@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -10,7 +11,7 @@ body {
 header {
   background-color: #1a2a36;
   color: #ffffff;
-  padding: 20px;
+  padding: 0.5px;
   text-align: center;
 }
 
@@ -33,7 +34,7 @@ nav a:hover {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
@@ -65,8 +66,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: #ffffff;
-  width: 40px;
-  height: 40px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -87,8 +88,46 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.slider {
+  max-width: 800px; /* Ancho máximo deseado */
+  margin: 0 auto;   /* Centra el slider */
+  height: auto;     /* Altura automática para adaptarse a la imagen */
+}
+
 .slider img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%;      /* Ajusta el ancho de las imágenes al 100% del contenedor */
+  height: auto;     /* Mantiene la proporción */
+}
+
+
+
+/* Flechas de navegación personalizadas */
+.slick-prev.custom-arrow, .slick-next.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(12, 1, 1, 0.5); /* Fondo semitransparente */
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slick-prev.custom-arrow {
+  left: 10px; /* Ajuste de posición a la izquierda */
+}
+
+.slick-next.custom-arrow {
+  right: 10px; /* Ajuste de posición a la derecha */
+}
+
+/* Efecto al pasar el ratón */
+.slick-prev.custom-arrow:hover, .slick-next.custom-arrow:hover {
+  background-color: rgba(194, 19, 19, 0.8); /* Cambia el color de fondo al pasar el mouse */
 }

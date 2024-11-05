@@ -18,18 +18,24 @@
     <header>
         <h1>Bienvenido a Transportes Fernandez S.L.</h1>
     </header>
-
+    <!-- <nav>
+      <a href="/">Inicio</a>
+      <a href="/servicios">Servicios</a>
+      <a href="/about">Sobre Nosotros</a>
+      <a href="/contacto">Contacto</a>
+  </nav> -->
     <div class="slider">
-        <div><img src="/src/assets/images/camion.png" alt="Imagen 1"></div>
-        <div><img src="/src/assets/images/camion2.jpg" alt="Imagen 2"></div>
-        <div><img src="/src/assets/images/fondo_mar.jpg" alt="Imagen 3"></div>
+        <div><img src="/src/assets/images/camion_resized.png" alt="Imagen 1"></div>
+        <div><img src="/src/assets/images/camion2_resized.jpg" alt="Imagen 2"></div>
+        <div><img src="/src/assets/images/fondo_mar_resized.jpg" alt="Imagen 3"></div>
+        <div><img src="/src/assets/images/awa.jpg" alt="Imagen 4"></div>
     </div>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Contacto</a>
+        <a href="/">Inicio</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/about">Sobre Nosotros</a>
+        <a href="/contacto">Contacto</a>
     </nav>
 
     <div class="container">
@@ -43,9 +49,13 @@
                 <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
             </div>
             <div class="service">
-              <h2>Alquiler de Equipos</h2>
-              <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
-          </div>
+                <h2>Alquiler de Equipos</h2>
+                <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
+            </div>
+            <div class="service">
+                <h2>Alquiler de Equipos</h2>
+                <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
+            </div>
         </section>
     </div>
 
@@ -57,17 +67,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <!-- Slick Slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <!-- Inicialización de Slick Slider -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').slick({
-                arrows: true,  // Muestra las flechas para navegar
-                autoplay: true, // Hace que las imágenes cambien automáticamente
-                autoplaySpeed: 5000, // Cambia cada 3 segundos
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
-            });
-        });
-    </script>
+    <!-- Tu archivo de JavaScript -->
+    <script type="text/javascript" src="src/slider.jsx"></script>
 </body>
 </html>
