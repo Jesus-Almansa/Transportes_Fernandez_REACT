@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
   // Lista de rutas de imágenes
   const imageList = [
       "/src/assets/images/camion_resized.png",
