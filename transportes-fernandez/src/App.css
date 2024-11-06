@@ -1,3 +1,5 @@
+/* rojo = #c4042c */
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -74,6 +76,7 @@ footer {
   transform: translateY(-50%);
   z-index: 1000;
   cursor: pointer;
+  aspect-ratio: 3/2;
 }
 
 .slick-prev {
@@ -89,7 +92,7 @@ footer {
 }
 
 .slider {
-  max-width: 960px; /* Ancho máximo deseado */
+  max-width: auto; /* Ancho máximo deseado */
   margin: 0 auto;   /* Centra el slider */
   height: auto;     /* Altura automática para adaptarse a la imagen */
 }
@@ -97,26 +100,28 @@ footer {
 .slider img {
   width: 100%;      /* Ajusta el ancho de las imágenes al 100% del contenedor */
   height: auto;     /* Mantiene la proporción */
+  aspect-ratio: 3/2; /* Proporción de aspecto 16:9 */
 }
 
 
 
 /* Flechas de navegación personalizadas */
+/* Flechas de navegación personalizadas */
 .slick-prev.custom-arrow, .slick-next.custom-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(12, 1, 1, 0.5); /* Fondo semitransparente */
-  border: none;
-  color: #fff;
-  width: 40px;
-  height: 40px;
+  top: 50%; /* Centra la flecha verticalmente */
+  transform: translateY(-50%); /* Ajusta para centrar correctamente */
+  background-color: rgba(12, 1, 1, 0.5); /* Color de fondo semitransparente */
+  border: none; /* Elimina bordes */
+  color: #fff; /* Color del icono de la flecha */
+  width: 40px; /* Ancho del botón de flecha */
+  height: 40px; /* Altura del botón de flecha */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
+  align-items: center; /* Centra el contenido internamente */
+  justify-content: center; /* Centra el contenido internamente */
+  border-radius: 50%; /* Hace que la flecha sea circular */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  z-index: 10; /* Asegura que la flecha esté encima de otros elementos */
 }
 
 .slick-prev.custom-arrow {
@@ -130,4 +135,44 @@ footer {
 /* Efecto al pasar el ratón */
 .slick-prev.custom-arrow:hover, .slick-next.custom-arrow:hover {
   background-color: rgba(194, 19, 19, 0.8); /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos generales para desktop */
+
+/* Media query para pantallas de 768px o menos */
+@media (max-width: 768px) {
+  .slider {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  header {
+      padding: 10px;
+      font-size: 20px;
+  }
+
+  nav {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  nav a {
+      padding: 5px;
+      font-size: 16px;
+      display: block; /* Coloca los enlaces en una columna */
+  }
+
+  .container {
+      padding: 5px;
+  }
+
+  .service {
+      margin-bottom: 15px;
+  }
+
+  .slick-prev.custom-arrow, .slick-next.custom-arrow {
+      width: 30px;
+      height: 30px;
+  }
 }
