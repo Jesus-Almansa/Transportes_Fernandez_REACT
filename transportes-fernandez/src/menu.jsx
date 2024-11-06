@@ -1,10 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
+// menu.jsx
+import React, { useRef } from 'react';
+import './App.css'; // Asegúrate de que los estilos están siendo importados
 
-  if (menuToggle && navMenu) {
-      menuToggle.addEventListener("click", () => {
-          navMenu.classList.toggle("show");
-      });
-  }
-});
+const Menu = () => {
+  const navMenuRef = useRef(null);
+
+  const toggleMenu = () => {
+    if (navMenuRef.current) {
+      navMenuRef.current.classList.toggle('show');
+    }
+  };
+
+  return (
+    <>
+      <div className="menu-toggle" onClick={toggleMenu}>
+        &#9776; {/* Icono de menú hamburguesa */}
+      </div>
+      <nav ref={navMenuRef} className="nav-menu">
+        <a href="/">Inicio</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/about">Sobre Nosotros</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+    </>
+  );
+};
+
+export default Menu;

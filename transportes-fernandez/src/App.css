@@ -148,7 +148,7 @@ footer {
 
 /* Botón de menú de hamburguesa */
 .menu-toggle {
-  display: none; /* Oculto por defecto en pantallas grandes */
+  display: block; /* Oculto por defecto en pantallas grandes */
   position: absolute;
   top: 15px; /* Ajusta según necesidad */
   right: 15px; /* Ajusta según necesidad */
@@ -159,7 +159,7 @@ footer {
 
 /* Navegación desplegable */
 .nav-menu {
-  display: block; /* Oculto por defecto */
+  display: none; /* Oculto por defecto */
   flex-direction: column; /* Coloca los enlaces en columna */
   background-color: var(--primary-color); /* Fondo rojo */
   position: absolute;
@@ -167,6 +167,10 @@ footer {
   right: 15px; /* Ajusta según necesidad */
   padding: 10px;
   border-radius: 4px; /* Bordes redondeados */
+}
+
+.nav-menu.show {
+  display: flex; /* Muestra el menú al hacer clic */
 }
 
 /* Estilo de los enlaces dentro del menú desplegable */

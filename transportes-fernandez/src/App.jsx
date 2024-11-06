@@ -1,21 +1,22 @@
 // menu.jsx
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css'; // Asegúrate de que los estilos están siendo importados
 
 const Menu = () => {
+  const navMenuRef = useRef(null);
+
   const toggleMenu = () => {
-    const navMenu = document.getElementById('nav-menu');
-    if (navMenu) {
-      navMenu.classList.toggle('show');
+    if (navMenuRef.current) {
+      navMenuRef.current.classList.toggle('show');
     }
   };
 
   return (
     <>
-      <div className="menu-toggle" id="menu-toggle" onClick={toggleMenu}>
+      <div className="menu-toggle" onClick={toggleMenu}>
         &#9776; {/* Icono de hamburguesa */}
       </div>
-      <nav id="nav-menu" className="nav-menu">
+      <nav ref={navMenuRef} className="nav-menu">
         <a href="/">Inicio</a>
         <a href="/servicios">Servicios</a>
         <a href="/about">Sobre Nosotros</a>
