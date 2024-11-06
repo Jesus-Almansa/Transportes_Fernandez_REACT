@@ -159,7 +159,7 @@ footer {
 
 /* Navegación desplegable */
 .nav-menu {
-  display: none; /* Oculto por defecto */
+  display: block; /* Oculto por defecto */
   flex-direction: column; /* Coloca los enlaces en columna */
   background-color: var(--primary-color); /* Fondo rojo */
   position: absolute;
@@ -180,21 +180,6 @@ footer {
 .nav-menu a:hover {
   color: var(--primary-color); /* Color rojo al pasar el mouse */
   background-color: var(--white-color); /* Fondo blanco al pasar el mouse */
-}
-
-/* Media query para pantallas pequeñas (mostrar botón y menú) */
-@media (max-width: 768px) {
-  .menu-toggle {
-      display: block; /* Muestra el botón de hamburguesa */
-  }
-
-  .nav-menu {
-      display: none; /* Oculta el menú inicialmente */
-  }
-
-  .nav-menu.show {
-      display: flex; /* Muestra el menú al hacer clic */
-  }
 }
 
 
@@ -264,5 +249,22 @@ footer {
   .slick-prev.custom-arrow, .slick-next.custom-arrow {
       width: 30px; /* Reduce tamaño de las flechas */
       height: 30px; /* Reduce tamaño de las flechas */
+  }
+  .menu-toggle {
+    display: block; /* Muestra el botón de hamburguesa en todas las pantallas */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .nav-menu {
+      display: flex; /* Oculta el menú inicialmente */
+  }
+
+  .nav-menu.show {
+      display: flex; /* Muestra el menú al hacer clic */
   }
 }
