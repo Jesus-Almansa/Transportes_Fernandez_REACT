@@ -89,7 +89,7 @@ footer {
 }
 
 .slider {
-  max-width: 800px; /* Ancho máximo deseado */
+  max-width: 960px; /* Ancho máximo deseado */
   margin: 0 auto;   /* Centra el slider */
   height: auto;     /* Altura automática para adaptarse a la imagen */
 }
