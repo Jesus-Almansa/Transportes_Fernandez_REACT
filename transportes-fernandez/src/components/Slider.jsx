@@ -1,30 +1,87 @@
-$(function() {
-  // Lista de rutas de imágenes
-  const imageList = [
-      "/src/assets/images/camion_resized.png",
-      "/src/assets/images/camion2_resized.jpg",
-      "/src/assets/images/fondo_mar_resized.jpg",
-      "/src/assets/images/awa.jpg"
-  ];
+// Quiero usar el carrusel de imágenes de Material-UI en mi aplicación de React. ¿Cómo puedo hacerlo?
+// Para usar el carrusel de imágenes de Material-UI en tu aplicación de React, primero debes instalar Material-UI en tu proyecto. Puedes hacerlo ejecutando el siguiente comando en la terminal:
+// npm install @mui/material @emotion/react @emotion/styled
+// Luego, puedes crear un componente Slider.jsx en la carpeta src/components/ de tu proyecto y agregar el siguiente código:
+import React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Carousel from 'react-material-ui-carousel';
 
-  // Selección del contenedor del slider
-  const $sliderContainer = $('.slider');
+const items = [
+  {
+    name: 'Random Name #1',
+    description: 'Probably the most random thing you have ever seen!',
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    name: 'Random Name #2',
+    description: 'Hello World!',
+    image: 'https://picsum.photos/200/300',
+  },
+  {
+    name: 'Random Name #3',
+    description: 'Hello World!',
+    image: 'https://picsum.photos/200/300',
+  },
+];
 
-  // Generación de los elementos div con imágenes dentro del contenedor
-  imageList.forEach(src => {
-      const imageDiv = `<div><img src="${src}" alt="Imagen"></div>`;
-      $sliderContainer.append(imageDiv);
-  });
+const MyCarousel = () => {
+  return (
+    <Carousel>
+      {items.map((item, index) => (
+        <Item key={index} item={item} />
+      ))}
+    </Carousel>
+  );
+};
 
-  // Inicialización de slick
-  $sliderContainer.slick({
-      arrows: true,       // Activa las flechas de navegación
-      autoplay: true,    // Desactiva el cambio automático de imágenes
-      autoplaySpeed: 5000, // Velocidad de cambio de imágenes en milisegundos
+const Item = ({ item }) => (
+  <Paper>
+    <Box>
+      <img src={item.image} alt={item.name} />
+      <h2>{item.name}</h2>
+      <p>{item.description}</p>
+    </Box>
+  </Paper>
+);
 
-      // Personalización de las flechas de navegación
-      prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fas fa-arrow-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fas fa-arrow-right"></i></button>',
-      dots: true          // Agrega puntos de navegación debajo de las imágenes
-  });
-});
+export default MyCarousel;
+// Luego, puedes importar y usar este componente en tu pantalla Home.jsx de la siguiente manera:
+// import React from 'react';
+// import MyCarousel from '../components/Slider';
+//
+// function Home() {
+//   return (
+//     <div>
+//       <h1>Welcome to Transportes Fernandez</h1>
+//       <p>This is the Home page where you can find general information.</p>
+//       <MyCarousel />
+//     </div>
+//   );
+// }
+//
+// export default Home; 
+// En este ejemplo, hemos creado un componente Slider.jsx que utiliza el carrusel de imágenes de Material-UI. Luego, importamos y usamos este componente en la pantalla Home.jsx para mostrar el carrusel de imágenes en la página de inicio de nuestra aplicación.
+//ahora dame los estilos para el carrusel
+// Compare this snippet from transportes-fernandez/src/components/Slider.css:
+// .carousel-root {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+// }
+//
+// .carousel-item {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+//   width: 100%;
+// }
+//
+// .carousel-image {
+//   max-width: 100%;
+//   height: auto;
+// }

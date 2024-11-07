@@ -1,32 +1,25 @@
-/* Estilos para el header fijo */
-header {
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0; /* Mantiene el header pegado a la parte superior */
-    left: 0; /* Asegura que el header comience desde el borde izquierdo */
-    width: 100%; /* El header ocupa todo el ancho de la página */
-    background-color: #333; /* Color de fondo del header */
-    color: #fff; /* Color del texto del header */
-    padding: 20px; /* Espaciado interno del header */
-    text-align: center; /* Centra el texto dentro del header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Añade una sombra para resaltar el header */
-    z-index: 1000; /* Asegura que el header esté siempre encima del contenido */
+/* Estilos para el header */
+
+.header-appbar {
+    background-color: var(--rojo) !important; /* Utiliza la variable de color definida en App.css */
+    color: var(--blanco);
   }
   
-  /* Estilos para compensar el espacio del header fijo en el contenido */
-  body {
-    margin: 0;
-    padding-top: 80px; /* Ajusta según la altura del header para evitar solapar el contenido */
-    font-family: Arial, sans-serif; /* Fuente base para la página */
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
   }
   
-  /* Ejemplo de contenido para hacer la página más completa */
-  main {
-    padding: 20px;
-    background-color: #f0f0f0;
+  .header-title {
+    flex-grow: 1; /* Hace que el título ocupe el máximo espacio posible */
   }
   
-  header h1 {
-    margin: 0; /* Elimina el margen superior e inferior del título dentro del header */
-    font-size: 1.8rem; /* Tamaño de fuente para el título del header */
+  .header-button {
+    color: var(--blanco); /* Los botones heredan el color blanco del header */
+  }
+  
+  .header-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Añadir un efecto al pasar el ratón */
   }
   

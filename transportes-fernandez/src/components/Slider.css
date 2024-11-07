@@ -1,53 +1,18 @@
-/* Botón de menú de hamburguesa */
-.menu-toggle {
-    display: none; /* Oculto por defecto en pantallas grandes */
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1002;
-}
-
-/* Navegación desplegable (por defecto visible en pantallas grandes) */
-.nav-menu {
-    display: flex; /* Visible por defecto */
-    flex-direction: row; /* Coloca los enlaces en una fila */
-    background-color: var(--primary-color);
-    position: relative;
-}
-
-.nav-menu a {
-    color: var(--white-color);
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.nav-menu a:hover {
-    color: var(--primary-color);
-    background-color: var(--white-color);
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Muestra el botón de hamburguesa */
+.carousel-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    }
+    .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    }
+    .carousel-image {
+    max-width: 100%;
+    height: auto;
     }
 
-    .nav-menu {
-        display: none; /* Oculta la navegación en pantallas pequeñas */
-        flex-direction: column; /* Coloca los enlaces en columna */
-        position: absolute;
-        top: 50px; /* Ajusta según necesidad */
-        right: 15px;
-        background-color: var(--primary-color);
-        padding: 10px;
-        border-radius: 4px;
-        z-index: 1001;
-    }
-
-    .nav-menu.show {
-        display: flex; /* Muestra el menú cuando tiene la clase 'show' */
-    }
-}
