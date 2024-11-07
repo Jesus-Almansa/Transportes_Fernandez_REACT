@@ -1,93 +1,274 @@
+/* Variables de color */
+:root {
+  --primary-color: #c4042c; /* Rojo principal */
+  --secondary-color: #1a2a36; /* Color oscuro */
+  --white-color: #ffffff; /* Blanco */
+  --background-light: #f4f4f4; /* Fondo claro */
+}
+
+/* Estilos globales */
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Fuente principal */
+  font-size: 16px; /* Tamaño de fuente base */
+  background-color: var(--background-light); /* Color de fondo */
+  color: #333; /* Color de texto principal */
+  line-height: 1.6; /* Altura de línea */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
 }
 
+/* Header */
 header {
-  background-color: #28323e;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
+  background-color: var(--secondary-color); /* Fondo oscuro */
+  color: var(--white-color); /* Texto blanco */
+  padding: 0.5px; /* Padding pequeño */
+  text-align: center; /* Texto centrado */
 }
 
+/* Navegación */
 nav {
-  display: flex;
-  justify-content: center;
-  background-color: #eb5e6e;
+  display: flex; /* Layout flex */
+  justify-content: center; /* Centra los enlaces */
+  background-color: var(--primary-color); /* Fondo rojo */
 }
 
 nav a {
-  color: #ffffff;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
+  color: var(--white-color); /* Color de texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Elimina subrayado */
+  transition: background-color 0.3s; /* Transición suave de fondo */
 }
 
 nav a:hover {
-  background-color: #c04e5a;
+  color: var(--primary-color); /* Color rojo al pasar el mouse */
+  background-color: var(--white-color); /* Fondo blanco al pasar el mouse */
 }
 
+/* Contenedor general */
 .container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  max-width: 1000px; /* Ancho máximo */
+  margin: auto; /* Centra el contenedor */
+  padding: 20px; /* Padding interno */
 }
 
+/* Servicios */
 .services {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: grid; /* Layout de cuadrícula */
+  grid-template-columns: 1fr 1fr; /* Dos columnas */
+  gap: 20px; /* Espacio entre elementos */
 }
 
 .service {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background: var(--white-color); /* Fondo blanco */
+  padding: 20px; /* Padding interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Texto centrado */
 }
 
+/* Footer */
 footer {
-  background-color: #28323e;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  background-color: var(--secondary-color); /* Fondo oscuro */
+  color: var(--white-color); /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 10px; /* Padding interno */
+  margin-top: 20px; /* Margen superior */
 }
 
 /* Slick Slider - Estilos de Flechas */
 .slick-prev, .slick-next {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1000;
-  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border: none; /* Sin bordes */
+  color: var(--white-color); /* Color de las flechas */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  border-radius: 50%; /* Forma circular */
+  position: absolute; /* Posición absoluta para posicionar dentro del slider */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajuste para centrar */
+  z-index: 1000; /* Asegura que esté encima */
+  cursor: pointer; /* Muestra cursor de puntero */
 }
 
 .slick-prev {
-  left: 10px;
+  left: 10px; /* Posiciona a la izquierda */
 }
 
 .slick-next {
-  right: 10px;
+  right: 10px; /* Posiciona a la derecha */
 }
 
 .slick-prev:hover, .slick-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro al pasar el mouse */
 }
 
+/* Contenedor del slider */
+.slider {
+  width: 100%; /* El slider ocupa el 100% del ancho */
+  margin: 0; /* Elimina cualquier margen del slider */
+  padding: 0; /* Elimina cualquier padding del slider */
+  position: relative; /* Posiciona elementos hijos absolutamente dentro de este contenedor */
+  overflow: hidden; /* Evita que elementos desbordados sean visibles */
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
+}
+
+/* Estilo para las imágenes dentro del slider */
 .slider img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de las imágenes */
+  object-fit: cover; /* Las imágenes cubren el contenedor sin distorsionarse */
+}
+
+/* Contenedor del logo */
+.logo-container {
+  position: absolute; /* Posiciona el logo de manera absoluta respecto al contenedor padre */
+  top: 10px; /* Coloca el logo a 10px desde la parte superior */
+  left: 10px; /* Coloca el logo a 10px desde la parte izquierda */
+  z-index: 1001; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+/* Enlace del logo */
+.logo-container a {
+  display: inline-block; /* Permite que el logo sea un bloque en línea */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+  width: 100px; /* Ancho del logo (ajústalo según tu preferencia) */
+  height: auto; /* Mantiene la proporción del logo */
+  cursor: pointer; /* Cambia el cursor al pasar por el logo */
+  transition: transform 0.6s; /* Transición suave para transformaciones */
+}
+
+/* Efecto al pasar el mouse sobre el logo */
+.logo:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del logo al pasar el mouse */
+}
+
+/* Botón de menú de hamburguesa */
+.menu-toggle {
+  display: block; /* Oculto por defecto en pantallas grandes */
+  position: absolute;
+  top: 15px; /* Ajusta según necesidad */
+  right: 15px; /* Ajusta según necesidad */
+  font-size: 24px; /* Tamaño del icono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  z-index: 1002; /* Asegura que esté encima del contenido */
+}
+
+/* Navegación desplegable */
+.nav-menu {
+  display: none; /* Oculto por defecto */
+  flex-direction: column; /* Coloca los enlaces en columna */
+  background-color: var(--primary-color); /* Fondo rojo */
+  position: absolute;
+  top: 50px; /* Ajusta según la posición del botón */
+  right: 15px; /* Ajusta según necesidad */
+  padding: 10px;
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.nav-menu.show {
+  display: flex; /* Muestra el menú al hacer clic */
+}
+
+/* Estilo de los enlaces dentro del menú desplegable */
+.nav-menu a {
+  color: var(--white-color); /* Color de texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Elimina subrayado */
+  transition: background-color 0.3s; /* Transición suave de fondo */
+}
+
+.nav-menu a:hover {
+  color: var(--primary-color); /* Color rojo al pasar el mouse */
+  background-color: var(--white-color); /* Fondo blanco al pasar el mouse */
+}
+
+
+/* Flechas de navegación personalizadas */
+.slick-prev.custom-arrow, .slick-next.custom-arrow {
+  position: absolute; /* Posiciona absolutamente */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajusta para centrar correctamente */
+  background-color: rgba(12, 1, 1, 0.5); /* Fondo semitransparente */
+  border: none; /* Sin bordes */
+  color: var(--white-color); /* Color del icono de la flecha */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  display: flex; /* Layout flex */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  border-radius: 50%; /* Forma circular */
+  cursor: pointer; /* Cursor de puntero */
+  z-index: 10; /* Asegura que esté por encima */
+}
+
+.slick-prev.custom-arrow {
+  left: 10px; /* Posiciona a la izquierda */
+}
+
+.slick-next.custom-arrow {
+  right: 10px; /* Posiciona a la derecha */
+}
+
+/* Efecto al pasar el ratón en flechas personalizadas */
+.slick-prev.custom-arrow:hover, .slick-next.custom-arrow:hover {
+  background-color: rgba(194, 19, 19, 0.8); /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 768px) {
+  .slider {
+      max-width: 100%; /* Asegura que el slider ocupe todo el ancho */
+      padding: 0; /* Elimina padding */
+  }
+
+  header {
+      padding: 10px; /* Aumenta el padding */
+      font-size: 20px; /* Ajusta el tamaño de la fuente */
+  }
+
+  nav {
+      flex-direction: column; /* Coloca los enlaces en una columna */
+      gap: 10px; /* Espaciado entre enlaces */
+      padding: 10px; /* Padding interno */
+  }
+
+  nav a {
+      padding: 5px; /* Reduce padding */
+      font-size: 16px; /* Ajusta el tamaño de la fuente */
+      display: block; /* Coloca los enlaces uno debajo del otro */
+  }
+
+  .container {
+      padding: 5px; /* Reduce padding */
+  }
+
+  .service {
+      margin-bottom: 15px; /* Espacio entre servicios */
+  }
+
+  .slick-prev.custom-arrow, .slick-next.custom-arrow {
+      width: 30px; /* Reduce tamaño de las flechas */
+      height: 30px; /* Reduce tamaño de las flechas */
+  }
+  .menu-toggle {
+    display: block; /* Muestra el botón de hamburguesa en todas las pantallas */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .nav-menu {
+      display: flex; /* Oculta el menú inicialmente */
+  }
+
+  .nav-menu.show {
+      display: flex; /* Muestra el menú al hacer clic */
+  }
 }

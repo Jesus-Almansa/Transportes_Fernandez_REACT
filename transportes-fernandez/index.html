@@ -15,33 +15,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Transportes Fernandez S.L.</h1>
-    </header>
-
-    <div class="slider">
-        <div><img src="https://unavatar.io/github/Jesus-Almansa" alt="Imagen 1"></div>
-        <div><img src="https://unavatar.io/github/rauulpastor" alt="Imagen 2"></div>
-        <div><img src="https://unavatar.io/github/torvalds" alt="Imagen 3"></div>
+    <!-- Contenedor para el logo interactivo -->
+    <div class="logo-container">
+        <!-- Enlace del logo que redirige a la página principal -->
+        <a href="/">
+            <!-- Imagen del logo -->
+            <img src="src/assets/images/logo.png" alt="Logo de la empresa" class="logo">
+        </a>
+    </div>
+    
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
     </div>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Sobre Nosotros</a>
-        <a href="#">Contacto</a>
+    <nav class="nav-menu">
+        <a href="/">Inicio</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/about">Sobre Nosotros</a>
+        <a href="/contacto">Contacto</a>
     </nav>
+
+    <div class="slider"></div> <!-- Contenedor vacío para el slider -->
 
     <div class="container">
         <section class="services">
             <div class="service">
-                <h2>Clases de Surf</h2>
+                <h2>Servicios de transporte</h2>
                 <p>Ofrecemos clases para todos los niveles, desde principiantes hasta surfistas avanzados.</p>
             </div>
             <div class="service">
                 <h2>Alquiler de Equipos</h2>
                 <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
             </div>
+            <!-- Más servicios aquí -->
         </section>
     </div>
 
@@ -53,17 +59,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <!-- Slick Slider -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <!-- Inicialización de Slick Slider -->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').slick({
-                arrows: true,  // Muestra las flechas para navegar
-                autoplay: true, // Hace que las imágenes cambien automáticamente
-                autoplaySpeed: 3000, // Cambia cada 3 segundos
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
-            });
-        });
-    </script>
+    <!-- Tu archivo de JavaScript -->
+    <script type="text/javascript" src="src/components/Slider.jsx"></script>
 </body>
 </html>
