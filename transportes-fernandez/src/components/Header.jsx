@@ -14,7 +14,7 @@ const Menu = () => {
   return (
     <>
       <div className="menu-toggle" onClick={toggleMenu}>
-        &#9776; {/* Icono de menú hamburguesa */}
+        &#9776; {/* Icono de hamburguesa */}
       </div>
       <nav ref={navMenuRef} className="nav-menu">
         <a href="/">Inicio</a>
