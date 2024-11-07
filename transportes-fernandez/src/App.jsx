@@ -8,8 +8,8 @@ import Footer from './components/Footer';
 // Import Screens (Pages)
 import Home from './screens/Home';
 import About from './screens/About';
-import Contact from './screens/Contact';
-import Services from './screens/Services';
+// import Contact from './screens/Contact';
+// import Services from './screens/Services';
 
 // Import CSS
 import './App.css';
@@ -25,8 +25,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
+          {/* <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} /> */}
         </Routes>
 
         {/* Footer is also usually the same across pages */}

@@ -1,53 +1,32 @@
-/* Botón de menú de hamburguesa */
-.menu-toggle {
-    display: none; /* Oculto por defecto en pantallas grandes */
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1002;
-}
-
-/* Navegación desplegable (por defecto visible en pantallas grandes) */
-.nav-menu {
-    display: flex; /* Visible por defecto */
-    flex-direction: row; /* Coloca los enlaces en una fila */
-    background-color: var(--primary-color);
-    position: relative;
-}
-
-.nav-menu a {
-    color: var(--white-color);
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.nav-menu a:hover {
-    color: var(--primary-color);
-    background-color: var(--white-color);
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Muestra el botón de hamburguesa */
-    }
-
-    .nav-menu {
-        display: none; /* Oculta la navegación en pantallas pequeñas */
-        flex-direction: column; /* Coloca los enlaces en columna */
-        position: absolute;
-        top: 50px; /* Ajusta según necesidad */
-        right: 15px;
-        background-color: var(--primary-color);
-        padding: 10px;
-        border-radius: 4px;
-        z-index: 1001;
-    }
-
-    .nav-menu.show {
-        display: flex; /* Muestra el menú cuando tiene la clase 'show' */
-    }
-}
+/* Estilos para el header fijo */
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Mantiene el header pegado a la parte superior */
+    left: 0; /* Asegura que el header comience desde el borde izquierdo */
+    width: 100%; /* El header ocupa todo el ancho de la página */
+    background-color: #333; /* Color de fondo del header */
+    color: #fff; /* Color del texto del header */
+    padding: 20px; /* Espaciado interno del header */
+    text-align: center; /* Centra el texto dentro del header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Añade una sombra para resaltar el header */
+    z-index: 1000; /* Asegura que el header esté siempre encima del contenido */
+  }
+  
+  /* Estilos para compensar el espacio del header fijo en el contenido */
+  body {
+    margin: 0;
+    padding-top: 80px; /* Ajusta según la altura del header para evitar solapar el contenido */
+    font-family: Arial, sans-serif; /* Fuente base para la página */
+  }
+  
+  /* Ejemplo de contenido para hacer la página más completa */
+  main {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  header h1 {
+    margin: 0; /* Elimina el margen superior e inferior del título dentro del header */
+    font-size: 1.8rem; /* Tamaño de fuente para el título del header */
+  }
+  

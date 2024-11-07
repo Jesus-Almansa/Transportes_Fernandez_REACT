@@ -17,33 +17,6 @@ body {
   padding: 0; /* Elimina el padding por defecto */
 }
 
-/* Header */
-header {
-  background-color: var(--secondary-color); /* Fondo oscuro */
-  color: var(--white-color); /* Texto blanco */
-  padding: 0.5px; /* Padding pequeño */
-  text-align: center; /* Texto centrado */
-}
-
-/* Navegación */
-nav {
-  display: flex; /* Layout flex */
-  justify-content: center; /* Centra los enlaces */
-  background-color: var(--primary-color); /* Fondo rojo */
-}
-
-nav a {
-  color: var(--white-color); /* Color de texto blanco */
-  padding: 10px 20px; /* Espaciado interno */
-  text-decoration: none; /* Elimina subrayado */
-  transition: background-color 0.3s; /* Transición suave de fondo */
-}
-
-nav a:hover {
-  color: var(--primary-color); /* Color rojo al pasar el mouse */
-  background-color: var(--white-color); /* Fondo blanco al pasar el mouse */
-}
-
 /* Contenedor general */
 .container {
   max-width: 1000px; /* Ancho máximo */
