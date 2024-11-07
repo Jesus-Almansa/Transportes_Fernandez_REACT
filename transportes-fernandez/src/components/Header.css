@@ -1,0 +1,27 @@
+/* Estilos para el header */
+
+.header-appbar {
+    background-color: var(--rojo) !important; /* Utiliza la variable de color definida en App.css */
+    color: var(--blanco);
+  }
+  
+  .header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .header-title {
+    flex-grow: 1; /* Hace que el título ocupe el máximo espacio posible */
+  }
+  
+  .header-button {
+    background-color: transparent;
+    color: var(--blanco); /* Los botones heredan el color blanco del header */
+  }
+  
+  .header-button:hover {
+    background-color: var(--background-light); /* Añadir un efecto al pasar el ratón */
+    color: var(--rojo);
+  }
+  

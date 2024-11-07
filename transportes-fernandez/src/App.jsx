@@ -1,29 +1,39 @@
-// menu.jsx
-import React, { useRef } from 'react';
-import './App.css'; // Asegúrate de que los estilos están siendo importados
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const Menu = () => {
-  const navMenuRef = useRef(null);
+// Import Components
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-  const toggleMenu = () => {
-    if (navMenuRef.current) {
-      navMenuRef.current.classList.toggle('show');
-    }
-  };
+// Import Screens (Pages)
+import Home from './screens/Home';
+import About from './screens/About';
+// import Contact from './screens/Contact';
+// import Services from './screens/Services';
 
+// Import CSS
+import './App.css';
+
+function App() {
   return (
-    <>
-      <div className="menu-toggle" onClick={toggleMenu}>
-        &#9776; {/* Icono de hamburguesa */}
-      </div>
-      <nav ref={navMenuRef} className="nav-menu">
-        <a href="/">Inicio</a>
-        <a href="/servicios">Servicios</a>
-        <a href="/about">Sobre Nosotros</a>
-        <a href="/contacto">Contacto</a>
-      </nav>
-    </>
-  );
-};
+    <Router>
+      <div className="App">
+        {/* Header is usually the same across pages */}
+        <Header />
 
-export default Menu;
+        {/* Main content - use Routes to manage pages */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} /> */}
+        </Routes>
+
+        {/* Footer is also usually the same across pages */}
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;

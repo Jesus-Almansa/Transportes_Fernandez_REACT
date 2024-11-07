@@ -1,65 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transportes Fernandez S.L.</title>
-    <!-- Enlace a Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Enlace a la hoja de estilos externa -->
-    <link rel="stylesheet" href="/src/App.css">
-    <!-- Enlace a Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-    <!-- Enlace a Font Awesome (para flechas opcionales) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <!-- Contenedor para el logo interactivo -->
-    <div class="logo-container">
-        <!-- Enlace del logo que redirige a la página principal -->
-        <a href="/">
-            <!-- Imagen del logo -->
-            <img src="src/assets/images/logo.png" alt="Logo de la empresa" class="logo">
-        </a>
-    </div>
-    
-    <div class="menu-toggle">
-        <i class="fas fa-bars"></i> <!-- Icono de menú hamburguesa -->
-    </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportes Fernandez</title>
+  </head>
 
-    <nav class="nav-menu">
-        <a href="/">Inicio</a>
-        <a href="/servicios">Servicios</a>
-        <a href="/about">Sobre Nosotros</a>
-        <a href="/contacto">Contacto</a>
-    </nav>
-
-    <div class="slider"></div> <!-- Contenedor vacío para el slider -->
-
-    <div class="container">
-        <section class="services">
-            <div class="service">
-                <h2>Servicios de transporte</h2>
-                <p>Ofrecemos clases para todos los niveles, desde principiantes hasta surfistas avanzados.</p>
-            </div>
-            <div class="service">
-                <h2>Alquiler de Equipos</h2>
-                <p>Disponemos de tablas de surf y trajes de neopreno para alquilar.</p>
-            </div>
-            <!-- Más servicios aquí -->
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Transportes Fernández. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-    <!-- Slick Slider -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <!-- Tu archivo de JavaScript -->
-    <script type="text/javascript" src="src/components/Slider.jsx"></script>
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
 </html>
