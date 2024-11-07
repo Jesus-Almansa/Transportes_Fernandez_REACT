@@ -1,29 +1,19 @@
-// menu.jsx
-import React, { useRef } from 'react';
-import './App.css'; // Asegúrate de que los estilos están siendo importados
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Menu = () => {
-  const navMenuRef = useRef(null);
-
-  const toggleMenu = () => {
-    if (navMenuRef.current) {
-      navMenuRef.current.classList.toggle('show');
-    }
-  };
-
+function Header() {
   return (
-    <>
-      <div className="menu-toggle" onClick={toggleMenu}>
-        &#9776; {/* Icono de hamburguesa */}
-      </div>
-      <nav ref={navMenuRef} className="nav-menu">
-        <a href="/">Inicio</a>
-        <a href="/servicios">Servicios</a>
-        <a href="/about">Sobre Nosotros</a>
-        <a href="/contacto">Contacto</a>
+    <header>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/services">Services</Link></li>
+        </ul>
       </nav>
-    </>
+    </header>
   );
-};
+}
 
-export default Menu;
+export default Header;
