@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import './Header.css'; // Importar el archivo de estilos CSS
+import Logo from './Logo';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
         <Toolbar className="header-toolbar">
           {/* Logo o Título */}
           <Typography variant="h6" component="div" className="header-title">
-            Transportes Fernandez (Falta componente de Logo)
+            <Logo />
           </Typography>
 
           {/* Enlaces de Navegación */}
