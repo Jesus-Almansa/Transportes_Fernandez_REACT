@@ -9,9 +9,10 @@ import MyCarousel from '../components/Slider';
 function Home() {
   return (
     <div id=''>
+      <MyCarousel />
       <h1>Welcome to Transportes Fernandez</h1>
       <p>This is the Home page where you can find general information.</p>
-      <MyCarousel />
+      
     </div>
   );
 }
