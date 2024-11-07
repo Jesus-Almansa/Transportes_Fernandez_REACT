@@ -2,7 +2,7 @@
     transition: transform 0.3s ease-in-out;
     width: 120px; /* Cambia el tamaño según tu preferencia */
     height: auto; /* Mantiene las proporciones */
-    max-height: 80px; /* Asegura que no sea demasiado alto */
+    max-height: 50px; /* Asegura que no sea demasiado alto */
     object-fit: contain; /* Ajusta la imagen sin distorsionar */
 }
 

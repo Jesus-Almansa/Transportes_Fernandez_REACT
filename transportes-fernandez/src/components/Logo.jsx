@@ -6,7 +6,8 @@ import './Logo.css';
 const Logo = () => {
     return (
         <Link to="/">
-            <img src={logo} alt="Logo de la empresa" style={{ cursor: 'pointer' }} />
+            <img className="logo"
+            src={logo} alt="Logo de la empresa" style={{ cursor: 'pointer' }} />
         </Link>
     );
 };
