@@ -1,19 +1,82 @@
 /* Variables de color */
 :root {
-  --rojo: #c4042c; /* Rojo principal */
-  --azul: #1a2a36; /* Color oscuro */
-  --blanco: #ffffff; /* Blanco */
-  --background-light: #f4f4f4; /* Fondo claro */
+  --rojo: #c4042c;
+  /* Rojo principal */
+  --azul: #1a2a36;
+  /* Color oscuro */
+  --blanco: #ffffff;
+  /* Blanco */
+  --background-light: #f4f4f4;
+  /* Fondo claro */
 }
 
 body {
   background-color: var(--background-light);
-  color: var(--secondary-color);
+  color: var(--azul);
   line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+h1 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.izquierda {
+  float: left;
+  width: auto;
+}
+
+.derecha {
+  float: right;
+  width: auto;
+  margin-right: 15%;
+}
+
+.enLinea {
+  display: flex;
+  vertical-align: top;
+}
+
+.oculto {
+  visibility: hidden;
 }

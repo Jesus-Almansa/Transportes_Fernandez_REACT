@@ -3,12 +3,13 @@
 .header-appbar {
     background-color: var(--rojo) !important; /* Utiliza la variable de color definida en App.css */
     color: var(--blanco);
+    font-family: 'Roboto',; /* Define la fuente del header */
   }
   
   .header-toolbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: -100px 10px;
   }
   
   .header-title {

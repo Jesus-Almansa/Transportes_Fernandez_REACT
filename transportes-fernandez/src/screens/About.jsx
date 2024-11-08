@@ -8,7 +8,9 @@ function About() {
   return (
     <div id=''>
       <h1>About Us</h1>
-      <p>Learn more about our company and services.</p>
+      <p>Learn more about our company and services.
+        TONTO EL QUE LO LEA
+      </p>
     </div>
   )
 }
