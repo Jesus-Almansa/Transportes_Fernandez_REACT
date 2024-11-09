@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Box.css'; // Assuming you will create a CSS file for styling
+import './BoxList.css'; // Assuming you will create a CSS file for styling
 
-const Box = ({ title, imageUrl, children }) => {
+const BoxList = ({ title, imageUrl, children }) => {
     return (
         <div className="box">
             <h2 className="box-title"></h2>
@@ -17,10 +17,10 @@ const Box = ({ title, imageUrl, children }) => {
     );
 };
 
-Box.propTypes = {
+BoxList.propTypes = {
     title: PropTypes.string.isRequired,
     imageUrl: PropTypes.string,
     children: PropTypes.node
 };
 
-export default Box;
+export default BoxList;

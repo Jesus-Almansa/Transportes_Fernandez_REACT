@@ -80,3 +80,9 @@ h1 {
 .oculto {
   visibility: hidden;
 }
+
+.alinearEnColumna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+.boxText {
+    width: auto;
+    height: auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.boxText:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.boxTextImage {
+    max-width: 30%;
+    height: 30%;
+    display: block;
+    padding-right: 120px;
+    padding-left: 100px;
+}
+
+.fondoAzul {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.fondoRojo {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+.fondoBlanco {
+    background-color: var(--blanco);
+    color: var(--azul);
+}
