@@ -25,9 +25,9 @@ function Header() {
             gap: 2,
           }}>
             <Button component={Link} to="/" color="inherit" size="large" className="header-button"><b>Inicio</b></Button>
-            <Button component={Link} to="/about" color="inherit" size="large" className="header-button"><b>Servicios</b></Button>
-            <Button component={Link} to="/contact" color="inherit" size="large" className="header-button"><b>Equipo</b></Button>
-            <Button component={Link} to="/services" color="inherit" size="large" className="header-button"><b>Contacto</b></Button>
+            <Button component={Link} to="/about" color="inherit" size="large" className="header-button"><b>Equipo</b></Button>
+            <Button component={Link} to="/contact" color="inherit" size="large" className="header-button"><b>Contacto</b></Button>
+            <Button component={Link} to="/services" color="inherit" size="large" className="header-button"><b>Servicios</b></Button>
           </Container>
           <div className="oculto">
             <Logo />
