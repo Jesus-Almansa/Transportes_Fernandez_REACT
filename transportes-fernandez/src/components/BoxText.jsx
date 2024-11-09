@@ -7,7 +7,7 @@ const BoxText = ({ title, logo, children }) => {
     return (
         <div className="enLinea">
 
-            <p className="boxText fondoRojo">
+            <p className="boxText fondoAzul">
                 <img src={image} alt={title} className="boxTextImage" />
                 {children}
             </p>

@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid'
 
 function About() {
   return (
-    <div id=''>
+    <div id='About'>
       <h1>About Us</h1>
       <p>Learn more about our company and services.
         TONTO EL QUE LO LEA

@@ -6,7 +6,7 @@ import BoxText from '../components/BoxText';
 
 function Home() {
   return (
-    <div id=''>
+    <div id='Home'>
       <Carousel />
       <div className="enLinea">
         <div className="izquierda">
@@ -27,7 +27,7 @@ function Home() {
       </div>
 
       <BoxText>
-        <div class="alinearEnColumna">
+        <div class="alinearEnColumna ">
           <h1>Transporte regional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
