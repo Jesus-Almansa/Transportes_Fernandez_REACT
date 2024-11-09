@@ -11,18 +11,29 @@ import Logo from './Logo';
 function Header() {
   return (
     <AppBar position="static" className="header-appbar">
-      <Container maxWidth="lg">
+      <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
           {/* Logo o Título */}
-          <Typography variant="h6" component="div" className="header-title">
-            <Logo />
-          </Typography>
+
+          <Logo />
 
           {/* Enlaces de Navegación */}
-          <Button component={Link} to="/" color="inherit" className="header-button">Home</Button>
-          <Button component={Link} to="/about" color="inherit" className="header-button">About</Button>
-          <Button component={Link} to="/contact" color="inherit" className="header-button">Contact</Button>
-          <Button component={Link} to="/services" color="inherit" className="header-button">Services</Button>
+          <Container maxWidth="sm" sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 2,
+          }}>
+            <Button component={Link} to="/" color="inherit" size="large" className="header-button"><b>Inicio</b></Button>
+            <Button component={Link} to="/about" color="inherit" size="large" className="header-button"><b>Servicios</b></Button>
+            <Button component={Link} to="/contact" color="inherit" size="large" className="header-button"><b>Equipo</b></Button>
+            <Button component={Link} to="/services" color="inherit" size="large" className="header-button"><b>Contacto</b></Button>
+          </Container>
+          <div className="oculto">
+            <Logo />
+          </div>
+
+
         </Toolbar>
       </Container>
     </AppBar>

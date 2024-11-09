@@ -25,6 +25,9 @@ const MyCarousel = () => {
       interval={3000}
       indicators={true}
       navButtonsAlwaysVisible={true}
+      navButtonsProps={{
+        className: 'carousel-nav-button', // Aplica la clase CSS personalizada a los botones
+      }}
     >
       {items.map((item, index) => (
         <div key={index} className="carousel-item">
