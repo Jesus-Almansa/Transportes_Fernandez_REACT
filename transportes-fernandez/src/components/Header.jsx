@@ -21,9 +21,10 @@ function Header() {
             gap: 2,
           }}>
             <NavButton to="/" label="Inicio" />
+            <NavButton to="/services" label="Servicios" />
             <NavButton to="/about" label="Equipo" />
             <NavButton to="/contact" label="Contacto" />
-            <NavButton to="/services" label="Servicios" />
+            
           </Container>
           <div className="oculto">  
             <Logo />
