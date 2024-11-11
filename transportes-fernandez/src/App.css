@@ -22,10 +22,28 @@ body {
   min-height: 100vh;
 }
 
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido */
+  min-height: 300px; /* Ajusta según tus necesidades */
+  padding: 20px;
+}
+
+.text-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  aspect-ratio: 16 / 9; /* Ajusta según sea necesario */
+}
+
 p,
 h1 {
   margin-left: 5%;
   margin-right: 5%;
+  text-align: justify;
+  min-height: 50px;
+  max-height: 990px;
 }
 
 .izquierda {
