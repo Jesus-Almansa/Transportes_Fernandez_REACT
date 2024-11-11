@@ -1,14 +1,14 @@
 const employees = [
     {
       id: 1,
-      name: "Paz Fernández Lozano",
-      position: "CEO",
+      name: "Jesús Almansa",
+      position: "CTO",
       imageUrl: "https://unavatar.io/github/Jesus-Almansa",
     },
     {
       id: 2,
       name: "El primiyo chico",
-      position: "CEO de la vida",
+      position: "Linux Enjoyer",
       imageUrl: "https://unavatar.io/github/torvalds",
     },
     {
