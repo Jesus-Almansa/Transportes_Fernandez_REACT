@@ -10,27 +10,35 @@ import Home from './screens/Home';
 import About from './screens/About';
 import Contact from './screens/Contact';
 import Services from './screens/Services';
+import Team from './screens/Team'; // Asegúrate de importar la página correspondiente para '/team'
+
+// Import Routes
+import routes from './data/routes'; // Importa tu archivo de rutas
 
 // Import CSS
 import './App.css';
+
+const routeComponents = {
+  '/': Home,
+  '/about': About,
+  '/contact': Contact,
+  '/services': Services,
+  '/team': Team, // Agrega cualquier otra página necesaria
+};
 
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* Header is usually the same across pages */}
         <Header />
 
-        {/* Main content - use Routes to manage pages */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          
+          {Object.entries(routes).map(([label, path]) => {
+            const Component = routeComponents[path];
+            return <Route key={label} path={path} element={<Component />} />;
+          })}
         </Routes>
 
-        {/* Footer is also usually the same across pages */}
         <Footer />
       </div>
     </Router>
