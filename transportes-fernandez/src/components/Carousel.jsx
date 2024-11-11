@@ -20,13 +20,13 @@ const items = [
 const MyCarousel = () => {
   return (
     <Carousel
-      autoPlay={true}
+      autoPlay={false}
       animation="slide"
       interval={3000}
       indicators={true}
       navButtonsAlwaysVisible={true}
       navButtonsProps={{
-        className: 'carousel-nav-button', // Aplica la clase CSS personalizada a los botones
+        className: 'carousel-arrow', // Aplica la clase CSS personalizada a los botones
       }}
     >
       {items.map((item, index) => (

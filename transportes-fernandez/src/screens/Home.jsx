@@ -2,39 +2,85 @@ import React from 'react';
 import Carousel from '../components/Carousel';
 import BoxList from '../components/BoxList';
 import BoxText from '../components/BoxText';
-
+import truckImage from '../assets/images/truck.png';
+import EmployeeCard from '../components/EmployeeCard';
+import Background from '../components/Background';
+import employees from '../data/employees';
+import narutoImage from '../assets/images/naruto.jpg';
 
 function Home() {
   return (
-    <div id='Home'>
+    <div id=''>
       <Carousel />
       <div className="enLinea">
-        <div className="izquierda">
+        <div className="izquierda contenedor-principal">
           <h1>Bienvenido a Transportes Fernández</h1>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti. Morbi sed fermentum odio, eu mollis arcu. Fusce nec tellus facilisis, rhoncus ante vitae, tincidunt nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis facilisis nunc ut ante consequat, ac aliquet lorem mattis.</p>
+          <p>Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
+            Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
+            Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
+            Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
+            Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente"
+          </p>
+        </div>
+
+
+      </div>
+      <br />
+      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+        <div className="alinearEnColumna">
+          <h1>Regional</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+        </div>
+      </BoxText>
+      <br />
+      <BoxText colorClass='fondoAzul' imageUrl={truckImage}>
+        <div className="alinearEnColumna">
+          <h1>Nacional</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+        </div>
+      </BoxText>
+      <br />
+      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+        <div className='alinearEnColumna'>
+          <h1>Internacional</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+        </div>
+      </BoxText>
+
+
+      <div className="enLinea">
+        <div className="izquierda">
+          <h1>Equipo</h1>
+          <p> Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida</p>
         </div>
 
         <div className="derecha">
-          <BoxList>
-            <ul>
-              <li>Transporte de mercancías</li>
-              <li>Transporte de pasajeros</li>
-              <li>Transporte de animales</li>
-              <li>Transporte de animales</li>
-            </ul>
-          </BoxList>
+          <EmployeeCard
+            name="Paz Fernández Lozano"
+            position="CEO"
+            imageUrl={narutoImage}
+          />
         </div>
       </div>
 
-      <BoxText>
-        <div className="alinearEnColumna ">
-          <h1>Transporte regional</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.</p>
-        </div>
+      <Background color="lightblue" />
 
-      </BoxText>
+      <div className="enLinea">
+  <div className="izquierda">
+    <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
+  </div>
 
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti. Morbi sed fermentum odio, eu mollis arcu. Fusce nec tellus facilisis, rhoncus ante vitae, tincidunt nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis facilisis nunc ut ante consequat, ac aliquet lorem mattis.</p>
+  <div className="employees-container">
+    {employees.map((employee) => (
+      <EmployeeCard
+        key={employee.id}
+        name={employee.name}
+        position={employee.position}
+        imageUrl={employee.imageUrl}
+      />
+    ))}
+  </div>
+</div>
 
 
     </div>

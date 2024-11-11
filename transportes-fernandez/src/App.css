@@ -1,15 +1,10 @@
 /* Variables de color */
 :root {
-  --rojo: #ab273c;
-  /* Rojo principal */
-  --azul: #1a2a36;
-  /* Color oscuro */
-  --blanco: #ffffff;
-  /* Blanco */
-  --negro: #171717;
-  /* Negro */
-  --background-light: #f4f4f4;
-  /* Fondo claro */
+  --rojo: #ab273c; /* Rojo principal */
+  --azul: #1a2a36; /* Color oscuro */
+  --blanco: #ffffff; /* Blanco */
+  --negro: #171717; /* Negro */
+  --background-light: #f4f4f4; /* Fondo claro */
 }
 
 body {
@@ -17,6 +12,8 @@ body {
   color: var(--azul);
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -25,42 +22,28 @@ body {
   min-height: 100vh;
 }
 
-p {
-  margin-left: 5%;
-  margin-right: 5%;
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido */
+  min-height: 300px; /* Ajusta según tus necesidades */
+  padding: 20px;
 }
 
-@media (min-width: 768px) {
-  p {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+.text-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  aspect-ratio: 16 / 9; /* Ajusta según sea necesario */
 }
 
-@media (min-width: 1024px) {
-  p {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-
+p,
 h1 {
   margin-left: 5%;
   margin-right: 5%;
-}
-
-@media (min-width: 768px) {
-  h1 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
+  text-align: justify;
+  min-height: 50px;
+  max-height: 990px;
 }
 
 .izquierda {
@@ -87,4 +70,45 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Media queries para iPhone 13 */
+@media (max-width: 390px) {
+  body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+
+  p,
+  h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .izquierda,
+  .derecha {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .enLinea {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  p,
+  h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 1024px) {
+  p,
+  h1 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }

@@ -21,3 +21,30 @@
    height: 100%;
    object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
 }
+
+.carousel-arrow {
+   color: #fff !important;
+   font-size: 2rem; 
+   cursor: pointer;
+   z-index: 1;
+   width: 50px; /* Ajusta según tu diseño */
+   height: 50px; /* Ajusta según tu diseño */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   pointer-events: auto; /* Asegura que el área del botón sea interactiva */
+}
+
+.carousel-arrow-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: auto; /* Asegúrate de que sea solo el área visible */
+   height: auto; /* Ajusta según sea necesario */
+   pointer-events: none; /* Desactiva eventos fuera del botón */
+}
+
+.carousel-arrow:hover {
+   color: var(--blanco) !important;
+   background-color: var(--rojo) !important;
+}
