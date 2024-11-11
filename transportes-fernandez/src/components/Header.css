@@ -16,12 +16,12 @@
   }
   
   .header-button {
-    background-color: transparent;
+    background-color: transparent ;
     color: var(--blanco); /* Los botones heredan el color blanco del header */
   }
   
   .header-button:hover {
-    background-color: var(--background-light); /* Añadir un efecto al pasar el ratón */
+    background-color: var(--blanco); /* Añadir un efecto al pasar el ratón */
     color: var(--rojo);
   }
   

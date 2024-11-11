@@ -6,17 +6,17 @@ import image from '../assets/images/truck.png';
 const BoxText = ({ title, logo, children }) => {
     return (
         <div className="enLinea">
-
-            <p className="boxText fondoRojo">
-                <img src={image} alt={title} className="boxTextImage" />
+            <div className="boxText fondoAzul"> {/* Cambiado de <p> a <div> */}
+                <img src={image} alt={title || 'Imagen'} className="boxTextImage" />
                 {children}
-            </p>
+            </div>
         </div>
     );
 };
 
+
 BoxText.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string, // Ahora es opcional
     imageUrl: PropTypes.string,
     children: PropTypes.node
 };

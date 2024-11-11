@@ -1,17 +1,19 @@
 /* Variables de color */
 :root {
-  --rojo: #c4042c;
+  --rojo: #ab273c;
   /* Rojo principal */
   --azul: #1a2a36;
   /* Color oscuro */
   --blanco: #ffffff;
   /* Blanco */
+  --negro: #171717;
+  /* Negro */
   --background-light: #f4f4f4;
   /* Fondo claro */
 }
 
 body {
-  background-color: var(--background-light);
+  background-color: var(--blanco);
   color: var(--azul);
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;

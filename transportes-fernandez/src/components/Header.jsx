@@ -1,12 +1,9 @@
+// Header.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import { Container, AppBar, Toolbar } from '@mui/material';
 import './Header.css'; // Importar el archivo de estilos CSS
 import Logo from './Logo';
+import NavButton from './NavButton'; // Importar el nuevo componente NavButton
 
 function Header() {
   return (
@@ -14,7 +11,6 @@ function Header() {
       <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
           {/* Logo o Título */}
-
           <Logo />
 
           {/* Enlaces de Navegación */}
@@ -24,16 +20,14 @@ function Header() {
             alignItems: 'center',
             gap: 2,
           }}>
-            <Button component={Link} to="/" color="inherit" size="large" className="header-button"><b>Inicio</b></Button>
-            <Button component={Link} to="/about" color="inherit" size="large" className="header-button"><b>Servicios</b></Button>
-            <Button component={Link} to="/contact" color="inherit" size="large" className="header-button"><b>Equipo</b></Button>
-            <Button component={Link} to="/services" color="inherit" size="large" className="header-button"><b>Contacto</b></Button>
+            <NavButton to="/" label="Inicio" />
+            <NavButton to="/about" label="Equipo" />
+            <NavButton to="/contact" label="Contacto" />
+            <NavButton to="/services" label="Servicios" />
           </Container>
-          <div className="oculto">
+          <div className="oculto">  
             <Logo />
           </div>
-
-
         </Toolbar>
       </Container>
     </AppBar>
