@@ -4,7 +4,6 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import ContactForm from '../components/features/ContactForm/ContactForm'
-import "./ContactForm.css"
 
 function Contact() {
   return (
