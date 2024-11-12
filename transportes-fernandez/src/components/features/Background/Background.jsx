@@ -1,10 +1,10 @@
 import React from 'react';
 import './Background.css';
 
-const Background = ({ color }) => {
+const Background = ({ color, children }) => {
     return (
-        <div className="background" style={{ backgroundColor: color }}>
-            {/* Aquí puedes agregar el contenido de la sección */}
+        <div style={{ backgroundColor: color }} className="section-background">
+            {children}
         </div>
     );
 };
