@@ -7,6 +7,7 @@ import EmployeeCard from '../components/features/Employee/EmployeeCard';
 import Background from '../components/features/Background/Background';
 import employees from '../data/employees';
 import narutoImage from '../assets/images/naruto.jpg';
+import regionalImage from '../assets/images/Regional.png';
 
 function Home() {
   return (
@@ -26,7 +27,7 @@ function Home() {
 
       </div>
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+      <BoxText colorClass='fondoRojo' imageUrl={regionalImage}>
         <div className="alinearEnColumna">
           <h1>Regional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
@@ -40,7 +41,7 @@ function Home() {
         </div>
       </BoxText>
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+      <BoxText colorClass='fondoBlanco' imageUrl={truckImage}>
         <div className='alinearEnColumna'>
           <h1>Internacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
@@ -63,24 +64,24 @@ function Home() {
         </div>
       </div>
 
-      <Background color="lightblue" />
+      <Background color="#ab273c">
+        <div><div className="enLinea">
+        <div className="izquierda">
+          <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
+        </div>
 
-      <div className="enLinea">
-  <div className="izquierda">
-    <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
-  </div>
-
-  <div className="employees-container">
-    {employees.map((employee) => (
-      <EmployeeCard
-        key={employee.id}
-        name={employee.name}
-        position={employee.position}
-        imageUrl={employee.imageUrl}
-      />
-    ))}
-  </div>
-</div>
+        <div className="employees-container">
+          {employees.map((employee) => (
+            <EmployeeCard
+              key={employee.id}
+              name={employee.name}
+              position={employee.position}
+              imageUrl={employee.imageUrl}
+            />
+          ))}
+        </div>
+      </div></div>
+      </Background>
 
 
     </div>
