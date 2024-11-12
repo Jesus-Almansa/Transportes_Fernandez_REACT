@@ -1,10 +1,10 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
-import BoxList from '../components/BoxList';
-import BoxText from '../components/BoxText';
+import Carousel from '../components/features/Carousel/Carousel';
+import BoxList from '../components/features/Box/BoxList';
+import BoxText from '../components/features/Box/BoxText';
 import truckImage from '../assets/images/truck.png';
-import EmployeeCard from '../components/EmployeeCard';
-import Background from '../components/Background';
+import EmployeeCard from '../components/features/Employee/EmployeeCard';
+import Background from '../components/features/Background/Background';
 import employees from '../data/employees';
 import narutoImage from '../assets/images/naruto.jpg';
 
