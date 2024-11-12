@@ -1,12 +1,15 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
-import BoxList from '../components/BoxList';
-import BoxText from '../components/BoxText';
+import Carousel from '../components/features/Carousel/Carousel';
+import BoxList from '../components/features/Box/BoxList';
+import BoxText from '../components/features/Box/BoxText';
 import truckImage from '../assets/images/truck.png';
-import EmployeeCard from '../components/EmployeeCard';
-import Background from '../components/Background';
+import EmployeeCard from '../components/features/Employee/EmployeeCard';
+import Background from '../components/features/Background/Background';
 import employees from '../data/employees';
 import narutoImage from '../assets/images/naruto.jpg';
+import regionalImage from '../assets/images/Regional.png';
+import nacionalImage from '../assets/images/nacional.jpg';
+import ContactForm from '../components/features/ContactForm/ContactForm';
 
 function Home() {
   return (
@@ -26,21 +29,21 @@ function Home() {
 
       </div>
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+      <BoxText colorClass='fondoRojo' imageUrl={regionalImage}>
         <div className="alinearEnColumna">
           <h1>Regional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
       </BoxText>
       <br />
-      <BoxText colorClass='fondoAzul' imageUrl={truckImage}>
+      <BoxText colorClass='fondoAzul' imageUrl={nacionalImage}>
         <div className="alinearEnColumna">
           <h1>Nacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
       </BoxText>
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+      <BoxText colorClass='fondoBlanco' imageUrl={truckImage}>
         <div className='alinearEnColumna'>
           <h1>Internacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
@@ -63,26 +66,26 @@ function Home() {
         </div>
       </div>
 
-      <Background color="lightblue" />
+      <Background color="#ab273c">
+        <div><div className="enLinea">
+          <div className="izquierda" className='text-white'>
+            <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
+          </div>
 
-      <div className="enLinea">
-  <div className="izquierda">
-    <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
-  </div>
+          <div className="employees-container">
+            {employees.map((employee) => (
+              <EmployeeCard
+                key={employee.id}
+                name={employee.name}
+                position={employee.position}
+                imageUrl={employee.imageUrl}
+              />
+            ))}
+          </div>
+        </div></div>
+      </Background>
 
-  <div className="employees-container">
-    {employees.map((employee) => (
-      <EmployeeCard
-        key={employee.id}
-        name={employee.name}
-        position={employee.position}
-        imageUrl={employee.imageUrl}
-      />
-    ))}
-  </div>
-</div>
-
-
+      <ContactForm />
     </div>
   );
 }

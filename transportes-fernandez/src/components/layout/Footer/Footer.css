@@ -1,0 +1,13 @@
+footer {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Asegúrate de que esté correctamente posicionado */
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente si hay más contenido */
+}

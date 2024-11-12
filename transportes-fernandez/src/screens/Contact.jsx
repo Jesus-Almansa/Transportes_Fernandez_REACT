@@ -1,66 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { styled } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import Paper from '@mui/material/Paper'
+import Grid from '@mui/material/Grid'
+import ContactForm from '../components/features/ContactForm/ContactForm'
 
-const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+function Contact() {
+  return (
+    <div id='Contact'>
+      <h1>Contact Us</h1>
+        <ContactForm />
+    </div>
+  )
+}
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
+export default Contact
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Aquí puedes manejar el envío del formulario, por ejemplo, enviarlo a un endpoint de tu API
-        console.log('Form data submitted:', formData);
-    };
-
-    return (
-        <div>
-            <h1>Contact Us</h1>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    />
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    );
-};
-
-export default Contact;

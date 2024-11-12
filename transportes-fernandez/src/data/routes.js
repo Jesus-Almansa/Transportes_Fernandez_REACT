@@ -1,8 +1,9 @@
 const routes = {
-    home: '/',
-    about: '/about',
-    services: '/services',
-    contact: '/contact',
+    Inicio: '/',
+    Empresa: '/about',
+    Servicios: '/services',
+    Equipo: '/team',   
+    Contacto: '/contact',
 };
 
 export default routes;

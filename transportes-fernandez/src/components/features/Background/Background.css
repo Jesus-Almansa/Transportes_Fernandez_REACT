@@ -13,3 +13,7 @@
     background-color: #f0f0f0; /* Light grey for alternating sections */
     color: black; /* Optional: to ensure text is readable */
 }
+
+.text-white {
+    color: white;
+}

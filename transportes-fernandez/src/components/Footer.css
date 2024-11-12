@@ -1,9 +1,0 @@
-footer{
-    background-color: var(--azul);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
-}
