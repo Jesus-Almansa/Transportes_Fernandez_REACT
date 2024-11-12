@@ -8,6 +8,7 @@ import Background from '../components/features/Background/Background';
 import employees from '../data/employees';
 import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/Regional.png';
+import ContactForm from '../components/features/ContactForm/ContactForm';
 
 function Home() {
   return (
@@ -66,24 +67,24 @@ function Home() {
 
       <Background color="#ab273c">
         <div><div className="enLinea">
-        <div className="izquierda">
-          <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
-        </div>
+          <div className="izquierda">
+            <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
+          </div>
 
-        <div className="employees-container">
-          {employees.map((employee) => (
-            <EmployeeCard
-              key={employee.id}
-              name={employee.name}
-              position={employee.position}
-              imageUrl={employee.imageUrl}
-            />
-          ))}
-        </div>
-      </div></div>
+          <div className="employees-container">
+            {employees.map((employee) => (
+              <EmployeeCard
+                key={employee.id}
+                name={employee.name}
+                position={employee.position}
+                imageUrl={employee.imageUrl}
+              />
+            ))}
+          </div>
+        </div></div>
       </Background>
 
-
+      <ContactForm />
     </div>
   );
 }
