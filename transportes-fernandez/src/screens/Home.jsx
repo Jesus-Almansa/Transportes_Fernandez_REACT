@@ -88,7 +88,6 @@ function Home() {
         <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
       </div>
       <ContactForm />
-
     </div>
   );
 }

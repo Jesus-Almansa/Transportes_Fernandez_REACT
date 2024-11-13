@@ -10,6 +10,7 @@ function Contact() {
     <div id='Contact'>
       <h1>Contact Us</h1>
         <ContactForm />
+      <br />
     </div>
   )
 }
