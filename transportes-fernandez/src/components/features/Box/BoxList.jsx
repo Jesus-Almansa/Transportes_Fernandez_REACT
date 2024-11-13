@@ -1,25 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './BoxList.css'; // Assuming you will create a CSS file for styling
+import './BoxList.css';
 
-const BoxList = ({ title, imageUrl, children }) => {
+const BoxList = ({ title, children }) => {
     return (
-        <div className="box">
-            {title && <h2 className="box-title">{title}</h2>} {/* Solo muestra si title está definido */}
-            <ul className="boxList">
-                {React.Children.map(children, (child, index) => (
-                    <li key={index} className="box-list-item">
-                        {child}
-                    </li>
-                ))}
-            </ul>
+        <div className="boxList">
+            {title && <h2 className="box-title">{title}</h2>}
+            <div className="box-content">
+                {children}
+            </div>
         </div>
     );
 };
 
 BoxList.propTypes = {
-    title: PropTypes.string, // Ahora es opcional
-    imageUrl: PropTypes.string,
+    title: PropTypes.string,
     children: PropTypes.node
 };
 
