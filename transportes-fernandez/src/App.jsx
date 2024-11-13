@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Components
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
+import Up from './components/layout/Up/Up';
 
 // Import Screens (Pages)
 import Home from './screens/Home';
 import About from './screens/About';
 import Contact from './screens/Contact';
 import Services from './screens/Services';
-import Team from './screens/Team'; // Asegúrate de importar la página correspondiente para '/team'
+import Team from './screens/Team';
 
 // Import Routes
 import routes from './data/routes'; // Importa tu archivo de rutas
@@ -46,8 +47,13 @@ function App() {
           <Route path="/services" element={<Services />} />
         </Routes> */}
 
+
+        <Up />
+        
         <Footer />
+
       </div>
+
     </Router>
   );
 }
