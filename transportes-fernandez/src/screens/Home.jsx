@@ -68,7 +68,7 @@ function Home() {
 
       <Background color="#ab273c">
         <div><div className="enLinea">
-          <div className="izquierda" className='text-white'>
+          <div className="izquierda text-white">
             <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
           </div>
 
@@ -84,8 +84,11 @@ function Home() {
           </div>
         </div></div>
       </Background>
-
+      <div className="enLinea">
+        <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
+      </div>
       <ContactForm />
+
     </div>
   );
 }
