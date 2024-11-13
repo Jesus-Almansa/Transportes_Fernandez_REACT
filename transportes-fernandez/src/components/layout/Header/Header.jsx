@@ -3,25 +3,30 @@ import { Container, AppBar, Toolbar } from '@mui/material';
 import './Header.css';
 import Logo from '../../features/Logo/Logo';
 import NavButton from '../NavButton/NavButton';
+import BurgerButton from '../BurgerButton/BurgerButton';
 import routes from '../../../data/routes';
+import useIsMobile from '../../hooks/useIsMobile'; // Importa el hook de detección del dispositivo
 
 function Header() {
+  const isMobile = useIsMobile(); // Llama al hook para determinar si es un dispositivo móvil
+
   return (
     <AppBar position="static" className="header-appbar">
       <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
-          {/* Logo o Título */}
+          {/* Logo */}
           <Logo />
 
-          {/* Enlaces de Navegación */}
-          <Container maxWidth="sm" className="nav-container">
-          {Object.entries(routes).map(([key, path]) => (
-              <NavButton key={key} to={path} label={key.charAt(0).toUpperCase() + key.slice(1)} />
-            ))}
-          </Container>
-          <div className="oculto">  
-            <Logo />
-          </div>
+          {/* Mostrar NavButton o BurgerButton según el dispositivo */}
+          {isMobile ? (
+            <BurgerButton routes={routes} />
+          ) : (
+            <Container maxWidth="sm" className="nav-container">
+              {Object.entries(routes).map(([key, path]) => (
+                <NavButton key={key} to={path} label={key.charAt(0).toUpperCase() + key.slice(1)} />
+              ))}
+            </Container>
+          )}
         </Toolbar>
       </Container>
     </AppBar>

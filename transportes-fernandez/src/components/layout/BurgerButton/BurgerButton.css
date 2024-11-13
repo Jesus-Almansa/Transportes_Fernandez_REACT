@@ -1,0 +1,15 @@
+.burger-button {
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Ejemplo de hover */
+}
