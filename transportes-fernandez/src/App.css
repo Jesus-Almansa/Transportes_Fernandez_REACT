@@ -5,6 +5,7 @@
   --blanco: #ffffff; /* Blanco */
   --negro: #171717; /* Negro */
   --background-light: #f4f4f4; /* Fondo claro */
+  --gris: #808080
 }
 
 body {

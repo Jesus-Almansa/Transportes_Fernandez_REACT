@@ -10,6 +10,7 @@ import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/Regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 import ContactForm from '../components/features/ContactForm/ContactForm';
+import TextBox from '../components/features/Box/TextBox';
 
 function Home() {
   return (
@@ -19,11 +20,18 @@ function Home() {
         <div className="izquierda contenedor-principal">
           <h1>Bienvenido a Transportes Fernández</h1>
           <p>Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
-            Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
-            Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
-            Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
-            Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente"
+          Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
+          Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
+          Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
+          Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".
           </p>
+          <TextBox>
+            <ul>
+              <li>Transporte regional</li>
+              <li>Transporte nacional</li>
+              <li>Transporte internacional</li>
+            </ul>
+          </TextBox>
         </div>
 
 
@@ -43,7 +51,7 @@ function Home() {
         </div>
       </BoxText>
       <br />
-      <BoxText colorClass='fondoBlanco' imageUrl={truckImage}>
+      <BoxText colorClass='fondoGris' imageUrl={truckImage}>
         <div className='alinearEnColumna'>
           <h1>Internacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
@@ -69,7 +77,14 @@ function Home() {
       <Background color="#ab273c">
         <div><div className="enLinea">
           <div className="izquierda text-white">
-            <p>Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.</p>
+            <TextBox>
+              Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.
+            <ul>
+            <li>Transporte regional</li>
+            <li>Transporte nacional</li>
+            <li>Transporte internacional</li>
+          </ul>
+            </TextBox>
           </div>
 
           <div className="employees-container">

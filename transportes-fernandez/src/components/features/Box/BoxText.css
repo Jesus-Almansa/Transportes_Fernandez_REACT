@@ -58,3 +58,7 @@
     background-color: var(--blanco);
     color: var(--azul);
 }
+.fondoGris {
+    background-color: var(--gris);
+    color: var(--azul);
+}
