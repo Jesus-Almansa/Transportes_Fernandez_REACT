@@ -1,3 +1,4 @@
+/* Para bloques de texto independientes */
 .text-box-Home-Resumen {
   width: 1600px;
   height: auto; 
@@ -52,4 +53,71 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Para las tarjetas de informacion de servicios */
+
+.infoCard {
+  width: auto;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 9%;
+  margin-right: 5%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.infoCardImage {
+  max-width: 30%;
+  height: 110%;
+  display: block;
+  padding-right: 120px;
+  padding-left: 0px;
+  border-radius: 8%;
+}
+
+.infoCardImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0.7), transparent);
+  /* Ajusta la dirección y los colores del gradiente según sea necesario */
+}
+
+.fondoAzul {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.fondoRojo {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
+
+.fondoBlanco {
+  background-color: var(--blanco);
+  color: var(--azul);
+}
+.fondoGris {
+  background-color: var(--gris);
+  color: var(--azul);
 }
