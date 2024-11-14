@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Components
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
-import Up from './components/layout/Up/Up';
+import ScrollButton from './components/layout/ScrollButton/ScrollButton';
 
 // Import Screens (Pages)
 import Home from './screens/Home';
@@ -48,7 +48,7 @@ function App() {
         </Routes> */}
 
 
-        <Up />
+        <ScrollButton />
         
         <Footer />
 

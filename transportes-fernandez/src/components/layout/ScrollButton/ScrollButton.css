@@ -1,5 +1,5 @@
-/* Up.css */
-.up-button {
+/* ScrollButton.css */
+.ScrollButton-button {
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -15,13 +15,13 @@
   }
   
 @media (max-width: 768px) {
-    .up-button {
+    .ScrollButton-button {
         bottom: 20px;
         right: 10px;
     }
 }
 
-.up-button:hover {
+.ScrollButton-button:hover {
     color: var(--rojo);
     background-color: var(--blanco);
 }
