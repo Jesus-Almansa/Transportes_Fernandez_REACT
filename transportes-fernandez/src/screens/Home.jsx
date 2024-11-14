@@ -31,14 +31,14 @@ function Home() {
       </div>
 
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={regionalImage}>
+      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
         <div className="alinearEnColumna">
           <h1>Regional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
       </BoxText>
       <br />
-      <BoxText colorClass='fondoAzul' imageUrl={nacionalImage}>
+      <BoxText colorClass='fondoAzul' imageUrl={truckImage}>
         <div className="alinearEnColumna">
           <h1>Nacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
