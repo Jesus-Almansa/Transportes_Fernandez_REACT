@@ -1,12 +1,12 @@
 import React from 'react';
 import './Box.css';
 
-const TextBox = ({ children, className }) => {
+const ImageBox = ({ image, className }) => {
   return (
     <div className={className}>
-      {children}
+      src={image}
     </div>
   );
 };
 
-export default TextBox;
+export default ImageBox;

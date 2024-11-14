@@ -14,28 +14,22 @@ import TextBox from '../components/features/Box/TextBox';
 
 function Home() {
   return (
-    <div id=''>
+    <div>
       <Carousel />
-      <div className="enLinea">
-        <div className="izquierda contenedor-principal">
-          <h1>Bienvenido a Transportes Fernández</h1>
-          <p>Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
-          Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
-          Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
-          Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
-          Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".
-          </p>
-          <TextBox>
-            <ul>
-              <li>Transporte regional</li>
-              <li>Transporte nacional</li>
-              <li>Transporte internacional</li>
-            </ul>
+
+      <div id='Resumen' className="alinearEnColumna">
+        <h1>Bienvenido a Transportes Fernández</h1>
+        <div className="enLinea">
+          <TextBox className="text-box-Home-Resumen">
+            Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
+            Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
+            Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
+            Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
+            Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"
           </TextBox>
         </div>
-
-
       </div>
+
       <br />
       <BoxText colorClass='fondoRojo' imageUrl={regionalImage}>
         <div className="alinearEnColumna">
@@ -62,7 +56,9 @@ function Home() {
       <div className="enLinea">
         <div className="izquierda">
           <h1>Equipo</h1>
-          <p> Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida</p>
+          <TextBox className="text-box-Equipo-CEO text-white">
+          Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
+          </TextBox>
         </div>
 
         <div className="derecha">
@@ -75,29 +71,29 @@ function Home() {
       </div>
 
       <Background color="#ab273c">
-        <div><div className="enLinea">
-          <div className="izquierda text-white">
-            <TextBox>
-              Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.Conoce a nuestro equipo de trabajo. Estamos comprometidos en brindarte el mejor servicio.
-            <ul>
-            <li>Transporte regional</li>
-            <li>Transporte nacional</li>
-            <li>Transporte internacional</li>
-          </ul>
-            </TextBox>
-          </div>
+        <div>
+          <div className="enLinea">
+            <div className="izquierda text-white">
+              <TextBox className="text-box-Equipo">
+                Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
+                Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
+                Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
+                Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
+                Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"
+              </TextBox>
+            </div>
 
-          <div className="employees-container">
-            {employees.map((employee) => (
-              <EmployeeCard
-                key={employee.id}
-                name={employee.name}
-                position={employee.position}
-                imageUrl={employee.imageUrl}
-              />
-            ))}
-          </div>
-        </div></div>
+            <div className="employees-container">
+              {employees.map((employee) => (
+                <EmployeeCard
+                  key={employee.id}
+                  name={employee.name}
+                  position={employee.position}
+                  imageUrl={employee.imageUrl}
+                />
+              ))}
+            </div>
+          </div></div>
       </Background>
       <div className="enLinea">
         <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
