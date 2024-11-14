@@ -1,23 +1,23 @@
-/* Up.jsx */
+/* ScrollButton.jsx */
 import React from 'react';
-import './Up.css';
+import './ScrollButton.css';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-const Up = () => {
+const ScrollButton = () => {
   const scrollToTop = () => {
     console.log('Scroll to top button clicked');
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'auto'
     });
   };
 
 
   return (
-    <div className="up-button" onClick={scrollToTop}>
+    <div className="ScrollButton-button" onClick={scrollToTop}>
       <ArrowUpwardIcon />
     </div>
   );
 };
 
-export default Up;
+export default ScrollButton;

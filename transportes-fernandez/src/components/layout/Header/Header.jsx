@@ -15,7 +15,7 @@ function Header() {
       <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
           {/* Logo */}
-          <Logo />
+          <Logo className=''/>
 
           {/* Mostrar NavButton o BurgerButton según el dispositivo */}
           {isMobile ? (
