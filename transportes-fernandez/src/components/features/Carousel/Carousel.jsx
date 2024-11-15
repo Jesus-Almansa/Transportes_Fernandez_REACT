@@ -17,6 +17,10 @@ const generateRandomItems = () => {
       name: 'Random Name #3',
       image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
     },
+    {
+      name: 'Random Name #4',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    },
   ];
 };
 
