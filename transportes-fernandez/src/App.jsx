@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Components
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
-import ScrollButton from './components/layout/ScrollButton/ScrollButton';
+import ScrollButton from './components/features/ScrollButton/ScrollButton';
 
 // Import Screens (Pages)
 import Home from './screens/Home';

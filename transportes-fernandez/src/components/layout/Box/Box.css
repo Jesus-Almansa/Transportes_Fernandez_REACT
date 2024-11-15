@@ -22,10 +22,11 @@
   height: auto; 
   padding: 30px;
   padding-right: 30px;
-  border: 0px solid #a19a9a; 
+  /* border: 0px solid #a19a9a;  */
   margin-top: 0px;
   /* margin-left: 80px; */
   margin-right: 10px;
+  color: var(--blanco);
   background-color: var(--rojo); /* Fondo opcional */
   justify-content: justify; /* Justifica el texto */
   text-align: justify; /* Justifica el texto */

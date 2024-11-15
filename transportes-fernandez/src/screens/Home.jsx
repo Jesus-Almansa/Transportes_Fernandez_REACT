@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from '../components/features/Carousel/Carousel';
-import BoxList from '../components/features/Box/BoxList';
-import BoxText from '../components/features/Box/infoCard';
+import BoxList from '../components/layout/Box/BoxList';
+import BoxText from '../components/layout/Box/infoCard';
 import truckImage from '../assets/images/truck.png';
 import EmployeeCard from '../components/features/Employee/EmployeeCard';
 import Background from '../components/features/Background/Background';
@@ -10,7 +10,7 @@ import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/Regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 import ContactForm from '../components/features/ContactForm/ContactForm';
-import TextBox from '../components/features/Box/TextBox';
+import TextBox from '../components/layout/Box/TextBox';
 
 function Home() {
   return (
@@ -56,7 +56,7 @@ function Home() {
       <div className="enLinea">
         <div className="izquierda">
           <h1>Equipo</h1>
-          <TextBox className="text-box-Equipo-CEO text-white">
+          <TextBox className="text-box-Equipo-CEO">
           Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
           </TextBox>
         </div>

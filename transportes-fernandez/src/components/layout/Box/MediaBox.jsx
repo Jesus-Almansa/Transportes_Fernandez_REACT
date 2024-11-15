@@ -1,7 +1,7 @@
 import React from 'react';
 import './Box.css';
 
-const ImageBox = ({ image, className }) => {
+const MediaBox = ({ image, className }) => {
   return (
     <div className={className}>
       src={image}
@@ -9,4 +9,4 @@ const ImageBox = ({ image, className }) => {
   );
 };
 
-export default ImageBox;
+export default MediaBox;
