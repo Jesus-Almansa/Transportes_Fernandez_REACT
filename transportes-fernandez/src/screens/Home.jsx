@@ -57,12 +57,13 @@ function Home() {
         <div className="izquierda">
           <h1>Equipo</h1>
           <TextBox className="text-box-Equipo-CEO">
-          Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
+            Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
           </TextBox>
         </div>
 
         <div className="derecha">
           <EmployeeCard
+            className='employee-card'
             name="Paz Fernández Lozano"
             position="CEO"
             imageUrl={narutoImage}
@@ -84,15 +85,17 @@ function Home() {
             </div>
 
             <div className="employees-container">
-              {employees.map((employee) => (
+              {employees.map((employee, index) => (
                 <EmployeeCard
                   key={employee.id}
                   name={employee.name}
                   position={employee.position}
                   imageUrl={employee.imageUrl}
+                  className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`} // Ejemplo con clase condicional
                 />
               ))}
             </div>
+
           </div></div>
       </Background>
       <div className="enLinea">
