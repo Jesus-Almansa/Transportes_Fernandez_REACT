@@ -1,0 +1,46 @@
+.ceo-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 22px;
+    margin: 10px;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.ceo-card:hover {
+    transform: scale(1.05);
+}
+
+.ceo-card img {
+    border-radius: 8%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.ceo-card h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.ceo-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 8px 0;
+}
+
+.ceo-card .ceo-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ceos-container {
+    display: flex;
+    gap: 20px; /* Espacio entre cada tarjeta */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben en una fila */
+    justify-content: center; /* Ajusta la alineación según sea necesario */
+  }

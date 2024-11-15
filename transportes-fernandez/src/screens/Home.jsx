@@ -63,7 +63,7 @@ function Home() {
 
         <div className="derecha">
           <EmployeeCard
-            className='employee-card'
+            className='ceo-card'
             name="Paz Fernández Lozano"
             position="CEO"
             imageUrl={narutoImage}
