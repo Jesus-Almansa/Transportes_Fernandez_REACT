@@ -1,28 +1,51 @@
+.burger-container {
+    position: relative;
+}
+
 .burger-button {
     color: inherit;
     cursor: pointer;
+    z-index: 1000;
 }
 
-.menu-container {
-    padding: 0;
-    margin: 0;
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 65%; /* Ajusta el ancho según tus necesidades */
+    max-width: 300px;
+    background-color: var(--rojo); /* Color oscuro para el fondo */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.burger-menu.open {
+    transform: translateX(0);
 }
 
 .menu-item {
     text-decoration: none;
-    color: var(--negro);
-    display: block;
-    padding: 10px; /* Eliminar padding */
-    background-color: var(--blanco);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0; /* Eliminar margen */
-    text-align: center; /* Asegura que el texto esté centrado */
-    width: 100%;
-    border-radius: 8%;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    min-width: 150px; /* Ancho mínimo */
+    text-align: left;
+    display: inline-block;
+    border-radius: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    max-width: 200px; /* Ancho máximo */
 }
 
-
 .menu-item:hover {
-    background-color: var(--rojo);
-    color: var(--blanco);
+    color: #ab273c;
+    background-color: #fff;
 }
