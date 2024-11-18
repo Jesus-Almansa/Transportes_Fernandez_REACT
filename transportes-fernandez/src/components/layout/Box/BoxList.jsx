@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './BoxList.css';
+import './Box.css';
 
 const BoxList = ({ title, children }) => {
     return (
