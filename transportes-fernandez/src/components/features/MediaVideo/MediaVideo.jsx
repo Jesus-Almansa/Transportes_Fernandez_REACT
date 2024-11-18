@@ -1,5 +1,5 @@
 import React from 'react';
-import './Media.css';
+import './MediaVideo.css';
 
 const Media = ({ content, className }) => {
   const getYouTubeEmbedUrl = (url) => {
