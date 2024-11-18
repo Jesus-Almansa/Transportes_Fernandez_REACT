@@ -86,11 +86,12 @@
 }
 
 .infoCardImage {
-  max-width: 30%;
+  max-width: 60%;
   height: auto;
   display: block;
   padding-right: 0px;
-  padding-left: 150px;
+  padding-left: 170px;
+  padding-top: 10px;
   border-radius: 8%;
 }
 
@@ -101,8 +102,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to left, rgba(255, 0, 0, 0.7), transparent);
-  /* Ajusta la dirección y los colores del gradiente según sea necesario */
 }
 
 .fondoAzul {
@@ -122,4 +121,8 @@
 .fondoGris {
   background-color: var(--gris);
   color: var(--azul);
+}
+.fondoNegro {
+  background-color: black;
+  color: var(--blanco);
 }
