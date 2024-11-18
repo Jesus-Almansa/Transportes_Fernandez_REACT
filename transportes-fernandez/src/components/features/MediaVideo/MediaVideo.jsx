@@ -21,16 +21,16 @@ const Media = ({ content, className }) => {
   const isMp4File = content.endsWith('.mp4');
 
   return (
-    <div className={`media-container ${className}`}>
-      <div className="media-wrapper">
+    <div className={`media_video-container ${className}`}>
+      <div className="media_video-wrapper">
         {isMp4File ? (
-          <video className="media" controls>
+          <video className="media_video" controls>
             <source src={content} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ) : embedUrl ? (
           <iframe
-            className="media"
+            className="media_video"
             src={embedUrl}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -38,7 +38,7 @@ const Media = ({ content, className }) => {
           ></iframe>
 
         ) : (
-          <img className="media" src={content} alt="media" />
+          <img className="media_video" src={content} alt="media_video" />
         )}
       </div>
     </div>
