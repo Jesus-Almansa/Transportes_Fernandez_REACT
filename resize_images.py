@@ -3,7 +3,7 @@ import os
 from PIL import Image
 
 # Define the input and output directories
-input_directory = "transportes-fernandez/src/assets/ToEdit/*"  # This will select all images in the folder
+input_directory = "transportes-fernandez/src/assets/original_images/*"  # This will select all images in the folder
 output_directory = "transportes-fernandez/src/assets/images"
 
 # Create output directory if it doesn't exist
