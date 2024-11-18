@@ -1,6 +1,6 @@
 import React from 'react';
 import BoxList from '../components/layout/Box/BoxList';
-import MediaBox from '../components/features/Media/Media';
+import MediaVideo from '../components/features/MediaVideo/MediaVideo.jsx';
 import zeldaVideo from '../assets/video/zelda.mp4';
 import OIAI from '../assets/video/OIAI.mp4';
 
@@ -16,9 +16,9 @@ const Services = () => {
                 </ul>
             </BoxList>
 
-            <MediaBox content={zeldaVideo} /> 
-            <MediaBox content="https://www.youtube.com/watch?v=olKjeHdOW3Y" />
-            <MediaBox content={OIAI} />
+            <MediaVideo content={zeldaVideo} /> 
+            <MediaVideo content="https://www.youtube.com/watch?v=olKjeHdOW3Y" />
+            <MediaVideo content={OIAI} />
         </div>
     );
 };
