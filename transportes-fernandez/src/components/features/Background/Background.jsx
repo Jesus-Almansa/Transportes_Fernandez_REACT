@@ -6,7 +6,6 @@ const Background = ({ color, children }) => {
         <div style={{ backgroundColor: color }} className="section-background">
             {children}
         </div>
-        
     );
 };
 

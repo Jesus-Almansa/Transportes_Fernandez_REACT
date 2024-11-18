@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from '../components/features/Carousel/Carousel';
-import BoxList from '../components/features/Box/BoxList';
-import BoxText from '../components/features/Box/infoCard';
-import truckImage from '../assets/images/truck.png';
+import BoxList from '../components/layout/Box/BoxList';
+import InfoCard from '../components/layout/Box/InfoCard';
+import truckImage from '../assets/images/truck_black.png';
 import EmployeeCard from '../components/features/Employee/EmployeeCard';
 import Background from '../components/features/Background/Background';
 import employees from '../data/employees';
@@ -10,7 +10,7 @@ import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/Regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 import ContactForm from '../components/features/ContactForm/ContactForm';
-import TextBox from '../components/features/Box/TextBox';
+import TextBox from '../components/layout/Box/TextBox';
 
 function Home() {
   return (
@@ -31,38 +31,47 @@ function Home() {
       </div>
 
       <br />
-      <BoxText colorClass='fondoRojo' imageUrl={truckImage}>
+      <InfoCard colorClass='fondoRojo' imageUrl={regionalImage}>
         <div className="alinearEnColumna">
           <h1>Regional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
-      </BoxText>
+      </InfoCard>
       <br />
-      <BoxText colorClass='fondoAzul' imageUrl={truckImage}>
+      <InfoCard colorClass='fondoAzul' imageUrl={nacionalImage}>
         <div className="alinearEnColumna">
           <h1>Nacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
-      </BoxText>
+      </InfoCard>
       <br />
-      <BoxText colorClass='fondoGris' imageUrl={truckImage}>
+      <InfoCard colorClass='fondoGris' imageUrl={truckImage}>
         <div className='alinearEnColumna'>
           <h1>Internacional</h1>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
         </div>
-      </BoxText>
+      </InfoCard>
+      <br />
+      <InfoCard colorClass='fondoNegro' imageUrl={truckImage}>
+        <div className='alinearEnColumna'>
+          <h1>Espacial</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+        </div>
+      </InfoCard>
+
 
 
       <div className="enLinea">
         <div className="izquierda">
           <h1>Equipo</h1>
-          <TextBox className="text-box-Equipo-CEO text-white">
-          Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
+          <TextBox className="text-box-Equipo-CEO">
+            Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
           </TextBox>
         </div>
 
         <div className="derecha">
           <EmployeeCard
+            className='ceo-card'
             name="Paz Fernández Lozano"
             position="CEO"
             imageUrl={narutoImage}
@@ -84,15 +93,17 @@ function Home() {
             </div>
 
             <div className="employees-container">
-              {employees.map((employee) => (
+              {employees.map((employee, index) => (
                 <EmployeeCard
                   key={employee.id}
                   name={employee.name}
                   position={employee.position}
                   imageUrl={employee.imageUrl}
+                  className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`} // Ejemplo con clase condicional
                 />
               ))}
             </div>
+
           </div></div>
       </Background>
       <div className="enLinea">

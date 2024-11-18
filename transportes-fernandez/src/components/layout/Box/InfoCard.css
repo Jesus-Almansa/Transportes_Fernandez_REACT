@@ -1,0 +1,70 @@
+/* Para las tarjetas de informacion de servicios */
+.infoCard {
+    width: 4000px !important;
+    height: auto; 
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Esto asegura que los hijos respeten las esquinas redondeadas */
+    border-radius: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: justify; /* Justifica el texto */
+    text-align: justify; /* Justifica el texto */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .infoCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .infoCardImage {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    padding-right: 0px;
+    padding-left: 170px;
+    padding-top: 10px;
+    border-radius: 8%;
+  }
+  
+  .infoCardImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .fondoAzul {
+    background-color: var(--azul);
+    color: var(--blanco);
+  }
+  
+  .fondoRojo {
+    background-color: var(--rojo);
+    color: var(--blanco);
+  }
+  
+  .fondoBlanco {
+    background-color: var(--blanco);
+    color: var(--azul);
+  }
+  .fondoGris {
+    background-color: var(--gris);
+    color: var(--azul);
+  }
+  .fondoNegro {
+    background-color: black;
+    color: var(--blanco);
+  }

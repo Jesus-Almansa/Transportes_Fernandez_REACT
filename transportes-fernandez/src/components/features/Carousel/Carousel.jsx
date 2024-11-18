@@ -1,28 +1,39 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './Carousel.css';
 
-const items = [
-  {
-    name: 'Random Name #1',
-    image: 'https://picsum.photos/1200/500?random=1',
-  },
-  {
-    name: 'Random Name #2',
-    image: 'https://picsum.photos/1200/500?random=2',
-  },
-  {
-    name: 'Random Name #3',
-    image: 'https://picsum.photos/1200/500?random=3',
-  },
-];
+// Función para generar un array de imágenes aleatorias
+const generateRandomItems = () => {
+  return [
+    {
+      name: 'Random Name #1',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    },
+    {
+      name: 'Random Name #2',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    },
+    {
+      name: 'Random Name #3',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    },
+    {
+      name: 'Random Name #4',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    },
+  ];
+};
 
 const MyCarousel = () => {
+  // Generar elementos de manera aleatoria para cada instancia
+  const items = useMemo(() => generateRandomItems(), []);
+
   return (
     <Carousel
-      autoPlay={false}
+      fullHeightHover={true}
+      autoPlay={true}
       animation="slide"
-      interval={3000}
+      interval={7000}
       indicators={true}
       navButtonsAlwaysVisible={true}
       navButtonsProps={{

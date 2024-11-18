@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, AppBar, Toolbar } from '@mui/material';
 import './Header.css';
 import Logo from '../../features/Logo/Logo';
-import NavButton from '../NavButton/NavButton';
-import BurgerButton from '../BurgerButton/BurgerButton';
+import NavButton from '../../features/NavButton/NavButton';
+import BurgerButton from '../../features/BurgerButton/BurgerButton';
 import routes from '../../../data/routes';
 import useIsMobile from '../../hooks/useIsMobile'; // Importa el hook de detección del dispositivo
 
