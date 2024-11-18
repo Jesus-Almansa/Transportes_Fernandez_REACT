@@ -6,7 +6,13 @@
     margin: 10px;
     background-color: #fff;
     transition: transform 0.2s;
+    max-width: 400px;
+    /* O cualquier valor adecuado para tu diseño */
+    width: 100%;
+    /* Asegúrate de que se ajuste al contenedor */
+    box-sizing: border-box;
 }
+
 
 .ceo-card:hover {
     transform: scale(1.05);
@@ -14,7 +20,7 @@
 
 .ceo-card img {
     border-radius: 8%;
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: cover;
     margin-bottom: 0px;
@@ -38,9 +44,11 @@
     align-items: center;
 }
 
-.ceos-container {
+.ceo-container {
     display: flex;
-    gap: 20px; /* Espacio entre cada tarjeta */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben en una fila */
-    justify-content: center; /* Ajusta la alineación según sea necesario */
-  }
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    width: 100%;
+    margin-bottom: 20px;
+    /* Añade un margen inferior si es necesario */
+}
