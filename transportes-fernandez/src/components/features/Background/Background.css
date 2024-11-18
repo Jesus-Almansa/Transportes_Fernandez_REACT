@@ -1,12 +1,9 @@
-:root {
-    --primary-blue: #007BFF; /* Replace with your specific blue color */
-}
-
 .section-background {
-    background-color: var(--primary-blue);
+    background-color: var(--azul);
     padding: 20px;
     margin: 20px 0;
     color: white; /* Optional: to ensure text is readable */
+    margin-bottom: 0;
 }
 
 .section-background:nth-child(even) {
