@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Box.css';
 import TextBox from './TextBox';
+import './InfoCard.css';
 
 const InfoCard = ({ title, imageUrl, children, className, colorClass }) => {
     return (
