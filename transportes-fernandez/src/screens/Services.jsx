@@ -1,6 +1,6 @@
 import React from 'react';
 import BoxList from '../components/layout/Box/BoxList';
-import MediaBox from '../components/layout/Box/MediaBox';
+import MediaBox from '../components/features/Media/Media';
 import zeldaVideo from '../assets/video/zelda.mp4';
 import OIAI from '../assets/video/OIAI.mp4';
 

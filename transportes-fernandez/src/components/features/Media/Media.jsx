@@ -1,7 +1,7 @@
 import React from 'react';
-import './MediaBox.css';
+import './Media.css';
 
-const MediaBox = ({ content, className }) => {
+const Media = ({ content, className }) => {
   const getYouTubeEmbedUrl = (url) => {
     try {
       const urlObj = new URL(url);
@@ -45,4 +45,4 @@ const MediaBox = ({ content, className }) => {
   );
 };
 
-export default MediaBox;
+export default Media;
