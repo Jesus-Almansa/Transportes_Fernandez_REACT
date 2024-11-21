@@ -116,26 +116,29 @@
 }
 
 /* Media Queries para tablets */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .text-box-Home-Resumen,
   .text-box-Home-Equipo-CEO,
   .text-box-Home-Equipo,
   .text-box-Equipo-CEO,
   .text-box-Equipo {
-    max-width: 100%; /* Ocupa más espacio en pantallas pequeñas */
-    font-size: 1rem; /* Reduce el tamaño del texto */
-    margin: 1.5rem 100%; /* Más margen para dispositivos móviles */
+    max-width: 90%; /* Ajusta el ancho para que se vea más proporcionado */
+    font-size: 1.1rem; /* Tamaño de texto ligeramente más grande */
+    margin: 2rem auto; /* Aumenta el margen superior e inferior */
+    padding: 1rem; /* Agrega un poco de espacio interno */
   }
 }
-/* Media Queries para móviles */
-@media (max-width: 480px) {
+/* Media Queries para iPhone */
+@media (min-width: 375px) and (max-width: 428px) {
   .text-box-Home-Resumen,
   .text-box-Home-Equipo-CEO,
   .text-box-Home-Equipo,
   .text-box-Equipo-CEO,
   .text-box-Equipo {
-    max-width: 90%; /* Ocupa todo el ancho de la pantalla */
-    font-size: 0.9rem; /* Ajusta el tamaño del texto */
-    margin: 2rem 5%; /* Márgenes más amplios arriba y abajo */
+    max-width: 90%; /* Ocupa casi todo el ancho, con margen lateral */
+    font-size: 1rem; /* Tamaño adecuado para pantallas pequeñas */
+    margin: 1.5rem auto; /* Espaciado superior e inferior */
+    padding: 1rem; /* Espacio interno para mejorar legibilidad */
   }
 }
+
