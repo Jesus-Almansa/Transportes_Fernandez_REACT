@@ -64,7 +64,7 @@ function Home() {
       <div className="enLinea">
         <div className="izquierda">
           <h1>Equipo</h1>
-          <TextBox className="text-box-Equipo-CEO">
+          <TextBox className="text-box-Home-Equipo-CEO">
             Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
           </TextBox>
         </div>
@@ -83,7 +83,7 @@ function Home() {
         <div>
           <div className="enLinea">
             <div className="izquierda text-white">
-              <TextBox className="text-box-Equipo">
+              <TextBox className="text-box-Home-Equipo">
                 Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
                 Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
                 Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
@@ -104,7 +104,8 @@ function Home() {
               ))}
             </div>
 
-          </div></div>
+          </div>
+        </div>
       </Background>
       <div className="enLinea">
         <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
