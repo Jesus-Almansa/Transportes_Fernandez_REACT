@@ -1,9 +1,6 @@
 /* Para bloques de texto independientes */
 .text-box-Home-Resumen {
-  width: 100%;
-  /* Ancho relativo al contenedor padre */
-  max-width: 1200px;
-  /* Máximo ancho en pantallas grandes */
+  width: 80%;
   height: auto;
   padding: 2rem;
   /* Padding en unidades relativas */
@@ -29,20 +26,14 @@
   width: 100%;
   height: auto;
   padding: 30px;
-  padding-right: 30px;
-  /* border: 0px solid #a19a9a;  */
-  margin-top: 0px;
-  /* margin-left: 80px; */
-  margin-right: 10px;
+  padding-left: 10%;
   color: var(--blanco);
   background-color: var(--rojo);
   /* Fondo opcional */
   justify-content: justify;
-  /* Justifica el texto */
   text-align: justify;
-  /* Justifica el texto */
   font-family: 'Roboto', sans-serif;
-  font-size: 23px;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,21 +41,16 @@
 
 .text-box-Home-Equipo {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: auto;
-  padding-right: 30px;
-  border: 0px solid #a19a9a;
-  margin-top: 0px;
-  /* margin-left: 80px; */
-  margin-right: 10px;
+  padding-top: 15%;
+  padding-bottom: 1%;
+  padding-left: 10%;
   background-color: var(--rojo);
-  /* Fondo opcional */
   justify-content: justify;
-  /* Justifica el texto */
   text-align: justify;
-  /* Justifica el texto */
   font-family: 'Roboto', sans-serif;
-  font-size: 23px;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,9 +69,7 @@
   background-color: var(--rojo);
   /* Fondo opcional */
   justify-content: justify;
-  /* Justifica el texto */
   text-align: justify;
-  /* Justifica el texto */
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   display: flex;
@@ -105,9 +89,7 @@
   background-color: var(--rojo);
   /* Fondo opcional */
   justify-content: justify;
-  /* Justifica el texto */
   text-align: justify;
-  /* Justifica el texto */
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   display: flex;
