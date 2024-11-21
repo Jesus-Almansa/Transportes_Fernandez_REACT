@@ -12,7 +12,7 @@ const Services = () => {
     return (
         <div>
             <MediaPicture src={CiutatVella} alt="placeholder" />
-            <MediaPicture src={FondoMar} alt="placeholder" />
+            {/* <MediaPicture src={FondoMar} alt="placeholder" /> */}
             <BoxList title="Servicios">
                 <ul>
                     <li>Regional</li>
@@ -23,8 +23,11 @@ const Services = () => {
             </BoxList>
 
             <MediaVideo content={zeldaVideo} /> 
+            <br />
             <MediaVideo content="https://www.youtube.com/watch?v=olKjeHdOW3Y" />
+            <br />
             <MediaVideo content={OIAI} />
+            <br />
         </div>
     );
 };
