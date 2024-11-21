@@ -21,14 +21,28 @@ function Home() {
         <h1>Bienvenido</h1>
         <div className="enLinea">
           <TextBox className="text-box-Home-Resumen">
-            Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
-            Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
-            Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
-            Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
-            Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"
+            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
+
+            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
+
+            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
           </TextBox>
         </div>
       </div>
+
+      <div id='Servicios' className="alinearEnColumna">
+        <h1>Servicios</h1>
+        <div className="enLinea">
+          <TextBox className="text-box-Home-Resumen">
+            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
+
+            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
+
+            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
+          </TextBox>
+        </div>
+      </div>
+
 
       <br />
       <InfoCard colorClass='fondoRojo' imageUrl={regionalImage}>
@@ -82,17 +96,14 @@ function Home() {
       <Background color="#ab273c">
         <div>
           <div className="enLinea">
-            <div className="izquierda text-white">
+            <div className="izquierda text-white alinearEnColumna">
+              <h1>Conoce al Equipo</h1>
               <TextBox className="text-box-Home-Equipo">
-                Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
-                Nos dedicamos exclusivamente al transporte de máquinas y material industrial y no de paquetes pequeños.
-                Principalmente realizamos estos servicios para grandes empresas del sector indsutrial.
-                Queremos realizar el rebranding modificando el logo, la web (la cual estoy desarrollando actualmente a parte de la que ya hay), la ropa de trabajo, cartas comerciales, sobres, etc...
-                Queremos mostrar que realizamos un servicio premium ya que somos caros pero realizamos un trabajo de calidad. Es por que queremos adoptar una imagen de marca profesional y seria que nos distinga. El lema es "Lo primero es el cliente".El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"El lema es "Lo primero es el cliente"
+                Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad. Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. Juntos, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
               </TextBox>
             </div>
 
-            <div className="employees-container">
+            <div className="employees-container derecha">
               {employees.map((employee, index) => (
                 <EmployeeCard
                   key={employee.id}
