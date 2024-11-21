@@ -1,15 +1,75 @@
 /* Para bloques de texto independientes */
 .text-box-Home-Resumen {
-  width: 1600px;
-  height: auto; 
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+  /* Padding en unidades relativas */
+  margin: 1rem auto;
+  /* Centra el texto y deja espacio arriba/abajo */
+  background-color: var(--blanco);
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  /* Tamaño del texto relativo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra opcional */
+  border-radius: 1.1rem;
+  /* Bordes redondeados */
+
+}
+
+.text-box-Home-Equipo-CEO {
+  width: 100%;
+  height: auto;
   padding: 30px;
-  padding-right: 90px;
-  border: 0px solid #a19a9a; 
-  margin-top: 0px;
-  margin-left: 80px;
-  background-color: var(--blanco); /* Fondo opcional */
-  justify-content: justify; /* Justifica el texto */
-  text-align: justify; /* Justifica el texto */
+  padding-left: 10%;
+  color: var(--blanco);
+  background-color: var(--rojo);
+  /* Fondo opcional */
+  justify-content: justify;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box-Home-Equipo {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  padding-top: 15%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  background-color: var(--rojo);
+  justify-content: justify;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box-Empresa {
+  width: 95%;
+  height: auto;
+  padding: 5%;
+  padding-right: 3%;
+  /* border: 0px solid #a19a9a;  */
+  margin-top: 0%;
+  /* margin-left: 80px; */
+  margin-right: 0%;
+  color: var(--blanco);
+  background-color: var(--rojo);
+  /* Fondo opcional */
+  justify-content: justify;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   display: flex;
@@ -19,7 +79,7 @@
 
 .text-box-Equipo-CEO {
   width: 100%;
-  height: auto; 
+  height: auto;
   padding: 30px;
   padding-right: 30px;
   /* border: 0px solid #a19a9a;  */
@@ -27,9 +87,10 @@
   /* margin-left: 80px; */
   margin-right: 10px;
   color: var(--blanco);
-  background-color: var(--rojo); /* Fondo opcional */
-  justify-content: justify; /* Justifica el texto */
-  text-align: justify; /* Justifica el texto */
+  background-color: var(--rojo);
+  /* Fondo opcional */
+  justify-content: justify;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   display: flex;
@@ -39,16 +100,17 @@
 
 .text-box-Equipo {
   width: 900px;
-  height: auto; 
+  height: auto;
   padding: 30px;
   padding-right: 30px;
-  border: 0px solid #a19a9a; 
+  border: 0px solid #a19a9a;
   margin-top: 0px;
   /* margin-left: 80px; */
   margin-right: 10px;
-  background-color: var(--rojo); /* Fondo opcional */
-  justify-content: justify; /* Justifica el texto */
-  text-align: justify; /* Justifica el texto */
+  background-color: var(--rojo);
+  /* Fondo opcional */
+  justify-content: justify;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
   display: flex;
@@ -56,25 +118,30 @@
   justify-content: center;
 }
 
-.fondoAzul {
-  background-color: var(--azul);
-  color: var(--blanco);
+/* Media Queries para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-box-Home-Resumen,
+  .text-box-Home-Equipo-CEO,
+  .text-box-Home-Equipo,
+  .text-box-Equipo-CEO,
+  .text-box-Equipo {
+    max-width: 90%; /* Ajusta el ancho para que se vea más proporcionado */
+    font-size: 1.1rem; /* Tamaño de texto ligeramente más grande */
+    margin: 2rem auto; /* Aumenta el margen superior e inferior */
+    padding: 1rem; /* Agrega un poco de espacio interno */
+  }
+}
+/* Media Queries para iPhone */
+@media (min-width: 375px) and (max-width: 428px) {
+  .text-box-Home-Resumen,
+  .text-box-Home-Equipo-CEO,
+  .text-box-Home-Equipo,
+  .text-box-Equipo-CEO,
+  .text-box-Equipo {
+    max-width: 90%; /* Ocupa casi todo el ancho, con margen lateral */
+    font-size: 1rem; /* Tamaño adecuado para pantallas pequeñas */
+    margin: 1.5rem auto; /* Espaciado superior e inferior */
+    padding: 1rem; /* Espacio interno para mejorar legibilidad */
+  }
 }
 
-.fondoRojo {
-  background-color: var(--rojo);
-  color: var(--blanco);
-}
-
-.fondoBlanco {
-  background-color: var(--blanco);
-  color: var(--azul);
-}
-.fondoGris {
-  background-color: var(--gris);
-  color: var(--azul);
-}
-.fondoNegro {
-  background-color: black;
-  color: var(--blanco);
-}

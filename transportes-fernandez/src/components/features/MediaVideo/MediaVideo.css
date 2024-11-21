@@ -1,9 +1,9 @@
 .media_video-container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 90%;
     /* Ajusta el tamaño máximo según tus necesidades */
-    margin: 20px auto;
+    margin: 0% auto;
     /* Centra el contenido */
 }
 
