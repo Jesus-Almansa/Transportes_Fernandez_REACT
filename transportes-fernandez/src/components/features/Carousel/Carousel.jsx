@@ -1,10 +1,15 @@
 import React, { useMemo } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './Carousel.css';
+// import narutoImage from '../../../assets/images/naruto.jpg';
 
 // Función para generar un array de imágenes aleatorias
 const generateRandomItems = () => {
   return [
+    // {
+    //   name: 'Random Name #1',
+    //   image: narutoImage,
+    // },
     {
       name: 'Random Name #1',
       image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
@@ -21,6 +26,10 @@ const generateRandomItems = () => {
       name: 'Random Name #4',
       image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
     },
+    {
+      name: 'Random Name #5',
+      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+    }
   ];
 };
 
