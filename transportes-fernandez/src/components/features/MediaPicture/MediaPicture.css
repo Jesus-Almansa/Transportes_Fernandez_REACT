@@ -1,38 +1,38 @@
 .media-picture {
     width: 100%;
-    max-width: 800px; /* Limita el ancho máximo para que no se vea demasiado grande */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 80%; /* Limit the maximum width to maintain proportions */
+    height: auto; /* Keep the aspect ratio */
     display: block;
     margin: 0 auto;
-    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .media-picture:hover {
-    transform: scale(1.05); /* Efecto de zoom suave al pasar el cursor */
+    transform: scale(1.05); /* Smooth zoom effect on hover */
     transition: transform 0.3s ease-in-out;
 }
 
-/* Media Query para iPads (pantallas medianas) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Media Query for iPads (medium screens) */
+@media (min-width: 48rem) and (max-width: 64rem) { /* 768px to 1024px */
     .media-picture {
-        max-width: 700px; /* Ajusta el ancho máximo para pantallas medianas */
-        border-radius: 10px; /* Bordes ligeramente más redondeados */
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra un poco más fuerte */
+        max-width: 70%; /* Slightly narrower on medium screens */
+        border-radius: 0.6rem; /* Slightly more rounded corners */
+        box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15); /* Stronger shadow */
     }
 }
 
-/* Media Query para iPhones y pantallas pequeñas */
-@media (max-width: 767px) {
+/* Media Query for iPhones and small screens */
+@media (max-width: 47.9rem) { /* Up to 767px */
     .media-picture {
-        max-width: 95%; /* Ocupa casi todo el ancho del contenedor */
-        margin: 1rem auto; /* Añade margen vertical para separación */
-        border-radius: 6px; /* Bordes más pequeños para pantallas pequeñas */
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+        max-width: 90%; /* Almost full width */
+        margin: 1rem auto; /* Adds vertical spacing for separation */
+        border-radius: 0.4rem; /* Slightly smaller rounded corners */
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
 
     .media-picture:hover {
-        transform: scale(1.02); /* Reduce el efecto hover en pantallas pequeñas */
+        transform: scale(1.02); /* Reduced zoom effect on smaller screens */
         transition: transform 0.3s ease-in-out;
     }
 }
