@@ -18,7 +18,7 @@ function Home() {
       <Carousel />
 
       <div id='Resumen' className="alinearEnColumna">
-        <h1>Bienvenido a Transportes Fernández</h1>
+        <h1>Bienvenido</h1>
         <div className="enLinea">
           <TextBox className="text-box-Home-Resumen">
             Somos una empresa que se dedica al transporte de material industrial. Actualmente queremos realizar el rebranding de la compañía por su 70 aniversario.
