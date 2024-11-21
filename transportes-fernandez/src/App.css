@@ -45,8 +45,8 @@ body {
   align-items: center;
 }
 
-/* Media queries para iPhone 13 */
-@media (max-width: 390px) {
+/* Media Queries para iPhone */
+@media (min-width: 375px) and (max-width: 428px) {
   body {
     font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
   }
