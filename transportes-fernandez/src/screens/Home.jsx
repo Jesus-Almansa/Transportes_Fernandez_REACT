@@ -14,7 +14,7 @@ import employees from '../data/employees';
 // Imágenes
 import truckImage from '../assets/images/truck_black.png';
 import narutoImage from '../assets/images/naruto.jpg';
-import regionalImage from '../assets/images/Regional.png';
+import regionalImage from '../assets/images/regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 
 function Home() {
