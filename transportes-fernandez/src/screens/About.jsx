@@ -2,7 +2,7 @@ import React from 'react';
 import MediaPicture from '../components/features/MediaPicture/MediaPicture';
 import TextBox from '../components/layout/Box/TextBox';
 
-import laMancha from '../assets/original_images/Regional.png';
+import laMancha from '../assets/original_images/regional.png';
 
 function About() {
   return (
