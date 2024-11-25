@@ -25,8 +25,8 @@ const Services = () => {
             <div className='alinearEnColumna'>
                 <h1>Regional</h1>
                 <div className='enLinea'>
-                    <div className='izquierda'>
-                        <MediaPicture src={regionalImage} alt="placeholder" />
+                    <div className=''>
+                        <MediaPicture src={regionalImage} alt="placeholder" className='picture-container'/>
                     </div>
 
                 </div>
