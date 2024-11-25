@@ -57,24 +57,31 @@
 }
 
 .text-box-Empresa {
-  width: 95%;
+  width: 90%;
   height: auto;
-  padding: 5%;
-  padding-right: 3%;
-  /* border: 0px solid #a19a9a;  */
-  margin-top: 0%;
-  /* margin-left: 80px; */
+  padding: 3%;
+  /* Padding en unidades relativas, respecto de toda la caja */
+  padding-right: 0%;
+  /* Padding en unidades relativas, respecto del lado derecho */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 4%;
   margin-right: 0%;
   color: var(--blanco);
   background-color: var(--rojo);
-  /* Fondo opcional */
-  justify-content: justify;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-  font-size: 23px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+
+.text-box_Servicios {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
 }
 
 .text-box-Equipo-CEO {
@@ -99,10 +106,11 @@
 }
 
 .text-box-Equipo {
-  width: 900px;
+  width: 90%;
   height: auto;
   padding: 30px;
-  padding-right: 30px;
+  padding-right: 50px;
+  /* padding-left: 30px; */
   border: 0px solid #a19a9a;
   margin-top: 0px;
   /* margin-left: 80px; */
@@ -120,28 +128,38 @@
 
 /* Media Queries para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+
   .text-box-Home-Resumen,
   .text-box-Home-Equipo-CEO,
   .text-box-Home-Equipo,
   .text-box-Equipo-CEO,
   .text-box-Equipo {
-    max-width: 90%; /* Ajusta el ancho para que se vea más proporcionado */
-    font-size: 1.1rem; /* Tamaño de texto ligeramente más grande */
-    margin: 2rem auto; /* Aumenta el margen superior e inferior */
-    padding: 1rem; /* Agrega un poco de espacio interno */
-  }
-}
-/* Media Queries para iPhone */
-@media (min-width: 375px) and (max-width: 428px) {
-  .text-box-Home-Resumen,
-  .text-box-Home-Equipo-CEO,
-  .text-box-Home-Equipo,
-  .text-box-Equipo-CEO,
-  .text-box-Equipo {
-    max-width: 90%; /* Ocupa casi todo el ancho, con margen lateral */
-    font-size: 1rem; /* Tamaño adecuado para pantallas pequeñas */
-    margin: 1.5rem auto; /* Espaciado superior e inferior */
-    padding: 1rem; /* Espacio interno para mejorar legibilidad */
+    max-width: 90%;
+    /* Ajusta el ancho para que se vea más proporcionado */
+    font-size: 1.1rem;
+    /* Tamaño de texto ligeramente más grande */
+    margin: 2rem auto;
+    /* Aumenta el margen superior e inferior */
+    padding: 1rem;
+    /* Agrega un poco de espacio interno */
   }
 }
 
+/* Media Queries para iPhone */
+@media (min-width: 375px) and (max-width: 428px) {
+
+  .text-box-Home-Resumen,
+  .text-box-Home-Equipo-CEO,
+  .text-box-Home-Equipo,
+  .text-box-Equipo-CEO,
+  .text-box-Equipo {
+    max-width: 90%;
+    /* Ocupa casi todo el ancho, con margen lateral */
+    font-size: 1rem;
+    /* Tamaño adecuado para pantallas pequeñas */
+    margin: 1.5rem auto;
+    /* Espaciado superior e inferior */
+    padding: 1rem;
+    /* Espacio interno para mejorar legibilidad */
+  }
+}
