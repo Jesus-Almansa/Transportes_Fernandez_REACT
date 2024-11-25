@@ -1,66 +1,42 @@
-/* Container for media picture */
-.media_picture-container {
-    position: relative;
+/* Estilos base para el contenedor <picture> */
+.picture-container {
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto; /* Utiliza rem para márgenes relativos al tamaño base de la fuente */
+    text-align: center;
+}
+
+/* Estilos base para las imágenes */
+.picture-container img {
     width: 100%;
-    max-width: 800px; /* Set the maximum size */
-    margin: 20px auto; /* Center the content */
+    height: auto;
+    max-width: 40rem; 
+    border-radius: 1rem; /* Bordes redondeados usando rem para adaptabilidad */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Sombra usando rem para consistencia */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Wrapper to maintain aspect ratio */
-.media_picture-wrapper {
-    position: relative;
-    padding-top: 56.25%; /* Maintains a 16:9 aspect ratio */
-    overflow: hidden;
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* Hover base (común para todas las imágenes) */
+.picture-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
 }
 
-/* Picture element styling */
-.media_picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    border: none;
+/* Estilos específicos para Empresa-Main */
+.picture-empresa-main {
+    display: flex; /* Cambiado a flex para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Usar rem para mantener proporciones coherentes */
 }
 
-/* Hover effect for images */
-.media_picture-wrapper:hover .media_picture {
-    transform: scale(1.05); /* Smooth zoom effect */
-    transition: transform 0.3s ease-in-out;
+/* Estilos específicos para Servicios-Regional */
+.picture-servicios-regional {
+    /* No se necesitan cambios adicionales para el contenedor en este caso */
 }
 
-/* Media Queries para iPhone */
-@media (min-width: 375px) and (max-width: 428px) {
-    .media_picture-container {
-        max-width: 100%; /* Full width on small screens */
-        margin: 10px auto; /* Adjust top/bottom margins */
-    }
-
-    .media_picture-wrapper {
-        padding-top: 75%; /* Change aspect ratio to 4:3 if needed */
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow for small screens */
-    }
-
-    .media_picture-wrapper:hover .media_picture {
-        transform: scale(1.02); /* Subtle hover effect for touch devices */
-    }
-}
-/* Media Queries for iPad */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .media_picture-container {
-        max-width: 90%; /* Slightly reduce max width */
-        margin: 15px auto; /* Adjust top/bottom margins */
-    }
-
-    .media_picture-wrapper {
-        padding-top: 66.66%; /* Change aspect ratio to 3:2 */
-        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1); /* Moderate shadow for medium screens */
-    }
-
-    .media_picture-wrapper:hover .media_picture {
-        transform: scale(1.03); /* Moderate hover effect */
-    }
+/* Efecto hover específico para Servicios-Regional */
+.picture-servicios-regional img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
