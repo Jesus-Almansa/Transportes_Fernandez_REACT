@@ -7,6 +7,7 @@ import EmployeeCard from '../components/features/Employee/EmployeeCard';
 import Background from '../components/features/Background/Background';
 import ContactForm from '../components/features/ContactForm/ContactForm';
 import TextBox from '../components/layout/Box/TextBox';
+import MediaPicture from '../components/features/MediaPicture/MediaPicture';
 
 // Rutas
 import employees from '../data/employees';
@@ -50,33 +51,23 @@ function Home() {
 
 
       <br />
-      <InfoCard colorClass='fondoRojo' imageUrl={regionalImage}>
-        <div className="alinearEnColumna">
-          <h1>Regional</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+      <h1 className='alinearEnColumna'>Cumplimos 70 años</h1>
+
+      <div className="enLinea">
+        <div className="izquierda">
+          <MediaPicture
+            src={regionalImage}
+            alt="Descripción de la imagen"
+            className="picture-container picture-empresa-main"
+          />
+
         </div>
-      </InfoCard>
-      <br />
-      <InfoCard colorClass='fondoAzul' imageUrl={nacionalImage}>
-        <div className="alinearEnColumna">
-          <h1>Nacional</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
+        <div className='derecha'>
+          <TextBox className='text-box-Empresa'>
+            Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
+          </TextBox>
         </div>
-      </InfoCard>
-      <br />
-      <InfoCard colorClass='fondoGris' imageUrl={truckImage}>
-        <div className='alinearEnColumna'>
-          <h1>Internacional</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
-        </div>
-      </InfoCard>
-      <br />
-      <InfoCard colorClass='fondoNegro' imageUrl={truckImage}>
-        <div className='alinearEnColumna'>
-          <h1>Espacial</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut purus nec arcu congue convallis. Fusce tristique sagittis lectus, et porttitor ante venenatis cursus. Quisque leo nibh, tincidunt ut tristique a, semper sit amet lorem. Nam nisi quam, fringilla vitae ultricies tincidunt, pretium ut ipsum. Etiam non erat magna. Suspendisse potenti.
-        </div>
-      </InfoCard>
+      </div>
 
 
 

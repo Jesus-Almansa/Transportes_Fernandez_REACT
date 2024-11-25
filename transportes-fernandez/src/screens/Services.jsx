@@ -7,12 +7,17 @@ import regionalImage from '../assets/images/regional copy.png';
 import CiutatVella from '../assets/images/nacional.jpg';
 import zeldaVideo from '../assets/video/zelda.mp4';
 import OIAI from '../assets/video/OIAI.mp4';
+import TextBox from '../components/layout/Box/TextBox.jsx';
 
 const Services = () => {
     return (
         <div>
             <MediaPicture src={CiutatVella} alt="placeholder" />
-            {/* <MediaPicture src={regionalImage} alt="placeholder" /> */}
+
+            <TextBox className='text-box_Servicios'>
+                pito
+            </TextBox>
+
             <BoxList title="Servicios">
                 <ul>
                     <li>Regional</li>
@@ -26,7 +31,7 @@ const Services = () => {
                 <h1>Regional</h1>
                 <div className='enLinea'>
                     <div className=''>
-                        <MediaPicture src={regionalImage} alt="placeholder" className='picture-container'/>
+                        <MediaPicture src={regionalImage} alt="placeholder" className='picture-container' />
                     </div>
 
                 </div>
