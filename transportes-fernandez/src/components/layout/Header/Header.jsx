@@ -14,16 +14,22 @@ function Header() {
     <AppBar position="static" className="header-appbar">
       <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
-          {/* Logo */}
-          <Logo className=''/>
+          {/* Logo siempre visible */}
+          <Logo className="header-logo" />
 
           {/* Mostrar NavButton o BurgerButton según el dispositivo */}
           {isMobile ? (
-            <BurgerButton routes={routes} />
+            <>
+              <BurgerButton routes={routes} />
+            </>
           ) : (
             <Container maxWidth="sm" className="nav-container">
               {Object.entries(routes).map(([key, path]) => (
-                <NavButton key={key} to={path} label={key.charAt(0).toUpperCase() + key.slice(1)} />
+                <NavButton
+                  key={key}
+                  to={path}
+                  label={key.charAt(0).toUpperCase() + key.slice(1)}
+                />
               ))}
             </Container>
           )}
