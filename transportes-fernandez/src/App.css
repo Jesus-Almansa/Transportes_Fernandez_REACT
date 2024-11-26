@@ -15,6 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 1.2rem; /* Tamaño del texto relativo */
 }
 
 #root {
@@ -35,6 +36,10 @@ body {
   max-width: 45%; /* Limita el ancho máximo */
 }
 
+.justify-left {
+  text-align: left;
+}
+
 .oculto {
   visibility: hidden;
 }
@@ -43,6 +48,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: var(--rojo);
+}
+
+/* Clase para hacer el texto más grande (puedes reutilizarla) */
+.large-text-title {
+  font-size: 2rem; /* Tamaño de fuente más grande */
+}
+.large-text-body {
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
 }
 
 /* Media Queries para iPhone */
