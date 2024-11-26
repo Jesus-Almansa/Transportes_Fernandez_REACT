@@ -32,11 +32,11 @@ const Team = () => {
             <div id='Fundadores' className='alinearEnColumna'>
                 <h1>De estudiante de derecho a empresaria</h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box-Home-Resumen">
+                    <TextBox className="text-box text-box-Home-Resumen">
                         Paz, natural de Villarrobledo (Albacete), es una empreseria con más de 40 años de experiencia en el sector del transporte. Cogió las riendas del negocio y de su familia desde muy joven, a los 18 años. Desde entonces, ha conseguido llevar la empresa a lo más alto, con esfuerzo y dedicación, en una industria tan competitiva como es el transporte de mercancías.
                     </TextBox>
                 </div>
-                <TextBox className="text-box-Home-Resumen">
+                <TextBox className="text-box text-box-Home-Resumen">
                     Jesús, marido de Paz y eventualmente informático, administrador, repartidor, conductor, mecánico, y cualquier otra cosa que se le ocurra a la jefa. Él es el apoyo incondicional de Paz y siempre está dispuesto a ayudar a su esposa en lo que haga falta.
                 </TextBox>
             </div>
@@ -57,7 +57,7 @@ const Team = () => {
                         />
                     ))}
                 </div>
-                <TextBox className="text-box-Equipo text-white">
+                <TextBox className="text-box text-box-Equipo text-white">
                     El equipo de Transportes Fernández es una familia. Nos caracterizamos por haber crecido junto a nuestros empleados de toda la vida. La empresa ha pasado de ser una empresa local a una empresa nacional gracias al esfuerzo y dedicación de todos los trabajadores.
                 </TextBox>
             </Background>
@@ -82,7 +82,7 @@ const Team = () => {
             <div className='alinearEnColumna'>
                 <h1>Su historia</h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box-Home-Resumen">
+                    <TextBox className="text-box text-box-Home-Resumen">
                         José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
                     </TextBox>
                 </div>

@@ -16,6 +16,7 @@ import truckImage from '../assets/images/truck_black.png';
 import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
+import aniversarioImage from '../assets/images/Logo-70Aniversario.png';
 
 function Home() {
   return (
@@ -39,25 +40,38 @@ function Home() {
 
 
       <br />
-      <h1 className='alinearEnColumna'>Cumplimos 70 años</h1>
+      <div id='Aniversario' className='alinearEnColumna'>
+        <h1>Cumplimos 70 años</h1>
 
-      <div className="enLinea">
-        <div className="izquierda">
-          <MediaPicture
-            src={regionalImage}
-            alt="Descripción de la imagen"
-            className="picture-container picture-empresa-main"
-          />
+        <div className="enLinea">
+          <div className="izquierda">
+            <MediaPicture
+              src={aniversarioImage}
+              alt="Descripción de la imagen"
+              className="picture-container picture-empresa-aniversario"
+            />
 
-        </div>
-        <div className='derecha'>
-          <TextBox className='text-box text-box-Empresa'>
-            Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
-          </TextBox>
+          </div>
+          <div className='derecha'>
+            <TextBox className='text-box text-box-Empresa'>
+              Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
+            </TextBox>
+          </div>
         </div>
       </div>
 
+      <div id='Servicios' className="alinearEnColumna">
+        <h1>Servicios</h1>
+        <div className="enLinea">
+          <TextBox className="text-box text-box-Home-Resumen">
+            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
+            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
+
+            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
+          </TextBox>
+        </div>
+      </div>
 
       <div className="enLinea">
         <div className="izquierda">
@@ -74,19 +88,6 @@ function Home() {
             position="CEO"
             imageUrl={narutoImage}
           />
-        </div>
-      </div>
-
-      <div id='Servicios' className="alinearEnColumna">
-        <h1>Servicios</h1>
-        <div className="enLinea">
-          <TextBox className="text-box text-box-Home-Resumen">
-            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
-
-            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
-
-            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
-          </TextBox>
         </div>
       </div>
 
@@ -115,6 +116,8 @@ function Home() {
           </div>
         </div>
       </Background>
+
+
       <div className="enLinea">
         <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
       </div>

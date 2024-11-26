@@ -16,7 +16,7 @@
 
 /* Clases específicas para variaciones de los bloques de texto */
 
-/* Bloque específico para el resumen en Home */
+/* Bloque específico para Home */
 .text-box-Home-Resumen {
   max-width: 80%; /* Ancho específico para este bloque */
   background-color: var(--blanco); /* Fondo blanco */
@@ -36,14 +36,19 @@
 /* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
-  padding: 15% 0 1% 10%; /* Ajuste específico de padding */
+  margin-left: 8%; /* Margin mueve el cuadro */
+  margin-top: 8%;
+  padding: 1rem; /* Padding el contenido dentro del cuadro */
   background-color: var(--rojo);
+  border-radius: 1rem; /* Bordes redondeados por defecto */
+  border: 4px solid blue;
 }
 
-/* Bloque específico para Empresa */
-.text-box-Empresa {
-  padding: 3% 0 1% 0; /* Padding superior, inferior y derecho */
-  margin-top: 4%; /* Espaciado superior adicional */
+/* Bloque específico para Home */
+.text-box-Empresa-aniversario {
+  padding: 1 rem; /* Padding superior, inferior y derecho */
+  margin-top: 10%; /* Espaciado superior adicional */
+  margin-right: 3%; /* Espaciado derecho adicional */
   color: var(--blanco);
   background-color: var(--rojo);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra más intensa */

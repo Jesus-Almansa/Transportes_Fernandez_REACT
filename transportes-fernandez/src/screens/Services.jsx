@@ -12,7 +12,7 @@ import TextBox from '../components/layout/Box/TextBox.jsx';
 const Services = () => {
     return (
         <div>
-            <MediaPicture src={CiutatVella} alt="placeholder" />
+            <MediaPicture src={CiutatVella} alt="placeholder" className='picture-container'/>
 
             <TextBox className='text-box_Servicios'>
                 pito

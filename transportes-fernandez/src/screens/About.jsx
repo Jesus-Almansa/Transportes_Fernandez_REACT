@@ -25,7 +25,7 @@ function About() {
 
         </div>
         <div className='derecha'>
-          <TextBox className='text-box-Empresa'>
+          <TextBox className='text-box text-box-Empresa-aniversario'>
             Transportes Fernández is a family business that has been operating for over 40 years. We specialize in regional transportation, covering the area of La Mancha.
           </TextBox>
         </div>
@@ -45,7 +45,7 @@ function About() {
 
         </div>
         <div className='derecha'>
-          <TextBox className='text-box-Empresa'>
+          <TextBox className='text-box text-box-Empresa-aniversario'>
             <p><b>Nacional</b></p>
             Transportes Fernández is a family business that has been operating for over 40 years. We specialize in regional transportation, covering the area of La Mancha.
           </TextBox>
@@ -54,7 +54,7 @@ function About() {
       <div id='Resumen' className="alinearEnColumna">
         <h1>Bienvenido</h1>
         <div className="enLinea">
-          <TextBox className="text-box-Home-Resumen">
+          <TextBox className="text-box  text-box-Home-Resumen">
             Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
             Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
