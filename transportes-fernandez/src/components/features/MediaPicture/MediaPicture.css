@@ -31,7 +31,7 @@
 }
 
 .picture-empresa-aniversario img {
-    max-width: 50%; /* Diferente tamaño específico */
+    max-width: 80%; /* Diferente tamaño específico */
     border-radius: 2rem; /* Mayor redondez */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Sombra más intensa */
 }
