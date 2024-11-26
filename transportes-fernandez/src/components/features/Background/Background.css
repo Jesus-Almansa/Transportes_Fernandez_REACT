@@ -1,7 +1,9 @@
 .section-background {
-    background-color: var(--azul);
+    background-color: var(--rojo);
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0px;
+    padding-top: 4rem; /* Espacio amplio en la parte superior */
+    padding-bottom: 4rem; /* Espacio amplio en la parte inferior */
     color: white; /* Optional: to ensure text is readable */
     margin-bottom: 0;
 }
@@ -11,6 +13,4 @@
     color: black; /* Optional: to ensure text is readable */
 }
 
-.text-white {
-    color: white;
-}
+

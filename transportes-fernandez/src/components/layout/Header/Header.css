@@ -34,6 +34,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   /* Ajusta según sea necesario; puedes usar `px`, `em`, etc., si prefieres */
 }
