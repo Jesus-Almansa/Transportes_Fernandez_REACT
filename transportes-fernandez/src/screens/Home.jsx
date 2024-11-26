@@ -25,7 +25,7 @@ function Home() {
       <div id='Resumen' className="alinearEnColumna">
         <h1>Bienvenido</h1>
         <div className="enLinea">
-          <TextBox className="text-box-Home-Resumen">
+          <TextBox className="text-box text-box-Home-Resumen">
             Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
             Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
@@ -51,7 +51,7 @@ function Home() {
 
         </div>
         <div className='derecha'>
-          <TextBox className='text-box-Empresa'>
+          <TextBox className='text-box text-box-Empresa'>
             Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
           </TextBox>
         </div>
@@ -62,7 +62,7 @@ function Home() {
       <div className="enLinea">
         <div className="izquierda">
           <h1>Equipo</h1>
-          <TextBox className="text-box-Home-Equipo-CEO">
+          <TextBox className="text-box text-box-Home-Equipo-CEO">
             Transportes Fernández es una empresa familiar que se caracteriza por haber crecido junto a sus empleados de toda la vida
           </TextBox>
         </div>
@@ -80,7 +80,7 @@ function Home() {
       <div id='Servicios' className="alinearEnColumna">
         <h1>Servicios</h1>
         <div className="enLinea">
-          <TextBox className="text-box-Home-Resumen">
+          <TextBox className="text-box text-box-Home-Resumen">
             Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
             Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
@@ -95,7 +95,7 @@ function Home() {
           <div className="enLinea">
             <div className="izquierda text-white alinearEnColumna">
               <h1>Conoce al Equipo</h1>
-              <TextBox className="text-box-Home-Equipo">
+              <TextBox className="text-box text-box-Home-Equipo">
                 Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad. Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. Juntos, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
               </TextBox>
             </div>
