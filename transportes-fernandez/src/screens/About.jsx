@@ -3,20 +3,24 @@ import MediaPicture from '../components/features/MediaPicture/MediaPicture';
 import TextBox from '../components/layout/Box/TextBox';
 
 import laMancha from '../assets/original_images/regional.png';
-import CiutatVella from '../assets/original_images/nacional.jpg';
+import ciutatVella from '../assets/original_images/nacional.jpg';
+import aniversario from '../assets/images/Logo-70Aniversario.png';
+import space from '../assets/images/space.jpg';
 
 function About() {
   return (
     <div id="About">
+
+      <MediaPicture src={space} alt="placeholder" className='picture-container'/>
 
       <h1 className='alinearEnColumna'>Cumplimos 70 años</h1>
 
       <div className="enLinea">
         <div className="izquierda">
           <MediaPicture
-            src={laMancha}
+            src={aniversario}
             alt="Descripción de la imagen"
-            className="picture-container picture-empresa-main"
+            className="picture-container picture-empresa-aniversario"
           />
 
         </div>
@@ -50,7 +54,7 @@ function About() {
       <div className="enLinea">
         <div className="izquierda">
           <MediaPicture
-            src={CiutatVella}
+            src={ciutatVella}
             alt="Descripción de la imagen"
             className="picture-container picture-empresa-main"
           />
