@@ -1,17 +1,14 @@
 /* Clase base para bloques de texto independientes */
 .text-box {
-  width: 90%; /* Tamaño relativo por defecto */
+  width: 100%; /* Tamaño relativo por defecto */
   height: auto;
-  padding: 2rem; /* Padding en unidades relativas */
-  margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
   background-color: var(--blanco); /* Fondo blanco por defecto */
   text-align: justify;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem; /* Tamaño del texto relativo */
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* display: flex; Esto justifica todo el contenido */
 }
 
 /* Clases específicas para variaciones de los bloques de texto */
@@ -21,7 +18,7 @@
   max-width: 80%; /* Ancho específico para este bloque */
   background-color: var(--blanco); /* Fondo blanco */
   border-radius: 1rem; /* Bordes redondeados por defecto */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
 }
 
 /* Bloque específico para equipo en Home (CEO) */
@@ -36,12 +33,10 @@
 /* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
-  margin-left: 8%; /* Margin mueve el cuadro */
+  margin-left: -22%; /* Margin mueve el cuadro */
   margin-top: 8%;
   padding: 1rem; /* Padding el contenido dentro del cuadro */
   background-color: var(--rojo);
-  border-radius: 1rem; /* Bordes redondeados por defecto */
-  border: 4px solid blue;
 }
 
 /* Bloque específico para Home */
@@ -53,6 +48,7 @@
   background-color: var(--rojo);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra más intensa */
   border-radius: 0.3rem; /* Bordes menos redondeados */
+  padding: 2rem; /* Padding en unidades relativas */
 }
 
 /* Bloque específico para Servicios */
