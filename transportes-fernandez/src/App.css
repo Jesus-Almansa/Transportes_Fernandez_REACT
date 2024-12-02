@@ -66,6 +66,22 @@ body {
   font-size: 1.2rem; /* Tamaño de fuente más grande */
 }
 
+/* For rotations */
+
+.rotating {
+  display: inline-block; /* Ensure the element rotates properly */
+  animation: spin 5s linear infinite; /* Apply the animation */
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
+}
+
 /* Media Queries para iPhone */
 @media (min-width: 375px) and (max-width: 428px) {
   body {
