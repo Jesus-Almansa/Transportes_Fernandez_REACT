@@ -7,6 +7,7 @@ import Background from '../components/features/Background/Background';
 import ContactForm from '../components/features/ContactForm/ContactForm';
 import TextBox from '../components/layout/Box/TextBox';
 import MediaPicture from '../components/features/MediaPicture/MediaPicture';
+import FlipCard from '../components/features/FlipCard/FlipCard';
 
 // Rutas
 import employees from '../data/employees';
@@ -17,6 +18,11 @@ import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 import aniversarioImage from '../assets/images/Logo-70Aniversario.png';
+import infiniteCubeImage from '../assets/images/infinitecube.png';
+
+// Iconos
+import IconoServicios from '../assets/Transporters Branding/icongraphy/1/Icons-28.png';
+
 
 function Home() {
   return (
@@ -35,8 +41,13 @@ function Home() {
         </div>
       </div>
 
-
-
+      <div id='Prueba' className="alinearEnColumna">
+      <FlipCard
+        frontImage={infiniteCubeImage}
+        backText="Cubo chill de cojones"
+        icon={<img src={IconoServicios} alt='Icon'/>}
+      />
+      </div>
 
       <br />
       <div id='Aniversario' className='alinearEnColumna'>
@@ -61,18 +72,29 @@ function Home() {
         </div>
       </div>
 
+
       <div id='Servicios' className="alinearEnColumna">
+
         <h1>Servicios</h1>
+
         <div className="enLinea">
-          <TextBox className="text-box text-box-Home-Resumen">
-            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
-
-            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
-
-            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
-          </TextBox>
+          <FlipCard
+            frontImage={regionalImage}
+            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+            icon={<i className="fas fa-truck" />}
+          />
+          <FlipCard
+            frontImage={regionalImage}
+            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+          />
+          <FlipCard
+            frontImage={regionalImage}
+            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+          />
         </div>
       </div>
+
+      
       <Background color="#ab273c">
         <div className="enLinea">
 
@@ -88,11 +110,11 @@ function Home() {
           <div className="izquierda">
 
             <TextBox className="text-box text-box-Home-Equipo">
-              <div className='large-text-title justify-left '>
+              <div className='large-text-title justify-left text-white'>
                 <b>Conoce al Equipo</b>
               </div>
               <br />
-              <div className='large-text-body'>
+              <div className='large-text-body text-white'>
                 Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
                 <br />
                 <br />
