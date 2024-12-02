@@ -30,8 +30,8 @@
     transform: rotateY(180deg); /* Efecto específico al hacer hover en el contenedor */
 }
 
-.picture-empresa-aniversario img {
-    max-width: 80%; /* Diferente tamaño específico */
+.picture-Home-aniversario img {
+    max-width: 60%; /* Diferente tamaño específico */
     border-radius: 2rem; /* Mayor redondez */
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Sombra más intensa */
 }
@@ -54,4 +54,3 @@
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease; /* Diferente velocidad de transición */
 }
-

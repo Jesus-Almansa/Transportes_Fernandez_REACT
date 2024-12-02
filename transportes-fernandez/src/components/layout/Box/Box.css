@@ -21,13 +21,19 @@
   margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
 }
 
+.text-box-Home-Aniversario {
+  width: 100%;
+  padding: 3%; /* Ajuste de padding específico */
+  color: var(--blanco);
+  background-color: var(--rojo);
+}
+
 /* Bloque específico para equipo en Home (CEO) */
 .text-box-Home-Equipo-CEO {
   width: 100%;
   padding: 3%; /* Ajuste de padding específico */
   color: var(--blanco);
   background-color: var(--rojo);
-
 }
 
 /* Bloque específico para equipo en Home */
