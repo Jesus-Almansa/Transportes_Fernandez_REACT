@@ -58,6 +58,10 @@ body {
   color: var(--rojo);
 }
 
+.text-black {
+  color: black;
+}
+
 /* Clase para hacer el texto más grande (puedes reutilizarla) */
 .large-text-title {
   font-size: 2rem; /* Tamaño de fuente más grande */
