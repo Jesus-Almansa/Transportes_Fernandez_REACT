@@ -3,8 +3,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin: 10px;
-    margin-left: 30%;
+    margin: 20px;
     background-color: #fff;
     transition: transform 0.2s;
     max-width: 400px;
@@ -44,6 +43,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+.ceo-card-Home-left {
+    margin-left: 28%;
+}
+
 
 .ceo-container {
     display: flex;

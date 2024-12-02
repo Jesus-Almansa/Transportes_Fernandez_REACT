@@ -78,7 +78,7 @@ function Home() {
 
           <div className="derecha text-red">
             <EmployeeCard
-              className='ceo-card'
+              className='ceo-card ceo-card-Home-left'
               name="Paz Fernández Lozano"
               position="CEO"
               imageUrl={narutoImage}

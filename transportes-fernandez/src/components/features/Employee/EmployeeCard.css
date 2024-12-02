@@ -40,7 +40,7 @@
 
 .employees-container {
     display: flex;
-    gap: 20px; /* Espacio entre cada tarjeta */
+    gap: 30px; /* Espacio entre cada tarjeta */
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si no caben en una fila */
     justify-content: center; /* Ajusta la alineación según sea necesario */
   }
