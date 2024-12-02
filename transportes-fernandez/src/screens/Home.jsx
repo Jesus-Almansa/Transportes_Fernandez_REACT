@@ -47,12 +47,12 @@ function Home() {
             <MediaPicture
               src={aniversarioImage}
               alt="Descripción de la imagen"
-              className="picture-container picture-empresa-aniversario"
+              className="picture-container picture-Home-aniversario"
             />
 
           </div>
           <div className='derecha'>
-            <TextBox className='text-box text-box-Empresa'>
+            <TextBox className='text-box text-box-Home-Aniversario'>
               <h1 className=''>Cumplimos 70 años</h1>
               Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
               HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
