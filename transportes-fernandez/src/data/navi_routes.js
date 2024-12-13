@@ -5,7 +5,7 @@ import Contact from '../screens/Contact';
 import Services from '../screens/Services';
 import Team from '../screens/Team';
 
-const routes = [
+const navi_routes = [
     { label: 'Inicio', path: '/', component: Home },
     { label: 'Empresa', path: '/about', component: About },
     { label: 'Servicios', path: '/services', component: Services },
@@ -13,4 +13,4 @@ const routes = [
     { label: 'Contacto', path: '/contact', component: Contact },
 ];
 
-export default routes;
+export default navi_routes;

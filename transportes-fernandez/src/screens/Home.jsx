@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 // Componentes
 import Carousel from '../components/features/Carousel/Carousel';
 import BoxList from '../components/layout/Box/BoxList';
@@ -23,6 +25,8 @@ import infiniteCubeImage from '../assets/images/infinitecube.png';
 // Iconos
 import IconoServicios from '../assets/Transporters Branding/icongraphy/1/Icons-28.png';
 
+// Rutas
+import { getPathByLabel } from '../data/routes';
 
 function Home() {
   return (
@@ -56,9 +60,13 @@ function Home() {
             </div>
             <div className='derecha'>
               <TextBox className='text-box text-box-Home-Intro'>
-                <h1 className='large-text-title'>Entregando calidad</h1>
+                <h1 className='large-text-title text-white'>Entregando calidad</h1>
                 <p>
-                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con{" "}
+                  <Link to={getPathByLabel('Aniversario')} className="text-red">
+                    70 años
+                  </Link>{' '}
+                  de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
                 </p>
               </TextBox>
             </div>

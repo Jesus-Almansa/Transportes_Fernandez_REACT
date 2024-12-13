@@ -7,7 +7,8 @@ import Footer from './components/layout/Footer/Footer';
 import ScrollButton from './components/features/ScrollButton/ScrollButton';
 
 // Import Routes
-import routes from './data/navi_routes';
+import naviRoutes from './data/navi_routes';
+import routes from './data/routes';
 
 // Import CSS
 import './App.css';
@@ -19,6 +20,12 @@ function App() {
         <Header />
 
         <Routes>
+          {/* Render navigation routes */}
+          {naviRoutes.map(({ path, component: Component }) => (
+            <Route key={path} path={path} element={<Component />} />
+          ))}
+
+          {/* Render additional routes */}
           {routes.map(({ path, component: Component }) => (
             <Route key={path} path={path} element={<Component />} />
           ))}
