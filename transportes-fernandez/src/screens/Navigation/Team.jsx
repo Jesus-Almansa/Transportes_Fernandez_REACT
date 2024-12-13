@@ -4,6 +4,7 @@ import Background from '../../components/features/Background/Background';
 import TextBox from '../../components/layout/Box/TextBox';
 
 import narutoImage from '../../assets/images/naruto.jpg';
+import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.jpg';
 import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
@@ -21,7 +22,7 @@ const Team = () => {
                         className='ceo-card'
                         name="Paz Fernández Lozano"
                         position="CEO"
-                        imageUrl={letiziaImage}>
+                        imageUrl={laMadre}>
                     </EmployeeCard>
                     <EmployeeCard
                         className='ceo-card'

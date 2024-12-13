@@ -16,6 +16,7 @@ import employees from '../../data/employees';
 // Imágenes
 import truckImage from '../../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../../assets/images/naruto.jpg';
+import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.jpg';
 import regionalImage from '../../assets/images/regional.png';
 import nacionalImage from '../../assets/images/nacional.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
@@ -114,7 +115,7 @@ function Home() {
               className='ceo-card ceo-card-Home-left'
               name="Paz Fernández Lozano"
               position="CEO"
-              imageUrl={narutoImage}
+              imageUrl={laMadre}
             />
           </div>
 
