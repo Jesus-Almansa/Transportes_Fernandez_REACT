@@ -57,8 +57,9 @@ function Home() {
             <div className='derecha'>
               <TextBox className='text-box text-box-Home-Intro'>
                 <h1 className='large-text-title'>Entregando calidad</h1>
-                En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y
-                HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
+                <p>
+                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+                </p>
               </TextBox>
             </div>
           </div>
@@ -67,7 +68,13 @@ function Home() {
 
         <div id='Servicios' className="alinearEnColumna">
 
-          <h1>Servicios</h1>
+          <h1 className='large-text-title text-red'>Servicios</h1>
+
+          <TextBox className='text-box text-box-Home-Servicios'>
+            <p>
+              En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+            </p>
+          </TextBox>
 
           <div className="enLinea">
             <FlipCard
