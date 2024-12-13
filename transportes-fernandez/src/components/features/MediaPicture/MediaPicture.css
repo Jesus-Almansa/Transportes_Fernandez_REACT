@@ -2,7 +2,6 @@
 .picture-container {
     display: block;
     margin: 0rem auto; /* Márgenes relativos para adaptabilidad */
-    text-align: center;
 }
 
 /* Estilos base para las imágenes */
@@ -10,8 +9,6 @@
     width: 100%;
     height: auto; /* Esto se ajusta al contenedor manteniendo la relación de aspecto */
     border-radius: 0rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    transition: transform 1s ease, box-shadow 0.3s ease;
 }
 
 /* Hover base (común para todas las imágenes) */
@@ -19,21 +16,18 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-/* Clases específicas para imágenes con variaciones */
+/* Clases específicas para imágenes en Home */
 
-.picture-empresa-main img {
-    max-width: 80%; /* Por ejemplo, más pequeño que el ancho total disponible */
-    border-radius: 1rem; /* Bordes redondeados */
+.picture-Home-Intro img {
+    max-width: 100%; /* Diferente tamaño específico */
+    border-radius: 0rem; /* Mayor redondez */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    margin-left: 10%;
 }
 
 .picture-empresa-main:hover {
     transform: rotateY(180deg); /* Efecto específico al hacer hover en el contenedor */
-}
-
-.picture-Home-aniversario img {
-    max-width: 60%; /* Diferente tamaño específico */
-    border-radius: 2rem; /* Mayor redondez */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Sombra más intensa */
 }
 
 .picture-Home-aniversario img {

@@ -64,7 +64,7 @@ body {
 
 /* Clase para hacer el texto más grande (puedes reutilizarla) */
 .large-text-title {
-  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-size: 3rem; /* Tamaño de fuente más grande */
 }
 .large-text-body {
   font-size: 1.2rem; /* Tamaño de fuente más grande */

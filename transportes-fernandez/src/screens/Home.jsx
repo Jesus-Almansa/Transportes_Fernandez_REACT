@@ -13,7 +13,7 @@ import FlipCard from '../components/features/FlipCard/FlipCard';
 import employees from '../data/employees';
 
 // Imágenes
-import truckImage from '../assets/images/truck_black.png';
+import truckImage from '../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
@@ -31,33 +31,32 @@ function Home() {
       <br />
 
       <div id='Resumen' className="alinearEnColumna">
-        <h1 className='text-red'>
+        <h1 className='text-red large-text-title'>
           BIENVENIDO A TRANSPORTES FERNÁNDEZ
         </h1>
         <div className="enLinea">
           <TextBox className="text-box text-box-Home-Resumen">
-
           </TextBox>
         </div>
       </div>
 
-      <div id='Prueba' className="alinearEnColumna">
+      <div id='Empresa' className="alinearEnColumna">
 
-        <div id='Aniversario' className='alinearEnColumna'>
+        <div id='Intro' className='alinearEnColumna'>
           {/* <h1>Cumplimos 70 años</h1> */}
 
           <div className="enLinea">
             <div className="izquierda">
               <MediaPicture
-                src={aniversarioImage}
+                src={truckImage}
                 alt="Descripción de la imagen"
-                className="picture-container picture-Home-aniversario"
+                className="picture-container picture-Home-Intro"
               />
 
             </div>
             <div className='derecha'>
               <TextBox className='text-box text-box-Home-Intro'>
-                <h1 className=''>Entregando calidad</h1>
+                <h1 className='large-text-title'>Entregando calidad</h1>
                 En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y
                 HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
               </TextBox>
