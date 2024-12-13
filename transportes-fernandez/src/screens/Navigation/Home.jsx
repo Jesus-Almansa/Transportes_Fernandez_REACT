@@ -2,31 +2,29 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 // Componentes
-import Carousel from '../components/features/Carousel/Carousel';
-import BoxList from '../components/layout/Box/BoxList';
-import EmployeeCard from '../components/features/Employee/EmployeeCard';
-import Background from '../components/features/Background/Background';
-import ContactForm from '../components/features/ContactForm/ContactForm';
-import TextBox from '../components/layout/Box/TextBox';
-import MediaPicture from '../components/features/MediaPicture/MediaPicture';
-import FlipCard from '../components/features/FlipCard/FlipCard';
+import Carousel from '../../components/features/Carousel/Carousel';
+import EmployeeCard from '../../components/features/Employee/EmployeeCard';
+import Background from '../../components/features/Background/Background';
+import ContactForm from '../../components/features/ContactForm/ContactForm';
+import TextBox from '../../components/layout/Box/TextBox';
+import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
+import FlipCard from '../../components/features/FlipCard/FlipCard';
 
 // Rutas
-import employees from '../data/employees';
+import employees from '../../data/employees';
 
 // Imágenes
-import truckImage from '../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
-import narutoImage from '../assets/images/naruto.jpg';
-import regionalImage from '../assets/images/regional.png';
-import nacionalImage from '../assets/images/nacional.jpg';
-import aniversarioImage from '../assets/images/Logo-70Aniversario.png';
-import infiniteCubeImage from '../assets/images/infinitecube.png';
+import truckImage from '../../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
+import narutoImage from '../../assets/images/naruto.jpg';
+import regionalImage from '../../assets/images/regional.png';
+import nacionalImage from '../../assets/images/nacional.jpg';
+import infiniteCubeImage from '../../assets/images/infinitecube.png';
 
 // Iconos
-import IconoServicios from '../assets/Transporters Branding/icongraphy/1/Icons-28.png';
+import IconoServicios from '../../assets/Transporters Branding/icongraphy/1/Icons-28.png';
 
 // Rutas
-import { getPathByLabel } from '../data/routes';
+import { getPathByLabel } from '../../data/routes';
 
 function Home() {
   return (
