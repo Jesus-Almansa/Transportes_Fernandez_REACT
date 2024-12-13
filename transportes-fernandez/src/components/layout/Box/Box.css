@@ -2,23 +2,36 @@
 .text-box {
   width: 100%; /* Tamaño relativo por defecto */
   height: auto;
-  background-color: var(--blanco); /* Fondo blanco por defecto */
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* display: flex; Esto justifica todo el contenido */
 }
 
 /* Clases específicas para variaciones de los bloques de texto */
 
 /* Bloque específico para Home */
-.text-box-Home-Resumen {
+.text-box-Home-Intro p{
+  justify-content: center;
+  max-width: 100%; /* Adjusted to fit content better */
+  background-color: var(--blanco);
+  box-sizing: border-box;
+  margin-left: -5%; /* Keeps the box closer to the left */
+  line-height: 1.5; /* Adjust line spacing for readability */
+  font-size: 1.3rem; /* Specific font size */
+}
+
+.text-box-Home-Servicios {
   max-width: 80%; /* Ancho específico para este bloque */
   background-color: var(--blanco); /* Fondo blanco */
   border-radius: 1rem; /* Bordes redondeados por defecto */
   margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
+}
+
+.text-box-Home-Aniversario {
+  width: 100%;
+  padding: 3%; /* Ajuste de padding específico */
+  color: var(--blanco);
+  background-color: var(--rojo);
 }
 
 /* Bloque específico para equipo en Home (CEO) */
@@ -27,7 +40,6 @@
   padding: 3%; /* Ajuste de padding específico */
   color: var(--blanco);
   background-color: var(--rojo);
-
 }
 
 /* Bloque específico para equipo en Home */

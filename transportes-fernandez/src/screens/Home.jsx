@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 // Componentes
 import Carousel from '../components/features/Carousel/Carousel';
 import BoxList from '../components/layout/Box/BoxList';
@@ -7,16 +9,24 @@ import Background from '../components/features/Background/Background';
 import ContactForm from '../components/features/ContactForm/ContactForm';
 import TextBox from '../components/layout/Box/TextBox';
 import MediaPicture from '../components/features/MediaPicture/MediaPicture';
+import FlipCard from '../components/features/FlipCard/FlipCard';
 
 // Rutas
 import employees from '../data/employees';
 
 // Imágenes
-import truckImage from '../assets/images/truck_black.png';
+import truckImage from '../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../assets/images/naruto.jpg';
 import regionalImage from '../assets/images/regional.png';
 import nacionalImage from '../assets/images/nacional.jpg';
 import aniversarioImage from '../assets/images/Logo-70Aniversario.png';
+import infiniteCubeImage from '../assets/images/infinitecube.png';
+
+// Iconos
+import IconoServicios from '../assets/Transporters Branding/icongraphy/1/Icons-28.png';
+
+// Rutas
+import { getPathByLabel } from '../data/routes';
 
 function Home() {
   return (
@@ -25,54 +35,79 @@ function Home() {
       <br />
 
       <div id='Resumen' className="alinearEnColumna">
-        <h1 className='text-red'>
+        <h1 className='text-red large-text-title'>
           BIENVENIDO A TRANSPORTES FERNÁNDEZ
         </h1>
         <div className="enLinea">
           <TextBox className="text-box text-box-Home-Resumen">
-
           </TextBox>
         </div>
       </div>
 
+      <div id='Empresa' className="alinearEnColumna">
+
+        <div id='Intro' className='alinearEnColumna'>
+          {/* <h1>Cumplimos 70 años</h1> */}
+
+          <div className="enLinea">
+            <div className="izquierda">
+              <MediaPicture
+                src={truckImage}
+                alt="Descripción de la imagen"
+                className="picture-container picture-Home-Intro"
+              />
+
+            </div>
+            <div className='derecha'>
+              <TextBox className='text-box text-box-Home-Intro'>
+                <h1 className='large-text-title text-white'>Entregando calidad</h1>
+                <p>
+                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con{" "}
+                  <Link to={getPathByLabel('Aniversario')} className="text-red">
+                    70 años
+                  </Link>{' '}
+                  de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+                </p>
+              </TextBox>
+            </div>
+          </div>
+        </div>
 
 
+        <div id='Servicios' className="alinearEnColumna">
 
-      <br />
-      <div id='Aniversario' className='alinearEnColumna'>
-        {/* <h1>Cumplimos 70 años</h1> */}
+          <h1 className='large-text-title text-red'>Servicios</h1>
 
-        <div className="enLinea">
-          <div className="izquierda">
-            <MediaPicture
-              src={aniversarioImage}
-              alt="Descripción de la imagen"
-              className="picture-container picture-empresa-aniversario"
+          <TextBox className='text-box text-box-Home-Servicios'>
+            <p>
+              En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+            </p>
+          </TextBox>
+
+          <div className="enLinea">
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+              icon={<i className="fas fa-truck" />}
             />
-
-          </div>
-          <div className='derecha'>
-            <TextBox className='text-box text-box-Empresa'>
-              <h1 className=''>Cumplimos 70 años</h1>
-              Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
-              HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
-            </TextBox>
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+            />
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+            />
+            <FlipCard
+              frontImage={infiniteCubeImage}
+              backText="Cubo chill de cojones"
+              icon={<img src={IconoServicios} alt='Icon' />}
+            />
           </div>
         </div>
       </div>
 
-      <div id='Servicios' className="alinearEnColumna">
-        <h1>Servicios</h1>
-        <div className="enLinea">
-          <TextBox className="text-box text-box-Home-Resumen">
-            Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
-            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
-
-            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalismo y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, "Lo primero es el cliente", reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
-          </TextBox>
-        </div>
-      </div>
       <Background color="#ab273c">
         <div className="enLinea">
 
@@ -88,11 +123,11 @@ function Home() {
           <div className="izquierda">
 
             <TextBox className="text-box text-box-Home-Equipo">
-              <div className='large-text-title justify-left '>
+              <div className='large-text-title justify-left text-white'>
                 <b>Conoce al Equipo</b>
               </div>
               <br />
-              <div className='large-text-body'>
+              <div className='large-text-body text-white'>
                 Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
                 <br />
                 <br />

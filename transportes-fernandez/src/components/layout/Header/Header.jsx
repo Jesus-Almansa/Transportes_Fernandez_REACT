@@ -4,8 +4,8 @@ import './Header.css';
 import Logo from '../../features/Logo/Logo';
 import NavButton from '../../features/NavButton/NavButton';
 import BurgerButton from '../../features/BurgerButton/BurgerButton';
-import routes from '../../../data/routes';
-import useIsMobile from '../../hooks/useIsMobile'; // Importa el hook de detección del dispositivo
+import routes from '../../../data/navi_routes';
+import useIsMobile from '../../hooks/useIsMobile'; // Hook para detección del dispositivo
 
 function Header() {
   const isMobile = useIsMobile(); // Llama al hook para determinar si es un dispositivo móvil
@@ -19,17 +19,11 @@ function Header() {
 
           {/* Mostrar NavButton o BurgerButton según el dispositivo */}
           {isMobile ? (
-            <>
-              <BurgerButton routes={routes} />
-            </>
+            <BurgerButton routes={routes} />
           ) : (
             <Container maxWidth="sm" className="nav-container">
-              {Object.entries(routes).map(([key, path]) => (
-                <NavButton
-                  key={key}
-                  to={path}
-                  label={key.charAt(0).toUpperCase() + key.slice(1)}
-                />
+              {routes.map(({ label, path }) => (
+                <NavButton key={path} to={path} label={label} />
               ))}
             </Container>
           )}

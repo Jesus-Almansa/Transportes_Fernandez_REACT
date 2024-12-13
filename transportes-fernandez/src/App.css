@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 /* Variables de color */
 :root {
   --rojo: #ab273c; /* Rojo principal */
@@ -12,11 +13,20 @@ body {
   background-color: var(--blanco);
   color: var(--azul);
   line-height: 1.6;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 1.2rem; /* Tamaño del texto relativo */
 }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 #root {
   display: flex;
@@ -28,7 +38,7 @@ body {
   display: flex;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
   align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
-  gap: 20px; /* Espacio entre los elementos */
+  gap: 1%; /* Espacio entre los elementos */
 }
 
 .izquierda, .derecha {
@@ -58,12 +68,32 @@ body {
   color: var(--rojo);
 }
 
+.text-black {
+  color: black;
+}
+
 /* Clase para hacer el texto más grande (puedes reutilizarla) */
 .large-text-title {
-  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-size: 3rem; /* Tamaño de fuente más grande */
 }
 .large-text-body {
   font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+/* For rotations */
+
+.rotating {
+  display: inline-block; /* Ensure the element rotates properly */
+  animation: spin 5s linear infinite; /* Apply the animation */
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+      transform: rotate(360deg); /* End at 360 degrees */
+  }
 }
 
 /* Media Queries para iPhone */
