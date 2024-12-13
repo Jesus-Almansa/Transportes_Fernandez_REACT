@@ -42,59 +42,58 @@ function Home() {
       </div>
 
       <div id='Prueba' className="alinearEnColumna">
-      <FlipCard
-        frontImage={infiniteCubeImage}
-        backText="Cubo chill de cojones"
-        icon={<img src={IconoServicios} alt='Icon'/>}
-      />
-      </div>
 
-      <br />
-      <div id='Aniversario' className='alinearEnColumna'>
-        {/* <h1>Cumplimos 70 años</h1> */}
+        <div id='Aniversario' className='alinearEnColumna'>
+          {/* <h1>Cumplimos 70 años</h1> */}
 
-        <div className="enLinea">
-          <div className="izquierda">
-            <MediaPicture
-              src={aniversarioImage}
-              alt="Descripción de la imagen"
-              className="picture-container picture-Home-aniversario"
+          <div className="enLinea">
+            <div className="izquierda">
+              <MediaPicture
+                src={aniversarioImage}
+                alt="Descripción de la imagen"
+                className="picture-container picture-Home-aniversario"
+              />
+
+            </div>
+            <div className='derecha'>
+              <TextBox className='text-box text-box-Home-Intro'>
+                <h1 className=''>Entregando calidad</h1>
+                En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y
+                HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
+              </TextBox>
+            </div>
+          </div>
+        </div>
+
+
+        <div id='Servicios' className="alinearEnColumna">
+
+          <h1>Servicios</h1>
+
+          <div className="enLinea">
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+              icon={<i className="fas fa-truck" />}
             />
-
-          </div>
-          <div className='derecha'>
-            <TextBox className='text-box text-box-Home-Aniversario'>
-              <h1 className=''>Cumplimos 70 años</h1>
-              Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha.
-              HAY QUE PONER JUSTIFICADO A LA IZQUIERDA EL h1
-            </TextBox>
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+            />
+            <FlipCard
+              frontImage={regionalImage}
+              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
+            />
+            <FlipCard
+              frontImage={infiniteCubeImage}
+              backText="Cubo chill de cojones"
+              icon={<img src={IconoServicios} alt='Icon' />}
+            />
           </div>
         </div>
       </div>
 
 
-      <div id='Servicios' className="alinearEnColumna">
-
-        <h1>Servicios</h1>
-
-        <div className="enLinea">
-          <FlipCard
-            frontImage={regionalImage}
-            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-            icon={<i className="fas fa-truck" />}
-          />
-          <FlipCard
-            frontImage={regionalImage}
-            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-          />
-          <FlipCard
-            frontImage={regionalImage}
-            backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-          />
-        </div>
-      </div>
-
-      
       <Background color="#ab273c">
         <div className="enLinea">
 
