@@ -89,6 +89,11 @@ p {
   animation: spin 5s linear infinite; /* Apply the animation */
 }
 
+.padding-vertical {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 @keyframes spin {
   from {
       transform: rotate(0deg); /* Start at 0 degrees */
