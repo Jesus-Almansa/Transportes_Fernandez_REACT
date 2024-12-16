@@ -1,39 +1,41 @@
 .media_video-container {
     position: relative;
     width: 100%;
-    max-width: 90%;
-    /* Ajusta el tamaño máximo según tus necesidades */
-    margin: 0% auto;
-    /* Centra el contenido */
-}
-
-.media_video {
+    max-width: 90%; /* Adjust the size based on your design */
+    margin: 0 auto; /* Center content */
+  }
+  
+  .media_video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: none
-}
-
-.media_video-wrapper {
+    border: none;
+  }
+  
+  .media_video-wrapper {
     position: relative;
-    padding-top: 56.25%;
-    /* Mantiene un aspect ratio de 16:9 */
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
     overflow: hidden;
-}
-
-/* Media_video query para dispositivos móviles */
-@media (max-width: 600px) {
+  }
+  
+  .media_video-error {
+    text-align: center;
+    padding: 20px;
+    color: red;
+    font-size: 1rem;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
     .media_video-container {
-        max-width: 100%;
-        /* Asegura que ocupe el ancho completo */
-        margin: 10px auto;
-        /* Ajusta el margen superior/inferior si es necesario */
+      max-width: 100%;
+      margin: 10px auto;
     }
-
+  
     .media_video-wrapper {
-        padding-top: 75%;
-        /* Cambia el aspect ratio si es necesario, por ejemplo, a 4:3 */
+      padding-top: 75%; /* Adjust aspect ratio for smaller screens */
     }
-}
+  }
+  
