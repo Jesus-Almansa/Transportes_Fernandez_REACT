@@ -38,7 +38,7 @@ p {
   display: flex;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
   align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
-  gap: 1%; /* Espacio entre los elementos */
+  gap: 3%; /* Espacio entre los elementos dentro del enLinea*/
 }
 
 .izquierda, .derecha {
