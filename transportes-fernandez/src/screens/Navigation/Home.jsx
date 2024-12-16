@@ -17,12 +17,15 @@ import employees from '../../data/employees';
 import truckImage from '../../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../../assets/images/naruto.jpg';
 import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.jpg';
-import regionalImage from '../../assets/images/regional.png';
-import nacionalImage from '../../assets/images/nacional.jpg';
+import valencia from '../../assets/original_images/valencia.jpg';
+import laMancha from '../../assets/original_images/laMancha.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
 
 // Iconos
 import IconoServicios from '../../assets/Transporters Branding/icongraphy/1/Icons-28.png';
+import iconoLaMancha from '../../assets/Transporters Branding/icongraphy/1/Icons-72.png';
+import iconoValencia from '../../assets/Transporters Branding/icongraphy/1/Icons-73.png';
+import iconoInternacional from '../../assets/Transporters Branding/icongraphy/1/Icons-74.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -30,10 +33,12 @@ import { getPathByLabel } from '../../data/routes';
 function Home() {
   return (
     <div id='Home'>
-      <Carousel />
-      <br />
 
-      <div id='Resumen' className="alinearEnColumna">
+      {/* CARRUSEL */}
+      <Carousel />
+
+      {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
+      <div id='Intro' className="alinearEnColumna">
         <h1 className='text-red large-text-title'>
           BIENVENIDO A TRANSPORTES FERNÁNDEZ
         </h1>
@@ -43,9 +48,9 @@ function Home() {
         </div>
       </div>
 
-      <div id='Empresa' className="alinearEnColumna">
+      <div className="alinearEnColumna">
 
-        <div id='Intro' className='alinearEnColumna'>
+        <div className='alinearEnColumna'>
           {/* <h1>Cumplimos 70 años</h1> */}
 
           <div className="enLinea">
@@ -72,41 +77,49 @@ function Home() {
           </div>
         </div>
 
-
+        {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
         <div id='Servicios' className="alinearEnColumna">
 
           <h1 className='large-text-title text-red'>Servicios</h1>
 
+          <div className="enLinea">
+            <FlipCard
+              frontImage={laMancha}
+              backText={"Transporte regional en La Mancha"}
+              icon={
+                <Link to={getPathByLabel("Aniversario")} className="text-white">
+                <img src={iconoLaMancha} alt='Icon' />
+                </Link>}
+            />
+            <FlipCard
+              frontImage={valencia}
+              backText="Transporte por toda península"
+              icon={
+                <Link to={getPathByLabel("Aniversario")} className="text-white">
+                <img src={iconoValencia} alt='Icon' />
+                </Link>}
+            />
+            <FlipCard
+              frontImage={infiniteCubeImage}
+              backText="Cubo chill de cojones"
+              icon={
+                <Link to={getPathByLabel("Aniversario")} className="text-white">
+                <img src={iconoInternacional} alt='Icon' />
+                </Link>}
+            />
+          </div>
           <TextBox className='text-box text-box-Home-Servicios'>
             <p>
               En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
             </p>
           </TextBox>
-
-          <div className="enLinea">
-            <FlipCard
-              frontImage={regionalImage}
-              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-              icon={<i className="fas fa-truck" />}
-            />
-            <FlipCard
-              frontImage={regionalImage}
-              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-            />
-            <FlipCard
-              frontImage={regionalImage}
-              backText="Transportes Fernández es una empresa familiar con más de 40 años de actividad. Estamos especializados en transporte regional, cubriendo la zona de La Mancha."
-            />
-            <FlipCard
-              frontImage={infiniteCubeImage}
-              backText="Cubo chill de cojones"
-              icon={<img src={IconoServicios} alt='Icon' />}
-            />
-          </div>
         </div>
       </div>
 
+      {/* 5 RAZONES POR LAS QUE ELEGIRNOS */}
+      <h1 className='large-text-title text-red'>5 Razones por las que elegirnos</h1>
 
+      {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
       <Background color="#ab273c">
         <div className="enLinea">
 

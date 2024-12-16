@@ -12,7 +12,7 @@ const FlipCard = ({ frontImage, backText, icon }) => {
                     <div className="icon-container">
                         {icon} {/* Render the icon directly */}
                     </div>
-                    <p>{backText}</p>
+                    {backText}
                 </div>
             </div>
         </div>
