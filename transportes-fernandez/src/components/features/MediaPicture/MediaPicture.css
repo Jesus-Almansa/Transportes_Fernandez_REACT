@@ -20,7 +20,7 @@
 
 .picture-Home-Intro img {
     max-width: 100%; /* Diferente tamaño específico */
-    border-radius: 0rem; /* Mayor redondez */
+    border-radius: 0.5rem; /* Mayor redondez */
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
     margin-left: 10%;
