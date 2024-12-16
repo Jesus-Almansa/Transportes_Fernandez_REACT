@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import ScrollButton from './components/features/ScrollButton/ScrollButton';
+import ScrollToTop from './components/features/ScrollToTop/ScrollToTop';
 
 // Import Routes
 import naviRoutes from './data/navi_routes';
@@ -16,6 +17,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <div><ScrollToTop /></div> {/* Scrolls to top on route change */}
       <div className="App">
         <Header />
 
@@ -31,10 +33,11 @@ function App() {
           ))}
         </Routes>
 
-        <ScrollButton />
-
         <Footer />
       </div>
+
+      <ScrollButton />
+
     </Router>
   );
 }
