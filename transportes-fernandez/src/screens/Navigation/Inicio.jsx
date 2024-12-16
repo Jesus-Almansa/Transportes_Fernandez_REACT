@@ -39,9 +39,10 @@ function Home() {
 
       {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
       <div id='Intro' className="alinearEnColumna">
-        <h1 className='text-red large-text-title'>
-          BIENVENIDO A TRANSPORTES FERNÁNDEZ
+        <h1 className='text-red large-text-title padding-vertical'>
+          <b>BIENVENIDO A TRANSPORTES FERNÁNDEZ</b>
         </h1>
+
         <div className="enLinea">
           <TextBox className="text-box text-box-Home-Resumen">
           </TextBox>
@@ -66,9 +67,15 @@ function Home() {
               <TextBox className='text-box text-box-Home-Intro'>
                 <h1 className='large-text-title text-white'>Entregando calidad</h1>
                 <p>
-                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con{" "}
-                  <Link to={getPathByLabel('Aniversario')} className="text-red">
-                    70 años
+                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
+
+                  <br />
+
+                  <br />
+
+                  Con{" "}
+                  <Link to={getPathByLabel('aniversario')} className="text-red">
+                    <strong>70 años</strong>
                   </Link>{' '}
                   de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
                 </p>
@@ -77,8 +84,42 @@ function Home() {
           </div>
         </div>
 
+        <h1 className='padding-vertical'></h1>
+
+        {/* 5 RAZONES POR LAS QUE ELEGIRNOS 5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS */}
+
+        <Background color="#1a2a36">
+
+
+          <TextBox className="text-box text-box-Home-Razones">
+            <div className='large-text-title text-white'>
+              <b>5 Razones para elegirnos</b>
+            </div>
+            <br />
+            <div className='large-text-body text-white'>
+        
+              <ul className="reasons-list text-white" style={{ listStyle: 'none', padding: 0 }}>
+                <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
+                <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
+                <li>&#10004; Innovación constante para mejorar la calidad de nuestros servicios.</li>
+                <li>&#10004; Comunicación abierta y trabajo en equipo en cada proyecto.</li>
+                <li>&#10004; Compromiso con la satisfacción total y el éxito de nuestros clientes.</li>
+              </ul>
+            </div>
+          </TextBox>
+
+
+
+          {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
+
+
+          <div>
+          </div>
+        </Background>
+
+
         {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
-        <div id='Servicios' className="alinearEnColumna">
+        <div id='Servicios' className="alinearEnColumna padding-vertical">
 
           <h1 className='large-text-title text-red'>Servicios</h1>
 
@@ -87,24 +128,24 @@ function Home() {
               frontImage={laMancha}
               backText={"Transporte regional en La Mancha"}
               icon={
-                <Link to={getPathByLabel("Aniversario")} className="text-white">
-                <img src={iconoLaMancha} alt='Icon' />
+                <Link to={getPathByLabel("servicios")}>
+                  <img src={iconoLaMancha} alt='iconLaMancha' />
                 </Link>}
             />
             <FlipCard
               frontImage={valencia}
               backText="Transporte por toda península"
               icon={
-                <Link to={getPathByLabel("Aniversario")} className="text-white">
-                <img src={iconoValencia} alt='Icon' />
+                <Link to={getPathByLabel("Aniversario")}>
+                  <img src={iconoValencia} alt='iconValencia' />
                 </Link>}
             />
             <FlipCard
               frontImage={infiniteCubeImage}
               backText="Cubo chill de cojones"
               icon={
-                <Link to={getPathByLabel("Aniversario")} className="text-white">
-                <img src={iconoInternacional} alt='Icon' />
+                <Link to={getPathByLabel("Aniversario")}>
+                  <img src={iconoInternacional} alt='iconInternacional' />
                 </Link>}
             />
           </div>
@@ -116,8 +157,7 @@ function Home() {
         </div>
       </div>
 
-      {/* 5 RAZONES POR LAS QUE ELEGIRNOS */}
-      <h1 className='large-text-title text-red'>5 Razones por las que elegirnos</h1>
+
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
       <Background color="#ab273c">
@@ -147,9 +187,11 @@ function Home() {
               </div>
             </TextBox>
           </div>
-
-
         </div>
+
+        {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
+
+        <br />
 
         <div className="employees-container text-red">
           {employees.map((employee, index) => (
