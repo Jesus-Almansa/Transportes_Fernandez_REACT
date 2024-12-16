@@ -1,7 +1,7 @@
 import Aniversario from '../screens/Aniversario';
 
 const routes = [
-  { label: 'Aniversario', path: '/Aniversario', component: Aniversario },
+  { label: 'Aniversario', path: '/aniversario', component: Aniversario },
 ];
 
 export const findRouteByLabel = (label) =>

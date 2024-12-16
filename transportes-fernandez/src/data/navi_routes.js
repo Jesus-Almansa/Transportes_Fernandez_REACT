@@ -1,16 +1,16 @@
 // Import Screens (Pages)
-import Home from '../screens/Navigation/Home';
-import About from '../screens/Navigation/About';
-import Contact from '../screens/Navigation/Contact';
-import Services from '../screens/Navigation/Services';
-import Team from '../screens/Navigation/Team';
+import Inicio from '../screens/Navigation/Inicio';
+import Empresa from '../screens/Navigation/Empresa';
+import Contacto from '../screens/Navigation/Contacto';
+import Servicios from '../screens/Navigation/Servicios';
+import Equipo from '../screens/Navigation/Equipo';
 
 const navi_routes = [
-    { label: 'Inicio', path: '/', component: Home },
-    { label: 'Empresa', path: '/about', component: About },
-    { label: 'Servicios', path: '/services', component: Services },
-    { label: 'Equipo', path: '/team', component: Team },
-    { label: 'Contacto', path: '/contact', component: Contact },
+    { label: 'Inicio', path: '/', component: Inicio },
+    { label: 'Empresa', path: '/empresa', component: Empresa },
+    { label: 'Servicios', path: '/servicios', component: Servicios },
+    { label: 'Equipo', path: '/equipo', component: Equipo },
+    { label: 'Contacto', path: '/contacto', component: Contacto },
 ];
 
 export default navi_routes;
