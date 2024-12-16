@@ -1,32 +1,38 @@
 import React from 'react';
-import { Container, AppBar, Toolbar } from '@mui/material';
+import { Container, AppBar, Toolbar, Box } from '@mui/material';
 import './Header.css';
 import Logo from '../../features/Logo/Logo';
 import NavButton from '../../features/NavButton/NavButton';
 import BurgerButton from '../../features/BurgerButton/BurgerButton';
 import routes from '../../../data/navi_routes';
-import useIsMobile from '../../hooks/useIsMobile'; // Hook para detección del dispositivo
+import useIsMobile from '../../hooks/useIsMobile';
 
 function Header() {
-  const isMobile = useIsMobile(); // Llama al hook para determinar si es un dispositivo móvil
+  const isMobile = useIsMobile(); // Hook para detectar dispositivo móvil
 
   return (
     <AppBar position="static" className="header-appbar">
       <Container maxWidth="xlg">
         <Toolbar className="header-toolbar">
-          {/* Logo siempre visible */}
-          <Logo className="header-logo" />
+          {/* Logo aligned to the left */}
+          <Box className="header-logo-container">
+            <Logo className="header-logo" />
+          </Box>
 
-          {/* Mostrar NavButton o BurgerButton según el dispositivo */}
-          {isMobile ? (
-            <BurgerButton routes={routes} />
-          ) : (
-            <Container maxWidth="sm" className="nav-container">
+          {/* Navigation buttons centered */}
+          {!isMobile && (
+            <Box className="nav-container">
               {routes.map(({ label, path }) => (
                 <NavButton key={path} to={path} label={label} />
               ))}
-            </Container>
+            </Box>
           )}
+
+          {/* Burger Button for mobile */}
+          {isMobile && <BurgerButton routes={routes} />}
+
+          {/* Empty Box to push buttons to the center */}
+          <Box className="header-placeholder" />
         </Toolbar>
       </Container>
     </AppBar>
