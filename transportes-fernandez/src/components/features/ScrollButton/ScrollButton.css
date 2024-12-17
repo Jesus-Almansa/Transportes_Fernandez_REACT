@@ -6,10 +6,10 @@
     background-color: var(--rojo);
     color: white;
     padding: 10px;
-    border-radius: 80%;
+    border-radius: 4rem;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     visibility: visible;
     z-index: 1000;
   }

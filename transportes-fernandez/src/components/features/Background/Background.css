@@ -1,16 +1,28 @@
 .section-background {
     background-color: var(--rojo);
-    padding: 20px;
-    margin: 20px 0px;
-    padding-top: 4rem; /* Espacio amplio en la parte superior */
-    padding-bottom: 4rem; /* Espacio amplio en la parte inferior */
-    color: white; /* Optional: to ensure text is readable */
-    margin-bottom: 0;
+    padding: 20px 0;
+    /* Vertical padding only, no horizontal padding */
+    margin: 0;
+    /* Remove margins */
+    padding-top: 5rem;
+    /* Space at the top */
+    padding-bottom: 5rem;
+    /* Space at the bottom */
+    color: white;
+    /* Ensure text readability */
+
+    /* Make the section full width */
+    width: 100vw;
+    /* Full viewport width */
+    position: relative;
+    left: 50%;
+    /* Move to center */
+    transform: translateX(-50%);
+    /* Recenter the element */
 }
 
 .section-background:nth-child(even) {
-    background-color: #f0f0f0; /* Light grey for alternating sections */
-    color: black; /* Optional: to ensure text is readable */
+    background-color: #f0f0f0;
+    /* Light grey for alternating sections */
+    color: black;
 }
-
-

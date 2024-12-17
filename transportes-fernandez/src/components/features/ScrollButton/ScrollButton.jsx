@@ -8,7 +8,7 @@ const ScrollButton = () => {
     console.log('Scroll to top button clicked');
     window.scrollTo({
       top: 0,
-      behavior: 'auto'
+      behavior: 'smooth'
     });
   };
 

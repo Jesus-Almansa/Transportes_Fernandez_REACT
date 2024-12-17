@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/Transporters Branding/logo files/TransperentPng/Logo File-04.png';
+import logo from '../../../assets/Transporters Branding/logo files/TransperentPng/Logo File-11.png';
 import './Logo.css';
 
 const Logo = ({ className }) => {

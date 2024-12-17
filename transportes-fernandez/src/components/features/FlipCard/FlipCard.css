@@ -1,6 +1,6 @@
 .flip-card {
     perspective: 1000px; /* Enable 3D perspective */
-    width: 500px;
+    width: 600px;
     height: 600px;
 }
 
@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Hide the back face when not visible */
-    border-radius: 10px;
+    border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -38,7 +38,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .flip-card-back {
@@ -58,7 +58,7 @@
 }
 
 .icon-container img {
-    width: 50px; /* Adjust the size of the icon */
-    height: 50px;
+    width: 300px; /* Adjust the size of the icon */
+    height: 300px;
     object-fit: contain; /* Ensure the image fits well */
 }

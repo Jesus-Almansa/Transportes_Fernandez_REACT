@@ -1,12 +1,15 @@
 import React from 'react';
-import EmployeeCard from '../components/features/Employee/EmployeeCard';
-import narutoImage from '../assets/images/naruto.jpg';
-import letiziaImage from '../assets/images/letizia.png';
-import roshiImage from '../assets/images/roshi.png';
-import marisaImage from '../assets/images/marisa.png';
-import employees from '../data/employees';
-import Background from '../components/features/Background/Background';
-import TextBox from '../components/layout/Box/TextBox';
+import EmployeeCard from '../../components/features/Employee/EmployeeCard';
+import Background from '../../components/features/Background/Background';
+import TextBox from '../../components/layout/Box/TextBox';
+
+import narutoImage from '../../assets/images/naruto.jpg';
+import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.jpg';
+import letiziaImage from '../../assets/images/letizia.png';
+import roshiImage from '../../assets/images/roshi.png';
+import marisaImage from '../../assets/images/marisa.png';
+import employees from '../../data/employees';
+
 
 
 const Team = () => {
@@ -19,7 +22,7 @@ const Team = () => {
                         className='ceo-card'
                         name="Paz Fernández Lozano"
                         position="CEO"
-                        imageUrl={letiziaImage}>
+                        imageUrl={laMadre}>
                     </EmployeeCard>
                     <EmployeeCard
                         className='ceo-card'

@@ -30,8 +30,8 @@
 
 /* Ajustes de las flechas */
 .carousel-arrow {
-   color: #fff !important;
-   font-size: 2rem;
+   color: var(--blanco) !important;
+   background-color: var(--rojo) !important;
    cursor: pointer;
    z-index: 1;
    width: 40px;
@@ -39,15 +39,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: rgba(0, 0, 0, 0.5);
    /* Fondo semitransparente para mayor visibilidad */
-   border-radius: 50%;
+   border-radius: 2rem !important;
    pointer-events: auto;
 }
 
 .carousel-arrow:hover {
-   color: var(--blanco) !important;
-   background-color: var(--rojo) !important;
+   color: var(--rojo) !important;
+   background-color: var(--blanco) !important;
 }
 
 /* Media Query para pantallas grandes como iPads */

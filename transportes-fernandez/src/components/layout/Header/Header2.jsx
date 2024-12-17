@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, AppBar, Toolbar, Box } from '@mui/material';
-import './Header.css';
+import './Header2.css';
 import Logo from '../../features/Logo/Logo';
 import NavButton from '../../features/NavButton/NavButton';
 import BurgerButton from '../../features/BurgerButton/BurgerButton';
@@ -18,20 +18,7 @@ function Header() {
           <Box className="header-logo-container">
             <Logo className="header-logo" />
           </Box>
-          
-          {!isMobile && (
-            <Box className="nav-container">
-              {routes.map(({ label, path }) => (
-                <NavButton key={path} to={path} label={label} />
-              ))}
-            </Box>
-          )}
-
-          {/* Burger Button for mobile */}
-          {isMobile && <BurgerButton routes={routes} />}
-
-          {/* Empty Box to push buttons to the center */}
-          <Box className="header-placeholder" />
+          <BurgerButton routes={routes} />
         </Toolbar>
       </Container>
     </AppBar>

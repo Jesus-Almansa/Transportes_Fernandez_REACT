@@ -1,18 +1,19 @@
 .logo {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.3);
+    transform: scale(2.7);
     width: auto;
     /* Cambia el tamaño según tu preferencia */
     height: auto;
     /* Mantiene las proporciones */
-    max-height: 80px;
+    max-height: 70px;
     /* Asegura que no sea demasiado alto */
     object-fit: contain;
     /* Ajusta la imagen sin distorsionar */
     margin: 0 auto;
     display: block;
+    padding-left: 1rem;
 }
 
 .logo:hover {
-    transform: scale(1.4);
+    transform: scale(2.75);
 }

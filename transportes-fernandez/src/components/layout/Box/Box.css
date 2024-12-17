@@ -20,6 +20,14 @@
   font-size: 1.3rem; /* Specific font size */
 }
 
+.text-box-Home-Razones {
+  width: 100%;
+  margin-left: 0%; /* Margin mueve el cuadro */
+  margin-top: 0%;
+  padding: 6rem; /* Padding el contenido dentro del cuadro */
+  background-color: var(--zul);
+}
+
 .text-box-Home-Servicios {
   max-width: 80%; /* Ancho específico para este bloque */
   background-color: var(--blanco); /* Fondo blanco */
@@ -45,7 +53,7 @@
 /* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
-  margin-left: -22%; /* Margin mueve el cuadro */
+  margin-left: -30%; /* Margin mueve el cuadro */
   margin-top: 8%;
   padding: 1rem; /* Padding el contenido dentro del cuadro */
   background-color: var(--rojo);
