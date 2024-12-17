@@ -1,11 +1,18 @@
 .burger-container {
     position: relative;
+    padding-right: 2rem;
 }
 
 .burger-button {
     color: inherit;
     cursor: pointer;
     z-index: 1000;
+    transform: scale(1.3);
+}
+
+.burger-button:hover {
+    color: var(--blanco);
+    background-color: var(--blanco);
 }
 
 .burger-menu {
@@ -41,11 +48,11 @@
     text-align: left;
     display: inline-block;
     border-radius: 8px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    max-width: 200px; /* Ancho máximo */
+    transition: color 0.1s ease, background-color 0.3s ease;
+    max-width: 50px; /* Ancho máximo */
 }
 
 .menu-item:hover {
-    color: #ab273c;
-    background-color: #fff;
+    color: var(--rojo);
+    background-color: var(--blanco);
 }

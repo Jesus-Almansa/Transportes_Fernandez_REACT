@@ -1,0 +1,52 @@
+/* Header general styles */
+.header-appbar {
+  background-color: var(--rojo) !important;
+  color: var(--blanco);
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Logo styling */
+.header-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.header-logo {
+  height: auto; /* Adjust logo size as needed */
+  cursor: pointer;
+}
+
+/* Navigation container centered */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  flex: 2; /* Takes central space */
+  padding: 1rem;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Fixed padding for all states */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-container a:hover {
+  color: var(--rojo);
+  background-color: var(--blanco); /* Only change color and background */
+}
+
+/* Empty box for spacing */
+.header-placeholder {
+  flex: 1;
+}

@@ -47,7 +47,7 @@ function Home() {
 
       {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
       <div id='Intro' className="alinearEnColumna">
-        <h1 className='text-red large-text-title padding-vertical-3'>
+        <h1 className='text-red very-large-text-title padding-vertical-3'>
           <b>BIENVENIDO A TRANSPORTES FERNÁNDEZ</b>
         </h1>
 
@@ -120,9 +120,9 @@ function Home() {
         {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
         <div id='Servicios' className="alinearEnColumna">
 
-          <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+          <h1 className='very-large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
 
-          <h1 className='text-red'>Lo que transportamos</h1>
+          <h1 className='text-red large-text-title'>Lo que transportamos</h1>
 
           <div className="enLinea">
             <FlipCard
