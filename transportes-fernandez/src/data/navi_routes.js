@@ -1,9 +1,9 @@
 // Import Screens (Pages)
-import Inicio from '../screens/Navigation/Inicio';
-import Empresa from '../screens/Navigation/Empresa';
-import Contacto from '../screens/Navigation/Contacto';
-import Servicios from '../screens/Navigation/Servicios';
-import Equipo from '../screens/Navigation/Equipo';
+import Inicio from '../screens/mainNavigation/Inicio';
+import Empresa from '../screens/mainNavigation/Empresa';
+import Contacto from '../screens/mainNavigation/Contacto';
+import Servicios from '../screens/mainNavigation/Servicios';
+import Equipo from '../screens/mainNavigation/Equipo';
 
 const navi_routes = [
     { label: 'Inicio', path: '/', component: Inicio },

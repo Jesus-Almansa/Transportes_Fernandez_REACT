@@ -1,9 +1,9 @@
 import React from 'react';
 
-import aniversario from '../assets/images/Logo-70Aniversario.png';
+import aniversario from '../../assets/images/Logo-70Aniversario.png';
 
-import MediaPicture from '../components/features/MediaPicture/MediaPicture';
-import TextBox from '../components/layout/Box/TextBox';
+import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
+import TextBox from '../../components/layout/Box/TextBox';
 
 
 const Aniversario = () => {

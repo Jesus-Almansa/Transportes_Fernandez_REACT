@@ -1,8 +1,8 @@
-import Aniversario from '../screens/Aniversario';
-import Empresa from '../screens/Navigation/Empresa';
-import Contacto from '../screens/Navigation/Contacto';
-import Servicios from '../screens/Navigation/Servicios';
-import Equipo from '../screens/Navigation/Equipo';
+import Aniversario from '../screens/Endpoints/Aniversario';
+import Empresa from '../screens/mainNavigation/Empresa';
+import Contacto from '../screens/mainNavigation/Contacto';
+import Servicios from '../screens/mainNavigation/Servicios';
+import Equipo from '../screens/mainNavigation/Equipo';
 
 const routes = [
   { label: 'aniversario', path: '/aniversario', component: Aniversario },
