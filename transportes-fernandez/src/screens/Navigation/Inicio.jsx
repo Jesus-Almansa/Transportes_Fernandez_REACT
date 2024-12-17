@@ -20,12 +20,20 @@ import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.j
 import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
+import equipamientoIndustrial from '../../assets/original_images/equipamienoIndustrial2.png'
+import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
+import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
+import internacional from '../../assets/original_images/space.png';
+
 
 // Iconos
 import IconoServicios from '../../assets/Transporters Branding/icongraphy/1/Icons-28.png';
 import iconoLaMancha from '../../assets/Transporters Branding/icongraphy/1/Icons-72.png';
 import iconoValencia from '../../assets/Transporters Branding/icongraphy/1/Icons-73.png';
 import iconoInternacional from '../../assets/Transporters Branding/icongraphy/1/Icons-74.png';
+import iconoIndustrial from '../../assets/Transporters Branding/icongraphy/1/Icons-75.jpg';
+import iconoEolico from '../../assets/Transporters Branding/icongraphy/1/Icons-76.png';
+import iconoEspecial from '../../assets/Transporters Branding/icongraphy/1/Icons-77.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -39,7 +47,7 @@ function Home() {
 
       {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
       <div id='Intro' className="alinearEnColumna">
-        <h1 className='text-red large-text-title padding-vertical'>
+        <h1 className='text-red large-text-title padding-vertical-3'>
           <b>BIENVENIDO A TRANSPORTES FERNÁNDEZ</b>
         </h1>
 
@@ -52,7 +60,6 @@ function Home() {
       <div className="alinearEnColumna">
 
         <div className='alinearEnColumna'>
-          {/* <h1>Cumplimos 70 años</h1> */}
 
           <div className="enLinea">
             <div className="izquierda">
@@ -69,9 +76,7 @@ function Home() {
                 <p>
                   En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
 
-                  <br />
-
-                  <br />
+                  <div className='padding-vertical-1'></div>
 
                   Con{" "}
                   <Link to={getPathByLabel('aniversario')} className="text-red">
@@ -84,7 +89,7 @@ function Home() {
           </div>
         </div>
 
-        <h1 className='padding-vertical'></h1>
+        <h1 className='padding-vertical-3'></h1>
 
         {/* 5 RAZONES POR LAS QUE ELEGIRNOS 5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS */}
 
@@ -97,7 +102,7 @@ function Home() {
             </div>
             <br />
             <div className='large-text-body text-white'>
-        
+
               <ul className="reasons-list text-white" style={{ listStyle: 'none', padding: 0 }}>
                 <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
                 <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
@@ -107,57 +112,84 @@ function Home() {
               </ul>
             </div>
           </TextBox>
-
-
-
-          {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
-
-
           <div>
           </div>
         </Background>
 
 
         {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
-        <div id='Servicios' className="alinearEnColumna padding-vertical">
+        <div id='Servicios' className="alinearEnColumna">
 
-          <h1 className='large-text-title text-red'>Servicios</h1>
+          <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+
+          <h1 className='text-red'>Lo que transportamos</h1>
 
           <div className="enLinea">
             <FlipCard
-              frontImage={laMancha}
-              backText={"Transporte regional en La Mancha"}
+              frontImage={equipamientoIndustrial}
+              backText={"Equipamiento industrial"}
               icon={
                 <Link to={getPathByLabel("servicios")}>
-                  <img src={iconoLaMancha} alt='iconLaMancha' />
+                  <img src={iconoIndustrial} alt='iconIndustrial' />
                 </Link>}
             />
             <FlipCard
-              frontImage={valencia}
-              backText="Transporte por toda península"
+              frontImage={parquesEolicos}
+              backText="Parques eólicos"
               icon={
-                <Link to={getPathByLabel("Aniversario")}>
-                  <img src={iconoValencia} alt='iconValencia' />
+                <Link to={getPathByLabel("servicios")}>
+                  <img src={iconoEolico} alt='iconEolico' />
                 </Link>}
             />
             <FlipCard
-              frontImage={infiniteCubeImage}
-              backText="Cubo chill de cojones"
+              frontImage={medidasEspeciales}
+              backText="Medidas especiales"
               icon={
-                <Link to={getPathByLabel("Aniversario")}>
-                  <img src={iconoInternacional} alt='iconInternacional' />
+                <Link to={getPathByLabel("servicios")}>
+                  <img src={iconoEspecial} alt='iconEspecial' />
                 </Link>}
             />
           </div>
-          <TextBox className='text-box text-box-Home-Servicios'>
-            <p>
-              En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
-            </p>
-          </TextBox>
         </div>
+
+        <h1 className='padding-vertical-1 text-red'>Donde lo transportamos</h1>
+
+        <div className="enLinea">
+
+          <FlipCard
+            frontImage={laMancha}
+            backText={"Transporte regional en La Mancha"}
+            icon={
+              <Link to={getPathByLabel("servicios")}>
+                <img src={iconoLaMancha} alt='iconLaMancha' />
+              </Link>}
+          />
+          <FlipCard
+            frontImage={valencia}
+            backText="Transporte por toda península e islas"
+            icon={
+              <Link to={getPathByLabel("Aniversario")}>
+                <img src={iconoValencia} alt='iconValencia' />
+              </Link>}
+          />
+          <FlipCard
+            frontImage={internacional}
+            backText="Transporte a nivel internacional"
+            icon={
+              <Link to={getPathByLabel("Aniversario")}>
+                <img src={iconoInternacional} alt='iconInternacional' />
+              </Link>}
+          />
+        </div>
+        <TextBox className='text-box text-box-Home-Servicios'>
+          <p>
+            En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+          </p>
+        </TextBox>
+
       </div>
 
-
+      <div className='padding-vertical-3'></div>
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
       <Background color="#ab273c">
