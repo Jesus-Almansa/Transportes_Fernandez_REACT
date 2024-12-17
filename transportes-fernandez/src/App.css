@@ -80,6 +80,11 @@ p {
 .large-text-title {
   font-size: 3rem; /* Tamaño de fuente más grande */
 }
+
+.very-large-text-title {
+  font-size: 3.6rem; /* Tamaño de fuente más grande */
+}
+
 .large-text-body {
   font-size: 1.2rem; /* Tamaño de fuente más grande */
 }
