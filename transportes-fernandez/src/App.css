@@ -62,6 +62,8 @@ p {
   align-items: center;
 }
 
+/* Colores para los textos en linea*/
+
 .text-white {
   color: white;
 }
@@ -74,7 +76,7 @@ p {
   color: black;
 }
 
-/* Clase para hacer el texto más grande (puedes reutilizarla) */
+/* Clase para hacer el tamaño de letra */
 .large-text-title {
   font-size: 3rem; /* Tamaño de fuente más grande */
 }
@@ -82,16 +84,33 @@ p {
   font-size: 1.2rem; /* Tamaño de fuente más grande */
 }
 
+/* Padeos para el padding sensei */
+
+.padding-vertical-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-vertical-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.padding-vertical-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.padding-left-1 {
+  padding-left: 1rem;
+}
+
+
 /* For rotations */
 
 .rotating {
   display: inline-block; /* Ensure the element rotates properly */
   animation: spin 5s linear infinite; /* Apply the animation */
-}
-
-.padding-vertical {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 @keyframes spin {
