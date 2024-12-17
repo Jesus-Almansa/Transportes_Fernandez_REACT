@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 function NavButton({ to, label }) {
   return (
     <Button 
-      component={Link} 
+      component={Link} // Replace the default 'button' element with a Link
       to={to} 
       color="inherit" 
       size="large" 

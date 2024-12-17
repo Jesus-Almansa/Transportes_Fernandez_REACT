@@ -18,8 +18,7 @@ function Header() {
           <Box className="header-logo-container">
             <Logo className="header-logo" />
           </Box>
-
-          {/* Navigation buttons centered */}
+          
           {!isMobile && (
             <Box className="nav-container">
               {routes.map(({ label, path }) => (

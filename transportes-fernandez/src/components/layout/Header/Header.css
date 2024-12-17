@@ -1,39 +1,52 @@
-/* Estilos para el header */
-
+/* Header general styles */
 .header-appbar {
   background-color: var(--rojo) !important;
-  /* Utiliza la variable de color definida en App.css */
   color: var(--blanco);
-  font-family: 'Roboto', ;
-  /* Define la fuente del header */
 }
 
 .header-toolbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.header-title {
-  flex-grow: 1;
-  /* Hace que el título ocupe el máximo espacio posible */
+/* Logo styling */
+.header-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
 }
 
-.header-button {
-  background-color: transparent;
-  color: var(--blanco);
-  /* Los botones heredan el color blanco del header */
+.header-logo {
+  height: auto; /* Adjust logo size as needed */
+  cursor: pointer;
 }
 
-.header-button:hover {
-  background-color: var(--blanco);
-  /* Añadir un efecto al pasar el ratón */
-  color: var(--rojo);
-}
-
+/* Navigation container centered */
 .nav-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  /* Ajusta según sea necesario; puedes usar `px`, `em`, etc., si prefieres */
+  flex: 2; /* Takes central space */
+  padding: 1rem;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Fixed padding for all states */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-container a:hover {
+  color: var(--rojo);
+  background-color: var(--blanco); /* Only change color and background */
+}
+
+/* Empty box for spacing */
+.header-placeholder {
+  flex: 1;
 }
