@@ -60,6 +60,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 /* Colores para los textos en linea*/
@@ -78,11 +79,11 @@ p {
 
 /* Clase para hacer el tamaño de letra */
 .large-text-title {
-  font-size: 3rem; /* Tamaño de fuente más grande */
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
 }
 
 .very-large-text-title {
-  font-size: 3.6rem; /* Tamaño de fuente más grande */
+  font-size: 3rem; /* Tamaño de fuente más grande */
 }
 
 .large-text-body {
