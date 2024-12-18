@@ -105,7 +105,7 @@ function Home() {
               <ul className="reasons-list text-white" style={{ listStyle: 'none', padding: 0 }}>
                 <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
                 <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
-                <li>&#10004; Innovación constante para mejorar la calidad de nuestros servicios.</li>
+                <li>&#10004; Respuesta inmediata y apoyo en todo momento, garantizando su tranquilidad.</li>
                 <li>&#10004; Comunicación abierta y trabajo en equipo en cada proyecto.</li>
                 <li>&#10004; Compromiso con la satisfacción y el éxito de nuestros clientes.</li>
               </ul>
@@ -151,6 +151,10 @@ function Home() {
           </div>
         </div>
 
+        <TextBox className='text-box text-box-Home-Servicios padding-vertical-2'>
+          En Transportes Fernández realizamos 3 tipos de transporte: maquinaria industrial, parques eólicos y cargas de dimensiones especiales. Nuestro equipo de expertos altamente cualificados se encarga de garantizar la máxima seguridad y eficacia en cada operación. Con una flota de vehículos adaptada a las necesidades del cliente, brindamos soluciones a medida que responden a los requerimientos específicos de cada cliente.
+        </TextBox>
+
         <h1 className='padding-vertical-1 text-red'>Donde lo transportamos</h1>
 
         <div className="enLinea">
@@ -180,10 +184,8 @@ function Home() {
               </Link>}
           />
         </div>
-        <TextBox className='text-box text-box-Home-Servicios'>
-          <p>
-            En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial. Con 70 años de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
-          </p>
+        <TextBox className='text-box text-box-Home-Servicios padding-vertical-2'>
+          La sede principal se encuentra ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde gestionamos los servicios de transporte regional en La Mancha, transporte por toda la península e islas y transporte a nivel internacional. Nuestra amplia red de colaboradores y socios nos permite ofrecer soluciones de transporte a medida en cualquier parte del mundo.
         </TextBox>
 
       </div>
@@ -192,9 +194,12 @@ function Home() {
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
       <Background color="#ab273c">
+        <div className='large-text-title text-white alinearEnColumna padding-vertical-down-3'>
+          <b>CONOCE AL EQUIPO</b>
+        </div>
         <div className="enLinea">
 
-          <div className="derecha text-red">
+          <div className="izquierda text-red negrita padding-izquierdo-3">
             <EmployeeCard
               className='ceo-card ceo-card-Home-left'
               name="Paz Fernández Lozano"
@@ -203,14 +208,10 @@ function Home() {
             />
           </div>
 
-          <div className="izquierda">
+          <div className="derecha">
 
-            <TextBox className="text-box text-box-Home-Equipo">
-              <div className='large-text-title justify-left text-white'>
-                <b>Conoce al Equipo</b>
-              </div>
-              <br />
-              <div className='large-text-body text-white'>
+            <TextBox className="text-box text-box-Home-Equipo padding-vertical-up-3">
+              <div className='text-body text-white padding-vertical-up-3'>
                 Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
                 <br />
                 <br />
