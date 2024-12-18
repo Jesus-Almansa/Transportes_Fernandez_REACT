@@ -1,11 +1,11 @@
 /* ScrollButton.css */
 .ScrollButton-button {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 3%;
+    right: 3%;
     background-color: var(--rojo);
     color: white;
-    padding: 10px;
+    padding: 0.5rem;
     border-radius: 4rem;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
