@@ -52,10 +52,7 @@
 /* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
-  margin-left: -30%; /* Margin mueve el cuadro */
-  margin-top: 8%;
-  padding: 1rem; /* Padding el contenido dentro del cuadro */
-  background-color: var(--rojo);
+  margin-left: -20%; /* Margin mueve el cuadro */
 }
 
 /* Bloque específico para Home */
