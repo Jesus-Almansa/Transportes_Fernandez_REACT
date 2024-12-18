@@ -14,9 +14,9 @@ import FlipCard from '../../components/features/FlipCard/FlipCard';
 import employees from '../../data/employees';
 
 // Imágenes
-import truckImage from '../../assets/Transporters Branding/SOCIAL MEDIA POST/1-02.jpg';
+import truckImage from '../../assets/TransportersBranding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../../assets/images/naruto.jpg';
-import laMadre from '../../assets/Transporters Branding/SEXIO/Editadas/laMadre.jpg';
+import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
 import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
@@ -27,13 +27,13 @@ import internacional from '../../assets/original_images/space.png';
 
 
 // Iconos
-import IconoServicios from '../../assets/Transporters Branding/icongraphy/1/Icons-28.png';
-import iconoLaMancha from '../../assets/Transporters Branding/icongraphy/1/Icons-72.png';
-import iconoValencia from '../../assets/Transporters Branding/icongraphy/1/Icons-73.png';
-import iconoInternacional from '../../assets/Transporters Branding/icongraphy/1/Icons-74.png';
-import iconoIndustrial from '../../assets/Transporters Branding/icongraphy/1/Icons-75.jpg';
-import iconoEolico from '../../assets/Transporters Branding/icongraphy/1/Icons-76.png';
-import iconoEspecial from '../../assets/Transporters Branding/icongraphy/1/Icons-77.png';
+import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons-28.png';
+import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/Icons-72.png';
+import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/Icons-73.png';
+import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/Icons-74.png';
+import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/Icons-75.jpg';
+import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/Icons-76.png';
+import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/Icons-77.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
