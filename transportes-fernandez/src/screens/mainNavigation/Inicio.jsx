@@ -52,8 +52,6 @@ function Home() {
         </h1>
 
         <div className="enLinea">
-          <TextBox className="text-box text-box-Home-Resumen">
-          </TextBox>
         </div>
       </div>
 
@@ -71,7 +69,7 @@ function Home() {
 
             </div>
             <div className='derecha'>
-              <TextBox className='text-box text-box-Home-Intro'>
+              <TextBox className='text-box text-box-Home-Intro text-body'>
 
                 En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
 
@@ -94,15 +92,15 @@ function Home() {
 
         <Background color="#1a2a36">
 
-          <h1 className='large-text-title text-white alinearEnColumna'>
+          <h1 className='very-large-text-title text-white alinearEnColumna padding-vertical-3'>
             5 Razones para elegirnos
           </h1>
           <TextBox className="text-box text-box-Home-Razones">
 
             <br />
-            <div className='large-text-body text-white'>
+            <div className='text-body text-white'>
 
-              <ul className="reasons-list text-white" style={{ listStyle: 'none', padding: 0 }}>
+              <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
                 <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
                 <li>&#10004; Respuesta inmediata y apoyo en todo momento, garantizando su tranquilidad.</li>
@@ -121,7 +119,7 @@ function Home() {
 
           <h1 className='very-large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
 
-          <h1 className='text-red large-text-title'>Lo que transportamos</h1>
+          <h1 className='text-red large-text-title padding-vertical-2'>Lo que transportamos</h1>
 
           <div className="enLinea">
             <FlipCard
@@ -151,8 +149,12 @@ function Home() {
           </div>
         </div>
 
-        <TextBox className='text-box text-box-Home-Servicios padding-vertical-2'>
-          En Transportes Fernández realizamos 3 tipos de transporte: maquinaria industrial, parques eólicos y cargas de dimensiones especiales. Nuestro equipo de expertos altamente cualificados se encarga de garantizar la máxima seguridad y eficacia en cada operación. Con una flota de vehículos adaptada a las necesidades del cliente, brindamos soluciones a medida que responden a los requerimientos específicos de cada cliente.
+        <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+          Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+
+          <div className='padding-vertical-1'></div>
+
+          Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
         </TextBox>
 
         <h1 className='padding-vertical-1 text-red'>Donde lo transportamos</h1>
@@ -184,8 +186,12 @@ function Home() {
               </Link>}
           />
         </div>
-        <TextBox className='text-box text-box-Home-Servicios padding-vertical-2'>
-          La sede principal se encuentra ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde gestionamos los servicios de transporte regional en La Mancha, transporte por toda la península e islas y transporte a nivel internacional. Nuestra amplia red de colaboradores y socios nos permite ofrecer soluciones de transporte a medida en cualquier parte del mundo.
+        <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+          Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+
+          <div className='padding-vertical-1'></div>
+
+          La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
         </TextBox>
 
       </div>
@@ -199,7 +205,7 @@ function Home() {
         </div>
         <div className="enLinea">
 
-          <div className="izquierda text-red negrita padding-izquierdo-3">
+          <div className="izquierda text-red negrita">
             <EmployeeCard
               className='ceo-card ceo-card-Home-left'
               name="Paz Fernández Lozano"
@@ -209,14 +215,10 @@ function Home() {
           </div>
 
           <div className="derecha">
-
-            <TextBox className="text-box text-box-Home-Equipo padding-vertical-up-3">
-              <div className='text-body text-white padding-vertical-up-3'>
-                Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
-                <br />
-                <br />
-                Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. Juntos, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
-              </div>
+            <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+              Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
+              <div className='padding-vertical-1'></div>
+              Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. Juntos, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
             </TextBox>
           </div>
         </div>
