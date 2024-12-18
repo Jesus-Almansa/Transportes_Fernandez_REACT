@@ -65,11 +65,9 @@ const Team = () => {
 
                     <br /><br />
 
-                    Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+                    El equipo de Transportes Fernández es más que un grupo de trabajo; somos una familia. A lo largo de los años, hemos crecido juntos, acompañados por empleados que han estado con nosotros desde nuestros inicios. Su esfuerzo, dedicación y compromiso han sido la base sobre la que hemos construido nuestra evolución, pasando de ser una empresa local a consolidarnos como un referente a nivel nacional.
 
-                    La sede principal de Transportes Fernández está ubicada en **Villarrobledo (Albacete)**, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
-
-                    El equipo está compuesto por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción del cliente. Cada integrante aporta una combinación única de experiencia, creatividad y pasión, lo que garantiza la oferta de soluciones personalizadas y de alta calidad. En Transportes Fernández, se valoran el trabajo en equipo, la innovación y la comunicación abierta, pilares fundamentales para gestionar cada proyecto con cuidado y dedicación. Este compromiso permite superar las expectativas de los clientes y consolidar el liderazgo en el sector del transporte industrial.
+                    Cada miembro de nuestro equipo aporta algo único, y juntos hemos creado un ambiente de confianza y colaboración que define quiénes somos. En Transportes Fernández valoramos a las personas que forman parte de esta familia y trabajamos codo a codo para superar los desafíos, celebrando cada logro como un triunfo compartido. Es este espíritu el que nos impulsa a seguir creciendo y mejorando cada día.
                 </TextBox>
             </Background>
 
