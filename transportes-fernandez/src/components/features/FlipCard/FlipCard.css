@@ -1,7 +1,8 @@
 .flip-card {
-    perspective: 62.5rem;  /* Perspective relative to the root font size (1000px ÷ 16 = 62.5rem) */
-    width: 25rem;
-    height: 25rem;    
+    perspective: 62.5rem;
+    /* Perspective relative to the root font size (1000px ÷ 16 = 62.5rem) */
+    width: 23rem;
+    height: 23rem;
 }
 
 .flip-card-inner {
@@ -13,7 +14,8 @@
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(-180deg); /* Rotate the card on hover */
+    transform: rotateY(-180deg);
+    /* Rotate the card on hover */
 }
 
 .flip-card-front,
@@ -21,7 +23,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide the back face when not visible */
+    backface-visibility: hidden;
+    /* Hide the back face when not visible */
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -45,20 +48,25 @@
     background-color: var(--azul);
     color: white;
     display: flex;
-    flex-direction: column; /* Stack icon and text */
+    flex-direction: column;
+    /* Stack icon and text */
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    padding: 20px;
+    padding: 0%;
     text-align: center;
 }
 
 .icon-container {
-    margin-bottom: 10px; /* Space between the icon and the text */
+    margin-bottom: 0%;
+    /* Space between the icon and the text */
 }
 
 .icon-container img {
-    width: 300px; /* Adjust the size of the icon */
-    height: 300px;
-    object-fit: contain; /* Ensure the image fits well */
+    width: 10rem;
+    /* Adjust the size of the icon */
+    height: 10rem;
+
+    object-fit: contain;
+    /* Ensure the image fits well */
 }
