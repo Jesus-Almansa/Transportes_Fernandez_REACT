@@ -62,6 +62,14 @@ const Team = () => {
                 </div>
                 <TextBox className="text-box text-box-Equipo text-white">
                     El equipo de Transportes Fernández es una familia. Nos caracterizamos por haber crecido junto a nuestros empleados de toda la vida. La empresa ha pasado de ser una empresa local a una empresa nacional gracias al esfuerzo y dedicación de todos los trabajadores.
+
+                    <br /><br />
+
+                    Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+
+                    La sede principal de Transportes Fernández está ubicada en **Villarrobledo (Albacete)**, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
+
+                    El equipo está compuesto por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción del cliente. Cada integrante aporta una combinación única de experiencia, creatividad y pasión, lo que garantiza la oferta de soluciones personalizadas y de alta calidad. En Transportes Fernández, se valoran el trabajo en equipo, la innovación y la comunicación abierta, pilares fundamentales para gestionar cada proyecto con cuidado y dedicación. Este compromiso permite superar las expectativas de los clientes y consolidar el liderazgo en el sector del transporte industrial.
                 </TextBox>
             </Background>
 
