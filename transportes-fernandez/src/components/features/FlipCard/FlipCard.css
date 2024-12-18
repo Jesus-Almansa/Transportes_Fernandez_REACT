@@ -1,7 +1,7 @@
 .flip-card {
-    perspective: 1000px; /* Enable 3D perspective */
-    width: 600px;
-    height: 600px;
+    perspective: 62.5rem;  /* Perspective relative to the root font size (1000px ÷ 16 = 62.5rem) */
+    width: 25rem;
+    height: 25rem;    
 }
 
 .flip-card-inner {
