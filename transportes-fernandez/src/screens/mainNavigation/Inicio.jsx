@@ -47,7 +47,7 @@ function Home() {
 
       {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
       <div id='Intro' className="alinearEnColumna">
-        <h1 className='text-red very-large-text-title padding-vertical-3'>
+        <h1 className='very-large-text-title padding-vertical-3 text-box-Home-IntroTitle'>
           <b>BIENVENIDO A TRANSPORTES FERNÁNDEZ</b>
         </h1>
 
@@ -72,18 +72,17 @@ function Home() {
             </div>
             <div className='derecha'>
               <TextBox className='text-box text-box-Home-Intro'>
-                <h1 className='large-text-title text-white'>Entregando calidad</h1>
-                <p>
-                  En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
 
-                  <div className='padding-vertical-1'></div>
+                En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
 
-                  Con{" "}
-                  <Link to={getPathByLabel('aniversario')} className="text-red">
-                    <strong>70 años</strong>
-                  </Link>{' '}
-                  de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
-                </p>
+                <div className='padding-vertical-1'></div>
+
+                Con{" "}
+                <Link to={getPathByLabel('aniversario')} className="text-red">
+                  <strong>70 años</strong>
+                </Link>{' '}
+                de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+
               </TextBox>
             </div>
           </div>
@@ -95,11 +94,11 @@ function Home() {
 
         <Background color="#1a2a36">
 
-
+          <h1 className='large-text-title text-white alinearEnColumna'>
+            5 Razones para elegirnos
+          </h1>
           <TextBox className="text-box text-box-Home-Razones">
-            <div className='large-text-title text-white'>
-              <b>5 Razones para elegirnos</b>
-            </div>
+
             <br />
             <div className='large-text-body text-white'>
 
@@ -108,7 +107,7 @@ function Home() {
                 <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
                 <li>&#10004; Innovación constante para mejorar la calidad de nuestros servicios.</li>
                 <li>&#10004; Comunicación abierta y trabajo en equipo en cada proyecto.</li>
-                <li>&#10004; Compromiso con la satisfacción total y el éxito de nuestros clientes.</li>
+                <li>&#10004; Compromiso con la satisfacción y el éxito de nuestros clientes.</li>
               </ul>
             </div>
           </TextBox>
