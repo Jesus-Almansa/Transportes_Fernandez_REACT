@@ -1,5 +1,6 @@
 import React from 'react';
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
+import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
 import TextBox from '../../components/layout/Box/TextBox';
 
@@ -10,36 +11,36 @@ import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
 
-
-
 const Team = () => {
     return (
-        <div>
-            <h1>El talento detrás de nuestros logros</h1>
-            <div className='ceo-container'>
+        <div id='Equipo' >
+            <h1 className='alinearEnColumna'>El talento detrás de nuestros logros</h1>
+            <div className='alinearEnColumna'>
                 <div className='enLinea'>
-                    <EmployeeCard
-                        className='ceo-card'
-                        name="Paz Fernández Lozano"
-                        position="CEO"
-                        imageUrl={laMadre}>
-                    </EmployeeCard>
-                    <EmployeeCard
-                        className='ceo-card'
-                        name="Jesús Tomás Almansa Ortega"
-                        position="Apoyo incondicional"
-                        imageUrl={narutoImage}>
-                    </EmployeeCard>
+                    <div className="izquierda text-red">
+                        <CEOCard
+                            name="Paz Fernández Lozano"
+                            position="CEO"
+                            imageUrl={laMadre}
+                        />
+                    </div>
+                    <div className="derecha text-red">
+                        <CEOCard
+                            name="Jesús Tomás Almansa"
+                            position="Apoyo incondicional"
+                            imageUrl={narutoImage}
+                        />
+                    </div>
                 </div>
             </div>
-            <div id='Fundadores' className='alinearEnColumna'>
+            <div className='alinearEnColumna'>
                 <h1>De estudiante de derecho a empresaria</h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Home-Resumen">
+                    <TextBox className="text-box text-box-Equipo-CEO">
                         Paz, natural de Villarrobledo (Albacete), es una empreseria con más de 40 años de experiencia en el sector del transporte. Cogió las riendas del negocio y de su familia desde muy joven, a los 18 años. Desde entonces, ha conseguido llevar la empresa a lo más alto, con esfuerzo y dedicación, en una industria tan competitiva como es el transporte de mercancías.
                     </TextBox>
                 </div>
-                <TextBox className="text-box text-box-Home-Resumen">
+                <TextBox className="text-box text-box-Equipo-CEO">
                     Jesús, marido de Paz y eventualmente informático, administrador, repartidor, conductor, mecánico, y cualquier otra cosa que se le ocurra a la jefa. Él es el apoyo incondicional de Paz y siempre está dispuesto a ayudar a su esposa en lo que haga falta.
                 </TextBox>
             </div>
@@ -71,23 +72,28 @@ const Team = () => {
                 </TextBox>
             </Background>
 
-            <h1>Fundadores de la empresa</h1>
-            <div id='Fundadores' className='ceo-container'>
+            <h1 className='alinearEnColumna'>Fundadores de la empresa</h1>
+            <div className='alinearEnColumna'>
                 <div className='enLinea'>
-                    <EmployeeCard
-                        className='ceo-card'
-                        name="José María Fernández"
-                        position="Fundador"
-                        imageUrl={roshiImage}>
-                    </EmployeeCard>
-                    <EmployeeCard
-                        className='ceo-card'
-                        name="Asunción Lozano"
-                        position="Fundadora"
-                        imageUrl={marisaImage}>
-                    </EmployeeCard>
+                    <div className="izquierda text-red">
+                        <CEOCard
+                            name="José María Fernández"
+                            position="Fundador"
+                            imageUrl={roshiImage}
+                        />
+                    </div>
+                    <div className="derecha text-red">
+                        <CEOCard
+                            name="María Asunción Lozano"
+                            position="Fundadora"
+                            imageUrl={marisaImage}
+                        />
+                    </div>
                 </div>
             </div>
+
+
+
             <div className='alinearEnColumna'>
                 <h1>Su historia</h1>
                 <div className='enLinea'>
