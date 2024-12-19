@@ -57,7 +57,9 @@ const Team = () => {
                             name={employee.name}
                             position={employee.position}
                             imageUrl={employee.imageUrl}
-                            className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`}
+                            number={employee.number}
+                            mail={employee.mail}
+                            className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`} // Ejemplo con clase condicional
                         />
                     ))}
                 </div>
