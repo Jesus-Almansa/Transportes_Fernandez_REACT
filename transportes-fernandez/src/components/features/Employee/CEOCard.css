@@ -4,7 +4,7 @@
     padding: 10px;
     margin: 10px;
     background-color: #fff;
-    width: 450px; /* Ancho fijo para igualar diseño */
+    width: 550px;
     transition: transform 0.2s ease-in-out;
     text-align: left;
 }
@@ -15,8 +15,8 @@
 
 .ceo-image {
     border-radius: 8%; /* Forma circular */
-    width: 450px; /* Tamaño uniforme para las imágenes */
-    height: 450px;
+    width: 550px; /* Tamaño uniforme para las imágenes */
+    height: 550px;
     object-fit: cover; /* Recorta correctamente la imagen */
     margin-bottom: 16px;
 }
