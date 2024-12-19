@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Componentes
 import Carousel from '../../components/features/Carousel/Carousel';
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
+import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
 import ContactForm from '../../components/features/ContactForm/ContactForm';
 import TextBox from '../../components/layout/Box/TextBox';
@@ -205,9 +206,8 @@ function Home() {
         </div>
         <div className="enLinea">
 
-          <div className="izquierda text-red negrita">
-            <EmployeeCard
-              className='ceo-card ceo-card-Home-left'
+          <div className="izquierda text-red padding-izquierdo-2">
+            <CEOCard
               name="Paz Fernández Lozano"
               position="CEO"
               imageUrl={laMadre}

@@ -45,7 +45,8 @@
 /* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
-  margin-left: -20%; /* Margin mueve el cuadro */
+  margin-left: -25%; /* Margin mueve el cuadro */
+  margin-top: 5%; /* Margin mueve el cuadro */
 }
 
 /* Bloque específico para Home */
