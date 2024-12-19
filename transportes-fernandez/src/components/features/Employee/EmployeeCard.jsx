@@ -1,28 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './EmployeeCard.css';
-import './CEOCard.css';
 
-const EmployeeCard = ({ name, position, imageUrl, className }) => {
-    // Combina la clase predeterminada `employee-card` con cualquier clase adicional proporcionada
-    const classes = `employee-card ${className || ''}`.trim();
-
+const EmployeeCard = ({ name, position, imageUrl }) => {
     return (
-        <div className={classes}>
+        <div className="employee-card">
             <img src={imageUrl} alt={`${name}`} className="employee-image" />
-            <div className="employee-info">
-                <h3>{name}</h3>
-                <p>{position}</p>
+            <div>
+                <h3 className="employee-name">{name}</h3>
+                <p className="employee-position">{position}</p>
             </div>
         </div>
     );
 };
 
 EmployeeCard.propTypes = {
-    className: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired, // Required name prop
+    position: PropTypes.string.isRequired, // Required position prop
+    imageUrl: PropTypes.string.isRequired, // Required image URL prop
 };
 
 export default EmployeeCard;
