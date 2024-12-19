@@ -23,7 +23,7 @@
 
 /* Estilos globales */
 html {
-  font-size: 16px; /* Tamaño de fuente base fijo */
+  font-size: 15px; /* Tamaño de fuente base fijo */
   scroll-behavior: smooth;
 }
 
@@ -95,11 +95,11 @@ h1, h2, h3, p {
 }
 
 .text-body {
-  font-size: 1.4375rem; /* 23px a rem */
+  font-size: 1rem; 
 }
 
 .large-text-body {
-  font-size: 1rem; /* 16px a rem */
+  font-size: 1.6rem; 
 }
 
 .negrita {
