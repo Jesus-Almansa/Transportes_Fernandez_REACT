@@ -6,7 +6,7 @@
 }
 /* Clases específicas para variaciones de los bloques de texto */
 
-/* Bloque específico para Home */
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
 .text-box-Home-IntroTitle {
   width: 100%;
   color: var(--rojo);
@@ -33,23 +33,35 @@
   margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
 }
 
-.text-box-Home-Aniversario {
-  width: 100%;
-  padding: 3%; /* Ajuste de padding específico */
-  color: var(--blanco);
-  background-color: var(--rojo);
-}
-
-/* Bloque específico para equipo en Home */
-
-/* Bloque específico para equipo en Home */
 .text-box-Home-Equipo {
   width: 100%;
   margin-left: -25%; /* Margin mueve el cuadro */
   margin-top: 5%; /* Margin mueve el cuadro */
 }
 
-/* Bloque específico para Home */
+/* Bloque específico para Servicios */
+.text-box-Servicios {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem; /* Ajuste de tamaño de fuente */
+}
+
+/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO */
+.text-box-Equipo-CEO {
+  max-width: 90%; /* Ancho específico para este bloque */
+  background-color: var(--blanco); /* Fondo blanco */
+  border-radius: 1rem; /* Bordes redondeados por defecto */
+  margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
+}
+
+/* Bloque específico para Equipo */
+.text-box-Equipo {
+  width: 90%;
+  padding: 2rem; /* Ajuste de padding */
+  margin-right: 1rem; /* Ajuste de margen derecho */
+  background-color: var(--rojo);
+}
+
+/* ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO*/
 .text-box-Empresa-aniversario {
   padding: 1 rem; /* Padding superior, inferior y derecho */
   margin-top: 10%; /* Espaciado superior adicional */
@@ -60,29 +72,13 @@
   border-radius: 0.3rem; /* Bordes menos redondeados */
   padding: 2rem; /* Padding en unidades relativas */
 }
-
-/* Bloque específico para Servicios */
-.text-box-Servicios {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem; /* Ajuste de tamaño de fuente */
-}
-
-/* Bloque específico para Equipo (CEO) */
-.text-box-Equipo-CEO {
+.text-box-Home-Aniversario {
   width: 100%;
-  padding: 2rem; /* Ajuste de padding específico */
+  padding: 3%; /* Ajuste de padding específico */
   color: var(--blanco);
   background-color: var(--rojo);
-  margin-right: 1rem; /* Ajuste de margen derecho */
 }
 
-/* Bloque específico para Equipo */
-.text-box-Equipo {
-  width: 90%;
-  padding: 2rem; /* Ajuste de padding */
-  margin-right: 1rem; /* Ajuste de margen derecho */
-  background-color: var(--rojo);
-}
 
 /* Media Queries para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
