@@ -48,7 +48,7 @@ function Home() {
 
       {/* INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION INTRODUCCION*/}
       <div id='Intro' className="alinearEnColumna">
-        <h1 className='very-large-text-title padding-vertical-3 text-box-Home-IntroTitle'>
+        <h1 className='large-text-title padding-vertical-3 text-box-Home-IntroTitle'>
           <b>BIENVENIDO A TRANSPORTES FERNÁNDEZ</b>
         </h1>
 
@@ -93,7 +93,7 @@ function Home() {
 
         <Background color="#1a2a36">
 
-          <h1 className='very-large-text-title text-white alinearEnColumna padding-vertical-3'>
+          <h1 className='large-text-title text-white alinearEnColumna padding-vertical-3'>
             5 Razones para elegirnos
           </h1>
           <TextBox className="text-box text-box-Home-Razones">
@@ -118,7 +118,7 @@ function Home() {
         {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
         <div id='Servicios' className="alinearEnColumna">
 
-          <h1 className='very-large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+          <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
 
           <h1 className='text-red large-text-title padding-vertical-2'>Lo que transportamos</h1>
 
@@ -218,7 +218,7 @@ function Home() {
             <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
               Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
               <div className='padding-vertical-1'></div>
-              Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. Juntos, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
+              Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
             </TextBox>
           </div>
         </div>
@@ -234,6 +234,8 @@ function Home() {
               name={employee.name}
               position={employee.position}
               imageUrl={employee.imageUrl}
+              number={employee.number}
+              mail={employee.mail}
               className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`} // Ejemplo con clase condicional
             />
           ))}
@@ -244,10 +246,12 @@ function Home() {
       </Background>
 
 
-      <div className="enLinea">
-        <h1>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
-      </div>
-      <ContactForm />
+      <Background color="#1a2a36">
+        <div className="alinearEnColumna">
+          <h1 className='text-white large-text-title'>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
+        </div>
+      </Background>
+
     </div>
   );
 }
