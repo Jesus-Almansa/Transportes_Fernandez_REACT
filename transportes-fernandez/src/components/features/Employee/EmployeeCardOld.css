@@ -6,15 +6,12 @@
     margin: 10px;
     background-color: #fff;
     width: 350px;
-    height: 430px;
-    position: relative; /* Enable absolute positioning for child elements */
-    overflow: hidden; /* Prevent content overflow */
-    transition: transform 0.4s ; /* Smooth scaling */
+    transition: transform 0.2s;
+
 }
 
 .employee-card:hover {
-    transform: scale(1.1);
-    height: 500px;
+    transform: scale(1.05);
 }
 
 .employee-card:hover .employee-number,
