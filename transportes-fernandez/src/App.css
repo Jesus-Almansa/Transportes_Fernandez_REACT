@@ -1,7 +1,7 @@
 /* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-/* Variables de color */
+/* Variables de color y espaciados */
 :root {
   --rojo: #ab273c; /* Rojo principal */
   --azul: #1a2a36; /* Color oscuro */
@@ -9,6 +9,15 @@
   --negro: #171717; /* Negro */
   --background-light: #f4f4f4; /* Fondo claro */
   --gris: #808080; /* Gris */
+
+  /* Variables de padding */
+  --padding-vertical-1: 2rem;
+  --padding-vertical-2: 3rem;
+  --padding-vertical-3: 4rem;
+  --padding-horizontal-1: 2rem;
+  --padding-horizontal-2: 3rem;
+  --padding-horizontal-3: 4rem;
+  --padding-horizontal-large: 20%;
 }
 
 /* Estilos globales */
@@ -25,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: visible !important;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Ajustado a rem */
   scroll-behavior: smooth;
 }
 
@@ -39,7 +48,7 @@ h1, h2, h3, p {
   display: flex;
   justify-content: space-between; /* Ajusta el espacio entre los elementos */
   align-items: flex-start;
-  gap: 20px; /* Espacio uniforme en píxeles */
+  gap: 1.25rem; /* Espacio uniforme en rem */
 }
 
 .izquierda, .derecha {
@@ -77,19 +86,19 @@ h1, h2, h3, p {
 
 /* Tamaños de texto */
 .large-text-title {
-  font-size: 40px; /* Tamaño de fuente absoluto */
+  font-size: 2.5rem; /* Tamaño en rem */
 }
 
 .very-large-text-title {
-  font-size: 48px;
+  font-size: 3rem; /* Tamaño en rem */
 }
 
 .text-body {
-  font-size: 23px;
+  font-size: 1.4375rem; /* 23px a rem */
 }
 
 .large-text-body {
-  font-size: 16px;
+  font-size: 1rem; /* 16px a rem */
 }
 
 .negrita {
@@ -98,66 +107,66 @@ h1, h2, h3, p {
 
 /* Espaciados */
 .padding-vertical-1 {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: var(--padding-vertical-1);
+  padding-bottom: var(--padding-vertical-1);
 }
 
 .padding-vertical-2 {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: var(--padding-vertical-2);
+  padding-bottom: var(--padding-vertical-2);
 }
 
 .padding-vertical-3 {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: var(--padding-vertical-3);
+  padding-bottom: var(--padding-vertical-3);
 }
 
 .padding-vertical-up-1 {
-  padding-top: 32px;
+  padding-top: var(--padding-vertical-1);
 }
 
 .padding-vertical-up-2 {
-  padding-top: 48px;
+  padding-top: var(--padding-vertical-2);
 }
 
 .padding-vertical-up-3 {
-  padding-top: 64px;
+  padding-top: var(--padding-vertical-3);
 }
 
 .padding-vertical-down-1 {
-  padding-bottom: 32px;
+  padding-bottom: var(--padding-vertical-1);
 }
 
 .padding-vertical-down-2 {
-  padding-bottom: 32px;
+  padding-bottom: var(--padding-vertical-2);
 }
 
 .padding-vertical-down-3 {
-  padding-bottom: 64px;
+  padding-bottom: var(--padding-vertical-3);
 }
 
 .padding-izquierdo-1 {
-  padding-left: 32px;
+  padding-left: var(--padding-horizontal-1);
 }
 
 .padding-izquierdo-2 {
-  padding-left: 48px;
+  padding-left: var(--padding-horizontal-2);
 }
 
 .padding-izquierdo-3 {
-  padding-left: 64px;
+  padding-left: var(--padding-horizontal-large);
 }
 
 .padding-derecho-1 {
-  padding-right: 32px;
+  padding-right: var(--padding-horizontal-1);
 }
 
 .padding-derecho-2 {
-  padding-right: 48px;
+  padding-right: var(--padding-horizontal-2);
 }
 
 .padding-derecho-3 {
-  padding-right: 64px;
+  padding-right: var(--padding-horizontal-3);
 }
 
 /* Animaciones */
@@ -178,7 +187,7 @@ h1, h2, h3, p {
 /* Media Queries */
 @media (max-width: 428px) {
   body {
-    font-size: 14px; /* Ajusta el tamaño de la fuente en móviles */
+    font-size: 0.875rem; /* Ajusta el tamaño de la fuente en móviles */
   }
 
   p,
