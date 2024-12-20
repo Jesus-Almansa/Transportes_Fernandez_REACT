@@ -25,6 +25,7 @@ import equipamientoIndustrial from '../../assets/original_images/equipamienoIndu
 import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
 import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
 import internacional from '../../assets/original_images/space.png';
+import españa from '../../assets/original_images/españakbron.png';
 
 
 // Iconos
@@ -246,11 +247,20 @@ function Home() {
       </Background>
 
 
-      <Background color="#1a2a36">
+      <Background
+        color="#1a2a36" // Hexadecimal color
+        transparency={0.9} // Transparency instead of opacity
+        imageUrl={españa} // España map as background
+      >
         <div className="alinearEnColumna">
-          <h1 className='text-white large-text-title'>¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
+          <div className="padding-vertical-3"></div>
+          <h1 className="text-white large-text-title">¿Tienes alguna duda?</h1>
+          <div className="padding-vertical-3"></div>
+          <h1 className="text-white large-text-title">Ponte en contacto con nosotros</h1>
+          <div className="padding-vertical-3"></div>
         </div>
       </Background>
+
 
     </div>
   );
