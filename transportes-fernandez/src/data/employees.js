@@ -21,7 +21,7 @@ const employees = [
     position: "Conductor",
     imageUrl: "https://unavatar.io/github/rauulpastor",
     number: "+34 669 354 140",
-    mail: "juanjo@transportesfernandez.es"
+    mail: "juanjose@transportesfernandez.es"
   },
   {
     id: 4,
