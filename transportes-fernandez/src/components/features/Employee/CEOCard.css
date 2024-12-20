@@ -34,3 +34,27 @@
     color: var(--negro);
     margin: 8px 0;
 }
+
+.ceo-number {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--negro);
+    margin: 0px 8px;
+
+    /* Initially hide the number */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+}
+
+.ceo-mail {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--negro);
+    margin: 0px 8px;
+
+    /* Initially hide the number */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
