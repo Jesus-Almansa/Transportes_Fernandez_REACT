@@ -1,7 +1,7 @@
 .section-background {
     position: relative; /* Enable relative positioning for pseudo-elements */
     width: 100vw; /* Full viewport width */
-    padding: 5rem 0; /* Vertical padding */
+    padding: 0rem 0; /* Vertical padding */
     overflow: hidden; /* Prevent overflow */
     background-size: cover; /* Ensure background image covers the section */
     background-position: center; /* Center the background image */
