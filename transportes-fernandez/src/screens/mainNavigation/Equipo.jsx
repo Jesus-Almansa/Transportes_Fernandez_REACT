@@ -97,7 +97,7 @@ const Team = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1>Su historia</h1>
+                <h1 className='padding-vertical-4'>Su historia</h1>
                 <div className='enLinea'>
                     <TextBox className="text-box text-box-Home-Resumen">
                         José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
