@@ -93,8 +93,8 @@ function Home() {
         {/* 5 RAZONES POR LAS QUE ELEGIRNOS 5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS */}
 
         <Background color="#1a2a36">
-
-          <h1 className='large-text-title text-white alinearEnColumna padding-vertical-3'>
+          <div className="padding-vertical-2"></div>
+          <h1 className='large-text-title text-white alinearEnColumna'>
             5 Razones para elegirnos
           </h1>
           <TextBox className="text-box text-box-Home-Razones">
@@ -113,6 +113,7 @@ function Home() {
           </TextBox>
           <div>
           </div>
+          <div className="padding-vertical-2"></div>
         </Background>
 
 
@@ -173,7 +174,7 @@ function Home() {
           />
           <FlipCard
             frontImage={valencia}
-            backText="Transporte por toda península e islas"
+            backText="Transporte por toda la península e islas"
             icon={
               <Link to={getPathByLabel("Aniversario")}>
                 <img src={iconoValencia} alt='iconValencia' />
@@ -203,6 +204,7 @@ function Home() {
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
       <Background color="#ab273c">
         <div className='large-text-title text-white alinearEnColumna padding-vertical-down-3'>
+          <div className="padding-vertical-2"></div>
           <b>CONOCE AL EQUIPO</b>
         </div>
         <div className="enLinea">
@@ -244,6 +246,7 @@ function Home() {
 
         <div>
         </div>
+        <div className="padding-vertical-2"></div>
       </Background>
 
 
@@ -253,11 +256,11 @@ function Home() {
         imageUrl={españa} // España map as background
       >
         <div className="alinearEnColumna">
-          <div className="padding-vertical-3"></div>
+          <div className="padding-vertical-2"></div>
           <h1 className="text-white large-text-title">¿Tienes alguna duda?</h1>
-          <div className="padding-vertical-3"></div>
+          <div className="padding-vertical-1"></div>
           <h1 className="text-white large-text-title">Ponte en contacto con nosotros</h1>
-          <div className="padding-vertical-3"></div>
+          <div className="padding-vertical-2"></div>
         </div>
       </Background>
 
