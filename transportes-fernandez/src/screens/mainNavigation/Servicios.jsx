@@ -22,7 +22,6 @@ import internacional from '../../assets/original_images/space.png';
 import españa from '../../assets/original_images/españakbron.png';
 import españa2 from '../../assets/original_images/españakbron22.png';
 import nave from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7901-Pano.jpg';
-;
 
 
 // Iconos
