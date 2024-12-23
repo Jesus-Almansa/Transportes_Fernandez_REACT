@@ -26,6 +26,7 @@ import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
 import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
 import internacional from '../../assets/original_images/space.png';
 import españa from '../../assets/original_images/españakbron.png';
+import españa2 from '../../assets/original_images/españakbron22.png';
 
 
 // Iconos
@@ -214,6 +215,9 @@ function Home() {
               name="Paz Fernández Lozano"
               position="CEO"
               imageUrl={laMadre}
+              number="+34 669 354 145"
+              mail="paz@transportesfernandez.es"
+              hoverable={true}
             />
           </div>
 
@@ -230,7 +234,7 @@ function Home() {
 
         <br />
 
-        <div className="employees-container text-red">
+        <div className="employees-container ">
           {employees.map((employee, index) => (
             <EmployeeCard
               key={employee.id}
@@ -239,7 +243,8 @@ function Home() {
               imageUrl={employee.imageUrl}
               number={employee.number}
               mail={employee.mail}
-              className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`} // Ejemplo con clase condicional
+              className={`employee-card ${index % 2 === 0 ? 'highlight' : ''}`}
+              hoverable={true}
             />
           ))}
         </div>
@@ -253,13 +258,16 @@ function Home() {
       <Background
         color="#1a2a36" // Hexadecimal color
         transparency={0.9} // Transparency instead of opacity
-        imageUrl={españa} // España map as background
+        imageUrl={españa2} // España map as background
       >
         <div className="alinearEnColumna">
           <div className="padding-vertical-2"></div>
-          <h1 className="text-white large-text-title">¿Tienes alguna duda?</h1>
+          <h1 className="text-white large-text-title">¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
           <div className="padding-vertical-1"></div>
-          <h1 className="text-white large-text-title">Ponte en contacto con nosotros</h1>
+          <h1 className="text-white large-text-title"></h1>
+          <div className="padding-vertical-2"></div>
+          <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
+          <h1 className="text-white large-text-title">Oficina de Valencia - 963 42 15 85</h1>
           <div className="padding-vertical-2"></div>
         </div>
       </Background>

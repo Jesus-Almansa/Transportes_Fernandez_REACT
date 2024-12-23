@@ -9,7 +9,7 @@
     height: 430px;
     position: relative; /* Enable absolute positioning for child elements */
     overflow: hidden; /* Prevent content overflow */
-    transition: transform 0.4s ; /* Smooth scaling */
+    transition: transform 0.4s; /* Smooth scaling */
 }
 
 .employee-card:hover {
@@ -24,6 +24,18 @@
     visibility: visible;
 }
 
+/* Disable hover effect for cards with the no-hover class */
+.employee-card.no-hover:hover {
+    transform: none;
+    height: 430px;
+}
+
+.employee-card.no-hover:hover .employee-number,
+.employee-card.no-hover:hover .employee-mail {
+    transform: none;
+    opacity: 0;
+    visibility: hidden;
+}
 
 .employee-image {
     border-radius: 8%;
@@ -64,7 +76,7 @@
     color: var(--negro);
     margin: 0px 8px;
 
-    /* Initially hide the number */
+    /* Initially hide the mail */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -73,9 +85,7 @@
 .employees-container {
     display: flex;
     gap: 120px;
-    /* Espacio entre cada tarjeta */
-    flex-wrap: wrap;
-    /* Permite que las tarjetas se envuelvan si no caben en una fila */
-    justify-content: center;
-    /* Ajusta la alineación según sea necesario */
+    /* Space between each card */
+    flex-wrap: wrap; /* Allow cards to wrap if they don't fit in a single row */
+    justify-content: center; /* Align cards in the center */
 }

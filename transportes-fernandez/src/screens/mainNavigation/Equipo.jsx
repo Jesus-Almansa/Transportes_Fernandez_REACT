@@ -6,6 +6,7 @@ import TextBox from '../../components/layout/Box/TextBox';
 
 import narutoImage from '../../assets/images/naruto.jpg';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
+import laMadre2 from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7783.jpg';
 import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
@@ -22,13 +23,16 @@ const Team = () => {
                             name="Paz Fernández Lozano"
                             position="CEO"
                             imageUrl={laMadre}
+                            number="+34 669 354 145"
+                            mail="paz@transportesfernandez.es"
                         />
                     </div>
                     <div className="derecha text-red">
                         <CEOCard
                             name="Jesús Tomás Almansa"
                             position="Apoyo incondicional"
-                            imageUrl={narutoImage}
+                            imageUrl={laMadre2}
+                            hoverable={false}
                         />
                     </div>
                 </div>
@@ -82,6 +86,7 @@ const Team = () => {
                             name="José María Fernández"
                             position="Fundador"
                             imageUrl={roshiImage}
+                            hoverable={false}
                         />
                     </div>
                     <div className="derecha text-red">
@@ -89,6 +94,7 @@ const Team = () => {
                             name="María Asunción Lozano"
                             position="Fundadora"
                             imageUrl={marisaImage}
+                            hoverable={false}
                         />
                     </div>
                 </div>
