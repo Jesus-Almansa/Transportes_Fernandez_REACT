@@ -15,7 +15,11 @@ import employees from '../../data/employees';
 const Team = () => {
     return (
         <div id='Equipo' >
-            <h1 className='alinearEnColumna'>El talento detrás de nuestros logros</h1>
+
+            <div className='padding-vertical-1' ></div>
+            <h1 className='large-text-title text-box-Equipo-title '>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
+            <div className='padding-vertical-1' ></div>
+
             <div className='alinearEnColumna'>
                 <div className='enLinea'>
                     <div className="izquierda text-red">
@@ -38,7 +42,9 @@ const Team = () => {
                 </div>
             </div>
             <div className='alinearEnColumna'>
+                <div className='padding-vertical-1' ></div>
                 <h1>De estudiante de derecho a empresaria</h1>
+                <div className='padding-vertical-1' ></div>
                 <div className='enLinea'>
                     <TextBox className="text-box text-box-Equipo-CEO">
                         Paz, natural de Villarrobledo (Albacete), es una empreseria con más de 40 años de experiencia en el sector del transporte. Cogió las riendas del negocio y de su familia desde muy joven, a los 18 años. Desde entonces, ha conseguido llevar la empresa a lo más alto, con esfuerzo y dedicación, en una industria tan competitiva como es el transporte de mercancías.
@@ -49,10 +55,13 @@ const Team = () => {
                 </TextBox>
             </div>
 
+            <div className='padding-vertical-1' ></div>
+
             <Background color="#ab273c">
-                <div className='text-white'>
-                    <h1>Trabajadores</h1>
+                <div className='text-white padding-vertical-up-3'>
+                    <h1>TRABAJADORES</h1>
                 </div>
+                <div className='text-white padding-vertical-down-3'></div>
 
                 <div className="employees-container">
                     {employees.map((employee, index) => (
