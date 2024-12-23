@@ -20,8 +20,8 @@ CEOCard.propTypes = {
     name: PropTypes.string.isRequired, // Required name prop
     position: PropTypes.string.isRequired, // Required position prop
     imageUrl: PropTypes.string.isRequired, // Required image URL prop
-    number: PropTypes.string.isRequired,
-    mail: PropTypes.string.isRequired,
+    number: PropTypes.string,
+    mail: PropTypes.string,
     hoverable: PropTypes.bool, // Optional prop to enable/disable hover
 };
 
