@@ -119,7 +119,7 @@ function Home() {
 
 
         {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
-        <div id='Servicios' className="alinearEnColumna">
+        <div id='Home-Servicios' className="alinearEnColumna">
 
           <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
 
@@ -164,7 +164,6 @@ function Home() {
         <h1 className='padding-vertical-1 text-red'>Donde lo transportamos</h1>
 
         <div className="enLinea">
-
           <FlipCard
             frontImage={laMancha}
             backText={"Transporte regional en La Mancha"}
@@ -177,7 +176,7 @@ function Home() {
             frontImage={valencia}
             backText="Transporte por toda la península e islas"
             icon={
-              <Link to={getPathByLabel("Aniversario")}>
+              <Link to={getPathByLabel("servicios")}>
                 <img src={iconoValencia} alt='iconValencia' />
               </Link>}
           />
@@ -185,7 +184,7 @@ function Home() {
             frontImage={internacional}
             backText="Transporte a nivel internacional"
             icon={
-              <Link to={getPathByLabel("Aniversario")}>
+              <Link to={getPathByLabel("servicios")}>
                 <img src={iconoInternacional} alt='iconInternacional' />
               </Link>}
           />
