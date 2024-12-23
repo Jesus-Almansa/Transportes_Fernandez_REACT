@@ -11,6 +11,7 @@
   --gris: #808080; /* Gris */
 
   /* Variables de padding */
+  --padding-vertical-0: 0.5%;
   --padding-vertical-1: 2%;
   --padding-vertical-2: 3%;
   --padding-vertical-3: 4%;
@@ -107,6 +108,11 @@ h1, h2, h3, p {
 }
 
 /* Espaciados */
+.padding-vertical-0 {
+  padding-top: var(--padding-vertical-0);
+  padding-bottom: var(--padding-vertical-0);
+}
+
 .padding-vertical-1 {
   padding-top: var(--padding-vertical-1);
   padding-bottom: var(--padding-vertical-1);
