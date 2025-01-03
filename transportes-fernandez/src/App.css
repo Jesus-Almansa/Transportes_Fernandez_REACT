@@ -107,6 +107,10 @@ h1, h2, h3, p {
   font-weight: bold;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 /* Espaciados */
 .padding-vertical-0 {
   padding-top: var(--padding-vertical-0);
