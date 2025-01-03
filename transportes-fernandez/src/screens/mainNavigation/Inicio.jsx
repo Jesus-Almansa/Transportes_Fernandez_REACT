@@ -34,16 +34,16 @@ import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons
 import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/icons-72.png';
 import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/icons-73.png';
 import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/icons-74.png';
-import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.png';
+import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
 import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
 import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
 
-function Home() {
+function Inicio() {
   return (
-    <div id='Home'>
+    <div id='Inicio'>
 
       {/* CARRUSEL */}
       <Carousel />
@@ -276,4 +276,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Inicio;
