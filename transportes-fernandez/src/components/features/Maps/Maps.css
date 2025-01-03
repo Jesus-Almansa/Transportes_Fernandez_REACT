@@ -1,0 +1,36 @@
+/* Contenedor principal del mapa */
+.map-container {
+    width: 100%;
+    max-width: 1200px; /* Ajusta según tu diseño */
+    margin: 0 auto;   /* Centra el contenedor */
+  }
+  
+  /* Ajustes para el iframe */
+  .map-iframe {
+    width: 100%;      /* Se adapta al contenedor */
+    height: 450px;    /* Altura fija */
+    border: 0;        /* Elimina el borde por defecto */
+  }
+  
+  /* -- MEDIA QUERIES -- */
+  
+  /* Versión para pantallas pequeñas (ej. máximo 480px de ancho) */
+  @media (max-width: 480px) {
+    .map-container {
+      max-width: 90%;  /* Deja un poco de margen lateral en móviles */
+    }
+  
+    .map-iframe {
+      height: 300px;   /* Reduce la altura del mapa en móvil */
+    }
+  }
+  
+  /* Opcional: puedes definir más breakpoints si necesitas mayores ajustes */
+  @media (max-width: 768px) {
+    /* Ejemplo:
+    .map-iframe {
+      height: 350px;
+    }
+    */
+  }
+  
