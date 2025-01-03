@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    padding: 16px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -59,7 +59,33 @@
 }
 
 .icon-container img {
-    width: 160px; /* Tamaño absoluto para mayor control */
-    height: 160px;
+    width: 250px; /* Tamaño absoluto para mayor control */
+    height: 250px;
     object-fit: contain; /* Asegura que la imagen se ajuste correctamente */
 }
+
+
+@media (max-width: 768px) {
+    .flip-card {
+        width: 500px;  /* Menos ancho que en escritorio */
+        height: 500px; /* Mantén misma proporción (cuadrada) */
+    }
+  
+    .icon-container img {
+        width: 300px; /* Menos tamaño */
+        height: 300px;
+    }
+  }
+  
+  /* En pantallas <= 480px (teléfonos más reducidos) */
+  @media (max-width: 480px) {
+    .flip-card {
+        width: 300px;
+        height: 300px;
+    }
+  
+    .icon-container img {
+        width: 150px;
+        height: 150px;
+    }
+  }
