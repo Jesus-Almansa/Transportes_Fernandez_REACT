@@ -3,10 +3,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
     background-color: #fff;
-    width: 350px;
-    height: 430px;
+    width: 430px;
+    height: 510px;
     position: relative; /* Enable absolute positioning for child elements */
     overflow: hidden; /* Prevent content overflow */
     transition: transform 0.4s; /* Smooth scaling */
@@ -14,7 +14,7 @@
 
 .employee-card:hover {
     transform: scale(1.1);
-    height: 500px;
+    height: 590px;
 }
 
 .employee-card:hover .employee-number,
@@ -27,7 +27,7 @@
 /* Disable hover effect for cards with the no-hover class */
 .employee-card.no-hover:hover {
     transform: none;
-    height: 430px;
+    height: 510px;
 }
 
 .employee-card.no-hover:hover .employee-number,
@@ -39,8 +39,8 @@
 
 .employee-image {
     border-radius: 8%;
-    width: 350px;
-    height: 350px;
+    width: 430px;
+    height: 430px;
     object-fit: cover;
     margin-bottom: 0px;
 }
