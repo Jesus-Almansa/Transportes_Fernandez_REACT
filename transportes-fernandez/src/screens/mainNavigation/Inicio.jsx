@@ -123,7 +123,7 @@ function Inicio() {
 
           <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
 
-          <h1 className='text-red large-text-title padding-vertical-2'>Lo que transportamos</h1>
+          <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
 
           <div className="enLinea">
             <FlipCard
@@ -161,7 +161,7 @@ function Inicio() {
           Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
         </TextBox>
 
-        <h1 className='padding-vertical-1 text-red'>Donde lo transportamos</h1>
+        <h1 className='padding-vertical-1 text-red text-title'>DONDE LO TRANSPORTAMOS</h1>
 
         <div className="enLinea">
           <FlipCard
@@ -209,7 +209,7 @@ function Inicio() {
         </div>
         <div className="enLinea">
 
-          <div className="izquierda text-red padding-izquierdo-2">
+          <div className="izquierda text-red padding-izquierdo-2 text-body">
             <CEOCard
               name="Paz Fernández Lozano"
               position="CEO"
@@ -233,7 +233,7 @@ function Inicio() {
 
         <br />
 
-        <div className="employees-container ">
+        <div className="employees-container text-body">
           {employees.map((employee, index) => (
             <EmployeeCard
               key={employee.id}

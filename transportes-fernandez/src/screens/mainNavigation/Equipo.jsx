@@ -25,7 +25,7 @@ const Equipo = () => {
                 <div className='padding-vertical-1' ></div>
 
                 <div className='enLinea'>
-                    <div className="izquierda text-red">
+                    <div className="izquierda text-red text-body">
                         <CEOCard
                             name="Paz Fernández Lozano"
                             position="CEO"
@@ -34,7 +34,7 @@ const Equipo = () => {
                             mail="paz@transportesfernandez.es"
                         />
                     </div>
-                    <div className="derecha text-red">
+                    <div className="derecha text-red text-body">
                         <CEOCard
                             name="Jesús Tomás Almansa"
                             position="Apoyo incondicional"
@@ -66,7 +66,7 @@ const Equipo = () => {
 
                 <div className='text-white padding-vertical-down-3'></div>
 
-                <div className="employees-container">
+                <div className="employees-container text-body">
                     {employees.map((employee, index) => (
                         <EmployeeCard
                             key={employee.id}
@@ -96,7 +96,7 @@ const Equipo = () => {
             <div className='alinearEnColumna'>
                 <h1 className='padding-vertical-3 text-red text-title'>FUNDADORES DE LA EMPRESA</h1>
                 <div className='enLinea'>
-                    <div className="izquierda text-red">
+                    <div className="izquierda text-red text-body">
                         <CEOCard
                             name="José María Fernández"
                             position="Fundador"
@@ -104,7 +104,7 @@ const Equipo = () => {
                             hoverable={false}
                         />
                     </div>
-                    <div className="derecha text-red">
+                    <div className="derecha text-red text-body">
                         <CEOCard
                             name="María Asunción Lozano"
                             position="Fundadora"
