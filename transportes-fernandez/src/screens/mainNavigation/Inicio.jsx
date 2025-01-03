@@ -60,34 +60,40 @@ function Inicio() {
 
       <div className="alinearEnColumna">
 
-        <div className='alinearEnColumna'>
 
-          <div className="enLinea">
-            <div className="izquierda">
-              <MediaPicture
-                src={truckImage}
-                alt="Descripción de la imagen"
-                className="picture-container picture-Home-Intro"
-              />
 
-            </div>
-            <div className='derecha'>
-              <TextBox className='text-box text-box-Home-Intro text-body'>
+        <div className="enLinea">
+          <div className="izquierda">
+            <MediaPicture
+              src={truckImage}
+              alt="Descripción de la imagen"
+              className="picture-container picture-Home-Intro"
+            />
 
-                En Transportes Fernández trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
+          </div>
+          <div className='derecha'>
+            <TextBox className='text-box text-box-Home-Intro text-body'>
 
-                <div className='padding-vertical-1'></div>
+              En                 {" "}
+              <Link to={getPathByLabel('empresa')} className="text-red no-underline">
+                <strong>Transportes Fernández</strong>
+              </Link>
+              {" "} trabajamos para ofrecer un servicio de calidad a nuestros clientes. Nuestro compromiso con la excelencia y la satisfacción del cliente nos ha permitido consolidar nuestra posición como líderes en el sector del transporte industrial.
 
-                Con{" "}
-                <Link to={getPathByLabel('aniversario')} className="text-red">
-                  <strong>70 años</strong>
-                </Link>{' '}
-                de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+              <div className='padding-vertical-1'></div>
 
-              </TextBox>
-            </div>
+              Con
+              {" "}
+              <Link to={getPathByLabel('aniversario')} className="text-red no-underline">
+                <strong>70 años</strong>
+              </Link>
+              {" "}
+              de experiencia, seguimos innovando y mejorando para superar las expectativas de nuestros clientes y adaptarnos a las necesidades del mercado.
+
+            </TextBox>
           </div>
         </div>
+
 
         <h1 className='padding-vertical-3'></h1>
 
@@ -125,12 +131,12 @@ function Inicio() {
 
           <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
 
-          <div className="enLinea">
+          <div className="enLinea text-body">
             <FlipCard
               frontImage={equipamientoIndustrial}
               backText={"Equipamiento industrial"}
               icon={
-                <Link to={getPathByLabel("servicios")}>
+                <Link to={getPathByLabel("industrial")}>
                   <img src={iconoIndustrial} alt='iconIndustrial' />
                 </Link>}
             />
@@ -163,7 +169,7 @@ function Inicio() {
 
         <h1 className='padding-vertical-1 text-red text-title'>DONDE LO TRANSPORTAMOS</h1>
 
-        <div className="enLinea">
+        <div className="enLinea text-body">
           <FlipCard
             frontImage={laMancha}
             backText={"Transporte regional en La Mancha"}
@@ -231,7 +237,7 @@ function Inicio() {
 
         {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
 
-        <br />
+        <div className="padding-vertical-1"></div>
 
         <div className="employees-container text-body">
           {employees.map((employee, index) => (
@@ -261,12 +267,15 @@ function Inicio() {
       >
         <div className="alinearEnColumna">
           <div className="padding-vertical-2"></div>
-          <h1 className="text-white large-text-title">¿Tienes alguna duda? Ponte en contacto con nosotros</h1>
+          <h1 className="text-white large-text-title">{" "}
+            <Link to={getPathByLabel('contacto')} className="text-white no-underline">
+              <strong>¿Tienes alguna duda? Ponte en contacto con nosotros</strong>
+            </Link>
+            {" "} </h1>
           <div className="padding-vertical-1"></div>
           <h1 className="text-white large-text-title"></h1>
           <div className="padding-vertical-2"></div>
           <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
-          <h1 className="text-white large-text-title">Oficina de Valencia - 963 42 15 85</h1>
           <div className="padding-vertical-2"></div>
         </div>
       </Background>
