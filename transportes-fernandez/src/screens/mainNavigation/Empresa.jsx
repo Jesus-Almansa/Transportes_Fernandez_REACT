@@ -5,12 +5,13 @@ import TextBox from '../../components/layout/Box/TextBox';
 import laMancha from '../../assets/original_images/regional.png';
 import ciutatVella from '../../assets/original_images/nacional.jpg';
 import space from '../../assets/images/space.jpg';
+import kamioneh from '../../assets/TransportersBranding/SOCIAL MEDIA POST/2-02.jpg';
 
 function About() {
   return (
     <div id="About">
 
-      <MediaPicture src={space} alt="placeholder" className='picture-container' />
+      <MediaPicture src={kamioneh} alt="placeholder" className='picture-container' />
 
       <p>Learn more about our company and services. TONTO EL QUE LO LEA</p>
 

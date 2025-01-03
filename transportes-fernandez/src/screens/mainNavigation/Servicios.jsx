@@ -48,7 +48,7 @@ const Services = () => {
                         frontImage={equipamientoIndustrial}
                         backText={"Equipamiento industrial"}
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("industrial")}>
                                 <img src={iconoIndustrial} alt='iconIndustrial' />
                             </Link>}
                     />

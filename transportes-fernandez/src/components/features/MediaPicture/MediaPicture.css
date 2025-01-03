@@ -16,7 +16,7 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-/* Clases específicas para imágenes en Home */
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME*/
 
 .picture-Home-Intro img {
     max-width: 100%; /* Diferente tamaño específico */
@@ -53,4 +53,14 @@
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease; /* Diferente velocidad de transición */
+}
+
+/* CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO*/
+
+.picture-contacto img {
+    max-width: 100%; /* Diferente tamaño específico */
+    border-radius: 0.5rem; /* Mayor redondez */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    align-items: center;
 }
