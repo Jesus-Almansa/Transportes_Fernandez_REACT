@@ -29,7 +29,7 @@ import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons
 import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/icons-72.png';
 import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/icons-73.png';
 import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/icons-74.png';
-import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.png';
+import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
 import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
 import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
 import zeldaVideo from '../../assets/video/zelda.mp4';
