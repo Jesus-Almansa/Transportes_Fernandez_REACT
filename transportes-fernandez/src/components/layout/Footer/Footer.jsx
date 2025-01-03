@@ -5,7 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <p>&copy; {currentYear} Transportes Fernández. Todos los derechos reservados.</p>
+      <div className="padding-vertical-0"></div>
+      <div className='text-body'>&copy; {currentYear} Transportes Fernández. Todos los derechos reservados.</div>
     </footer>
   );
 };
