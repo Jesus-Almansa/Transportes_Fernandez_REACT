@@ -1,9 +1,12 @@
 /* Clase base para bloques de texto independientes */
 .text-box {
-  width: 100%; /* Tamaño relativo por defecto */
+  font-size: 1.2rem; /* Tamaño de fuente base para todos */
+  font-family: 'Montserrat', sans-serif; /* O la que uses como principal */
+  width: 100%;
   height: auto;
   text-align: justify;
 }
+
 /* Clases específicas para variaciones de los bloques de texto */
 
 /* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
@@ -14,7 +17,6 @@
 }
 
 .text-box-Home-Intro {
-  text-align: justify;
   margin-left: -8%; /* Keeps the box closer to the left */
   margin-top: 10%;
   background-color: var(--blanco);
@@ -53,12 +55,11 @@
 .text-box-Equipo-title {
   width: 100%;
   color: var(--rojo);
-  text-align: center; 
+  text-align: center;
 }
 
-.text-box-Equipo-CEO {
+.text-box-Equipo {
   max-width: 70%; /* Ancho específico para este bloque */
-  background-color: var(--blanco); /* Fondo blanco */
   border-radius: 1rem; /* Bordes redondeados por defecto */
   margin: 1rem auto; /* Centra el texto y deja espacio arriba/abajo */
 }

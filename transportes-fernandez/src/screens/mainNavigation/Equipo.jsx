@@ -12,15 +12,18 @@ import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
 
-const Team = () => {
+const Equipo = () => {
     return (
         <div id='Equipo' >
 
-            <div className='padding-vertical-1' ></div>
-            <h1 className='large-text-title text-box-Equipo-title '>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
-            <div className='padding-vertical-1' ></div>
-
             <div className='alinearEnColumna'>
+
+                <div className='padding-vertical-1' ></div>
+
+                <h1 className='large-text-title text-box-Equipo-title'>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
+
+                <div className='padding-vertical-1' ></div>
+
                 <div className='enLinea'>
                     <div className="izquierda text-red">
                         <CEOCard
@@ -43,14 +46,14 @@ const Team = () => {
             </div>
             <div className='alinearEnColumna'>
                 <div className='padding-vertical-1' ></div>
-                <h1>De estudiante de derecho a empresaria</h1>
+                <h1 className='text-red text-title'>DE ESTUDIANTE DE DERECHO A EMPRESARIA</h1>
                 <div className='padding-vertical-1' ></div>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Equipo-CEO">
+                    <TextBox className="text-box text-box-Equipo text-body">
                         Paz, natural de Villarrobledo (Albacete), es una empreseria con más de 40 años de experiencia en el sector del transporte. Cogió las riendas del negocio y de su familia desde muy joven, a los 18 años. Desde entonces, ha conseguido llevar la empresa a lo más alto, con esfuerzo y dedicación, en una industria tan competitiva como es el transporte de mercancías.
                     </TextBox>
                 </div>
-                <TextBox className="text-box text-box-Equipo-CEO">
+                <TextBox className="text-box text-box-Equipo text-body">
                     Jesús, marido de Paz y eventualmente informático, administrador, repartidor, conductor, mecánico, y cualquier otra cosa que se le ocurra a la jefa. Él es el apoyo incondicional de Paz y siempre está dispuesto a ayudar a su esposa en lo que haga falta.
                 </TextBox>
             </div>
@@ -58,9 +61,9 @@ const Team = () => {
             <div className='padding-vertical-1' ></div>
 
             <Background color="#ab273c">
-                <div className='text-white padding-vertical-up-3'>
-                    <h1>TRABAJADORES</h1>
-                </div>
+
+                <h1 className='text-white padding-vertical-up-3 text-title'>TRABAJADORES</h1>
+
                 <div className='text-white padding-vertical-down-3'></div>
 
                 <div className="employees-container">
@@ -76,7 +79,8 @@ const Team = () => {
                         />
                     ))}
                 </div>
-                <TextBox className="text-box text-box-Equipo text-white">
+
+                <TextBox className="text-box text-box-Equipo text-body text-white padding-vertical-3">
                     El equipo de Transportes Fernández es una familia. Nos caracterizamos por haber crecido junto a nuestros empleados de toda la vida. La empresa ha pasado de ser una empresa local a una empresa nacional gracias al esfuerzo y dedicación de todos los trabajadores.
 
                     <br /><br />
@@ -85,10 +89,12 @@ const Team = () => {
 
                     Cada miembro de nuestro equipo aporta algo único, y juntos hemos creado un ambiente de confianza y colaboración que define quiénes somos. En Transportes Fernández valoramos a las personas que forman parte de esta familia y trabajamos codo a codo para superar los desafíos, celebrando cada logro como un triunfo compartido. Es este espíritu el que nos impulsa a seguir creciendo y mejorando cada día.
                 </TextBox>
+
             </Background>
 
-            <h1 className='alinearEnColumna'>Fundadores de la empresa</h1>
+
             <div className='alinearEnColumna'>
+                <h1 className='padding-vertical-3 text-red text-title'>FUNDADORES DE LA EMPRESA</h1>
                 <div className='enLinea'>
                     <div className="izquierda text-red">
                         <CEOCard
@@ -112,9 +118,9 @@ const Team = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1 className='padding-vertical-4'>Su historia</h1>
+                <h1 className='alinearEnColumna padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Home-Resumen">
+                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-3">
                         José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
                     </TextBox>
                 </div>
@@ -124,4 +130,4 @@ const Team = () => {
     );
 };
 
-export default Team;
+export default Equipo;
