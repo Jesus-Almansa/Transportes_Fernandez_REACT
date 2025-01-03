@@ -14,7 +14,7 @@
 
 .ceo-card:hover {
     transform: scale(1.1);
-    height: 700px;
+    height: 710px;
 }
 
 .ceo-card.no-hover:hover {
