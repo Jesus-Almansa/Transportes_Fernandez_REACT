@@ -60,8 +60,6 @@ function Inicio() {
 
       <div className="alinearEnColumna">
 
-
-
         <div className="enLinea">
           <div className="izquierda">
             <MediaPicture
@@ -93,117 +91,118 @@ function Inicio() {
             </TextBox>
           </div>
         </div>
+      </div>
 
 
-        <h1 className='padding-vertical-3'></h1>
+      <h1 className='padding-vertical-3'></h1>
 
-        {/* 5 RAZONES POR LAS QUE ELEGIRNOS 5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS */}
+      {/* 5 RAZONES POR LAS QUE ELEGIRNOS 5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS5 RAZONES POR LAS QUE ELEGIRNOS */}
 
-        <Background color="#1a2a36">
-          <div className="padding-vertical-2"></div>
-          <h1 className='large-text-title text-white alinearEnColumna'>
-            5 Razones para elegirnos
-          </h1>
-          <TextBox className="text-box text-box-Home-Razones">
+      <Background color="#1a2a36">
+        <div className="padding-vertical-2"></div>
+        <h1 className='large-text-title text-white alinearEnColumna'>
+          5 Razones para elegirnos
+        </h1>
+        <TextBox className="text-box text-box-Home-Razones">
 
-            <br />
-            <div className='text-body text-white'>
+          <br />
+          <div className='text-body text-white'>
 
-              <ul style={{ listStyle: 'none', padding: 0 }}>
-                <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
-                <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
-                <li>&#10004; Respuesta inmediata y apoyo en todo momento, garantizando su tranquilidad.</li>
-                <li>&#10004; Comunicación abierta y trabajo en equipo en cada proyecto.</li>
-                <li>&#10004; Compromiso con la satisfacción y el éxito de nuestros clientes.</li>
-              </ul>
-            </div>
-          </TextBox>
-          <div>
+            <ul style={{ listStyle: 'none', padding: 0 }}>
+              <li>&#10004; Profesionales altamente capacitados y comprometidos con la excelencia.</li>
+              <li>&#10004; Soluciones personalizadas que se adaptan a las necesidades de cada cliente.</li>
+              <li>&#10004; Respuesta inmediata y apoyo en todo momento, garantizando su tranquilidad.</li>
+              <li>&#10004; Comunicación abierta y trabajo en equipo en cada proyecto.</li>
+              <li>&#10004; Compromiso con la satisfacción y el éxito de nuestros clientes.</li>
+            </ul>
           </div>
-          <div className="padding-vertical-2"></div>
-        </Background>
-
-
-        {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
-        <div id='Home-Servicios' className="alinearEnColumna">
-
-          <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
-
-          <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
-
-          <div className="enLinea text-body">
-            <FlipCard
-              frontImage={equipamientoIndustrial}
-              backText={"Equipamiento industrial"}
-              icon={
-                <Link to={getPathByLabel("industrial")}>
-                  <img src={iconoIndustrial} alt='iconIndustrial' />
-                </Link>}
-            />
-            <FlipCard
-              frontImage={parquesEolicos}
-              backText="Parques eólicos"
-              icon={
-                <Link to={getPathByLabel("servicios")}>
-                  <img src={iconoEolico} alt='iconEolico' />
-                </Link>}
-            />
-            <FlipCard
-              frontImage={medidasEspeciales}
-              backText="Medidas especiales"
-              icon={
-                <Link to={getPathByLabel("servicios")}>
-                  <img src={iconoEspecial} alt='iconEspecial' />
-                </Link>}
-            />
-          </div>
-        </div>
-
-        <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-          Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
-
-          <div className='padding-vertical-1'></div>
-
-          Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
         </TextBox>
+        <div>
+        </div>
+        <div className="padding-vertical-2"></div>
+      </Background>
 
-        <h1 className='padding-vertical-1 text-red text-title'>DONDE LO TRANSPORTAMOS</h1>
+
+      {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
+      <div id='Home-Servicios' className="alinearEnColumna">
+
+        <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+
+        <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
 
         <div className="enLinea text-body">
           <FlipCard
-            frontImage={laMancha}
-            backText={"Transporte regional en La Mancha"}
+            frontImage={equipamientoIndustrial}
+            backText={"Equipamiento industrial"}
             icon={
-              <Link to={getPathByLabel("servicios")}>
-                <img src={iconoLaMancha} alt='iconLaMancha' />
+              <Link to={getPathByLabel("industrial")}>
+                <img src={iconoIndustrial} alt='iconIndustrial' />
               </Link>}
           />
           <FlipCard
-            frontImage={valencia}
-            backText="Transporte por toda la península e islas"
+            frontImage={parquesEolicos}
+            backText="Parques eólicos"
             icon={
               <Link to={getPathByLabel("servicios")}>
-                <img src={iconoValencia} alt='iconValencia' />
+                <img src={iconoEolico} alt='iconEolico' />
               </Link>}
           />
           <FlipCard
-            frontImage={internacional}
-            backText="Transporte a nivel internacional"
+            frontImage={medidasEspeciales}
+            backText="Medidas especiales"
             icon={
               <Link to={getPathByLabel("servicios")}>
-                <img src={iconoInternacional} alt='iconInternacional' />
+                <img src={iconoEspecial} alt='iconEspecial' />
               </Link>}
           />
         </div>
-        <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-          Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
-
-          <div className='padding-vertical-1'></div>
-
-          La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
-        </TextBox>
-
       </div>
+
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+
+        <div className='padding-vertical-1'></div>
+
+        Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
+      </TextBox>
+
+      <h1 className='padding-vertical-1 text-red text-title'>DONDE LO TRANSPORTAMOS</h1>
+
+      <div className="enLinea text-body">
+        <FlipCard
+          frontImage={laMancha}
+          backText={"Transporte regional en La Mancha"}
+          icon={
+            <Link to={getPathByLabel("servicios")}>
+              <img src={iconoLaMancha} alt='iconLaMancha' />
+            </Link>}
+        />
+        <FlipCard
+          frontImage={valencia}
+          backText="Transporte por toda la península e islas"
+          icon={
+            <Link to={getPathByLabel("servicios")}>
+              <img src={iconoValencia} alt='iconValencia' />
+            </Link>}
+        />
+        <FlipCard
+          frontImage={internacional}
+          backText="Transporte a nivel internacional"
+          icon={
+            <Link to={getPathByLabel("servicios")}>
+              <img src={iconoInternacional} alt='iconInternacional' />
+            </Link>}
+        />
+      </div>
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+
+        <div className='padding-vertical-1'></div>
+
+        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
+      </TextBox>
+
+
 
       <div className='padding-vertical-3'></div>
 
@@ -281,7 +280,7 @@ function Inicio() {
       </Background>
 
 
-    </div>
+    </div >
   );
 }
 

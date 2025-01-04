@@ -48,18 +48,25 @@ h1, h2, h3, p {
 /* Clases para diseño en línea */
 .enLinea {
   display: flex;
-  justify-content: space-between; /* Ajusta el espacio entre los elementos */
-  align-items: flex-start;
+  justify-content: center; /* Ajusta el espacio entre los elementos */
+  align-items: center;
   gap: 1.25rem; /* Espacio uniforme en rem */
 }
 
 .izquierda, .derecha {
-  flex: 1; /* Proporción igual para ambos elementos */
+  flex: 1;
   max-width: 45%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 .justify-left {
   text-align: left;
+}
+
+.justify-center {
+  text-align: center;
 }
 
 .oculto {
