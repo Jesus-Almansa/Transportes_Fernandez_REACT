@@ -10,6 +10,7 @@ import ContactForm from '../../components/features/ContactForm/ContactForm';
 import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import FlipCard from '../../components/features/FlipCard/FlipCard';
+import Button from '../../components/features/Button/Button';
 
 // Rutas
 import employees from '../../data/employees';
@@ -27,6 +28,7 @@ import medidasEspeciales from '../../assets/original_images/medidasEspeciales.pn
 import internacional from '../../assets/original_images/space.png';
 import españa from '../../assets/original_images/españakbron.png';
 import españa2 from '../../assets/original_images/españakbron22.png';
+import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
 
 
 // Iconos
@@ -63,7 +65,7 @@ function Inicio() {
         <div className="enLinea">
           <div className="izquierda">
             <MediaPicture
-              src={truckImage}
+              src={madreNiño}
               alt="Descripción de la imagen"
               className="picture-container picture-Home-Intro"
             />
@@ -272,10 +274,17 @@ function Inicio() {
             </Link>
             {" "} </h1>
           <div className="padding-vertical-1"></div>
+
+          <Button to={getPathByLabel('contacto')} className={"button"}>
+            LLÁMANOS
+          </Button>
+
+
+
           <h1 className="text-white large-text-title"></h1>
           <div className="padding-vertical-2"></div>
-          <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
-          <div className="padding-vertical-2"></div>
+          {/* <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
+          <div className="padding-vertical-2"></div> */}
         </div>
       </Background>
 

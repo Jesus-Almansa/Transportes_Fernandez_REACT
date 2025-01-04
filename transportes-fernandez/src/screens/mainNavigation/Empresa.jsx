@@ -11,7 +11,7 @@ function About() {
   return (
     <div id="About">
 
-      <MediaPicture src={kamioneh} alt="placeholder" className='picture-container' />
+      <MediaPicture src={kamioneh} alt="placeholder" className='picture-container ' />
 
       <p>Learn more about our company and services. TONTO EL QUE LO LEA</p>
 

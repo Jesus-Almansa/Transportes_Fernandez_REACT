@@ -21,7 +21,7 @@ import medidasEspeciales from '../../assets/original_images/medidasEspeciales.pn
 import internacional from '../../assets/original_images/space.png';
 import españa from '../../assets/original_images/españakbron.png';
 import españa2 from '../../assets/original_images/españakbron22.png';
-import nave from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7901-Pano.jpg';
+import panoramica from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7901-Pano.jpg';
 
 
 // Iconos
@@ -36,14 +36,16 @@ import zeldaVideo from '../../assets/video/zelda.mp4';
 import OIAI from '../../assets/video/OIAI.mp4';
 
 
-const Services = () => {
+const Servicios = () => {
     return (
         <div id='Servicios'>
 
-            <MediaPicture src={nave} alt="placeholder" className='picture-container' />
+            <div className="alinearEnColumna">
+                <MediaPicture src={panoramica} alt="guacala" className='picture-container picture-Servicios-Panoramica' />
+            </div>
 
             <div className="alinearEnColumna">
-                <div className="enLinea">
+                <div className="enLinea text-body">
                     <FlipCard
                         frontImage={equipamientoIndustrial}
                         backText={"Equipamiento industrial"}
@@ -74,7 +76,7 @@ const Services = () => {
             <div className='padding-vertical-0' ></div>
 
             <div className="alinearEnColumna">
-                <div className="enLinea">
+                <div className="enLinea text-body">
                     <FlipCard
                         frontImage={laMancha}
                         backText={"Transporte regional en La Mancha"}
@@ -119,4 +121,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Servicios;

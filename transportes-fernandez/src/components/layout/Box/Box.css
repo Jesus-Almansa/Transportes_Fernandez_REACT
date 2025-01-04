@@ -17,8 +17,8 @@
 }
 
 .text-box-Home-Intro {
-  margin-left: -8%; /* Keeps the box closer to the left */
-  margin-top: 10%;
+  margin-left: -6%; /* Keeps the box closer to the left */
+  margin-top: 3%;
   background-color: var(--blanco);
   min-height: 0px;
   max-width: 85%;

@@ -12,13 +12,15 @@ function Contact() {
   return (
     <div id="Contact">
 
-      <MediaPicture
-        src={fachada}
-        alt="fachada"
-        className="picture-container picture-contacto"
-      />
+      <div className="alinearEnColumna">
 
-      <ContactForm />
+        <MediaPicture
+          src={fachada}
+          alt="fachada"
+          className="picture-container picture-Contacto"
+        />
+      </div>
+      {/* <ContactForm /> */}
 
       <div className="padding-vertical-1"></div>
 
@@ -26,7 +28,7 @@ function Contact() {
 
       <div className="padding-vertical-0"></div>
 
-    </div>
+    </div >
   );
 }
 

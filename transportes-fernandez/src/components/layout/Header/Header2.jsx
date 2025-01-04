@@ -17,7 +17,7 @@ function Header() {
           <Box className="header-logo-container">
             <Logo className="header-logo" />
           </Box>
-          <BurgerButton routes={routes} />
+          <BurgerButton routes={routes} className='text-body'/>
         </Toolbar>
       </Container>
     </AppBar>
