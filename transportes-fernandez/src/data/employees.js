@@ -12,7 +12,7 @@ const employees = [
     name: "Carmen Rosell Torres",
     position: "Departamento internacional",
     imageUrl: "https://unavatar.io/github/torvalds",
-    number: "+34 654 098 561",
+    number: "+34 652 098 561",
     mail: "carmen@transportesfernandez.es"
   },
   {
