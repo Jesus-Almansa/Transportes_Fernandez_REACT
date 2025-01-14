@@ -2,158 +2,162 @@
 
 /* Contenedor general (botón + panel). Fijado abajo a la izquierda */
 .whatsapp-container {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 9999;
-  }
-  
-  /* 
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+/* 
     Clase .open:
     - Icono de WhatsApp gira 180º y se hace pequeño (scale 0.5).
     - Icono de Cerrar pasa a rotar 0º y scale(1) con opacity 1.
   */
-  .whatsapp-container.open .icon-whatsapp {
-    transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
-    opacity: 0;
-  }
-  .whatsapp-container.open .icon-close {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  
-  /* 
+.whatsapp-container.open .icon-whatsapp {
+  transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
+  opacity: 0;
+}
+
+.whatsapp-container.open .icon-close {
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+/* 
     Animación para el panel. 
     Cuando .open esté presente en el contenedor, 
     el panel se mostrará moviéndose de abajo a arriba (translateY).
   */
-  .whatsapp-container.open .whatsapp-panel {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  
-  /* El botón flotante */
-  .whatsapp-button {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background-color: var(--verde); /* verde WhatsApp */
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .whatsapp-button:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Íconos superpuestos */
-  
-  /* El icono de WhatsApp, visible de inicio */
-  .icon-whatsapp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* Centrado con translate(-50%, -50%) */
-    transform: translate(-50%, -50%) rotate(0deg) scale(1.7);
-    transform-origin: center;
-    opacity: 1;
-    font-size: 30px;
-    /* Transiciones de giro, escala y opacidad */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  /* El icono de cerrar, oculto de inicio */
-  .icon-close {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
-    transform-origin: center;
-    opacity: 0;
-    font-size: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  /* Panel desplegable */
-  .whatsapp-panel {
-    position: absolute;
-    bottom: 70px; 
-    left: 0;
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    padding: 1rem;
-    color: #333;
-  
-    /* Estado inicial: oculto (opacity:0), desplazado hacia abajo */
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none;
-  
-    /* Transición de la opacidad y de la posición vertical */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .whatsapp-panel-title {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--rojo); /* Ajusta según tu variable de color */
-  }
-  
-  .whatsapp-panel-subtitle {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  /* Lista de contactos */
-  .whatsapp-contacts {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .whatsapp-contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: #f8f8f8;
-    padding: 0.5rem;
-    border-radius: 6px;
-    color: #333;
-    transition: background-color 0.3s ease;
-  }
-  
-  .whatsapp-contact:hover {
-    background-color: #eaeaea;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-name {
-    font-weight: bold;
-  }
-  
-  .contact-description {
-    font-size: 0.8rem;
-    color: #888;
-  }
-  
-  /* Ícono de WhatsApp en cada contacto */
-  .contact-icon {
-    margin-left: 10px;
-    font-size: 24px;
-  }
-  
+.whatsapp-container.open .whatsapp-panel {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* El botón flotante */
+.whatsapp-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--verde);
+  /* verde WhatsApp */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Íconos superpuestos */
+
+/* El icono de WhatsApp, visible de inicio */
+.icon-whatsapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Centrado con translate(-50%, -50%) */
+  transform: translate(-50%, -50%) rotate(0deg) scale(1.6);
+  transform-origin: center;
+  opacity: 1;
+  font-size: 30px;
+  /* Transiciones de giro, escala y opacidad */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: #ffffff;
+}
+
+/* El icono de cerrar, oculto de inicio */
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg) scale(1);
+  transform-origin: center;
+  opacity: 0;
+  font-size: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: #ffffff;
+}
+
+/* Panel desplegable */
+.whatsapp-panel {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  color: #333;
+
+  /* Estado inicial: oculto (opacity:0), desplazado hacia abajo */
+  opacity: 0;
+  transform: translateY(50px);
+  pointer-events: none;
+
+  /* Transición de la opacidad y de la posición vertical */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-panel-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--rojo);
+  /* Ajusta según tu variable de color */
+}
+
+.whatsapp-panel-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Lista de contactos */
+.whatsapp-contacts {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.whatsapp-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-contact:hover {
+  background-color: #eaeaea;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-description {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Ícono de WhatsApp en cada contacto */
+.contact-icon {
+  margin-left: 10px;
+  font-size: 24px;
+}

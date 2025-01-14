@@ -20,9 +20,9 @@ const contacts = [
     initialMessage: 'Hola, me gustaría solicitar un presupuesto...',
   },
   {
-    name: 'Servicio Técnico SuitER',
+    name: 'Jefe de tráfico',
     description: 'Asistencia técnica',
-    phone: '+34654444444',
+    phone: '+34669354144',
     initialMessage: 'Hola, necesito asistencia técnica con SuitER...',
   },
 ];
