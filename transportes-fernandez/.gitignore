@@ -26,3 +26,8 @@ dist-ssr
 
 # assets 
 src/assets/
+
+build/
+dist/
+
+.env
