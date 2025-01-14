@@ -1,6 +1,6 @@
 /* WhatsAppButton.css */
 
-/* Contenedor general. Fijado abajo-izquierda */
+/* Contenedor general (botón + panel). Fijado abajo a la izquierda */
 .whatsapp-container {
     position: fixed;
     bottom: 20px;
@@ -8,17 +8,42 @@
     z-index: 9999;
   }
   
-  /* Botón principal: círculo verde, con hover */
+  /* 
+    Clase .open:
+    - Icono de WhatsApp gira 180º y se hace pequeño (scale 0.5).
+    - Icono de Cerrar pasa a rotar 0º y scale(1) con opacity 1.
+  */
+  .whatsapp-container.open .icon-whatsapp {
+    transform: translate(-50%, -50%) rotate(180deg) scale(0.5);
+    opacity: 0;
+  }
+  .whatsapp-container.open .icon-close {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  
+  /* 
+    Animación para el panel. 
+    Cuando .open esté presente en el contenedor, 
+    el panel se mostrará moviéndose de abajo a arriba (translateY).
+  */
+  .whatsapp-container.open .whatsapp-panel {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* El botón flotante */
   .whatsapp-button {
-    position: relative; /* Para superponer dos íconos */
-    width: 60px;
-    height: 60px;
-    background-color: #25d366; /* color típico de WhatsApp */
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: var(--verde); /* verde WhatsApp */
     border: none;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    overflow: hidden; /* Para ocultar lo que se salga si rotamos */
+    overflow: hidden;
     transition: transform 0.3s ease;
   }
   
@@ -27,58 +52,59 @@
   }
   
   /* Íconos superpuestos */
-  .icon-whatsapp,
-  .icon-close {
+  
+  /* El icono de WhatsApp, visible de inicio */
+  .icon-whatsapp {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 15px;   /* Centrado vertical, ya que el botón es 60x60 */
-    left: 15px;  /* Centrado horizontal */
+    top: 50%;
+    left: 50%;
+    /* Centrado con translate(-50%, -50%) */
+    transform: translate(-50%, -50%) rotate(0deg) scale(1.7);
     transform-origin: center;
+    opacity: 1;
+    font-size: 30px;
+    /* Transiciones de giro, escala y opacidad */
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
-  /* Por defecto, iconClose estará "girado" y oculto */
+  /* El icono de cerrar, oculto de inicio */
   .icon-close {
-    transform: rotate(180deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+    transform-origin: center;
     opacity: 0;
-  }
-  
-  /* iconWhatsApp visible inicialmente */
-  .icon-whatsapp {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  
-  /* Cuando .whatsapp-container tiene clase .open: animamos */
-  .whatsapp-container.open .icon-whatsapp {
-    transform: rotate(180deg);
-    opacity: 0;
-  }
-  
-  .whatsapp-container.open .icon-close {
-    transform: rotate(0deg);
-    opacity: 1;
+    font-size: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
   /* Panel desplegable */
   .whatsapp-panel {
     position: absolute;
-    bottom: 70px; /* Para que aparezca encima del botón */
-    left: 0;      /* Alineado con el botón a la izquierda */
+    bottom: 70px; 
+    left: 0;
     width: 300px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     padding: 1rem;
     color: #333;
+  
+    /* Estado inicial: oculto (opacity:0), desplazado hacia abajo */
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+  
+    /* Transición de la opacidad y de la posición vertical */
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   
   .whatsapp-panel-title {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #4caf50;
+    color: var(--rojo); /* Ajusta según tu variable de color */
   }
   
   .whatsapp-panel-subtitle {
@@ -125,9 +151,9 @@
     color: #888;
   }
   
+  /* Ícono de WhatsApp en cada contacto */
   .contact-icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 8px;
+    margin-left: 10px;
+    font-size: 24px;
   }
   
