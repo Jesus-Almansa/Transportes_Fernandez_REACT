@@ -1,14 +1,22 @@
 /* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+/* Base box-sizing para toda la app */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Variables de color y espaciados */
 :root {
-  --rojo: #ab273c; /* Rojo principal */
-  --azul: #1a2a36; /* Color oscuro */
-  --blanco: #ffffff; /* Blanco */
-  --negro: #000000; /* Negro */
+  /* Paleta de colores principal */
+  --rojo: #ab273c;         /* Rojo principal */
+  --azul: #1a2a36;         /* Azul oscuro */
+  --blanco: #ffffff;       /* Blanco */
+  --negro: #000000;        /* Negro */
   --background-light: #f4f4f4; /* Fondo claro */
-  --gris: #808080; /* Gris */
+  --gris: #808080;         /* Gris */
 
   /* Variables de padding */
   --padding-vertical-0: 0.5%;
@@ -24,7 +32,8 @@
 
 /* Estilos globales */
 html {
-  font-size: 15px; /* Tamaño de fuente base fijo */
+  /* Tamaño base flexible. Si deseas fijo, usa 16px */
+  font-size: 16px; 
   scroll-behavior: smooth;
 }
 
@@ -36,13 +45,12 @@ body {
   margin: 0;
   padding: 0;
   overflow: visible !important;
-  
   scroll-behavior: smooth;
 }
 
 h1, h2, h3, p {
   font-family: 'Montserrat', sans-serif;
-  margin: 0; /* Eliminar márgenes inconsistentes */
+  margin: 0; /* Eliminar márgenes por defecto */
 }
 
 /* Clases para diseño en línea */
@@ -80,7 +88,7 @@ h1, h2, h3, p {
   justify-content: center;
 }
 
-/* Colores de texto */
+/* Clases de color */
 .text-white {
   color: var(--blanco);
 }
@@ -93,21 +101,21 @@ h1, h2, h3, p {
   color: var(--negro);
 }
 
-/* Tamaños de texto */
+/* Tamaños de texto (usa clamp si quieres escalar) */
 .text-title {
-  font-size: 2.5rem; /* Tamaño en rem */
+  font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 .large-text-title {
-  font-size: 3rem; /* Tamaño en rem */
+  font-size: clamp(2.5rem, 5vw, 3rem);
 }
 
 .text-body {
-  font-size: 1.5rem; 
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .large-text-body {
-  font-size: 2rem; 
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .negrita {
@@ -144,6 +152,7 @@ h1, h2, h3, p {
   padding-bottom: var(--padding-vertical-4);
 }
 
+/* Ejemplo de padding vertical “solo arriba” o “solo abajo” */
 .padding-vertical-up-1 {
   padding-top: var(--padding-vertical-1);
 }
@@ -213,26 +222,16 @@ h1, h2, h3, p {
   display: inline-block;
   animation: spin 5s linear infinite;
 }
-
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
-/* Media Queries */
+/* Media Queries (adapta según tus breakpoints) */
 @media (max-width: 428px) {
-  body {
-    font-size: 0.875rem; /* Ajusta el tamaño de la fuente en móviles */
-  }
-
-  p,
-  h1 {
-    margin-left: 5%;
-    margin-right: 5%;
+  /* En móviles, ajustamos un poco la fuente base */
+  html {
+    font-size: 14px;
   }
 
   .enLinea {
@@ -246,16 +245,14 @@ h1, h2, h3, p {
 }
 
 @media (min-width: 768px) {
-  p,
-  h1 {
+  p, h1 {
     margin-left: 10%;
     margin-right: 10%;
   }
 }
 
 @media (min-width: 1024px) {
-  p,
-  h1 {
+  p, h1 {
     margin-left: 15%;
     margin-right: 15%;
   }
