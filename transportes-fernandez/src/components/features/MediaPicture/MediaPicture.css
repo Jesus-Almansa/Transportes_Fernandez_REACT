@@ -1,13 +1,15 @@
 /* Estilos base para el contenedor <picture> */
 .picture-container {
     display: block;
-    margin: 0rem auto; /* Márgenes relativos para adaptabilidad */
+    margin: 0rem auto;
+    /* Márgenes relativos para adaptabilidad */
 }
 
 /* Estilos base para las imágenes */
 .picture-container img {
     width: 100%;
-    height: auto; /* Esto se ajusta al contenedor manteniendo la relación de aspecto */
+    height: auto;
+    /* Esto se ajusta al contenedor manteniendo la relación de aspecto */
     border-radius: 0rem;
 }
 
@@ -16,41 +18,52 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-/* Clases específicas para imágenes en Home */
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME*/
 
 .picture-Home-Intro img {
-    max-width: 100%; /* Diferente tamaño específico */
-    border-radius: 0.5rem; /* Mayor redondez */
+    max-width: 100%;
+    /* Diferente tamaño específico */
+    border-radius: 0.5rem;
+    /* Mayor redondez */
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
-    margin-left: 10%;
+    /* margin-left: 8%; */
+    margin: 0 auto;
+    display: block;
+    align-items: center;
 }
 
 .picture-empresa-main:hover {
-    transform: rotateY(180deg); /* Efecto específico al hacer hover en el contenedor */
+    transform: rotateY(180deg);
+    /* Efecto específico al hacer hover en el contenedor */
 }
 
-.picture-Home-aniversario img {
-    max-width: 90%; /* Diferente tamaño específico */
-    border-radius: 0rem; /* Mayor redondez */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); /* Sombra más intensa */
-}
-
-.picture-servicios-regional img {
-    max-width: 90%;
+/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/
+.picture-Servicios-Panoramica img {
+    max-width: 95.7%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    margin-left: 2.1%;
+    margin-top: 0.3%;
 }
 
-.picture-servicios-regional img:hover {
-    transform: scale(1.1); /* Incrementa un poco más el efecto hover */
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.4);
-}
+/* CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO*/
 
-/* Estilos adicionales para cualquier otro caso específico */
-.picture-promocional img {
+.picture-Contacto img {
     max-width: 70%;
-    border-radius: 1rem;
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25);
-    transition: all 0.5s ease; /* Diferente velocidad de transición */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    /* margin-left: 15%; */
+    margin: 0 auto;
+    display: block;
+
+}
+
+/* ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO*/
+.picture-Home-aniversario img {
+    max-width: 90%;
+    border-radius: 0rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }

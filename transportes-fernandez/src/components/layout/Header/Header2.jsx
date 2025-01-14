@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, AppBar, Toolbar, Box } from '@mui/material';
 import './Header2.css';
 import Logo from '../../features/Logo/Logo';
-import NavButton from '../../features/NavButton/NavButton';
 import BurgerButton from '../../features/BurgerButton/BurgerButton';
 import routes from '../../../data/navi_routes';
 import useIsMobile from '../../hooks/useIsMobile';
@@ -18,7 +17,7 @@ function Header() {
           <Box className="header-logo-container">
             <Logo className="header-logo" />
           </Box>
-          <BurgerButton routes={routes} />
+          <BurgerButton routes={routes} className='text-body'/>
         </Toolbar>
       </Container>
     </AppBar>

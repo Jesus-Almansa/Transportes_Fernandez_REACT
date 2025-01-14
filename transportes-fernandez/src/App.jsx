@@ -17,7 +17,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div><ScrollToTop /></div> {/* Scrolls to top on route change */}
+      <div><ScrollToTop /></div>
       <div className="App">
         <Header />
 

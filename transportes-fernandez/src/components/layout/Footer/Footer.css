@@ -1,13 +1,28 @@
 footer {
-    background-color: var(--azul);
-    color: white;
-    text-align: center;
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    /* Cambia distribución a columna */
     padding: 10px;
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto; /* Esto asegura que el footer se empuje hacia la parte inferior */
+    /* Reduce padding */
+    text-align: center;
+    /* Asegura que todo se centre en móvil */
   }
-  
+
+  footer p {
+    margin: 5px 0;
+    /* Ajusta márgenes para evitar saturación */
+  }
+}

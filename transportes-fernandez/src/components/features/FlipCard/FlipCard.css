@@ -1,6 +1,7 @@
+/* Estilo FlipCard */
 .flip-card {
-    perspective: 1000px; /* Enable 3D perspective */
-    width: 600px;
+    perspective: 1000px; /* Medida absoluta para consistencia */
+    width: 600px; /* 23rem traducido a px para tamaño fijo */
     height: 600px;
 }
 
@@ -9,11 +10,11 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(-180deg); /* Rotate the card on hover */
+    transform: rotateY(-180deg); /* Rota la tarjeta al pasar el mouse */
 }
 
 .flip-card-front,
@@ -21,13 +22,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide the back face when not visible */
-    border-radius: 0.5rem;
+    backface-visibility: hidden; /* Oculta la cara trasera cuando no es visible */
+    border-radius: 8px; /* Aumenta el redondeo para un diseño más moderno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .flip-card-front {
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,27 +39,53 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 }
 
 .flip-card-back {
     background-color: var(--azul);
-    color: white;
+    color: #ffffff;
     display: flex;
-    flex-direction: column; /* Stack icon and text */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: rotateY(180deg);
-    padding: 20px;
+    padding: 0px;
     text-align: center;
 }
 
 .icon-container {
-    margin-bottom: 10px; /* Space between the icon and the text */
+    margin-bottom: 16px; /* Espacio fijo entre el icono y el texto */
 }
 
 .icon-container img {
-    width: 300px; /* Adjust the size of the icon */
-    height: 300px;
-    object-fit: contain; /* Ensure the image fits well */
+    width: 250px; /* Tamaño absoluto para mayor control */
+    height: 250px;
+    object-fit: contain; /* Asegura que la imagen se ajuste correctamente */
 }
+
+
+@media (max-width: 768px) {
+    .flip-card {
+        width: 500px;  /* Menos ancho que en escritorio */
+        height: 500px; /* Mantén misma proporción (cuadrada) */
+    }
+  
+    .icon-container img {
+        width: 300px; /* Menos tamaño */
+        height: 300px;
+    }
+  }
+  
+  /* En pantallas <= 480px (teléfonos más reducidos) */
+  @media (max-width: 480px) {
+    .flip-card {
+        width: 300px;
+        height: 300px;
+    }
+  
+    .icon-container img {
+        width: 150px;
+        height: 150px;
+    }
+  }

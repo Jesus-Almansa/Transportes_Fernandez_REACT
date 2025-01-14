@@ -1,28 +1,29 @@
 .section-background {
-    background-color: var(--rojo);
-    padding: 20px 0;
-    /* Vertical padding only, no horizontal padding */
-    margin: 0;
-    /* Remove margins */
-    padding-top: 5rem;
-    /* Space at the top */
-    padding-bottom: 5rem;
-    /* Space at the bottom */
-    color: white;
-    /* Ensure text readability */
-
-    /* Make the section full width */
-    width: 100vw;
-    /* Full viewport width */
-    position: relative;
-    left: 50%;
-    /* Move to center */
-    transform: translateX(-50%);
-    /* Recenter the element */
+    position: relative; /* Enable relative positioning for pseudo-elements */
+    width: 100vw; /* Full viewport width */
+    padding: 0rem 0; /* Vertical padding */
+    overflow: hidden; /* Prevent overflow */
+    background-size: cover; /* Ensure background image covers the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    z-index: 0; /* Set base layer */
 }
 
-.section-background:nth-child(even) {
-    background-color: #f0f0f0;
-    /* Light grey for alternating sections */
-    color: black;
+.section-background::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire section */
+    height: 100%;
+    background-color: inherit; /* Inherit color from the `color` prop */
+    opacity: inherit; /* Inherit opacity from the `opacity` prop */
+    z-index: 1; /* Overlay above background image */
+    pointer-events: none; /* Allow interactions to pass through */
+}
+
+.background-content {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2; /* Layer above the overlay */
+    color: white; /* Default text color */
 }

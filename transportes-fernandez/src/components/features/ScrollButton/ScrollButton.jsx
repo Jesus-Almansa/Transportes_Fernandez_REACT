@@ -2,6 +2,7 @@
 import React from 'react';
 import './ScrollButton.css';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const ScrollButton = () => {
   const scrollToTop = () => {
@@ -15,7 +16,7 @@ const ScrollButton = () => {
 
   return (
     <div className="ScrollButton-button" onClick={scrollToTop}>
-      <ArrowUpwardIcon />
+      <KeyboardArrowUpIcon />
     </div>
   );
 };
