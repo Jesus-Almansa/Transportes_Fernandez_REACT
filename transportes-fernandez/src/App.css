@@ -104,10 +104,14 @@ h1, h2, h3, p {
 /* Tamaños de texto (usa clamp si quieres escalar) */
 .text-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
+  text-align: center;
+  margin: 0 auto; 
 }
 
 .large-text-title {
   font-size: clamp(2.5rem, 5vw, 3rem);
+  text-align: center;
+  margin: 0 auto; 
 }
 
 .text-body {
@@ -227,9 +231,8 @@ h1, h2, h3, p {
   to   { transform: rotate(360deg); }
 }
 
-/* Media Queries (adapta según tus breakpoints) */
 @media (max-width: 428px) {
-  /* En móviles, ajustamos un poco la fuente base */
+  /* Ajuste de la fuente base en móviles */
   html {
     font-size: 14px;
   }
@@ -242,18 +245,64 @@ h1, h2, h3, p {
   .izquierda, .derecha {
     max-width: 100%;
   }
+
+  /* Reaplicamos u Overridemamos estilos, si necesitamos */
+  .text-title {
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
+    text-align: center; 
+    margin: 0 auto; 
+  }
+
+  .large-text-title {
+    font-size: clamp(2.3rem, 7vw, 2.8rem);
+    text-align: center; 
+    margin: 0 auto; 
+  }
 }
 
+/* =========================================================
+   MEDIA QUERY #2: Pantallas a partir de 768px (tablets)
+   ========================================================= */
 @media (min-width: 768px) {
+  /* Ajuste de márgenes para p y h1 */
   p, h1 {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  /* Si deseas ajustarlos en tablet, puedes redefinirlos aquí */
+  .text-title {
+    font-size: clamp(2rem, 3vw, 2.5rem); 
+    text-align: center; 
+    margin: 0 auto; 
+  }
+
+  .large-text-title {
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    text-align: center; 
+    margin: 0 auto; 
+  }
 }
 
+/* =========================================================
+   MEDIA QUERY #3: Pantallas a partir de 1024px (desktops grandes)
+   ========================================================= */
 @media (min-width: 1024px) {
+  /* Ajuste de márgenes para p y h1 */
   p, h1 {
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .text-title {
+    font-size: clamp(2.2rem, 3vw, 2.5rem);
+    text-align: center; 
+    margin: 0 auto; 
+  }
+
+  .large-text-title {
+    font-size: clamp(2.7rem, 4vw, 3rem);
+    text-align: center; 
+    margin: 0 auto; 
   }
 }
