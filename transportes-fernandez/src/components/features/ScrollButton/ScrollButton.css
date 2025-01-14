@@ -5,8 +5,8 @@
     right: 3%;
     background-color: var(--rojo);
     color: white;
-    padding: 0.5rem;
-    border-radius: 4rem;
+    padding: 0.35rem;
+    border-radius: 9.5rem;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: opacity 0.1s ease-in-out;
