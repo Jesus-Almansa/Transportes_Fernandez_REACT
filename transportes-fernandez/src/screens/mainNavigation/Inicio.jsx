@@ -11,6 +11,8 @@ import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import FlipCard from '../../components/features/FlipCard/FlipCard';
 import Button from '../../components/features/Button/Button';
+import MailButton from '../../components/features/MailButton/MailButton';
+import WhatsAppButton from '../../components/features/WhatsAppButton/WhatsAppButton';
 
 // Rutas
 import employees from '../../data/employees';
@@ -168,7 +170,7 @@ function Inicio() {
         Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
       </TextBox>
 
-      <h1 className='padding-vertical-1 text-red text-title'>DONDE LO TRANSPORTAMOS</h1>
+      <h1 className='padding-vertical-1 text-red text-title alinearEnColumna'>DONDE LO TRANSPORTAMOS</h1>
 
       <div className="enLinea text-body">
         <FlipCard
@@ -214,27 +216,25 @@ function Inicio() {
           <div className="padding-vertical-2"></div>
           <b>CONOCE AL EQUIPO</b>
         </div>
-        <div className="enLinea">
 
-          <div className="izquierda text-red padding-izquierdo-2 text-body">
-            <CEOCard
-              name="Paz Fernández Lozano"
-              position="CEO"
-              imageUrl={laMadre}
-              number="+34 669 354 145"
-              mail="paz@transportesfernandez.es"
-              hoverable={true}
-            />
-          </div>
-
-          <div className="derecha">
-            <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
-              Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
-              <div className='padding-vertical-1'></div>
-              Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
-            </TextBox>
-          </div>
+        <div className="text-red text-body alienarEnColumna">
+          <CEOCard
+            name="Paz Fernández Lozano"
+            position="CEO"
+            imageUrl={laMadre}
+            number="+34 669 354 145"
+            mail="paz@transportesfernandez.es"
+            hoverable={true}
+          />
         </div>
+
+
+
+        <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+          Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
+          <div className='padding-vertical-1'></div>
+          Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
+        </TextBox>
 
         {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
 
@@ -267,17 +267,29 @@ function Inicio() {
         imageUrl={españa2} // España map as background
       >
         <div className="alinearEnColumna">
-          <div className="padding-vertical-2"></div>
+          <div className="padding-vertical-1"></div>
           <h1 className="text-white large-text-title">{" "}
             <Link to={getPathByLabel('contacto')} className="text-white no-underline">
-              <strong>¿Tienes alguna duda? Ponte en contacto con nosotros</strong>
+              <strong>¿Tienes alguna duda?</strong>
             </Link>
             {" "} </h1>
           <div className="padding-vertical-1"></div>
 
           <Button to={getPathByLabel('contacto')} className={"button"}>
-            LLÁMANOS
+            CONTACTO
           </Button>
+
+          <div className="padding-vertical-1"></div>
+
+          <MailButton
+            email="paz@transportesfernandez.es"
+            subject="Consulta desde la web"
+            body="Hola, tengo algunas dudas sobre..."
+            className="mail-button"
+          >
+            ESCRÍBENOS
+          </MailButton>
+
 
 
 
@@ -287,6 +299,8 @@ function Inicio() {
           <div className="padding-vertical-2"></div> */}
         </div>
       </Background>
+
+      <WhatsAppButton />
 
 
     </div >
