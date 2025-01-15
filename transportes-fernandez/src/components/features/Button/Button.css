@@ -1,34 +1,50 @@
 /* Button.css */
 
-/* Estilo base para todos los botones */
+/* Estilo base */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
     color: white;
-    background-color: var(--rojo); /* Fallback a rojo si --rojo no está definido */
-    border: none;
+    background-color: var(--rojo);
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Estilo al pasar el cursor */
+/* Hover */
 .button:hover {
     background-color: var(--blanco);
     color: var(--rojo);
     transform: scale(1.05);
 }
 
-/* Estilos personalizados para el botón de contacto */
+/* Botón de contacto */
 .button-contacto {
-    background-color: var(--verde, #28a745); /* Por ejemplo, un color verde */
+    font-size: 30px;
+    padding: 15px 40px;
 }
 
 .button-contacto:hover {
-    background-color: #1e7e34;
+    background-color: var(--blanco);
+    color: var(--rojo);
 }
 
-/* Puedes agregar más clases personalizadas según tus necesidades */
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .button-contacto {
+        font-size: 18px;   /* Reducimos el tamaño en móviles */
+        padding: 10px 20px;
+    }
+}
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .button-contacto {
+        font-size: 24px;   /* Ajuste intermedio */
+        padding: 12px 30px;
+    }
+}

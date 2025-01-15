@@ -1,13 +1,13 @@
 /* MailButton.css */
 
-/* Versión adaptada del estilo base .button */
+/* Estilo base */
 .mail-button {
-    display: inline-flex;         /* Para alinear icono y texto en la misma fila */
-    align-items: center;          /* Centra verticalmente el icono y el texto */
-    padding: 10px 20px;
-    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 30px;
     color: white;
-    background-color: var(--rojo); /* Color de fondo por defecto */
+    background-color: var(--rojo);
     border: none;
     border-radius: 4px;
     text-align: center;
@@ -16,30 +16,57 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Efecto hover sobre el contenedor */
 .mail-button:hover {
     background-color: var(--blanco);
     color: var(--rojo);
     transform: scale(1.05);
 }
 
-/* Íconos dentro del MailButton */
+/* Íconos */
 .mail-button .mail-icon {
-    width: 40px;              /* Ajusta el tamaño del icono */
-    margin-right: 8px;        /* Espacio entre icono y texto */
+    width: 45px;
+    margin-right: 8px;
     transition: opacity 0.3s ease;
 }
 
-/* Ícono alternativo para hover */
 .mail-button .mail-icon-hover {
-    display: none;            /* Oculto por defecto */
-}
-
-/* Al hacer hover, se esconde el ícono "default" y se muestra el de "hover" */
-.mail-button:hover .mail-icon-default {
     display: none;
 }
 
+/* Al hacer hover, alternar íconos */
+.mail-button:hover .mail-icon-default {
+    display: none;
+}
 .mail-button:hover .mail-icon-hover {
-    display: inline;          /* Muestra el ícono de hover */
+    display: inline;
+}
+
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .mail-button {
+        font-size: 20px;      /* Reduce la fuente para pantallas muy pequeñas */
+        padding: 10px 15px;   /* Ajusta el padding */
+    }
+
+    .mail-button .mail-icon {
+        width: 35px;          /* Ícono un poco más pequeño */
+        margin-right: 5px;
+    }
+}
+
+/* Tablets y pantallas medianas (de 481px a 768px) */
+@media (max-width: 768px) {
+    .mail-button {
+        font-size: 24px;
+        padding: 12px 20px;
+    }
+
+    .mail-button .mail-icon {
+        width: 40px;
+        margin-right: 6px;
+    }
 }
