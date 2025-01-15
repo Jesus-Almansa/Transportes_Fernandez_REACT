@@ -26,7 +26,7 @@ const Equipo = () => {
 
                 <div className='alinearEnColumna'>
                     <div className='enLinea'>
-                        <div className="izquierda text-red text-body">
+                        <div className=" text-red text-body">
                             <CEOCard
                                 name="Paz Fernández Lozano"
                                 position="CEO"
@@ -36,7 +36,7 @@ const Equipo = () => {
                                 hoverable={true}
                             />
                         </div>
-                        <div className="derecha text-red text-body">
+                        <div className=" text-red text-body">
                             <CEOCard
                                 name="Jesús Tomás Almansa"
                                 position="Apoyo incondicional"
@@ -99,7 +99,7 @@ const Equipo = () => {
             <div className='alinearEnColumna'>
                 <h1 className='padding-vertical-3 text-red text-title'>FUNDADORES DE LA EMPRESA</h1>
                 <div className='enLinea'>
-                    <div className="izquierda text-red text-body">
+                    <div className="text-red text-body">
                         <CEOCard
                             name="José María Fernández"
                             position="Fundador"
@@ -107,7 +107,7 @@ const Equipo = () => {
                             hoverable={false}
                         />
                     </div>
-                    <div className="derecha text-red text-body">
+                    <div className="text-red text-body">
                         <CEOCard
                             name="María Asunción Lozano"
                             position="Fundadora"
@@ -121,7 +121,7 @@ const Equipo = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1 className='alinearEnColumna padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
+                <h1 className='padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
                 <div className='enLinea'>
                     <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-3">
                         José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
