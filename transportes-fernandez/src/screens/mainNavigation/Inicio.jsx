@@ -215,7 +215,10 @@ function Inicio() {
       <Background color="#ab273c">
         <div className='large-text-title text-white alinearEnColumna padding-vertical-down-3'>
           <div className="padding-vertical-2"></div>
-          <b>CONOCE AL EQUIPO</b>
+
+          <Link to={getPathByLabel('equipo')} className="text-white no-underline">
+            <strong><b>CONOCE AL EQUIPO</b></strong>
+          </Link>
         </div>
 
         <div className="text-red text-body alinearEnColumna">
@@ -273,15 +276,24 @@ function Inicio() {
         imageUrl={españa2} // España map as background
       >
         <div className="alinearEnColumna">
-          <div className="padding-vertical-1"></div>
+          <div className="padding-vertical-up-3"></div>
           <h1 className="text-white large-text-title">{" "}
             <Link to={getPathByLabel('contacto')} className="text-white no-underline">
-              <strong>¿Tienes alguna duda?</strong>
+              <strong>CONTÁCTANOS PARA CUALQUIER CONSULTA</strong>
             </Link>
             {" "} </h1>
-          <div className="padding-vertical-1"></div>
 
-          <Button to={getPathByLabel('contacto')} className={"button"}>
+          <div className="padding-vertical-2"></div>
+        </div>
+
+        <TextBox className="text-box text-box-Home-Horarios text-body alinearEnColumna negrita">
+          HORARIO DE OFICINA: 
+          <br />
+          LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
+        </TextBox>
+
+        <div className="enLinea negrita">
+          <Button to={getPathByLabel('contacto')} className={"button button-contacto"}>
             CONTACTO
           </Button>
 
@@ -296,16 +308,17 @@ function Inicio() {
             ESCRÍBENOS
           </MailButton>
 
-
-
-
-          <h1 className="text-white large-text-title"></h1>
-          <div className="padding-vertical-2"></div>
-          {/* <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
-          <div className="padding-vertical-2"></div> */}
         </div>
+
+        <div className="padding-vertical-2"></div>
+
       </Background>
 
+      <div className="padding-vertical-2"></div>
+
+      <h1 className="text-red large-text-title"> PUEDES ENCONTRARNOS EN VILLARROBLEDO (ALBACETE)</h1>
+
+      <div className="padding-vertical-2"></div>
 
       <Maps />
 
@@ -314,3 +327,7 @@ function Inicio() {
 }
 
 export default Inicio;
+
+
+{/* <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
+<div className="padding-vertical-2"></div> */}
