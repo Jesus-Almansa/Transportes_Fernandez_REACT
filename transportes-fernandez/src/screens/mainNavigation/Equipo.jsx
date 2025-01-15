@@ -20,27 +20,30 @@ const Equipo = () => {
 
                 <div className='padding-vertical-1' ></div>
 
-                <h1 className='large-text-title text-box-Equipo-title'>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
+                <h1 className='large-text-title text-box-Equipo-title text-red'>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
 
                 <div className='padding-vertical-1' ></div>
 
-                <div className='enLinea'>
-                    <div className="izquierda text-red text-body">
-                        <CEOCard
-                            name="Paz Fernández Lozano"
-                            position="CEO"
-                            imageUrl={laMadre}
-                            number="+34 669 354 145"
-                            mail="paz@transportesfernandez.es"
-                        />
-                    </div>
-                    <div className="derecha text-red text-body">
-                        <CEOCard
-                            name="Jesús Tomás Almansa"
-                            position="Apoyo incondicional"
-                            imageUrl={laMadre2}
-                            hoverable={false}
-                        />
+                <div className='alinearEnColumna'>
+                    <div className='enLinea'>
+                        <div className="izquierda text-red text-body">
+                            <CEOCard
+                                name="Paz Fernández Lozano"
+                                position="CEO"
+                                imageUrl={laMadre}
+                                number="+34 669 354 145"
+                                mail="paz@transportesfernandez.es"
+                                hoverable={true}
+                            />
+                        </div>
+                        <div className="derecha text-red text-body">
+                            <CEOCard
+                                name="Jesús Tomás Almansa"
+                                position="Apoyo incondicional"
+                                imageUrl={laMadre2}
+                                hoverable={false}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
