@@ -3,9 +3,10 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 import laMancha from '../../assets/original_images/regional.png';
-import ciutatVella from '../../assets/original_images/nacional.jpg';
+import camionesFrontal from '../../assets/TransportersBranding/SEXIO/100/camiones.jpg';
 import space from '../../assets/images/space.jpg';
 import kamioneh from '../../assets/TransportersBranding/SOCIAL MEDIA POST/2-02.jpg';
+import camionUnitario from '../../assets/TransportersBranding/SEXIO/100/camionUnitario.jpg';
 
 function About() {
   return (
@@ -19,9 +20,9 @@ function About() {
       <div className="enLinea">
         <div className="izquierda">
           <MediaPicture
-            src={ciutatVella}
+            src={camionesFrontal}
             alt="Descripción de la imagen"
-            className="picture-container picture-empresa-main"
+            className="picture-container picture-Empresa-Hoy"
           />
 
         </div>
@@ -35,7 +36,7 @@ function About() {
       <div id='Resumen' className="alinearEnColumna">
         <h1>Bienvenido</h1>
         <div className="enLinea">
-          <TextBox className="text-box  text-box-Home-Resumen">
+          <TextBox className="text-box  text-box-Home-Intro">
             Somos una empresa especializada en el transporte de material industrial, con décadas de experiencia ofreciendo soluciones logísticas de alta calidad para grandes empresas del sector. Nos enfocamos exclusivamente en el transporte de maquinaria y materiales industriales, dejando de lado el transporte de paquetes pequeños, lo que nos permite garantizar un servicio altamente especializado, diseñado para cumplir con las necesidades específicas de nuestros clientes.
 
             Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
@@ -44,6 +45,13 @@ function About() {
           </TextBox>
         </div>
       </div>
+
+      <MediaPicture
+        src={camionUnitario}
+        alt="Descripción de la imagen"
+        className="picture-container picture-Empresa-Hoy"
+      />
+
     </div>
   );
 }

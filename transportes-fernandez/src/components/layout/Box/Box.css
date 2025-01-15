@@ -14,14 +14,13 @@
 
 /* Variaciones para distintas secciones */
 
-/* HOME */
+/* HOME  HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME*/
 .text-box-Home-IntroTitle {
   width: 100%;
   color: var(--rojo);
   text-align: center;
 }
 
-/* Elimina margin-left muy grandes si no son realmente necesarios */
 .text-box-Home-Intro {
   margin-top: 3%;
   background-color: var(--blanco);
@@ -31,12 +30,10 @@
 }
 
 .text-box-Home-Razones {
-  /* Corrige la variable de color */
   background-color: var(--azul);
   max-width: 1000px;
   margin: 1rem auto;
   text-align: left;
-  /* o center, según quieras */
   align-items: center;
 }
 
@@ -47,7 +44,6 @@
   padding: 2rem;
 }
 
-/* Servicios */
 .text-box-Home-Servicios {
   max-width: 70%;
   background-color: var(--blanco);
@@ -56,16 +52,25 @@
   padding: 2rem;
 }
 
-/* Bloque específico para Servicios */
-.text-box-Servicios {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+.text-box-Home-Horarios {
   max-width: 90%;
-  margin: 2rem auto;
-  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 3rem;
 }
 
-/* Equipo */
+/* EMPRESA  EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA*/
+.text-box-Empresa-Hoy {
+  margin-top: 10%;
+  margin-right: 3%;
+  color: var(--blanco);
+  background-color: var(--rojo);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  padding: 2rem;
+}
+
+/* EQUIPO  EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/
 .text-box-Equipo {
   max-width: 70%;
   border-radius: 1rem;
@@ -84,7 +89,7 @@
   padding: 2rem;
 }
 
-.text-box-Home-Aniversario {
+.text-box-Aniversario {
   width: 100%;
   padding: 3%;
   color: var(--blanco);

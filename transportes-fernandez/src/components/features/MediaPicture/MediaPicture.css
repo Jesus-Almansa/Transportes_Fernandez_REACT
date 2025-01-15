@@ -2,15 +2,12 @@
 .picture-container {
     display: block;
     margin: 0rem auto;
-    /* Márgenes relativos para adaptabilidad */
 }
 
 /* Estilos base para las imágenes */
 .picture-container img {
     width: 100%;
     height: auto;
-    /* Esto se ajusta al contenedor manteniendo la relación de aspecto */
-    border-radius: 0rem;
 }
 
 /* Hover base (común para todas las imágenes) */
@@ -33,9 +30,15 @@
     align-items: center;
 }
 
-.picture-empresa-main:hover {
-    transform: rotateY(180deg);
-    /* Efecto específico al hacer hover en el contenedor */
+/* EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA*/
+
+.picture-Empresa-Hoy img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    display: block;
 }
 
 /* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/
@@ -51,14 +54,13 @@
 /* CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO*/
 
 .picture-Contacto img {
-    max-width: 70%;
+    max-width: 90%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
     /* margin-left: 15%; */
     margin: 0 auto;
     display: block;
-
 }
 
 /* ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO*/
