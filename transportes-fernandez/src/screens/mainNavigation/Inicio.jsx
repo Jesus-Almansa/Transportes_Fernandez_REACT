@@ -287,6 +287,8 @@ function Inicio() {
           LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
         </TextBox>
 
+        <div className="padding-vertical-1"></div>
+
         <div className="enLinea negrita">
           <Button to={getPathByLabel('contacto')} className={"button button-contacto"}>
             CONTACTO
@@ -295,7 +297,7 @@ function Inicio() {
           <div className="padding-vertical-1"></div>
 
           <MailButton
-            email="paz@transportesfernandez.es"
+            email="contacto@transportesfernandez.es"
             subject="Consulta desde la web"
             body="Hola, tengo algunas dudas sobre..."
             className="mail-button"
