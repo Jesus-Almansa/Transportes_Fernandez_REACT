@@ -6,6 +6,7 @@ import Header from './components/layout/Header/Header2';
 import Footer from './components/layout/Footer/Footer';
 import ScrollButton from './components/features/ScrollButton/ScrollButton';
 import ScrollToTop from './components/features/ScrollToTop/ScrollToTop';
+import WhatsAppButton from './components/features/WhatsAppButton/WhatsAppButton';
 
 // Import Routes
 import naviRoutes from './data/navi_routes';
@@ -37,6 +38,7 @@ function App() {
       </div>
 
       <ScrollButton />
+      <WhatsAppButton />
 
     </Router>
   );
