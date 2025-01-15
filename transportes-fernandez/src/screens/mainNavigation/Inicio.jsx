@@ -12,7 +12,7 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import FlipCard from '../../components/features/FlipCard/FlipCard';
 import Button from '../../components/features/Button/Button';
 import MailButton from '../../components/features/MailButton/MailButton';
-import WhatsAppButton from '../../components/features/WhatsAppButton/WhatsAppButton';
+import Maps from '../../components/features/Maps/Maps';
 
 // Rutas
 import employees from '../../data/employees';
@@ -211,13 +211,14 @@ function Inicio() {
       <div className='padding-vertical-3'></div>
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
+
       <Background color="#ab273c">
         <div className='large-text-title text-white alinearEnColumna padding-vertical-down-3'>
           <div className="padding-vertical-2"></div>
           <b>CONOCE AL EQUIPO</b>
         </div>
 
-        <div className="text-red text-body alienarEnColumna">
+        <div className="text-red text-body alinearEnColumna">
           <CEOCard
             name="Paz Fernández Lozano"
             position="CEO"
@@ -230,10 +231,8 @@ function Inicio() {
 
 
 
-        <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+        <TextBox className="text-box text-body text-white text-box-Home-Equipo padding-vertical-up-3">
           Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
-          <div className='padding-vertical-1'></div>
-          Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
         </TextBox>
 
         {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
@@ -257,7 +256,14 @@ function Inicio() {
 
         <div>
         </div>
-        <div className="padding-vertical-2"></div>
+        <div className="padding-vertical-0"></div>
+
+        <TextBox className="text-box text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+          Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
+        </TextBox>
+
+        <div className="padding-vertical-1"></div>
+
       </Background>
 
 
@@ -300,8 +306,8 @@ function Inicio() {
         </div>
       </Background>
 
-      <WhatsAppButton />
 
+      <Maps />
 
     </div >
   );
