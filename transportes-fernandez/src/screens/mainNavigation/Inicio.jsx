@@ -201,14 +201,9 @@ function Inicio() {
       <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
         Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
 
-        <div className='padding-vertical-1'></div>
-
-        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
       </TextBox>
 
-
-
-      <div className='padding-vertical-3'></div>
+      <div className='padding-vertical-up-0'></div>
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
 
@@ -287,7 +282,7 @@ function Inicio() {
         </div>
 
         <TextBox className="text-box text-box-Home-Horarios text-body alinearEnColumna negrita">
-          HORARIO DE OFICINA: 
+          HORARIO DE OFICINA:
           <br />
           LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
         </TextBox>
@@ -310,15 +305,16 @@ function Inicio() {
 
         </div>
 
-        <div className="padding-vertical-2"></div>
+        <div className="padding-vertical-3"></div>
 
       </Background>
 
       <div className="padding-vertical-2"></div>
 
       <h1 className="text-red large-text-title"> PUEDES ENCONTRARNOS EN VILLARROBLEDO (ALBACETE)</h1>
-
-      <div className="padding-vertical-2"></div>
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
+      </TextBox>
 
       <Maps />
 
