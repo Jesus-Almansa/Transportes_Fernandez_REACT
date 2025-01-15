@@ -1,6 +1,6 @@
 .burger-container {
     position: relative;
-    padding-right: 2rem;
+    padding-right: 0rem;
 }
 
 .burger-button {
@@ -20,9 +20,11 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 65%; /* Ajusta el ancho según tus necesidades */
+    width: 65%;
+    /* Ajusta el ancho según tus necesidades */
     max-width: 300px;
-    background-color: var(--rojo); /* Color oscuro para el fondo */
+    background-color: var(--rojo);
+    /* Color oscuro para el fondo */
     color: white;
     display: flex;
     flex-direction: column;
@@ -38,21 +40,39 @@
     transform: translateX(0);
 }
 
+.menu-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 20px 25px;
+}
+
 .menu-item {
     text-decoration: none;
-    color: white;
-    font-size: 16px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 20px;
     padding: 10px 20px;
-    margin: 10px 0;
-    min-width: 150px; /* Ancho mínimo */
-    text-align: left;
-    display: inline-block;
+    margin: 10px 0px;
+    min-width: 150px;
+    /* Ancho mínimo */
+    text-align: center;
     border-radius: 8px;
+    border-color: var(--blanco);
     transition: color 0.1s ease, background-color 0.3s ease;
-    max-width: 50px; /* Ancho máximo */
+    max-width: 60px;
+    /* Ancho máximo */
 }
 
 .menu-item:hover {
     color: var(--rojo);
     background-color: var(--blanco);
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        font-size: 20px;
+        transition: color 0.1s ease, background-color 0.3s ease;
+    }
 }

@@ -38,7 +38,7 @@ function BurgerButton({ routes }) {
         color="inherit"
         aria-label="menu"
         onClick={handleToggle}
-        className="burger-button"
+        className="burger-button "
       >
         {open ? <CloseIcon /> : <MenuIcon />}
       </IconButton>
@@ -48,7 +48,7 @@ function BurgerButton({ routes }) {
         ref={menuRef} // Attach the reference to the menu
         className={`burger-menu ${open ? 'open' : ''}`}
       >
-        <h1 className="menu-header">Transportes Fernandez</h1>
+        <h1 className="menu-header">TRANSPORTES FERNÁNDEZ</h1>
         {routes.map(({ label, path }) => (
           <Link
             to={path}

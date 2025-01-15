@@ -6,11 +6,11 @@ import Servicios from '../screens/mainNavigation/Servicios';
 import Equipo from '../screens/mainNavigation/Equipo';
 
 const navi_routes = [
-    { label: 'Inicio', path: '/', component: Inicio },
-    { label: 'Empresa', path: '/empresa', component: Empresa },
-    { label: 'Servicios', path: '/servicios', component: Servicios },
-    { label: 'Equipo', path: '/equipo', component: Equipo },
-    { label: 'Contacto', path: '/contacto', component: Contacto },
+    { label: 'INICIO', path: '/', component: Inicio },
+    { label: 'EMPRESA', path: '/empresa', component: Empresa },
+    { label: 'SERVICIOS', path: '/servicios', component: Servicios },
+    { label: 'EQUIPO', path: '/equipo', component: Equipo },
+    { label: 'CONTACTO', path: '/contacto', component: Contacto },
 ];
 
 export default navi_routes;
