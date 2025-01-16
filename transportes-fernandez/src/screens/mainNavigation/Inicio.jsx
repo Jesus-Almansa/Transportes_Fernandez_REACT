@@ -6,7 +6,6 @@ import Carousel from '../../components/features/Carousel/Carousel';
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
 import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
-import ContactForm from '../../components/features/ContactForm/ContactForm';
 import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import FlipCard from '../../components/features/FlipCard/FlipCard';
