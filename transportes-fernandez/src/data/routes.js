@@ -4,6 +4,8 @@ import Contacto from '../screens/mainNavigation/Contacto';
 import Servicios from '../screens/mainNavigation/Servicios';
 import Equipo from '../screens/mainNavigation/Equipo';
 import Industrial from '../screens/Endpoints/Industrial';
+import Parques from '../screens/Endpoints/Parques';
+
 
 const routes = [
   { label: 'aniversario', path: '/aniversario', component: Aniversario },
@@ -12,6 +14,8 @@ const routes = [
   { label: 'servicios', path: '/servicios', component: Servicios },
   { label: 'equipo', path: '/equipo', component: Equipo },
   { label: 'industrial', path: '/industrial', component: Industrial },
+  { label: 'parques', path: '/parques', component: Parques },
+  
 ];
 
 export const findRouteByLabel = (label) =>
