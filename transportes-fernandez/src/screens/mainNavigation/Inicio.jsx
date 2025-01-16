@@ -290,7 +290,7 @@ function Inicio() {
         <div className="padding-vertical-1"></div>
 
         <div className="enLinea negrita">
-          <Button to={getPathByLabel('contacto')} className={"button button-contacto"}>
+          <Button to={getPathByLabel('contacto')} className={"button button-Home-Contacto"}>
             CONTACTO
           </Button>
 

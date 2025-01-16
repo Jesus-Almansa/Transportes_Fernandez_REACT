@@ -19,14 +19,38 @@
 }
 
 /* Botón de contacto */
-.button-contacto {
+.button-Home-Contacto {
     font-size: 30px;
     padding: 15px 40px;
 }
 
-.button-contacto:hover {
+.button-Home-Contacto:hover {
     background-color: var(--blanco);
     color: var(--rojo);
+}
+
+.button-Empresa-Servicios {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Empresa-Servicios:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.button-Empresa-Contacto {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Empresa-Contacto:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
 }
 
 /* ================================
