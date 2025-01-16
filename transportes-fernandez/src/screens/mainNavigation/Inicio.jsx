@@ -130,7 +130,12 @@ function Inicio() {
       {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
       <div id='Home-Servicios' className="alinearEnColumna">
 
-        <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+        <div className='large-text-title padding-vertical-3'>
+
+          <Link to={getPathByLabel('servicios')} className="text-red no-underline">
+            <strong><b>SERVICIOS</b></strong>
+          </Link>
+        </div>
 
         <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
 
