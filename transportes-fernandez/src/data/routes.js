@@ -1,11 +1,14 @@
-import Aniversario from '../screens/Endpoints/Aniversario';
 import Empresa from '../screens/mainNavigation/Empresa';
 import Contacto from '../screens/mainNavigation/Contacto';
 import Servicios from '../screens/mainNavigation/Servicios';
 import Equipo from '../screens/mainNavigation/Equipo';
+
+
+// Endpoints
+import Aniversario from '../screens/Endpoints/Aniversario';
 import Industrial from '../screens/Endpoints/Industrial';
 import Parques from '../screens/Endpoints/Parques';
-
+import Especiales from '../screens/Endpoints/Especiales';
 
 const routes = [
   { label: 'aniversario', path: '/aniversario', component: Aniversario },
@@ -15,6 +18,7 @@ const routes = [
   { label: 'equipo', path: '/equipo', component: Equipo },
   { label: 'industrial', path: '/industrial', component: Industrial },
   { label: 'parques', path: '/parques', component: Parques },
+  { label: 'especiales', path: '/especiales', component: Especiales },
   
 ];
 
