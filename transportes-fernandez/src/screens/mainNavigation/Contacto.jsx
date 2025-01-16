@@ -15,9 +15,9 @@ import españa2 from '../../assets/original_images/españakbron22.png';
 
 import { getPathByLabel } from '../../data/routes';
 
-function Contact() {
+function Contacto() {
   return (
-    <div id="Contact">
+    <div id="Contacto">
 
       <div className="padding-vertical-0"></div>
 
@@ -40,7 +40,7 @@ function Contact() {
           <div className="padding-vertical-up-3"></div>
           <h1 className="text-white large-text-title">{" "}
             <Link to={getPathByLabel('contacto')} className="text-white no-underline">
-              <strong>CONTÁCTANOS PARA CUALQUIER CONSULTA</strong>
+              <strong>CONTÁCTANOS PARA CUALQUIER DUDA</strong>
             </Link>
             {" "} </h1>
 
@@ -58,7 +58,7 @@ function Contact() {
           <div className="padding-vertical-1"></div>
 
           <MailButton
-            email="paz@transportesfernandez.es"
+            email="contacto@transportesfernandez.es"
             subject="Consulta desde la web"
             body="Hola, tengo algunas dudas sobre..."
             className="mail-button"
@@ -82,4 +82,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contacto;
