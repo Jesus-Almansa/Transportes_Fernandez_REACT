@@ -3,8 +3,9 @@ import EmployeeCard from '../../components/features/Employee/EmployeeCard';
 import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
 import TextBox from '../../components/layout/Box/TextBox';
+import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 
-import narutoImage from '../../assets/images/naruto.jpg';
+import cubo from '../../assets/images/infinitecube.png';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
 import laMadre2 from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7783.jpg';
 import letiziaImage from '../../assets/images/letizia.png';
@@ -31,7 +32,7 @@ const Equipo = () => {
                                 name="Paz Fernández Lozano"
                                 position="CEO"
                                 imageUrl={laMadre}
-                                number="+34 669 354 145"
+                                number="+34 605 688 210"
                                 mail="paz@transportesfernandez.es"
                                 hoverable={true}
                             />
@@ -87,6 +88,14 @@ const Equipo = () => {
                     El equipo de Transportes Fernández es una familia. Nos caracterizamos por haber crecido junto a nuestros empleados de toda la vida. La empresa ha pasado de ser una empresa local a una empresa nacional gracias al esfuerzo y dedicación de todos los trabajadores.
 
                     <br /><br />
+
+                    <MediaPicture
+                        src={cubo}
+                        alt="Descripción de la imagen"
+                        className="picture-container picture-Empresa-Hoy"
+                    />
+
+                    <div className='padding-vertical-3 alinearEnColumna'>AQUI VA LA FOTO DE TODO EL EQUIPO</div>
 
                     El equipo de Transportes Fernández es más que un grupo de trabajo; somos una familia. A lo largo de los años, hemos crecido juntos, acompañados por empleados que han estado con nosotros desde nuestros inicios. Su esfuerzo, dedicación y compromiso han sido la base sobre la que hemos construido nuestra evolución, pasando de ser una empresa local a consolidarnos como un referente a nivel nacional.
 
