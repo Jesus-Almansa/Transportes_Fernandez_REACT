@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer/Footer';
 import ScrollButton from './components/features/ScrollButton/ScrollButton';
 import ScrollToTop from './components/features/ScrollToTop/ScrollToTop';
 import WhatsAppButton from './components/features/WhatsAppButton/WhatsAppButton';
+import KonamiCode from './components/features/KonamiCode/KonamiCode';
 
 // Import Routes
 import naviRoutes from './data/navi_routes';
@@ -19,6 +20,7 @@ function App() {
   return (
     <Router>
       <div><ScrollToTop /></div>
+      <KonamiCode />
       <div className="App">
         <Header />
 
