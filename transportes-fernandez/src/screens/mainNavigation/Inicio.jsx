@@ -221,7 +221,7 @@ function Inicio() {
             name="Paz Fernández Lozano"
             position="CEO"
             imageUrl={laMadre}
-            number="+34 669 354 145"
+            number="+34 605 688 210"
             mail="paz@transportesfernandez.es"
             hoverable={true}
           />
