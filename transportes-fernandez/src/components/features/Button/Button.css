@@ -53,6 +53,18 @@
     border-color: var(--rojo);
 }
 
+.button-Servicios-Volver {
+    font-size: 25px;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+}
+
+.button-Servicios-Volver:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
 /* ================================
    MEDIA QUERIES
    ================================ */
