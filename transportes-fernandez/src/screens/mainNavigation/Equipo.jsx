@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+// Componentes
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
 import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
 import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 
+// Imágenes
 import cubo from '../../assets/images/infinitecube.png';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
 import laMadre2 from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7783.jpg';
@@ -12,6 +16,9 @@ import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
+
+// Rutas
+import { getPathByLabel } from '../../data/routes';
 
 const Equipo = () => {
     return (
@@ -133,7 +140,10 @@ const Equipo = () => {
                 <h1 className='padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
                 <div className='enLinea'>
                     <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-3">
-                        José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
+                        <Link to={getPathByLabel('jose-maria')} className="text-red no-underline">
+                            <strong>José María</strong>
+                        </Link> y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
+
                     </TextBox>
                 </div>
             </div>

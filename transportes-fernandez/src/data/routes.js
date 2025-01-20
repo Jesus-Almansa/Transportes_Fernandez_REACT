@@ -98,10 +98,10 @@ const routes = [
   },
 
   {
-    label: JoseMaria,
+    label: 'jose-maria',
     path: '/jose-maria',
     component: JoseMaria,
-    title: 'Jose Maria' + tituloBase
+    title: 'José María' + tituloBase
   },
 
 ];
