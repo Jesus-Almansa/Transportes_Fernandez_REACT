@@ -117,7 +117,7 @@ const Equipo = () => {
                 <div className='enLinea'>
                     <div className="text-red text-body">
                         <CEOCard
-                            name="José María Fernández"
+                            name="José María Fernández López"
                             position="Fundador"
                             imageUrl={roshiImage}
                             hoverable={false}
@@ -125,7 +125,7 @@ const Equipo = () => {
                     </div>
                     <div className="text-red text-body">
                         <CEOCard
-                            name="María Asunción Lozano"
+                            name="María Asunción Lozano López-Gil"
                             position="Fundadora"
                             imageUrl={marisaImage}
                             hoverable={false}

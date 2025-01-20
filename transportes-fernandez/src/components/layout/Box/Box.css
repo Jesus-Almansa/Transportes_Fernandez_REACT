@@ -46,7 +46,6 @@
 
 .text-box-Home-Servicios {
   max-width: 70%;
-  background-color: var(--blanco);
   border-radius: 1rem;
   margin: 1rem auto;
   padding: 2rem;
@@ -78,22 +77,27 @@
   padding: 2rem;
 }
 
-/* Aniversario */
-.text-box-Empresa-aniversario {
+/* ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO*/
+.text-box-Aniversario-Intro {
   margin-top: 10%;
   margin-right: 3%;
-  color: var(--blanco);
-  background-color: var(--rojo);
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-  border-radius: 0.3rem;
+  padding: 2rem;
+}
+.text-box-Aniversario-Main {
+  max-width: 70%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  margin: 1rem auto;
   padding: 2rem;
 }
 
-.text-box-Aniversario {
-  width: 100%;
-  padding: 3%;
-  color: var(--blanco);
-  background-color: var(--rojo);
+.text-box-Aniversario-Timeline {
+  max-width: 70%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: left;
+  align-items: center;
 }
 
 /* Media Queries para tablets */
