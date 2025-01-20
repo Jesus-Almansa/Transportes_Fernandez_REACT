@@ -151,7 +151,7 @@ function Inicio() {
             frontImage={parquesEolicos}
             backText="Parques eólicos"
             icon={
-              <Link to={getPathByLabel("servicios")}>
+              <Link to={getPathByLabel("parques")}>
                 <img src={iconoEolico} alt='iconEolico' />
               </Link>}
           />
@@ -159,7 +159,7 @@ function Inicio() {
             frontImage={medidasEspeciales}
             backText="Medidas especiales"
             icon={
-              <Link to={getPathByLabel("servicios")}>
+              <Link to={getPathByLabel("especiales")}>
                 <img src={iconoEspecial} alt='iconEspecial' />
               </Link>}
           />
@@ -181,7 +181,7 @@ function Inicio() {
           frontImage={laMancha}
           backText={"Transporte regional en La Mancha"}
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("regional")}>
               <img src={iconoLaMancha} alt='iconLaMancha' />
             </Link>}
         />
@@ -189,7 +189,7 @@ function Inicio() {
           frontImage={valencia}
           backText="Transporte por toda la península e islas"
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("nacional")}>
               <img src={iconoValencia} alt='iconValencia' />
             </Link>}
         />
@@ -197,7 +197,7 @@ function Inicio() {
           frontImage={internacional}
           backText="Transporte a nivel internacional"
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("internacional")}>
               <img src={iconoInternacional} alt='iconInternacional' />
             </Link>}
         />
