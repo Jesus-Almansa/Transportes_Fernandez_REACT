@@ -1,8 +1,7 @@
-// import Inicio from '../screens/mainNavigation/Inicio';
 import Empresa from '../screens/mainNavigation/Empresa';
+import Contacto from '../screens/mainNavigation/Contacto';
 import Servicios from '../screens/mainNavigation/Servicios';
 import Equipo from '../screens/mainNavigation/Equipo';
-import Contacto from '../screens/mainNavigation/Contacto';
 
 // Endpoints
 import Aniversario from '../screens/Endpoints/Aniversario';
@@ -15,24 +14,85 @@ import Internacional from '../screens/Endpoints/Internacional';
 import Konami from '../screens/Endpoints/Konami';
 
 const routes = [
+  {
+    label: 'empresa',
+    path: '/empresa',
+    component: Empresa,
+    title: 'Empresa | Transportes Fernández'
+  },
+  {
+    label: 'contacto',
+    path: '/contacto',
+    component: Contacto,
+    title: 'Contacto | Transportes Fernández'
+  },
+  {
+    label: 'servicios',
+    path: '/servicios',
+    component: Servicios,
+    title: 'Servicios | Transportes Fernández'
+  },
+  {
+    label: 'equipo',
+    path: '/equipo',
+    component: Equipo,
+    title: 'Equipo | Transportes Fernández'
+  },
 
-  { label: 'empresa', path: '/empresa', component: Empresa },
-  { label: 'contacto', path: '/contacto', component: Contacto },
-  { label: 'servicios', path: '/servicios', component: Servicios },
-  { label: 'equipo', path: '/equipo', component: Equipo },
+  {
+    label: 'aniversario',
+    path: '/aniversario',
+    component: Aniversario,
+    title: 'Aniversario | Transportes Fernández'
+  },
 
-  { label: 'aniversario', path: '/aniversario', component: Aniversario },
-  
-  { label: 'especiales', path: '/especiales', component: Especiales },
-  { label: 'industrial', path: '/industrial', component: Industrial },
-  { label: 'parques', path: '/parques', component: Parques },
-  { label: 'regional', path: '/regional', component: Regional },
-  { label: 'nacional', path: '/nacional', component: Nacional },
-  { label: 'internacional', path: '/internacional', component: Internacional },
-  { label: 'konami', path: '/konami', component: Konami },
+  {
+    label: 'industrial',
+    path: '/industrial',
+    component: Industrial,
+    title: 'Industrial | Transportes Fernández'
+  },
+  {
+    label: 'parques',
+    path: '/parques',
+    component: Parques,
+    title: 'Parques | Transportes Fernández'
+  },
 
+  {
+    label: 'especiales',
+    path: '/especiales',
+    component: Especiales,
+    title: 'Especiales | Transportes Fernández'
+  },
 
+  { 
+    label: 'regional',
+    path: '/regional',
+    component: Regional,
+    title: 'Regional | Transportes Fernández'
+  },
 
+  {
+    label: 'nacional',
+    path: '/nacional',
+    component: Nacional,
+    title: 'Nacional | Transportes Fernández'
+  },
+
+  {
+    label: 'internacional',
+    path: '/internacional',
+    component: Internacional,
+    title: 'Internacional | Transportes Fernández'
+  },
+
+  {
+    label: 'konami',
+    path: '/konami',
+    component: Konami,
+    title: 'Konami | Transportes Fernández'
+  },
 ];
 
 export const findRouteByLabel = (label) =>
