@@ -166,15 +166,15 @@ function Inicio() {
         </div>
       </div>
 
-      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-up-3 text-body'>
+        Nos especializamos en el traslado de maquinaria industrial de gran volumen, componentes para parques eólicos y cargas de dimensiones especiales, ofreciendo soluciones diseñadas para los proyectos más exigentes. Nuestro equipo de expertos analiza minuciosamente cada tipo de carga para seleccionar el vehículo y la metodología de transporte más adecuada, priorizando siempre la seguridad y eficiencia. Gracias a esta capacidad de adaptación, podemos abarcar desde piezas delicadas de precisión hasta estructuras sobredimensionadas que requieren un cuidado excepcional en cada fase del proceso.
 
         <div className='padding-vertical-1'></div>
 
-        Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
+        Para responder a las demandas más específicas, contamos con una flota de vehículos modernos y equipados con tecnología de vanguardia, capaz de gestionar incluso los desafíos logísticos más complejos. Cada operación se ejecuta con estándares rigurosos de calidad, respaldados por profesionales altamente cualificados que supervisan de cerca el proceso de carga, traslado y entrega. Este compromiso integral garantiza la integridad de los bienes en todo momento, convirtiendo a Transportes Fernández en un aliado confiable para el transporte especializado.
       </TextBox>
 
-      <h1 className='padding-vertical-1 text-red text-title alinearEnColumna'>DONDE LO TRANSPORTAMOS</h1>
+      <h1 className='padding-vertical-4 text-red text-title alinearEnColumna'>DONDE LO TRANSPORTAMOS</h1>
 
       <div className="enLinea text-body">
         <FlipCard
@@ -202,12 +202,17 @@ function Inicio() {
             </Link>}
         />
       </div>
-      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
-
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-up-3 text-body'>
+        Nuestra cobertura geográfica abarca tanto rutas nacionales como internacionales, facilitando la circulación de cargas en diversos entornos urbanos, industriales y rurales. Gracias a la experiencia acumulada en numerosos proyectos, conocemos a fondo las vías y regulaciones que rigen el transporte de mercancías en distintas regiones, asegurando el cumplimiento de todas las normativas y el uso eficiente de cada ruta. Con una planificación detallada y el respaldo de sistemas de localización en tiempo real, garantizamos la llegada puntual de cada envío.
       </TextBox>
 
-      <div className='padding-vertical-up-0'></div>
+      
+
+      <TextBox className='text-box text-box-Home-Servicios text-body'>
+        Además, asumimos retos logísticos en zonas de difícil acceso o con condiciones geográficas particulares, adaptando los recorridos para optimizar tiempos y recursos. Nuestros expertos llevan a cabo un estudio previo de cada trayecto, identificando posibles obstáculos y diseñando planes de contingencia para cualquier eventualidad. De esta forma, ofrecemos a nuestros clientes la tranquilidad de contar con un servicio de alcance extendido, capaz de transportar sus mercancías allá donde se necesiten, con la misma calidad y eficacia que nos caracteriza.
+      </TextBox>
+
+      <div className='padding-vertical-up-3'></div>
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
 
@@ -319,7 +324,7 @@ function Inicio() {
 
       <h1 className="text-red large-text-title"> PUEDES ENCONTRARNOS EN VILLARROBLEDO (ALBACETE)</h1>
       <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
+        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo.
       </TextBox>
 
       <Maps />

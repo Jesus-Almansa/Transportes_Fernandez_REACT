@@ -43,16 +43,16 @@ function Empresa() {
 
       {/* RESUMEN RESUMEN RESUMEN RESUMEN RESUMEN RESUMEN RESUMEN RESUMEN*/}
       <div id='Resumen' className="alinearEnColumna">
-        <h1 className='large-text-title padding-vertical-3 text-box-Home-IntroTitle'>
+        <h1 className='large-text-title padding-vertical-4 text-box-Home-IntroTitle'>
           <b>NUESTROS OBJETIVOS</b>
         </h1>
         <div className="enLinea">
           <TextBox className="text-body text-box  text-box-Home-Intro">
-            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con dedicación, responsabilidad y calidad, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
+            Trabajamos para construir una comunidad de personas comprometidas y profesionales, que valoran la excelencia y el crecimiento continuo, tanto a nivel personal como en su trabajo. Aspiramos a superar retos con <b>dedicación</b>, <b>responsabilidad</b> y <b>rigor</b>, siempre garantizando confianza, seguridad y satisfacción en cada servicio que ofrecemos.
 
             <div className="padding-vertical-1"></div>
 
-            Nuestro objetivo es posicionarnos como un proveedor premium, conocido por nuestra eficiencia, profesionalidad y resultados de calidad. Nos esforzamos por ofrecer un servicio serio, confiable y adaptado a los más altos estándares del sector. Bajo nuestro lema, <b>"Lo primero es el cliente"</b>, reafirmamos nuestro compromiso de superar expectativas y construir relaciones sólidas basadas en la confianza y la satisfacción de quienes eligen trabajar con nosotros.
+            Aspiramos a ser reconocidos como un referente destacado en el sector, caracterizándonos por nuestra eficiencia, profesionalismo y resultados. Nos dedicamos a brindar un servicio serio, fiable y alineado con los más altos estándares de calidad. Con nuestro lema, <b>"Lo primero es el cliente"</b>, reafirmamos nuestro compromiso de superar expectativas y construir relaciones duraderas basadas en la satisfacción y el respeto mutuo.
           </TextBox>
         </div>
       </div>
@@ -69,6 +69,12 @@ function Empresa() {
         </Button>
 
       </div>
+
+      <div className='padding-vertical-up-2'></div>
+
+      <TextBox className='text-body text-box text-box-Home-Intro'>
+        Cada proyecto que emprendemos es una oportunidad para demostrar nuestra pasión por lo que hacemos. Nos motiva la idea de marcar una diferencia real en la vida de nuestros clientes, ofreciendo soluciones innovadoras que no solo resuelven sus necesidades, sino que también superan sus expectativas. Con este enfoque, seguimos creciendo y construyendo una comunidad basada en valores sólidos, compromiso y una visión compartida de éxito.
+      </TextBox>
 
       <div className='padding-vertical-up-2'></div>
 

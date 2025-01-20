@@ -4,36 +4,39 @@ import Servicios from '../screens/mainNavigation/Servicios';
 import Equipo from '../screens/mainNavigation/Equipo';
 import Contacto from '../screens/mainNavigation/Contacto';
 
+// Sufijo del título (puede exportarse desde un archivo de constantes)
+const tituloBase = ' | Transportes Fernández';
+
 const navi_routes = [
   {
     label: 'INICIO',
     path: '/',
     component: Inicio,
-    title: 'Inicio | Transportes Fernández'
+    title: 'Inicio' + tituloBase
   },
   {
     label: 'EMPRESA',
     path: '/empresa',
     component: Empresa,
-    title: 'Empresa | Transportes Fernández'
+    title: 'Empresa' + tituloBase
   },
   {
     label: 'SERVICIOS',
     path: '/servicios',
     component: Servicios,
-    title: 'Servicios | Transportes Fernández'
+    title: 'Servicios' + tituloBase
   },
   {
     label: 'EQUIPO',
     path: '/equipo',
     component: Equipo,
-    title: 'Equipo | Transportes Fernández'
+    title: 'Equipo' + tituloBase
   },
   {
     label: 'CONTACTO',
     path: '/contacto',
     component: Contacto,
-    title: 'Contacto | Transportes Fernández'
+    title: 'Contacto' + tituloBase
   },
 ];
 

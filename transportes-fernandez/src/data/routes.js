@@ -12,87 +12,98 @@ import Regional from '../screens/Endpoints/Regional';
 import Nacional from '../screens/Endpoints/Nacional';
 import Internacional from '../screens/Endpoints/Internacional';
 import Konami from '../screens/Endpoints/Konami';
+import JoseMaria from '../screens/Endpoints/JoseMaria';
+
+const tituloBase = ' | Transportes Fernández';
 
 const routes = [
   {
     label: 'empresa',
     path: '/empresa',
     component: Empresa,
-    title: 'Empresa | Transportes Fernández'
+    title: 'Empresa' + tituloBase
   },
   {
     label: 'contacto',
     path: '/contacto',
     component: Contacto,
-    title: 'Contacto | Transportes Fernández'
+    title: 'Contacto' + tituloBase
   },
   {
     label: 'servicios',
     path: '/servicios',
     component: Servicios,
-    title: 'Servicios | Transportes Fernández'
+    title: 'Servicios' + tituloBase
   },
   {
     label: 'equipo',
     path: '/equipo',
     component: Equipo,
-    title: 'Equipo | Transportes Fernández'
+    title: 'Equipo' + tituloBase
   },
 
   {
     label: 'aniversario',
     path: '/aniversario',
     component: Aniversario,
-    title: 'Aniversario | Transportes Fernández'
+    title: 'Aniversario' + tituloBase
   },
 
   {
     label: 'industrial',
     path: '/industrial',
     component: Industrial,
-    title: 'Industrial | Transportes Fernández'
+    title: 'Industrial' + tituloBase
   },
   {
     label: 'parques',
     path: '/parques',
     component: Parques,
-    title: 'Parques | Transportes Fernández'
+    title: 'Parques' + tituloBase
   },
 
   {
     label: 'especiales',
     path: '/especiales',
     component: Especiales,
-    title: 'Especiales | Transportes Fernández'
+    title: 'Especiales' + tituloBase
   },
 
   { 
     label: 'regional',
     path: '/regional',
     component: Regional,
-    title: 'Regional | Transportes Fernández'
+    title: 'Regional' + tituloBase
   },
 
   {
     label: 'nacional',
     path: '/nacional',
     component: Nacional,
-    title: 'Nacional | Transportes Fernández'
+    title: 'Nacional' + tituloBase
   },
 
   {
     label: 'internacional',
     path: '/internacional',
     component: Internacional,
-    title: 'Internacional | Transportes Fernández'
+    title: 'Internacional' + tituloBase
   },
 
   {
     label: 'konami',
     path: '/konami',
     component: Konami,
-    title: 'Konami | Transportes Fernández'
+    title: 'Konami' + tituloBase
   },
+
+  {
+    label: JoseMaria,
+    path: '/jose-maria',
+    component: JoseMaria,
+    title: 'Jose Maria' + tituloBase
+  },
+
 ];
 
 export const findRouteByLabel = (label) =>
