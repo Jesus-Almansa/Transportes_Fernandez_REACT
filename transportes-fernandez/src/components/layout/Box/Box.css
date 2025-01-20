@@ -69,6 +69,14 @@
   padding: 2rem;
 }
 
+.text-box-Empresa-Main {
+  max-width: 70%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
 /* EQUIPO  EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/
 .text-box-Equipo {
   max-width: 70%;
