@@ -7,7 +7,8 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Images
-import madreNiño from '../../assets/TransportersBranding/SEXIO/100/techo.jpg';
+import techoIndustrial from '../../assets/TransportersBranding/SEXIO/100/techo.jpg';
+import toroMecanico from '../../assets/TransportersBranding/SEXIO/100/toroMecanico.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -38,7 +39,7 @@ const Industrial = () => {
                 Nuestro servicio está diseñado para cubrir una amplia gama de cargas industriales:
 
                 <ul className='text-box-Aniversario-Timeline  text-box text-body'>
-                    <li><b>Maquinaria de gran envergadura:</b> prensas, calderas, turbinas y otros equipos pesados que requieren medios de transporte y manipulación específicos..</li>
+                    <li><b>Maquinaria de gran envergadura:</b> prensas, calderas, turbinas y otros equipos pesados que requieren medios de transporte y manipulación específicos.</li>
                     <li><b>Líneas de producción y equipos completos:</b> ofrecemos la capacidad logística de trasladar sistemas industriales en bloque o por módulos, coordinando cada fase del proceso para minimizar interrupciones en tu producción.</li>
                     <li><b>Componentes especiales:</b> estructuras metálicas, tanques, paneles, piezas de repuesto y equipos delicados que necesitan una sujeción y protección adecuadas durante todo el trayecto.</li>
                 </ul>
@@ -46,12 +47,31 @@ const Industrial = () => {
                 Gracias a la versatilidad de nuestra flota y la capacitación de nuestro equipo, podemos gestionar desde cargas voluminosas hasta unidades delicadas de alta precisión, siempre garantizando los más altos estándares de calidad y seguridad.
             </TextBox>
 
+            <MediaPicture
+                src={toroMecanico}
+                alt="toroMecanico"
+                className="picture-container picture-Industrial-toroMecanico"
+            />
+
             <h1 className='padding-vertical-2 text-red large-text-title alinearEnColumna'>LOGÍSTICA Y PLANIFICACIÓN</h1>
 
+            <TextBox className='alinearEnColumna text-box text-box-Industrial-Intro text-body'>
+                El éxito en el transporte industrial radica en una planificación detallada. En Transportes Fernández, llevamos a cabo:
+
+                <ul className='text-box-Aniversario-Timeline  text-box text-body'>
+                    <li><b>Análisis de requerimientos:</b> evaluamos el tipo de maquinaria, dimensiones, peso y complejidad de la carga.</li>
+                    <li><b>Diseño de rutas seguras y eficientes:</b>  estudiamos carreteras, puentes, túneles y cualquier restricción o permiso necesario para cargas especiales.</li>
+                    <li><b>Coordinación con el cliente:</b> mantenemos una comunicación fluida para adaptar calendarios de producción o entrega, evitando retrasos y reduciendo costos.</li>
+                    <li><b>Tramitación de permisos:</b>  gestionamos la documentación exigida por las autoridades locales o internacionales para el transporte de mercancías especiales o sobredimensionadas.</li>
+                </ul>
+
+                Con esta metodología rigurosa, optimizamos cada etapa del envío y garantizamos la integridad de la maquinaria hasta su destino final.
+            </TextBox>
+
             <MediaPicture
-                src={madreNiño}
+                src={techoIndustrial}
                 alt="fachada"
-                className="picture-container picture-Contacto"
+                className="picture-container picture-Industrial-techo"
             />
         </div>
     );
