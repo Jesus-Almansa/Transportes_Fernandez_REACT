@@ -206,7 +206,7 @@ function Inicio() {
         Nuestra cobertura geográfica abarca tanto rutas nacionales como internacionales, facilitando la circulación de cargas en diversos entornos urbanos, industriales y rurales. Gracias a la experiencia acumulada en numerosos proyectos, conocemos a fondo las vías y regulaciones que rigen el transporte de mercancías en distintas regiones, asegurando el cumplimiento de todas las normativas y el uso eficiente de cada ruta. Con una planificación detallada y el respaldo de sistemas de localización en tiempo real, garantizamos la llegada puntual de cada envío.
       </TextBox>
 
-      
+
 
       <TextBox className='text-box text-box-Home-Servicios text-body'>
         Además, asumimos retos logísticos en zonas de difícil acceso o con condiciones geográficas particulares, adaptando los recorridos para optimizar tiempos y recursos. Nuestros expertos llevan a cabo un estudio previo de cada trayecto, identificando posibles obstáculos y diseñando planes de contingencia para cualquier eventualidad. De esta forma, ofrecemos a nuestros clientes la tranquilidad de contar con un servicio de alcance extendido, capaz de transportar sus mercancías allá donde se necesiten, con la misma calidad y eficacia que nos caracteriza.
@@ -294,6 +294,12 @@ function Inicio() {
           HORARIO DE OFICINA:
           <br />
           LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
+
+          <div className="padding-vertical-1"></div>
+
+          CORREO:
+          <br />
+          contacto@transportesfernandez.es
         </TextBox>
 
         <div className="padding-vertical-1"></div>

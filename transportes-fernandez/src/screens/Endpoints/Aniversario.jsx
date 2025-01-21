@@ -46,11 +46,11 @@ const Aniversario = () => {
                 FUNDACIÓN Y MISIÓN
             </div>
 
-            <TextBox className='text-body text-box-Aniversario-Main'>
+            <TextBox className='text-body text-box text-box-Aniversario-Main'>
                 Corría el año 1954 cuando nuestros fundadores, motivados por la visión de crear un servicio de transporte confiable y cercano, sentaron las bases de lo que hoy conocemos como Transportes Fernández. Desde entonces, cada año ha sido una oportunidad para perfeccionar nuestros métodos y evolucionar junto a los cambios del mercado.
                 A lo largo de estos 70 años, hemos crecido y evolucionado junto a nuestros clientes, ampliando la flota de vehículos y adaptándonos a las exigencias de un entorno cada vez más tecnológico y competitivo.
 
-                <div className='padding-vertical-0'></div>
+                <div className='padding-vertical-1'></div>
 
                 Cada generación de profesionales ha aportado su conocimiento y visión, integrando nuevos métodos de planificación y supervisión que garantizan la seguridad y eficacia de nuestros servicios. Este aniversario simboliza no solo el orgullo de un legado bien cimentado, sino también el inicio de una nueva etapa llena de proyectos ambiciosos, en la que continuaremos trabajando para ofrecer un transporte fiable y de vanguardia.
             </TextBox>
@@ -59,7 +59,7 @@ const Aniversario = () => {
                 LÍNEA DE TIEMPO
             </div>
 
-            <ul className='text-box-Aniversario-Timeline  text-body'>
+            <ul className='text-box text-box-Aniversario-Timeline  text-body'>
                 <li>1954 -  Fundación de Transportes Fernández, con un pequeño equipo y una gran determinación.</li>
                 <li>1960-1970: Consolidación de la empresa en el transporte local y primeros proyectos de gran envergadura</li>
                 <li>1980: Incorporación de tecnologías de seguimiento y mejoras en los procesos logísticos.</li>
@@ -72,7 +72,7 @@ const Aniversario = () => {
                 EL FACTOR HUMANO
             </div>
 
-            <TextBox className='text-body text-box-Aniversario-Main'>
+            <TextBox className='text-box text-body text-box-Aniversario-Main'>
                 Uno de nuestros mayores logros es haber construido un equipo que trasciende las generaciones, donde la experiencia de los más veteranos se fusiona con las ideas frescas de los nuevos talentos. Son ellos quienes, día tras día, garantizan la excelencia en cada operación, atendiendo las necesidades de nuestros clientes con compromiso y esmero.
             </TextBox>
 

@@ -93,7 +93,6 @@
 }
 .text-box-Aniversario-Main {
   max-width: 70%;
-  background-color: var(--blanco);
   border-radius: 1rem;
   margin: 1rem auto;
   padding: 2rem;
@@ -106,6 +105,16 @@
   padding: 2rem;
   text-align: left;
   align-items: center;
+}
+
+/* INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL*/
+
+.text-box-Industrial-Intro {
+  max-width: 70%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
 }
 
 /* Media Queries para tablets */

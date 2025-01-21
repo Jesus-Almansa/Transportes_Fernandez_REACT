@@ -51,6 +51,12 @@ function Contacto() {
           HORARIO DE OFICINA:
           <br />
           LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
+
+          <div className="padding-vertical-1"></div>
+
+          CORREO:
+          <br />
+          contacto@transportesfernandez.es
         </TextBox>
 
         <div className="enLinea negrita">
@@ -72,7 +78,7 @@ function Contacto() {
 
       </Background>
 
-      <div className="padding-vertical-1"></div>
+      <div className="padding-vertical-0"></div>
 
       <Maps />
 

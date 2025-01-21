@@ -127,6 +127,10 @@ h1, h2, h3, p {
   font-weight: bold;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .no-underline {
   text-decoration: none;
 }
