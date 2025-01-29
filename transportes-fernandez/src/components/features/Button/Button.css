@@ -18,6 +18,19 @@
     transform: scale(1.05);
 }
 
+/* Servicios */
+
+.button-Home-Servicios {
+    font-size: 30px;
+    padding: 15px 40px;
+    
+}
+
+.button-Home-Servicios:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+}
+
 /* Botón de contacto */
 .button-Home-Contacto {
     font-size: 30px;

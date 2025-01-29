@@ -11,8 +11,8 @@ import Especiales from '../screens/Endpoints/Especiales';
 import Regional from '../screens/Endpoints/Regional';
 import Nacional from '../screens/Endpoints/Nacional';
 import Internacional from '../screens/Endpoints/Internacional';
-import Konami from '../screens/Endpoints/Konami';
-import JoseMaria from '../screens/Endpoints/JoseMaria';
+import Developer from '../screens/Endpoints/Developer';
+import Fundadores from '../screens/Endpoints/Fundadores';
 
 const tituloBase = ' | Transportes Fernández';
 
@@ -91,17 +91,17 @@ const routes = [
   },
 
   {
-    label: 'konami',
-    path: '/konami',
-    component: Konami,
-    title: 'Konami' + tituloBase
+    label: 'developer',
+    path: '/developer',
+    component: Developer,
+    title: 'Developer' + tituloBase
   },
 
   {
-    label: 'jose-maria',
-    path: '/jose-maria',
-    component: JoseMaria,
-    title: 'José María' + tituloBase
+    label: 'fundadores',
+    path: '/fundadores',
+    component: Fundadores,
+    title: 'Fundadores' + tituloBase
   },
 
 ];

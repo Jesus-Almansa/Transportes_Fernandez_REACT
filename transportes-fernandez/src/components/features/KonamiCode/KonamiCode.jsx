@@ -20,7 +20,7 @@ const KonamiCode = () => {
       // Verifica si la secuencia coincide
       if (JSON.stringify(userInput) === JSON.stringify(konamiSequence)) {
         console.log('¡Código Konami detectado!');
-        navigate('/konami'); // Redirige al endpoint secreto
+        navigate('/developer'); // Redirige al endpoint secreto
       }
     };
 

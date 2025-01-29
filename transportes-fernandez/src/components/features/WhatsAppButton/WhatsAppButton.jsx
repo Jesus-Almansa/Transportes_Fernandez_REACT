@@ -5,7 +5,7 @@ import './WhatsAppButton.css';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CloseIcon from '@mui/icons-material/Close';
 
-// Ejemplo de lista de contactos
+// Lista de contactos
 const contacts = [
   {
     name: 'Administración y comercial nacional',
