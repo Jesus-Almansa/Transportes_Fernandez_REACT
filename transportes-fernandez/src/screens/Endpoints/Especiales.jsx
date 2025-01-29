@@ -63,6 +63,8 @@ const especiales = () => {
                 De esta manera, nos aseguramos de que cada componente llegue a su destino en perfectas condiciones y dentro de los plazos establecidos, contribuyendo al éxito de tus proyectos de gran envergadura.
             </TextBox>
 
+            <div className='padding-vertical-up-1'> </div>
+
             <MediaPicture
                 src={equipo}
                 alt="Parque Eólico 2"
