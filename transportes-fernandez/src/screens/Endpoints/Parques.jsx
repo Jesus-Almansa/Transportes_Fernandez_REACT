@@ -8,7 +8,7 @@ import TextBox from '../../components/layout/Box/TextBox';
 // Imágenes (reemplaza con las rutas reales de tus imágenes)
 import parqueEolico1 from '../../assets/original_images/ground_windturbine.jpg';
 import offshoreWindturbine from '../../assets/original_images/offshore_windturbine.jpg';
-import landscape from '../../assets/original_images/2landscape_windturbine.jpg';
+import landscape from '../../assets/original_images/landscape_windturbine.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
