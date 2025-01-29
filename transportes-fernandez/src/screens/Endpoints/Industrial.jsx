@@ -29,7 +29,7 @@ const Industrial = () => {
 
             <h1 className='padding-vertical-2 text-red large-text-title alinearEnColumna'>TRANSPORTE INDUSTRIAL</h1>
 
-            <TextBox className='alinearEnColumna text-box-Industrial-Intro text-body'>
+            <TextBox className='alinearEnColumna text-box text-box-Industrial-Intro text-body'>
                 En el entorno de la industria, cada minuto cuenta. Por ello, Transportes Fernández ofrece soluciones personalizadas para el transporte de maquinaria industrial y cargas de alta complejidad, brindando una respuesta eficaz a los requerimientos logísticos de empresas de diferentes sectores. Con décadas de experiencia, nos especializamos en el manejo de bienes que requieren un alto nivel de conocimiento técnico y un cuidado excepcional, asegurando que cada envío llegue a su destino de manera puntual y segura.
             </TextBox>
 

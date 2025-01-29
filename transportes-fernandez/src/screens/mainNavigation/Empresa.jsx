@@ -22,7 +22,7 @@ function Empresa() {
 
       <MediaPicture src={camionUnitario} alt="placeholder" className='picture-container ' />
 
-      <h1 className='large-text-title padding-vertical-3 text-box-Home-IntroTitle'>
+      <h1 className='large-text-title padding-vertical-4 text-box-Home-IntroTitle'>
         <b>TRANSPORTES FERNÁNDEZ A DÍA DE HOY</b>
       </h1>
       <div className="enLinea">
@@ -41,7 +41,7 @@ function Empresa() {
         </div>
       </div>
 
-      <div className='padding-vertical-2'></div>
+      <div className='padding-vertical-1'></div>
 
       <TextBox className='text-body text-box text-box-Empresa-Main'>
         A lo largo de más de medio siglo, Transportes Fernández ha mantenido un firme compromiso con la eficiencia y la calidad en el traslado de materiales industriales. Hoy, seguimos evolucionando para responder a los desafíos que plantean la innovación tecnológica y las demandas logísticas del mercado global. Nuestra experiencia nos ha permitido diseñar procesos específicos para la manipulación, carga y transporte de maquinaria pesada, componentes de gran envergadura y soluciones industriales complejas, siempre garantizando un servicio a la altura de las expectativas de nuestros clientes.

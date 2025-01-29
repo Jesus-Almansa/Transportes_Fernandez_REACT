@@ -214,6 +214,14 @@ function Inicio() {
 
       <div className='padding-vertical-up-3'></div>
 
+      <div className='alinearEnColumna'>
+        <Button to={getPathByLabel('servicios')} className={"button button-Empresa-Servicios negrita"}>
+          SERVICIOS
+        </Button>
+      </div>
+
+      <div className='padding-vertical-up-3'></div>
+
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
 
       <Background color="#ab273c">
