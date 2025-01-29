@@ -16,6 +16,7 @@ import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
+import JoseMariaJoven from '../../assets/original_images/JoseMaria_Joven.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -119,7 +120,7 @@ const Equipo = () => {
                         <CEOCard
                             name="José María Fernández López"
                             position="Fundador"
-                            imageUrl={roshiImage}
+                            imageUrl={JoseMariaJoven}
                             hoverable={false}
                         />
                     </div>
@@ -151,7 +152,6 @@ const Equipo = () => {
                             <strong> Asunción </strong>
                         </Link>
                         fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
-
                     </TextBox>
                 </div>
             </div>
