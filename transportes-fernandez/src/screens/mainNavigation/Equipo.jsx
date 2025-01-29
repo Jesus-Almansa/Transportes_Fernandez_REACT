@@ -137,12 +137,20 @@ const Equipo = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1 className='padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
+                <h1 className='padding-vertical-3 text-red text-title'>
+                    <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
+                        <strong>SU HISTORIA</strong>
+                    </Link>
+                </h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-3">
-                        <Link to={getPathByLabel('jose-maria')} className="text-red no-underline">
+                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-2">
+                        <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
                             <strong>José María</strong>
-                        </Link> y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
+                        </Link> y
+                        <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
+                            <strong> Asunción </strong>
+                        </Link>
+                        fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
 
                     </TextBox>
                 </div>
