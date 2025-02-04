@@ -38,6 +38,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Asegura que html, body y el contenedor raíz ocupen toda la altura */
+html, body, #root {
+  height: 100%;
+}
+
+/* Configura el contenedor principal como flex y en columna */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   background-color: var(--blanco);
   color: var(--azul);
