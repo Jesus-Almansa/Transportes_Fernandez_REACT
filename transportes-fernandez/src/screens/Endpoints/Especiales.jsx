@@ -6,8 +6,8 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes (reemplaza con las rutas reales de tus imágenes)
-import tuberias from '../../assets/original_images/industrial_pipe.jpg';
-import equipo from '../../assets/original_images/equipamientoIndustrial.jpeg';
+import techoIndustrial from '../../assets/TransportersBranding/SEXIO/100/techo.jpg';
+import toroMecanico from '../../assets/TransportersBranding/SEXIO/100/toroMecanico.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -35,8 +35,8 @@ const especiales = () => {
 
             {/* Imagen 1 */}
             <MediaPicture
-                src={tuberias}
-                alt="Parque Eólico 1"
+                src={toroMecanico}
+                alt="Toro Mecánico"
                 className="picture-container picture-Parques-Eolicos"
             />
 
@@ -65,9 +65,17 @@ const especiales = () => {
 
             <div className='padding-vertical-up-1'> </div>
 
+            <div className='alinearEnColumna'>
+                <Button to={getPathByLabel('contacto')} className={"button button-Servicios-Contacto"}>
+                    CONTACTO
+                </Button>
+            </div>
+
+            <div className='padding-vertical-1'></div>
+
             <MediaPicture
-                src={equipo}
-                alt="Parque Eólico 2"
+                src={techoIndustrial}
+                alt="Techo Industrial"
                 className="picture-container picture-Parques-Offshore"
             />
         </div>

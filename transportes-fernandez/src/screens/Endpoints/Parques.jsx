@@ -64,7 +64,14 @@ const parques = () => {
                 De esta forma, nos aseguramos de que cada pieza llegue a su destino en perfectas condiciones y a tiempo, facilitando la implementación exitosa de tu parque eólico.
             </TextBox>
 
-            {/* Imagen 2 */}
+            <div className='alinearEnColumna'>
+                <Button to={getPathByLabel('contacto')} className={"button button-Servicios-Contacto"}>
+                    CONTACTO
+                </Button>
+            </div>
+
+            <div className='padding-vertical-1'></div>
+
             <MediaPicture
                 src={landscape}
                 alt="Parque Eólico 2"

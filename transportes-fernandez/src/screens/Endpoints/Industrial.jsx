@@ -7,8 +7,8 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Images
-import techoIndustrial from '../../assets/TransportersBranding/SEXIO/100/techo.jpg';
-import toroMecanico from '../../assets/TransportersBranding/SEXIO/100/toroMecanico.jpg';
+import tuberias from '../../assets/original_images/industrial_pipe.jpg';
+import equipo from '../../assets/original_images/equipamientoIndustrial.jpeg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -48,7 +48,7 @@ const Industrial = () => {
             </TextBox>
 
             <MediaPicture
-                src={toroMecanico}
+                src={tuberias}
                 alt="toroMecanico"
                 className="picture-container picture-Industrial-toroMecanico"
             />
@@ -68,8 +68,16 @@ const Industrial = () => {
                 Con esta metodología rigurosa, optimizamos cada etapa del envío y garantizamos la integridad de la maquinaria hasta su destino final.
             </TextBox>
 
+            <div className='alinearEnColumna'>
+                <Button to={getPathByLabel('contacto')} className={"button button-Servicios-Contacto"}>
+                    CONTACTO
+                </Button>
+            </div>
+
+            <div className='padding-vertical-1'></div>
+
             <MediaPicture
-                src={techoIndustrial}
+                src={equipo}
                 alt="fachada"
                 className="picture-container picture-Industrial-techo"
             />

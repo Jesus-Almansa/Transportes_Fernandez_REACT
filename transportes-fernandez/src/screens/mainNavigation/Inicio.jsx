@@ -20,6 +20,11 @@ import employees from '../../data/employees';
 import truckImage from '../../assets/TransportersBranding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../../assets/images/naruto.jpg';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
+import españa from '../../assets/original_images/españakbron.png';
+import españa2 from '../../assets/original_images/españakbron22.png';
+import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
+
+// Imágenes endpoints
 import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
@@ -27,9 +32,6 @@ import equipamientoIndustrial from '../../assets/original_images/equipamienoIndu
 import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
 import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
 import internacional from '../../assets/original_images/space.png';
-import españa from '../../assets/original_images/españakbron.png';
-import españa2 from '../../assets/original_images/españakbron22.png';
-import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
 
 
 // Iconos
