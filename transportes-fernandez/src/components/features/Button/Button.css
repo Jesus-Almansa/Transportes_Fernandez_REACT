@@ -23,7 +23,6 @@
 .button-Home-Servicios {
     font-size: 30px;
     padding: 15px 40px;
-    
 }
 
 .button-Home-Servicios:hover {
@@ -74,6 +73,18 @@
 }
 
 .button-Servicios-Volver:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.button-Servicios-Contacto {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Servicios-Contacto:hover {
     background-color: var(--blanco);
     color: var(--rojo);
     border-color: var(--rojo);
