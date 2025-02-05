@@ -16,7 +16,7 @@ import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
-import JoseMariaJoven from '../../assets/original_images/JoseMaria_Joven.png';
+import JoseMariaJoven from '../../assets/original_images/JoseMaria_Joven - Cropped.png';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
