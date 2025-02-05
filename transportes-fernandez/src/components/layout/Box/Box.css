@@ -117,6 +117,15 @@
   padding: 2rem;
 }
 
+
+/* FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES*/
+.text-box-Fundadores-JoseMaria {
+  max-width: 80%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  text-align: justify;
+}
+
 /* Media Queries para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .text-box {
