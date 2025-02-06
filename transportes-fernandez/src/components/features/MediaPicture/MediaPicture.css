@@ -42,7 +42,7 @@
 }
 
 .picture-Empresa-Hoy img:hover {
-    transform: scale(1.01); /* Por ejemplo, escala al 110% */
+    transform: scale(1.01);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -56,7 +56,7 @@
 }
 
 .picture-Empresa-End img:hover {
-    transform: scale(1.03); /* Por ejemplo, escala al 110% */
+    transform: scale(1.03);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -93,7 +93,7 @@
 }
 
 .picture-aniversario img:hover {
-    transform: scale(1.009); /* Por ejemplo, escala al 110% */
+    transform: scale(1.009);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .picture-Industrial-toroMecanico img:hover {
-    transform: scale(1.005); /* Por ejemplo, escala al 110% */
+    transform: scale(1.005);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -123,7 +123,7 @@
 }
 
 .picture-Industrial-techo img:hover {
-    transform: scale(1.005); /* Por ejemplo, escala al 110% */
+    transform: scale(1.005);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -139,7 +139,7 @@
 }
 
 .picture-Parques-Eolicos img:hover {
-    transform: scale(1.005); /* Por ejemplo, escala al 110% */
+    transform: scale(1.005);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -153,7 +153,7 @@
 }
 
 .picture-Parques-Offshore img:hover {
-    transform: scale(1.005); /* Por ejemplo, escala al 110% */
+    transform: scale(1.005);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -168,6 +168,11 @@
     display: block;
 }
 
+.picture-Regional img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
 /* NACIONAL NACIONAL NACIONAL NACIONAL NACIONAL NACIONAL NACIONAL */
 .picture-Nacional img {
     max-width: 67%;
@@ -176,6 +181,11 @@
     transition: transform 1s ease, box-shadow 0.3s ease;
     margin: 0 auto;
     display: block;
+}
+
+.picture-Nacional img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 /* INTERNACIONAL INTERNACIONAL INTERNACIONAL INTERNACIONAL INTERNACIONAL INTERNACIONAL */
@@ -188,13 +198,100 @@
     display: block;
 }
 
+.picture-Internacional img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
 /* FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES*/
 .picture-JoseMaria img {
-    max-width: 100%;
+    width: 65%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
-    margin: 0 auto;
-    display: block;
-    transform: scale(0.7);
+    display: block;     /* become a block-level element */
+    margin: 0 auto;     /* center horizontally in container */
 }
+
+.picture-JoseMaria img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.picture-JoseMaria-Carnet img {
+    width: 70%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    display: block;     /* become a block-level element */
+    margin: 0 auto;     /* center horizontally in container */
+}
+
+.picture-JoseMaria-Carnet img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.picture-Yaya img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    display: block;     /* become a block-level element */
+    margin: 0 auto;     /* center horizontally in container */
+}
+
+.picture-Yaya img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.picture-Anuncio-Periodico img {
+    width: 60%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    display: block;     /* become a block-level element */
+    margin: 0 auto;     /* center horizontally in container */
+}
+
+.picture-Anuncio-Periodico img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER DEVELOPER*/
+.picture-Jesus img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    display: block;     /* become a block-level element */
+    margin: 0 auto;     /* center horizontally in container */
+}
+
+.picture-Jesus img:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 430px) {    
+    .picture-Servicios-Panoramica img,
+    .picture-Contacto img,
+    .picture-aniversario img,
+    .picture-Industrial-toroMecanico img,
+    .picture-Parques-Eolicos img,
+    .picture-Regional img,
+    .picture-Nacional img,
+    .picture-Internacional img,
+    .picture-JoseMaria img, 
+    .picture-JoseMaria-Carnet img,
+    .picture-Yaya img,
+    .picture-Anuncio-Periodico img, 
+    .picture-Jesus img {
+      width: 90% !important;
+      margin: 0 auto;           /* Centrado */
+      display: block;           /* Asegura que se comporte como bloque */
+    }
+  }
+  
