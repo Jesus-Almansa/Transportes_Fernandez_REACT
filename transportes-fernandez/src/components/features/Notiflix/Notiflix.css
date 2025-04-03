@@ -1,0 +1,97 @@
+.my-custom-report .my-custom-report-overlay {
+    background: rgba(0, 0, 0, 0.3) !important;
+
+}
+
+/* The main alert container */
+.my-custom-report .my-custom-report-content {
+    width: 500px !important;
+    height: 335px !important;
+    background: var(--blanco) !important;
+    border-radius: 20px !important;
+    border: 2px solid var(--rojo) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    padding: 1rem !important;
+}
+
+/* The icon at the top (info, success, etc.) */
+.my-custom-report .my-custom-report-icon {
+    background: url(../../../assets/TransportersBranding/icongraphy/3/Icons-32.png) center no-repeat;
+    width: 80px !important;
+    height: 80px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.my-custom-report .my-custom-report-icon svg {
+    display: none !important;
+}
+
+
+/* The alert title */
+.my-custom-report .my-custom-report-title {
+    font-size: 1.4rem !important;
+    color: var(--rojo) !important;
+    text-transform: uppercase;
+}
+
+/* The alert message text */
+.my-custom-report .my-custom-report-message {
+    font-size: 1rem !important;
+    color: #333 !important;
+    margin-top: 0.5rem;
+}
+
+/* The "OK" button */
+.my-custom-report .my-custom-report-button {
+    background: var(--rojo) !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1.25rem !important;
+    border: none !important;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.my-custom-report .my-custom-report-button:hover {
+    background: #c92b1c !important;
+}
+
+@media (max-width: 1024px) {
+    .my-custom-report .my-custom-report-content {
+        width: 450px !important;
+        height: auto !important;
+    }
+}
+
+/* Dispositivos hasta 768px */
+@media (max-width: 768px) {
+    .my-custom-report .my-custom-report-content {
+        width: 360px !important;
+        height: auto !important;
+    }
+
+    /* Puedes también bajar la fuente y/o el icono, si hace falta */
+    .my-custom-report .my-custom-report-title {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Dispositivos hasta 428px */
+@media (max-width: 428px) {
+    .my-custom-report .my-custom-report-content {
+        width: 90% !important;
+        height: auto !important;
+        /* Dejar el alto en 'auto' suele ser mejor para pantallas pequeñas */
+    }
+
+    .my-custom-report .my-custom-report-title {
+        font-size: 1.1rem !important;
+    }
+
+    .my-custom-report .my-custom-report-button {
+        font-size: 0.9rem !important;
+        padding: 0.6rem 1rem !important;
+    }
+}

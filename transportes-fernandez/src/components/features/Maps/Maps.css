@@ -1,7 +1,7 @@
 /* Contenedor principal del mapa */
 .map-container {
   width: 100%;
-  max-width: 1900px;
+  max-width: 100%;
   /* Ancho máximo del contenedor */
   margin: 0 auto;
   /* Centra el contenedor */

@@ -4,13 +4,13 @@ import image2 from '../assets/images/Marisa.png';
 const founders = [
   {
     id: 1,
-    name: 'José María Fernández',
+    name: 'José María Fernández López',
     position: 'Fundador',
     imageUrl: image1,
   },
   {
     id: 2,
-    name: 'Asunción Lozano',
+    name: 'María Asunción Lozano López-Gil',
     position: 'Fundadora',
     imageUrl: image2,
   },

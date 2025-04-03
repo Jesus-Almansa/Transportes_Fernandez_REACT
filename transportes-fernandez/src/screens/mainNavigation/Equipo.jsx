@@ -1,16 +1,26 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
+// Componentes
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
 import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
 import TextBox from '../../components/layout/Box/TextBox';
+import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 
-import narutoImage from '../../assets/images/naruto.jpg';
+// Imágenes
+import cubo from '../../assets/images/infinitecube.png';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
 import laMadre2 from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7783.jpg';
 import letiziaImage from '../../assets/images/letizia.png';
 import roshiImage from '../../assets/images/roshi.png';
 import marisaImage from '../../assets/images/marisa.png';
 import employees from '../../data/employees';
+// import JoseMariaJoven from '../../assets/original_images/joseMaria_Joven-Cropped.png';
+import JoseMariaJoven from '../../assets/original_images/joseMaria_Joven-cropped.png';
+
+// Rutas
+import { getPathByLabel } from '../../data/routes';
 
 const Equipo = () => {
     return (
@@ -20,27 +30,30 @@ const Equipo = () => {
 
                 <div className='padding-vertical-1' ></div>
 
-                <h1 className='large-text-title text-box-Equipo-title'>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
+                <h1 className='large-text-title text-box-Equipo-title text-red'>EL TALENTO DETRÁS DE NUESTROS LOGROS</h1>
 
                 <div className='padding-vertical-1' ></div>
 
-                <div className='enLinea'>
-                    <div className="izquierda text-red text-body">
-                        <CEOCard
-                            name="Paz Fernández Lozano"
-                            position="CEO"
-                            imageUrl={laMadre}
-                            number="+34 669 354 145"
-                            mail="paz@transportesfernandez.es"
-                        />
-                    </div>
-                    <div className="derecha text-red text-body">
-                        <CEOCard
-                            name="Jesús Tomás Almansa"
-                            position="Apoyo incondicional"
-                            imageUrl={laMadre2}
-                            hoverable={false}
-                        />
+                <div className='alinearEnColumna'>
+                    <div className='enLinea'>
+                        <div className=" text-red text-body">
+                            <CEOCard
+                                name="Paz Fernández Lozano"
+                                position="CEO"
+                                imageUrl={laMadre}
+                                number="+34 605 688 210"
+                                mail="paz@transportesfernandez.es"
+                                hoverable={true}
+                            />
+                        </div>
+                        <div className=" text-red text-body">
+                            <CEOCard
+                                name="Jesús Tomás Almansa"
+                                position="Apoyo incondicional"
+                                imageUrl={laMadre2}
+                                hoverable={false}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,6 +98,14 @@ const Equipo = () => {
 
                     <br /><br />
 
+                    <MediaPicture
+                        src={cubo}
+                        alt="Descripción de la imagen"
+                        className="picture-container picture-Empresa-Hoy"
+                    />
+
+                    <div className='padding-vertical-3 alinearEnColumna'>AQUI VA LA FOTO DE TODO EL EQUIPO</div>
+
                     El equipo de Transportes Fernández es más que un grupo de trabajo; somos una familia. A lo largo de los años, hemos crecido juntos, acompañados por empleados que han estado con nosotros desde nuestros inicios. Su esfuerzo, dedicación y compromiso han sido la base sobre la que hemos construido nuestra evolución, pasando de ser una empresa local a consolidarnos como un referente a nivel nacional.
 
                     Cada miembro de nuestro equipo aporta algo único, y juntos hemos creado un ambiente de confianza y colaboración que define quiénes somos. En Transportes Fernández valoramos a las personas que forman parte de esta familia y trabajamos codo a codo para superar los desafíos, celebrando cada logro como un triunfo compartido. Es este espíritu el que nos impulsa a seguir creciendo y mejorando cada día.
@@ -96,17 +117,17 @@ const Equipo = () => {
             <div className='alinearEnColumna'>
                 <h1 className='padding-vertical-3 text-red text-title'>FUNDADORES DE LA EMPRESA</h1>
                 <div className='enLinea'>
-                    <div className="izquierda text-red text-body">
+                    <div className="text-red text-body">
                         <CEOCard
-                            name="José María Fernández"
+                            name="José María Fernández López"
                             position="Fundador"
-                            imageUrl={roshiImage}
+                            imageUrl={JoseMariaJoven}
                             hoverable={false}
                         />
                     </div>
-                    <div className="derecha text-red text-body">
+                    <div className="text-red text-body">
                         <CEOCard
-                            name="María Asunción Lozano"
+                            name="María Asunción Lozano López-Gil"
                             position="Fundadora"
                             imageUrl={marisaImage}
                             hoverable={false}
@@ -118,10 +139,20 @@ const Equipo = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1 className='alinearEnColumna padding-vertical-3 text-red text-title'>SU HISTORIA</h1>
+                <h1 className='padding-vertical-3 text-red text-title'>
+                    <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
+                        <strong>SU HISTORIA</strong>
+                    </Link>
+                </h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-3">
-                        José y Asunción fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
+                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-2">
+                        <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
+                            <strong>José María</strong>
+                        </Link> y
+                        <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
+                            <strong> Asunción </strong>
+                        </Link>
+                        fueron los socios fundadores de la empresa. Comenzaron con un pequeño camión y con el tiempo han ido creciendo hasta tener una flota de camiones y empleados. La empresa ha crecido mucho y ha pasado de ser una empresa local a una empresa nacional.
                     </TextBox>
                 </div>
             </div>

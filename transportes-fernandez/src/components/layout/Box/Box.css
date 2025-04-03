@@ -1,78 +1,67 @@
 /* Clase base para bloques de texto */
 .text-box {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: auto;
   text-align: justify;
-  margin: 0 auto;     /* Centrado automático */
-  padding: 1rem;      /* Un padding razonable para todos los contenedores */
+  margin: 0 auto;
+  /* Centrado automático */
+  padding: 1rem;
+  /* Un padding razonable para todos los contenedores */
   box-sizing: border-box;
 }
 
 /* Variaciones para distintas secciones */
 
-/* HOME */
+/* HOME  HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME*/
 .text-box-Home-IntroTitle {
   width: 100%;
   color: var(--rojo);
   text-align: center;
 }
 
-/* Elimina margin-left muy grandes si no son realmente necesarios */
 .text-box-Home-Intro {
   margin-top: 3%;
   background-color: var(--blanco);
   max-width: 85%;
-  margin: 1rem auto; /* En vez de -6%, usas centrado */
+  margin: 1rem auto;
+  /* En vez de -6%, usas centrado */
 }
 
 .text-box-Home-Razones {
-  /* Corrige la variable de color */
   background-color: var(--azul);
   max-width: 1000px;
-  margin: 0 auto;  
-  text-align: left; /* o center, según quieras */
+  margin: 1rem auto;
+  text-align: left;
   align-items: center;
 }
 
-/* Evita margin-left negativos */
 .text-box-Home-Equipo {
-  width: 100%;
-  margin-top: 5%;
-  text-align: justify;
+  max-width: 70%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
 }
 
-/* Servicios */
 .text-box-Home-Servicios {
   max-width: 70%;
-  background-color: var(--blanco);
   border-radius: 1rem;
   margin: 1rem auto;
   padding: 2rem;
 }
 
-/* Bloque específico para Servicios */
-.text-box-Servicios {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem; 
+.text-box-Home-Horarios {
   max-width: 90%;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-/* Equipo */
-.text-box-Equipo {
-  max-width: 70%;
   border-radius: 1rem;
   margin: 1rem auto;
-  padding: 2rem;
+  padding: 3rem;
 }
 
-/* Aniversario */
-.text-box-Empresa-aniversario {
+/* EMPRESA  EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA*/
+.text-box-Empresa-Hoy {
   margin-top: 10%;
-  margin-right: 3%; 
+  margin-right: 3%;
   color: var(--blanco);
   background-color: var(--rojo);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -80,11 +69,60 @@
   padding: 2rem;
 }
 
-.text-box-Home-Aniversario {
-  width: 100%;
-  padding: 3%;
-  color: var(--blanco);
-  background-color: var(--rojo);
+.text-box-Empresa-Main {
+  max-width: 70%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+/* EQUIPO  EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/
+.text-box-Equipo {
+  max-width: 70%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+/* ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO ANIVERSARIO*/
+.text-box-Aniversario-Intro {
+  margin-top: 10%;
+  margin-right: 3%;
+  padding: 2rem;
+}
+.text-box-Aniversario-Main {
+  max-width: 70%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.text-box-Aniversario-Timeline {
+  max-width: 70%;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: left;
+  align-items: center;
+}
+
+/* INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL INDUSTRIAL*/
+
+.text-box-Industrial-Intro {
+  max-width: 70%;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+
+/* FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES*/
+.text-box-Fundadores-JoseMaria {
+  max-width: 90%;
+  border-radius: 1rem;
+  text-align: justify;
 }
 
 /* Media Queries para tablets */

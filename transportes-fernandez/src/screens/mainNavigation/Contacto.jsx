@@ -1,28 +1,84 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 // Componentes
-import ContactForm from '../../components/features/ContactForm/ContactForm';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import Maps from '../../components/features/Maps/Maps';
+import Background from '../../components/features/Background/Background';
+import Button from '../../components/features/Button/Button';
+import MailButton from '../../components/features/MailButton/MailButton';
+import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
 import fachada from '../../assets/TransportersBranding/SEXIO/100/fachadaAbierta.jpg';
+import españa2 from '../../assets/original_images/españakbron22.png';
 
-function Contact() {
+import { getPathByLabel } from '../../data/routes';
+
+function Contacto() {
   return (
-    <div id="Contact">
+    <div id="Contacto">
+
+      <div className="padding-vertical-0"></div>
 
       <div className="alinearEnColumna">
-
         <MediaPicture
           src={fachada}
           alt="fachada"
           className="picture-container picture-Contacto"
         />
       </div>
-      {/* <ContactForm /> */}
 
-      <div className="padding-vertical-1"></div>
+      <div className="padding-vertical-0"></div>
+
+      <Background
+        color="#1a2a36" // Hexadecimal color
+        transparency={0.9} // Transparency instead of opacity
+        imageUrl={españa2} // España map as background
+      >
+        <div className="alinearEnColumna">
+          <div className="padding-vertical-up-3"></div>
+          <h1 className="text-white large-text-title">{" "}
+            <Link to={getPathByLabel('contacto')} className="text-white no-underline">
+              <strong>CONTÁCTANOS PARA CUALQUIER DUDA</strong>
+            </Link>
+            {" "} </h1>
+
+          <div className="padding-vertical-2"></div>
+        </div>
+
+        <TextBox className="text-box text-box-Home-Horarios text-body alinearEnColumna negrita">
+          HORARIO DE OFICINA:
+          <br />
+          LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
+
+          <div className="padding-vertical-1"></div>
+
+          CORREO:
+          <br />
+          contacto@transportesfernandez.es
+        </TextBox>
+
+        <div className="enLinea negrita">
+
+          <div className="padding-vertical-1"></div>
+
+          <MailButton
+            email="contacto@transportesfernandez.es"
+            subject="Consulta desde la web"
+            body="Hola, tengo algunas dudas sobre..."
+            className="mail-button"
+          >
+            ESCRÍBENOS
+          </MailButton>
+
+        </div>
+
+        <div className="padding-vertical-3"></div>
+
+      </Background>
+
+      <div className="padding-vertical-0"></div>
 
       <Maps />
 
@@ -32,4 +88,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contacto;

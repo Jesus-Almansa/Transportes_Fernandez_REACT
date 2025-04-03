@@ -5,16 +5,16 @@
     padding: 10px;
     margin: 0px;
     background-color: #fff;
-    width: 430px;
-    height: 510px;
-    position: relative; /* Enable absolute positioning for child elements */
-    overflow: hidden; /* Prevent content overflow */
-    transition: transform 0.4s; /* Smooth scaling */
+    width: 470px;
+    height: 570px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s;
 }
 
 .employee-card:hover {
     transform: scale(1.1);
-    height: 590px;
+    height: 650px;
 }
 
 .employee-card:hover .employee-number,
@@ -24,10 +24,9 @@
     visibility: visible;
 }
 
-/* Disable hover effect for cards with the no-hover class */
 .employee-card.no-hover:hover {
     transform: none;
-    height: 510px;
+    height: 570px;
 }
 
 .employee-card.no-hover:hover .employee-number,
@@ -37,10 +36,11 @@
     visibility: hidden;
 }
 
+/* Imagen y texto */
 .employee-image {
     border-radius: 8%;
-    width: 430px;
-    height: 430px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     margin-bottom: 0px;
 }
@@ -63,8 +63,6 @@
     font-weight: bold;
     color: var(--negro);
     margin: 0px 8px;
-
-    /* Initially hide the number */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
@@ -75,8 +73,6 @@
     font-weight: bold;
     color: var(--negro);
     margin: 0px 8px;
-
-    /* Initially hide the mail */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -85,7 +81,107 @@
 .employees-container {
     display: flex;
     gap: 120px;
-    /* Space between each card */
-    flex-wrap: wrap; /* Allow cards to wrap if they don't fit in a single row */
-    justify-content: center; /* Align cards in the center */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =========================================================
+   DESACTIVAR :hover EN DISPOSITIVOS TÁCTILES
+   (Si no deseas escalado en móviles)
+   ========================================================= */
+@media (hover: none) {
+    .employee-card:hover {
+        transform: none !important;
+        height: auto !important;
+    }
+}
+
+/* =========================================================
+   MÓVILES PEQUEÑOS (hasta 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+    .employee-card {
+        width: 90%;
+        height: auto;
+        margin: 1rem auto;
+        transform: none !important; /* Evitar escalado */
+    }
+
+    .employee-card:hover {
+        transform: none;
+        height: auto;
+    }
+
+    .employee-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .employee-name {
+        font-size: 1.2rem;
+    }
+
+    .employee-position,
+    .employee-number,
+    .employee-mail {
+        font-size: 0.95rem;
+    }
+
+    .employees-container {
+        gap: 20px;
+    }
+}
+
+/* =========================================================
+   TABLETS (hasta 768px)
+   ========================================================= */
+@media (max-width: 768px) {
+    .employee-card {
+        width: 70%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .employee-card:hover {
+        transform: none;
+        height: auto;
+    }
+
+    .employee-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .employee-name {
+        font-size: 1.3rem;
+    }
+
+    .employee-position,
+    .employee-number,
+    .employee-mail {
+        font-size: 1rem;
+    }
+
+    .employees-container {
+        gap: 40px;
+    }
+}
+
+/* =========================================================
+   PANTALLAS PEQUEÑAS CON hover REAL
+   (Para mini-laptops, iPad con puntero, etc.)
+   ========================================================= */
+@media (max-width: 768px) and (hover: hover) {
+    .employee-card {
+        width: 90%;
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    .employee-card:hover {
+        transform: scale(1.1);
+        height: 650px; /* Mantén la altura que quieras para hover */
+    }
 }

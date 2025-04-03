@@ -45,7 +45,7 @@ const employees = [
     position: "Conductor",
     imageUrl: "https://unavatar.io/github/sexio",
     number: "+34 669 354 139",
-    mail: "eusebio@transportesfernandez.es"
+    mail: "juan@transportesfernandez.es"
   }
 ];
 

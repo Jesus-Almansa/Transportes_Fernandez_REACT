@@ -58,7 +58,7 @@ const Servicios = () => {
                         frontImage={parquesEolicos}
                         backText="Parques eólicos"
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("parques")}>
                                 <img src={iconoEolico} alt='iconEolico' />
                             </Link>}
                     />
@@ -66,7 +66,7 @@ const Servicios = () => {
                         frontImage={medidasEspeciales}
                         backText="Medidas especiales"
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("especiales")}>
                                 <img src={iconoEspecial} alt='iconEspecial' />
                             </Link>}
                     />
@@ -81,7 +81,7 @@ const Servicios = () => {
                         frontImage={laMancha}
                         backText={"Transporte regional en La Mancha"}
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("regional")}>
                                 <img src={iconoLaMancha} alt='iconLaMancha' />
                             </Link>}
                     />
@@ -89,7 +89,7 @@ const Servicios = () => {
                         frontImage={valencia}
                         backText="Transporte por toda la península e islas"
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("nacional")}>
                                 <img src={iconoValencia} alt='iconValencia' />
                             </Link>}
                     />
@@ -97,7 +97,7 @@ const Servicios = () => {
                         frontImage={internacional}
                         backText="Transporte a nivel internacional"
                         icon={
-                            <Link to={getPathByLabel("servicios")}>
+                            <Link to={getPathByLabel("internacional")}>
                                 <img src={iconoInternacional} alt='iconInternacional' />
                             </Link>}
                     />

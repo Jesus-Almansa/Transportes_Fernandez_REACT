@@ -5,16 +5,16 @@ import './WhatsAppButton.css';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CloseIcon from '@mui/icons-material/Close';
 
-// Ejemplo de lista de contactos
+// Lista de contactos
 const contacts = [
   {
-    name: 'Administración',
+    name: 'Administración y comercial nacional',
     description: 'Facturación',
-    phone: '+34669354145',
-    initialMessage: 'Hola, estoy interesado en temas de facturación...',
+    phone: '+34605688210',
+    initialMessage: 'Hola, estoy interesado en un transporte...',
   },
   {
-    name: 'Comercial',
+    name: 'Comercial internacional',
     description: 'Información y presupuestos',
     phone: '+34652098561',
     initialMessage: 'Hola, me gustaría solicitar un presupuesto...',
@@ -23,7 +23,7 @@ const contacts = [
     name: 'Jefe de tráfico',
     description: 'Asistencia técnica',
     phone: '+34669354144',
-    initialMessage: 'Hola, necesito asistencia técnica con SuitER...',
+    initialMessage: 'Hola, necesito asistencia técnica...',
   },
 ];
 

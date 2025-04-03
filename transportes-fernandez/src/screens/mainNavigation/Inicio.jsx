@@ -6,13 +6,12 @@ import Carousel from '../../components/features/Carousel/Carousel';
 import EmployeeCard from '../../components/features/Employee/EmployeeCard';
 import CEOCard from '../../components/features/Employee/CEOCard';
 import Background from '../../components/features/Background/Background';
-import ContactForm from '../../components/features/ContactForm/ContactForm';
 import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import FlipCard from '../../components/features/FlipCard/FlipCard';
 import Button from '../../components/features/Button/Button';
 import MailButton from '../../components/features/MailButton/MailButton';
-import WhatsAppButton from '../../components/features/WhatsAppButton/WhatsAppButton';
+import Maps from '../../components/features/Maps/Maps';
 
 // Rutas
 import employees from '../../data/employees';
@@ -21,6 +20,11 @@ import employees from '../../data/employees';
 import truckImage from '../../assets/TransportersBranding/SOCIAL MEDIA POST/1-02.jpg';
 import narutoImage from '../../assets/images/naruto.jpg';
 import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
+import españa from '../../assets/original_images/españakbron.png';
+import españa2 from '../../assets/original_images/españakbron22.png';
+import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
+
+// Imágenes endpoints
 import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
 import infiniteCubeImage from '../../assets/images/infinitecube.png';
@@ -28,9 +32,6 @@ import equipamientoIndustrial from '../../assets/original_images/equipamienoIndu
 import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
 import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
 import internacional from '../../assets/original_images/space.png';
-import españa from '../../assets/original_images/españakbron.png';
-import españa2 from '../../assets/original_images/españakbron22.png';
-import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
 
 
 // Iconos
@@ -130,7 +131,12 @@ function Inicio() {
       {/* SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS SERVICIOS*/}
       <div id='Home-Servicios' className="alinearEnColumna">
 
-        <h1 className='large-text-title text-red padding-vertical-3'>SERVICIOS</h1>
+        <div className='large-text-title padding-vertical-3'>
+
+          <Link to={getPathByLabel('servicios')} className="text-red no-underline">
+            <strong><b>SERVICIOS</b></strong>
+          </Link>
+        </div>
 
         <h1 className='text-red text-title padding-vertical-2'>LO QUE TRANSPORTAMOS</h1>
 
@@ -147,7 +153,7 @@ function Inicio() {
             frontImage={parquesEolicos}
             backText="Parques eólicos"
             icon={
-              <Link to={getPathByLabel("servicios")}>
+              <Link to={getPathByLabel("parques")}>
                 <img src={iconoEolico} alt='iconEolico' />
               </Link>}
           />
@@ -155,29 +161,29 @@ function Inicio() {
             frontImage={medidasEspeciales}
             backText="Medidas especiales"
             icon={
-              <Link to={getPathByLabel("servicios")}>
+              <Link to={getPathByLabel("especiales")}>
                 <img src={iconoEspecial} alt='iconEspecial' />
               </Link>}
           />
         </div>
       </div>
 
-      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-up-3 text-body'>
+        Nos especializamos en el traslado de maquinaria industrial de gran volumen, componentes para parques eólicos y cargas de dimensiones especiales, ofreciendo soluciones diseñadas para los proyectos más exigentes. Nuestro equipo de expertos analiza minuciosamente cada tipo de carga para seleccionar el vehículo y la metodología de transporte más adecuada, priorizando siempre la seguridad y eficiencia. Gracias a esta capacidad de adaptación, podemos abarcar desde piezas delicadas de precisión hasta estructuras sobredimensionadas que requieren un cuidado excepcional en cada fase del proceso.
 
         <div className='padding-vertical-1'></div>
 
-        Además, Transportes Fernández ofrece un enfoque completamente personalizado para cada cliente, analizando en detalle las necesidades de cada proyecto para diseñar soluciones a medida. Este compromiso con la calidad y la atención al cliente ha posicionado a la empresa como un referente en el sector del transporte especializado. Desde el diseño de rutas optimizadas hasta el uso de tecnologías avanzadas para supervisar cada operación, Transportes Fernández asegura un servicio que combina innovación, fiabilidad y profesionalismo.
+        Para responder a las demandas más específicas, contamos con una flota de vehículos modernos y equipados con tecnología de vanguardia, capaz de gestionar incluso los desafíos logísticos más complejos. Cada operación se ejecuta con estándares rigurosos de calidad, respaldados por profesionales altamente cualificados que supervisan de cerca el proceso de carga, traslado y entrega. Este compromiso integral garantiza la integridad de los bienes en todo momento, convirtiendo a Transportes Fernández en un aliado confiable para el transporte especializado.
       </TextBox>
 
-      <h1 className='padding-vertical-1 text-red text-title alinearEnColumna'>DONDE LO TRANSPORTAMOS</h1>
+      <h1 className='padding-vertical-4 text-red text-title alinearEnColumna'>DONDE LO TRANSPORTAMOS</h1>
 
       <div className="enLinea text-body">
         <FlipCard
           frontImage={laMancha}
           backText={"Transporte regional en La Mancha"}
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("regional")}>
               <img src={iconoLaMancha} alt='iconLaMancha' />
             </Link>}
         />
@@ -185,7 +191,7 @@ function Inicio() {
           frontImage={valencia}
           backText="Transporte por toda la península e islas"
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("nacional")}>
               <img src={iconoValencia} alt='iconValencia' />
             </Link>}
         />
@@ -193,36 +199,48 @@ function Inicio() {
           frontImage={internacional}
           backText="Transporte a nivel internacional"
           icon={
-            <Link to={getPathByLabel("servicios")}>
+            <Link to={getPathByLabel("internacional")}>
               <img src={iconoInternacional} alt='iconInternacional' />
             </Link>}
         />
       </div>
-      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
-        Transportes Fernández se especializa en tres áreas clave del transporte: maquinaria industrial, componentes para parques eólicos y cargas de dimensiones especiales. Cada operación es realizada por un equipo de expertos altamente cualificados que aseguran un servicio eficiente y seguro, cumpliendo con los más altos estándares del sector. La empresa cuenta con una flota de vehículos modernos y adaptados para gestionar transportes de alta complejidad, garantizando la integridad de las cargas en todo momento.
-
-        <div className='padding-vertical-1'></div>
-
-        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo. Este enfoque global permite a Transportes Fernández consolidarse como un referente en el sector, combinando innovación, profesionalismo y alcance internacional.
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-up-3 text-body'>
+        Nuestra cobertura geográfica abarca tanto rutas nacionales como internacionales, facilitando la circulación de cargas en diversos entornos urbanos, industriales y rurales. Gracias a la experiencia acumulada en numerosos proyectos, conocemos a fondo las vías y regulaciones que rigen el transporte de mercancías en distintas regiones, asegurando el cumplimiento de todas las normativas y el uso eficiente de cada ruta. Con una planificación detallada y el respaldo de sistemas de localización en tiempo real, garantizamos la llegada puntual de cada envío.
       </TextBox>
 
 
 
-      <div className='padding-vertical-3'></div>
+      <TextBox className='text-box text-box-Home-Servicios text-body'>
+        Además, asumimos retos logísticos en zonas de difícil acceso o con condiciones geográficas particulares, adaptando los recorridos para optimizar tiempos y recursos. Nuestros expertos llevan a cabo un estudio previo de cada trayecto, identificando posibles obstáculos y diseñando planes de contingencia para cualquier eventualidad. De esta forma, ofrecemos a nuestros clientes la tranquilidad de contar con un servicio de alcance extendido, capaz de transportar sus mercancías allá donde se necesiten, con la misma calidad y eficacia que nos caracteriza.
+      </TextBox>
+
+      <div className='padding-vertical-up-3'></div>
+
+      <div className='alinearEnColumna'>
+        <Button to={getPathByLabel('servicios')} className={"button button-Empresa-Servicios negrita"}>
+          SERVICIOS
+        </Button>
+      </div>
+
+      <div className='padding-vertical-up-3'></div>
 
       {/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO*/}
+
       <Background color="#ab273c">
         <div className='large-text-title text-white alinearEnColumna padding-vertical-down-3'>
           <div className="padding-vertical-2"></div>
-          <b>CONOCE AL EQUIPO</b>
+
+          <Link to={getPathByLabel('equipo')} className="text-white no-underline">
+            <strong><b>CONOCE AL EQUIPO</b></strong>
+          </Link>
         </div>
 
-        <div className="text-red text-body alienarEnColumna">
+        <div className="text-red text-body alinearEnColumna">
           <CEOCard
             name="Paz Fernández Lozano"
             position="CEO"
             imageUrl={laMadre}
-            number="+34 669 354 145"
+            number="+34 605 688 210"
             mail="paz@transportesfernandez.es"
             hoverable={true}
           />
@@ -230,10 +248,8 @@ function Inicio() {
 
 
 
-        <TextBox className="text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+        <TextBox className="text-box text-body text-white text-box-Home-Equipo padding-vertical-up-3">
           Nuestro equipo está formado por profesionales altamente capacitados, comprometidos con la excelencia y la satisfacción de nuestros clientes. Cada miembro aporta una combinación única de experiencia, creatividad y pasión por lo que hace, lo que nos permite ofrecer soluciones personalizadas y de alta calidad.
-          <div className='padding-vertical-1'></div>
-          Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
         </TextBox>
 
         {/* EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS EMPLEADOS*/}
@@ -257,7 +273,14 @@ function Inicio() {
 
         <div>
         </div>
-        <div className="padding-vertical-2"></div>
+        <div className="padding-vertical-0"></div>
+
+        <TextBox className="text-box text-body text-white text-box-Home-Equipo padding-vertical-up-3">
+          Valoramos el trabajo en equipo, la innovación y la comunicación abierta, asegurándonos de que cada proyecto sea gestionado con el máximo cuidado y dedicación. <b>Juntos</b>, trabajamos para superar las expectativas de nuestros clientes y consolidar nuestra posición como líderes en el sector del transporte industrial.
+        </TextBox>
+
+        <div className="padding-vertical-1"></div>
+
       </Background>
 
 
@@ -267,22 +290,39 @@ function Inicio() {
         imageUrl={españa2} // España map as background
       >
         <div className="alinearEnColumna">
-          <div className="padding-vertical-1"></div>
+          <div className="padding-vertical-up-3"></div>
           <h1 className="text-white large-text-title">{" "}
             <Link to={getPathByLabel('contacto')} className="text-white no-underline">
-              <strong>¿Tienes alguna duda?</strong>
+              <strong>CONTÁCTANOS PARA CUALQUIER CONSULTA</strong>
             </Link>
             {" "} </h1>
+
+          <div className="padding-vertical-2"></div>
+        </div>
+
+        <TextBox className="text-box text-box-Home-Horarios text-body alinearEnColumna negrita">
+          HORARIO DE OFICINA:
+          <br />
+          LUNES A VIERNES DE 9:00 A 14:00 Y DE 16:30 A 19:30
+
           <div className="padding-vertical-1"></div>
 
-          <Button to={getPathByLabel('contacto')} className={"button"}>
+          CORREO:
+          <br />
+          contacto@transportesfernandez.es
+        </TextBox>
+
+        <div className="padding-vertical-1"></div>
+
+        <div className="enLinea negrita">
+          <Button to={getPathByLabel('contacto')} className={"button button-Home-Contacto"}>
             CONTACTO
           </Button>
 
           <div className="padding-vertical-1"></div>
 
           <MailButton
-            email="paz@transportesfernandez.es"
+            email="contacto@transportesfernandez.es"
             subject="Consulta desde la web"
             body="Hola, tengo algunas dudas sobre..."
             className="mail-button"
@@ -290,21 +330,27 @@ function Inicio() {
             ESCRÍBENOS
           </MailButton>
 
-
-
-
-          <h1 className="text-white large-text-title"></h1>
-          <div className="padding-vertical-2"></div>
-          {/* <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
-          <div className="padding-vertical-2"></div> */}
         </div>
+
+        <div className="padding-vertical-3"></div>
+
       </Background>
 
-      <WhatsAppButton />
+      <div className="padding-vertical-2"></div>
 
+      <h1 className="text-red large-text-title"> PUEDES ENCONTRARNOS EN VILLARROBLEDO (ALBACETE)</h1>
+      <TextBox className='text-box text-box-Home-Servicios padding-vertical-3 text-body'>
+        La sede principal de Transportes Fernández está ubicada en <b className="text-red">Villarrobledo (Albacete)</b>, desde donde se gestionan servicios de transporte regional en La Mancha, así como transporte nacional e internacional. Gracias a una amplia red de colaboradores y socios, la empresa ofrece soluciones de transporte personalizadas que pueden adaptarse a cualquier necesidad, abarcando desde rutas locales hasta operaciones logísticas en cualquier parte del mundo.
+      </TextBox>
+
+      <Maps />
 
     </div >
   );
 }
 
 export default Inicio;
+
+
+{/* <h1 className="text-white large-text-title">Oficina de Villarrobledo - 967 14 06 98</h1>
+<div className="padding-vertical-2"></div> */}

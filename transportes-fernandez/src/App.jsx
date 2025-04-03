@@ -6,6 +6,9 @@ import Header from './components/layout/Header/Header2';
 import Footer from './components/layout/Footer/Footer';
 import ScrollButton from './components/features/ScrollButton/ScrollButton';
 import ScrollToTop from './components/features/ScrollToTop/ScrollToTop';
+import WhatsAppButton from './components/features/WhatsAppButton/WhatsAppButton';
+import KonamiCode from './components/features/KonamiCode/KonamiCode';
+import TitleWrapper from './components/features/TitleWrapper/TitleWrapper';
 
 // Import Routes
 import naviRoutes from './data/navi_routes';
@@ -18,25 +21,42 @@ function App() {
   return (
     <Router>
       <div><ScrollToTop /></div>
+      <KonamiCode />
       <div className="App">
         <Header />
 
         <Routes>
-          {/* Render navigation routes */}
-          {naviRoutes.map(({ path, component: Component }) => (
-            <Route key={path} path={path} element={<Component />} />
+          {naviRoutes.map(({ path, component: Component, title }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <TitleWrapper title={title}>
+                  <Component />
+                </TitleWrapper>
+              }
+            />
           ))}
 
-          {/* Render additional routes */}
-          {routes.map(({ path, component: Component }) => (
-            <Route key={path} path={path} element={<Component />} />
+          {routes.map(({ path, component: Component, title }) => (
+            <Route
+              key={path}
+              path={path}
+              element={
+                <TitleWrapper title={title}>
+                  <Component />
+                </TitleWrapper>
+              }
+            />
           ))}
         </Routes>
+
 
         <Footer />
       </div>
 
       <ScrollButton />
+      <WhatsAppButton />
 
     </Router>
   );

@@ -1,6 +1,6 @@
 .logo {
     transition: transform 0.3s ease-in-out;
-    transform: scale(2.7);
+    transform: scale(1);
     width: auto;
     /* Cambia el tamaño según tu preferencia */
     height: auto;
@@ -11,9 +11,8 @@
     /* Ajusta la imagen sin distorsionar */
     margin: 0 auto;
     display: block;
-    padding-left: 1rem;
 }
 
 .logo:hover {
-    transform: scale(2.75);
+    transform: scale(1.1);
 }

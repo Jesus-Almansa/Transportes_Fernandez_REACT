@@ -1,34 +1,111 @@
 /* Button.css */
 
-/* Estilo base para todos los botones */
+/* Estilo base */
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
     color: white;
-    background-color: var(--rojo); /* Fallback a rojo si --rojo no está definido */
-    border: none;
+    background-color: var(--rojo);
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Estilo al pasar el cursor */
+/* Hover */
 .button:hover {
     background-color: var(--blanco);
     color: var(--rojo);
     transform: scale(1.05);
 }
 
-/* Estilos personalizados para el botón de contacto */
-.button-contacto {
-    background-color: var(--verde, #28a745); /* Por ejemplo, un color verde */
+/* Servicios */
+
+.button-Home-Servicios {
+    font-size: 30px;
+    padding: 15px 40px;
 }
 
-.button-contacto:hover {
-    background-color: #1e7e34;
+.button-Home-Servicios:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
 }
 
-/* Puedes agregar más clases personalizadas según tus necesidades */
+/* Botón de contacto */
+.button-Home-Contacto {
+    font-size: 30px;
+    padding: 15px 40px;
+}
+
+.button-Home-Contacto:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+}
+
+.button-Empresa-Servicios {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Empresa-Servicios:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.button-Empresa-Contacto {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Empresa-Contacto:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.button-Servicios-Volver {
+    font-size: 25px;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    padding-left: 5%;  
+}
+
+.button-Servicios-Volver:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.button-Servicios-Contacto {
+    font-size: 30px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+}
+
+.button-Servicios-Contacto:hover {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .button-contacto {
+        font-size: 18px;   /* Reducimos el tamaño en móviles */
+        padding: 10px 20px;
+    }
+}
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .button-contacto {
+        font-size: 24px;   /* Ajuste intermedio */
+        padding: 12px 30px;
+    }
+}
