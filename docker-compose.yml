@@ -1,0 +1,7 @@
+services:
+  transportes-fernandez:
+    build: .
+    ports:
+      - "5173:5173"
+    environment:
+      - HOST=0.0.0.0
