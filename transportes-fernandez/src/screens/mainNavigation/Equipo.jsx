@@ -9,15 +9,12 @@ import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 
 // Imágenes
-import cubo from '../../assets/images/infinitecube.png';
-import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
-import laMadre2 from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7783.jpg';
-import letiziaImage from '../../assets/images/letizia.png';
-import roshiImage from '../../assets/images/roshi.png';
-import marisaImage from '../../assets/images/marisa.png';
+import cubo from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/infinitecube.jpg';
+import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/_DSC7783.jpg';
+import padre from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/_DSC7786.jpg';
 import employees from '../../data/employees';
-// import JoseMariaJoven from '../../assets/original_images/joseMaria_Joven-Cropped.png';
-import JoseMariaJoven from '../../assets/original_images/joseMaria_Joven-cropped.png';
+import yaya from '../../assets/images/marisa.png';
+import JoseMariaJoven from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/joseMaria_Joven-cropped.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -50,7 +47,7 @@ const Equipo = () => {
                             <CEOCard
                                 name="Jesús Tomás Almansa"
                                 position="Apoyo incondicional"
-                                imageUrl={laMadre2}
+                                imageUrl={padre}
                                 hoverable={false}
                             />
                         </div>
@@ -129,7 +126,7 @@ const Equipo = () => {
                         <CEOCard
                             name="María Asunción Lozano López-Gil"
                             position="Fundadora"
-                            imageUrl={marisaImage}
+                            imageUrl={yaya}
                             hoverable={false}
                         />
                     </div>

@@ -4,37 +4,28 @@ import { Link } from "react-router-dom";
 import { getPathByLabel } from '../../data/routes';
 
 // Componentes
-import BoxList from '../../components/layout/Box/BoxList.jsx';
-import MediaVideo from '../../components/features/MediaVideo/MediaVideo.jsx';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture.jsx';
-import TextBox from '../../components/layout/Box/TextBox.jsx';
 import FlipCard from '../../components/features/FlipCard/FlipCard.jsx';
 
 // Imágenes
-import ciutatVella from '../../assets/original_images/nacional.jpg';
-import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
-import infiniteCubeImage from '../../assets/images/infinitecube.png';
-import equipamientoIndustrial from '../../assets/original_images/equipamienoIndustrial2.png'
-import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
-import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
+import valencia from '../../assets/original_images/valencia.jpg';
 import internacional from '../../assets/original_images/space.png';
-import españa from '../../assets/original_images/españakbron.png';
-import españa2 from '../../assets/original_images/españakbron22.png';
-import panoramica from '../../assets/TransportersBranding/SEXIO/Editadas/_DSC7901-Pano.jpg';
+
+import equipamientoIndustrial from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/equipamienoIndustrial.jpg';
+import parquesEolicos from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/parquesEolicos.jpg';
+import medidasEspeciales from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/medidasEspeciales.jpg'; 
+
+import panoramica from '../../assets/TransportersBranding/SEXIO/Editadas/Servicios/_DSC7901-Pano.jpg';
 
 
 // Iconos
-import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons-28.png';
 import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/icons-72.png';
 import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/icons-73.png';
 import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/icons-74.png';
 import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
 import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
 import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
-import zeldaVideo from '../../assets/video/zelda.mp4';
-import OIAI from '../../assets/video/OIAI.mp4';
-
 
 const Servicios = () => {
     return (

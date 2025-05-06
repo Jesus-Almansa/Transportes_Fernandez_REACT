@@ -10,7 +10,7 @@ import MailButton from '../../components/features/MailButton/MailButton';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
-import fachada from '../../assets/TransportersBranding/SEXIO/100/fachadaAbierta.jpg';
+import fachada from '../../assets/TransportersBranding/SEXIO/Editadas/Contacto/fachadaAbierta.jpg';
 import españa2 from '../../assets/original_images/españakbron22.png';
 
 import { getPathByLabel } from '../../data/routes';

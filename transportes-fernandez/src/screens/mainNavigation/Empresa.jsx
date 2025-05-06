@@ -7,11 +7,10 @@ import TextBox from '../../components/layout/Box/TextBox';
 import Button from '../../components/features/Button/Button';
 
 // Imágenes
-import laMancha from '../../assets/original_images/regional.png';
-import camionesFrontal from '../../assets/TransportersBranding/SEXIO/100/camiones.jpg';
-import space from '../../assets/images/space.jpg';
-import kamioneh from '../../assets/TransportersBranding/SOCIAL MEDIA POST/2-02.jpg';
-import camionUnitario from '../../assets/TransportersBranding/SEXIO/100/camionUnitario.jpg';
+import camionUnitario from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/camionUnitario.jpg';
+import camionesFrontal from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/camiones.jpg';
+import kamioneh from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/2-02.jpg';
+
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
