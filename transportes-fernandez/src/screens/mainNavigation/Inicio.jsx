@@ -17,22 +17,18 @@ import Maps from '../../components/features/Maps/Maps';
 import employees from '../../data/employees';
 
 // Imágenes
-import truckImage from '../../assets/TransportersBranding/SOCIAL MEDIA POST/1-02.jpg';
-import narutoImage from '../../assets/images/naruto.jpg';
-import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/laMadre.jpg';
-import españa from '../../assets/original_images/españakbron.png';
-import españa2 from '../../assets/original_images/españakbron22.png';
-import madreNiño from '../../assets/TransportersBranding/SEXIO/100/madreNiño2.jpg';
+
+import madreNiño from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/madreNiño2.jpg';
+import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/laMadre.jpg';
 
 // Imágenes endpoints
-import valencia from '../../assets/original_images/valencia.jpg';
 import laMancha from '../../assets/original_images/laMancha.jpg';
-import infiniteCubeImage from '../../assets/images/infinitecube.png';
-import equipamientoIndustrial from '../../assets/original_images/equipamienoIndustrial2.png'
-import parquesEolicos from '../../assets/original_images/parquesEolicos0.png';
-import medidasEspeciales from '../../assets/original_images/medidasEspeciales.png';
+import valencia from '../../assets/original_images/valencia.jpg';
 import internacional from '../../assets/original_images/space.png';
 
+import equipamientoIndustrial from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/equipamienoIndustrial.jpg';
+import parquesEolicos from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/parquesEolicos.jpg';
+import medidasEspeciales from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/medidasEspeciales.jpg'; 
 
 // Iconos
 import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons-28.png';
@@ -42,6 +38,8 @@ import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/i
 import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
 import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
 import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
+
+import españa2 from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/españakbron22.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';

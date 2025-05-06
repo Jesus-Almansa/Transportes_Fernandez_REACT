@@ -1,9 +1,11 @@
+import laMadre from '../assets/TransportersBranding/SEXIO/Editadas/Inicio/laMadre.jpg';
+
 const employees = [
   {
     id: 1,
     name: "Eusebio De La Cruz",
     position: "Jefe de tráfico",
-    imageUrl: "https://unavatar.io/github/Jesus-Almansa",
+    imageUrl: laMadre,
     number: "+34 669 354 144",
     mail: "eusebio@transportesfernandez.es"
   },
