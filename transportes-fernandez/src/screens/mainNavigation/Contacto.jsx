@@ -11,7 +11,7 @@ import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
 import fachada from '../../assets/TransportersBranding/SEXIO/Editadas/Contacto/fachadaAbierta.jpg';
-import españa2 from '../../assets/original_images/españakbron22.png';
+import españa2 from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/españakbron22.jpg';
 
 import { getPathByLabel } from '../../data/routes';
 
