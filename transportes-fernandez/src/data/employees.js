@@ -1,27 +1,33 @@
 import laMadre from '../assets/TransportersBranding/SEXIO/Editadas/Inicio/laMadre.jpg';
+import eusebio from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/eusebio0.jpg';
+import carmen from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/carmen.jpg';
+import juanjete from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/juanjete0.jpg';
+import sergio from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/sergio0.jpg';
+import jesusillo from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/jesusillo0.jpg';
+import juanito from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/juanito0.jpg';
 
 const employees = [
   {
     id: 1,
     name: "Eusebio De La Cruz",
     position: "Jefe de tráfico",
-    imageUrl: laMadre,
+    imageUrl: eusebio,
     number: "+34 669 354 144",
     mail: "eusebio@transportesfernandez.es"
   },
-  {
-    id: 2,
-    name: "Carmen Rosell Torres",
-    position: "Departamento internacional",
-    imageUrl: "https://unavatar.io/github/torvalds",
-    number: "+34 652 098 561",
-    mail: "carmen@transportesfernandez.es"
-  },
+  // {
+  //   id: 2,
+  //   name: "Carmen Rosell Torres",
+  //   position: "Departamento internacional",
+  //   imageUrl: carmen,
+  //   number: "+34 652 098 561",
+  //   mail: "carmen@transportesfernandez.es"
+  // },
   {
     id: 3,
     name: "Juan José Serrano",
     position: "Conductor",
-    imageUrl: "https://unavatar.io/github/rauulpastor",
+    imageUrl: juanjete,
     number: "+34 669 354 140",
     mail: "juanjose@transportesfernandez.es"
   },
@@ -29,7 +35,7 @@ const employees = [
     id: 4,
     name: "Sergio Aroca Araque",
     position: "Conductor",
-    imageUrl: "https://unavatar.io/github/jfrazelle",
+    imageUrl: sergio,
     number: "+34 669 354 141",
     mail: "sergio@transportesfernandez.es"
   },
@@ -37,15 +43,15 @@ const employees = [
     id: 5,
     name: "Jesús Pérez Carretero",
     position: "Conductor",
-    imageUrl: "https://unavatar.io/github/begum",
+    imageUrl: jesusillo,
     number: "+34 669 354 146",
     mail: "jesus@transportesfernandez.es"
   },
   {
     id: 6,
-    name: "Juan",
+    name: "Juan Cubillos Segura",
     position: "Conductor",
-    imageUrl: "https://unavatar.io/github/sexio",
+    imageUrl: juanito,
     number: "+34 669 354 139",
     mail: "juan@transportesfernandez.es"
   }
