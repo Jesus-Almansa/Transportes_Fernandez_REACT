@@ -1,10 +1,10 @@
-import laMadre from '../assets/TransportersBranding/SEXIO/Editadas/Inicio/laMadre.jpg';
-import eusebio from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/eusebio0.jpg';
-import carmen from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/carmen.jpg';
-import juanjete from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/juanjete0.jpg';
-import sergio from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/sergio0.jpg';
-import jesusillo from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/jesusillo0.jpg';
-import juanito from '../assets/TransportersBranding/SEXIO/Editadas/Equipo/juanito0.jpg';
+import laMadre from '../assets_prod/Inicio/laMadre.jpg';
+import eusebio from '../assets_prod/Equipo/eusebio0.jpg';
+import carmen from '../assets_prod/Equipo/carmen.jpg';
+import juanjete from '../assets_prod/Equipo/juanjete0.jpg';
+import sergio from '../assets_prod/Equipo/sergio0.jpg';
+import jesusillo from '../assets_prod/Equipo/jesusillo0.jpg';
+import juanito from '../assets_prod/Equipo/juanito0.jpg';
 
 const employees = [
   {

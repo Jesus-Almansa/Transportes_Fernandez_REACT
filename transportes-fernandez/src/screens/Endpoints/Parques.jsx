@@ -6,9 +6,9 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes (reemplaza con las rutas reales de tus imágenes)
-import parqueEolico1 from '../../assets/original_images/ground_windturbine.jpg';
-import offshoreWindturbine from '../../assets/original_images/offshore_windturbine.jpg';
-import landscape from '../../assets/original_images/landscape_windturbine.jpg';
+// import parqueEolico0 from '../../assets/original_images/ground_windturbine.jpg';
+import parqueEolico0 from '../../assets_prod/Endpoints/ground_windturbine.jpg';
+import landscape from '../../assets_prod/Endpoints/landscape_windturbine.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -36,7 +36,7 @@ const parques = () => {
 
             {/* Imagen 1 */}
             <MediaPicture
-                src={parqueEolico1}
+                src={parqueEolico0}
                 alt="Parque Eólico 1"
                 className="picture-container picture-Parques-Eolicos"
             />

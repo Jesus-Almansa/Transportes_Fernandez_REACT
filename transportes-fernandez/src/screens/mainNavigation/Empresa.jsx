@@ -7,9 +7,9 @@ import TextBox from '../../components/layout/Box/TextBox';
 import Button from '../../components/features/Button/Button';
 
 // Imágenes
-import camionUnitario from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/camionUnitario.jpg';
-import camionesFrontal from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/camiones.jpg';
-import kamioneh from '../../assets/TransportersBranding/SEXIO/Editadas/Empresa/2-02.jpg';
+import camionUnitario from '../../assets_prod/Empresa/camionUnitario.jpg';
+import camionesFrontal from '../../assets_prod/Empresa/camiones.jpg';
+import kamioneh from '../../assets_prod/Empresa/2-02.jpg';
 
 
 // Rutas

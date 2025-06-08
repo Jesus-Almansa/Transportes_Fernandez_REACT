@@ -9,12 +9,12 @@ import TextBox from '../../components/layout/Box/TextBox';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 
 // Imágenes
-import cubo from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/infinitecube.jpg';
-import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/_DSC7783.jpg';
-import padre from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/_DSC7786.jpg';
+import cubo from '../../assets_prod/Equipo/infinitecube.jpg';
+import laMadre from '../../assets_prod/Equipo/_DSC7783.jpg';
+import padre from '../../assets_prod/Equipo/_DSC7786.jpg';
 import employees from '../../data/employees';
-import yaya from '../../assets/images/marisa.png';
-import JoseMariaJoven from '../../assets/TransportersBranding/SEXIO/Editadas/Equipo/joseMaria_Joven-cropped.jpg';
+import yaya from '../../assets_prod/Equipo/yaya.jpg';
+import JoseMariaJoven from '../../assets_prod/Equipo/joseMaria_Joven.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';

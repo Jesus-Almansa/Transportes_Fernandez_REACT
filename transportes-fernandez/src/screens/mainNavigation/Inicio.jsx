@@ -18,28 +18,28 @@ import employees from '../../data/employees';
 
 // Imágenes
 
-import madreNiño from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/madreNiño2.jpg';
-import laMadre from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/laMadre.jpg';
+import madreNiño from '../../assets_prod/Inicio/madreNiño2.jpg';
+import laMadre from '../../assets_prod/Inicio/laMadre.jpg';
 
 // Imágenes endpoints
-import laMancha from '../../assets/original_images/laMancha.jpg';
-import valencia from '../../assets/original_images/valencia.jpg';
-import internacional from '../../assets/original_images/space.png';
+import laMancha from '../../assets_prod/Inicio/laMancha.jpg';
+import valencia from '../../assets_prod/Inicio/valencia.jpg';
+import internacional from '../../assets_prod/Inicio/space.png';
 
-import equipamientoIndustrial from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/equipamienoIndustrial.jpg';
-import parquesEolicos from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/parquesEolicos.jpg';
-import medidasEspeciales from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/medidasEspeciales.jpg'; 
+import equipamientoIndustrial from '../../assets_prod/Inicio/equipamienoIndustrial.jpg';
+import parquesEolicos from '../../assets_prod/Inicio/parquesEolicos.jpg';
+import medidasEspeciales from '../../assets_prod/Inicio/medidasEspeciales.jpg'; 
 
 // Iconos
-import IconoServicios from '../../assets/TransportersBranding/icongraphy/1/Icons-28.png';
-import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/icons-72.png';
-import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/icons-73.png';
-import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/icons-74.png';
-import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
-import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
-import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
+import IconoServicios from '../../assets_prod/iconos/1/Icons-28.png';
+import iconoLaMancha from '../../assets_prod/iconos/1/icons-72.png';
+import iconoValencia from '../../assets_prod/iconos/1/icons-73.png';
+import iconoInternacional from '../../assets_prod/iconos/1/icons-74.png';
+import iconoIndustrial from '../../assets_prod/iconos/1/icons-75.jpg';
+import iconoEolico from '../../assets_prod/iconos/1/icons-76.png';
+import iconoEspecial from '../../assets_prod/iconos/1/icons-77.png';
 
-import españa2 from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/españakbron22.jpg';
+import españa2 from '../../assets_prod/Inicio/españakbron22.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';

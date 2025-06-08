@@ -9,8 +9,8 @@ import TextBox from '../../components/layout/Box/TextBox';
 import { getPathByLabel } from '../../data/routes';
 
 // Ejemplo de imagen (ajusta la ruta y el nombre del archivo a tu proyecto)
-import laMancha from '../../assets/original_images/CastillaLaBuena_Reducida.jpg';
-import landscape from '../../assets/original_images/CLM-LaBuena.png';
+import laMancha from '../../assets_prod/Endpoints/CastillaLaBuena_Reducida.jpg';
+import landscape from '../../assets_prod/Endpoints/CLM-LaBuena.jpg';
 
 const Regional = () => {
     return (

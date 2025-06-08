@@ -9,8 +9,8 @@ import TextBox from '../../components/layout/Box/TextBox';
 import { getPathByLabel } from '../../data/routes';
 
 // Imágenes de ejemplo (modifica las rutas y nombres según tu proyecto)
-import puigCampana from '../../assets/original_images/puigCampana.png';
-import ciutatVella from '../../assets/original_images/CiutatVella.jpg';
+import puigCampana from '../../assets_prod/Endpoints/puigCampana.jpg';
+import ciutatVella from '../../assets_prod/Endpoints/CiutatVella.jpg';
 
 const Nacional = () => {
     return (

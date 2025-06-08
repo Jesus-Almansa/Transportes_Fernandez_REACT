@@ -8,24 +8,24 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture.js
 import FlipCard from '../../components/features/FlipCard/FlipCard.jsx';
 
 // Imágenes
-import laMancha from '../../assets/original_images/laMancha.jpg';
-import valencia from '../../assets/original_images/valencia.jpg';
-import internacional from '../../assets/original_images/space.png';
+import laMancha from '../../assets_prod/Inicio/laMancha.jpg';
+import valencia from '../../assets_prod/Inicio/valencia.jpg';
+import internacional from '../../assets_prod/Inicio/space.png';
 
-import equipamientoIndustrial from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/equipamienoIndustrial.jpg';
-import parquesEolicos from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/parquesEolicos.jpg';
-import medidasEspeciales from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/medidasEspeciales.jpg'; 
+import equipamientoIndustrial from '../../assets_prod/Inicio/equipamienoIndustrial.jpg';
+import parquesEolicos from '../../assets_prod/Inicio/parquesEolicos.jpg';
+import medidasEspeciales from '../../assets_prod/Inicio/medidasEspeciales.jpg'; 
 
-import panoramica from '../../assets/TransportersBranding/SEXIO/Editadas/Servicios/_DSC7901-Pano.jpg';
+import panoramica from '../../assets_prod/Servicios/_DSC7901-Pano.jpg';
 
 
 // Iconos
-import iconoLaMancha from '../../assets/TransportersBranding/icongraphy/1/icons-72.png';
-import iconoValencia from '../../assets/TransportersBranding/icongraphy/1/icons-73.png';
-import iconoInternacional from '../../assets/TransportersBranding/icongraphy/1/icons-74.png';
-import iconoIndustrial from '../../assets/TransportersBranding/icongraphy/1/icons-75.jpg';
-import iconoEolico from '../../assets/TransportersBranding/icongraphy/1/icons-76.png';
-import iconoEspecial from '../../assets/TransportersBranding/icongraphy/1/icons-77.png';
+import iconoLaMancha from '../../assets_prod/iconos/1/icons-72.png';
+import iconoValencia from '../../assets_prod/iconos/1/icons-73.png';
+import iconoInternacional from '../../assets_prod/iconos/1/icons-74.png';
+import iconoIndustrial from '../../assets_prod/iconos/1/icons-75.jpg';
+import iconoEolico from '../../assets_prod/iconos/1/icons-76.png';
+import iconoEspecial from '../../assets_prod/iconos/1/icons-77.png';
 
 const Servicios = () => {
     return (

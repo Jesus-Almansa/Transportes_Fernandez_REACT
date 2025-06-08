@@ -6,8 +6,9 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes (reemplaza con las rutas reales de tus imágenes)
-import techoIndustrial from '../../assets/TransportersBranding/SEXIO/100/techo.jpg';
-import toroMecanico from '../../assets/TransportersBranding/SEXIO/100/toroMecanico.jpg';
+import techoIndustrial from '../../assets_prod/Endpoints/techo.jpg';
+import toroMecanico from '../../assets_prod/Endpoints/toroMecanico.jpg';
+// import toroMecanico from '../../assets/TransportersBranding/SEXIO/100/toroMecanico.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';

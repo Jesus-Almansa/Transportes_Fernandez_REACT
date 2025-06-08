@@ -8,9 +8,9 @@ import TextBox from '../../components/layout/Box/TextBox';
 // Rutas
 import { getPathByLabel } from '../../data/routes';
 
-// Imágenes de ejemplo (modifica las rutas y nombres según tu proyecto)
-import suiza from '../../assets/original_images/suiza.jpg';
-import sky from '../../assets/original_images/sky.jpg';
+// Imagenes
+import suiza from '../../assets_prod/Endpoints/suiza.jpg';
+import sky from '../../assets_prod/Endpoints/sky.jpg';
 
 const Internacional = () => {
     return (

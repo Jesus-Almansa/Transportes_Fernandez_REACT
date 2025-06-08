@@ -7,8 +7,9 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Images
-import tuberias from '../../assets/original_images/industrial_pipe.jpg';
-import equipo from '../../assets/original_images/equipamientoIndustrial.jpeg';
+import padre from '../../assets_prod/Equipo/_DSC7786.jpg';
+import tuberias from '../../assets_prod/Endpoints/industrial_pipe.jpg';
+import equipo from '../../assets_prod/Endpoints/equipamientoIndustrial.jpeg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';

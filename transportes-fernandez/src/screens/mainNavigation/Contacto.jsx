@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import Maps from '../../components/features/Maps/Maps';
 import Background from '../../components/features/Background/Background';
-import Button from '../../components/features/Button/Button';
 import MailButton from '../../components/features/MailButton/MailButton';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
-import fachada from '../../assets/TransportersBranding/SEXIO/Editadas/Contacto/fachadaAbierta.jpg';
-import españa2 from '../../assets/TransportersBranding/SEXIO/Editadas/Inicio/españakbron22.jpg';
+import fachada from '../../assets_prod/Contacto/fachadaAbierta.jpg';
+import españa2 from '../../assets_prod/Inicio/españakbron22.jpg';
 
 import { getPathByLabel } from '../../data/routes';
 

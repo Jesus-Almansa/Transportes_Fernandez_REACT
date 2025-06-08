@@ -5,13 +5,12 @@ import Notiflix from "notiflix";
 import "../../components/features/Notiflix/Notiflix.css";
 
 // Components
-import Button from '../../components/features/Button/Button';
 import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
-import jesus from '../../assets/original_images/dev.jpg';
-import header from '../../assets/original_images/header.png';
+import jesus from '../../assets_prod/Endpoints/dev.jpg';
+import header from '../../assets_prod/Endpoints/header.jpg';
 
 const Developer = () => {
     // We'll only show the alert once

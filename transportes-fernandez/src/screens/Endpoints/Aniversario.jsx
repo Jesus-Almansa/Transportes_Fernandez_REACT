@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Images
-import aniversario from '../../assets/images/Logo-70Aniversario.png';
+import aniversario from '../../assets_prod/Endpoints//Logo-70Aniversario.png';
 
 
 // Componentes

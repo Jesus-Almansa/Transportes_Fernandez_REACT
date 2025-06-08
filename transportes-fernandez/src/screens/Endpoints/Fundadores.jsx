@@ -6,10 +6,9 @@ import MediaPicture from '../../components/features/MediaPicture/MediaPicture';
 import TextBox from '../../components/layout/Box/TextBox';
 
 // Imágenes
-import joseMaria from '../../assets/original_images/joseMaria_Joven.png';
-import joseMaria_Carnet from '../../assets/original_images/joseaMariaCarnet.png';
-import marisa from '../../assets/original_images/marisa.png';
-import anuncio from '../../assets/original_images/anuncioPeriodico.png';
+import JoseMariaJoven from '../../assets_prod/Equipo/joseMaria_Joven.jpg';
+import yaya from '../../assets_prod/Equipo/yaya.jpg';
+import anuncio from '../../assets_prod/Equipo/anuncioPeriodico.jpg';
 
 const Fundadores = () => {
     return (
@@ -19,7 +18,7 @@ const Fundadores = () => {
                 <div className="enLinea">
                     <div className="izquierda">
                         <MediaPicture
-                            src={joseMaria}
+                            src={JoseMariaJoven}
                             alt="Jose María Fernández"
                             className="picture-container picture-JoseMaria"
                         />
@@ -53,7 +52,7 @@ const Fundadores = () => {
 
                     <div className='derecha'>
                         <MediaPicture
-                            src={marisa}
+                            src={yaya}
                             alt="Jose María Fernández"
                             className="picture-container picture-Yaya"
                         />
