@@ -1,0 +1,5 @@
+# Evita subir al contexto cosas pesadas o irrelevantes
+node_modules
+dist
+*.env*
+.git
