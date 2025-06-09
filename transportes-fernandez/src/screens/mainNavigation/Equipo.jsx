@@ -15,6 +15,7 @@ import padre from '../../assets_prod/Equipo/_DSC7786.jpg';
 import employees from '../../data/employees';
 import yaya from '../../assets_prod/Equipo/yaya.jpg';
 import JoseMariaJoven from '../../assets_prod/Equipo/joseMaria_Joven.jpg';
+import pa from '../../assets_prod/Equipo/pa.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -47,7 +48,7 @@ const Equipo = () => {
                             <CEOCard
                                 name="Jesús Tomás Almansa"
                                 position="Apoyo incondicional"
-                                imageUrl={padre}
+                                imageUrl={pa}
                                 hoverable={false}
                             />
                         </div>
