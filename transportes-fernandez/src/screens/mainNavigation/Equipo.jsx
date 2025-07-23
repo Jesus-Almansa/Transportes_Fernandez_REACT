@@ -16,6 +16,8 @@ import employees from '../../data/employees';
 import yaya from '../../assets_prod/Equipo/yaya.jpg';
 import JoseMariaJoven from '../../assets_prod/Equipo/joseMaria_Joven.jpg';
 import pa from '../../assets_prod/Equipo/pa.jpg';
+import elPa from '../../assets_prod/Equipo/elPa.jpg';
+import equipo from '../../assets_prod/Equipo/equipo.jpg';
 
 // Rutas
 import { getPathByLabel } from '../../data/routes';
@@ -46,9 +48,9 @@ const Equipo = () => {
                         </div>
                         <div className=" text-red text-body">
                             <CEOCard
-                                name="Jesús Tomás Almansa"
+                                name="Jesús Almansa"
                                 position="Apoyo incondicional"
-                                imageUrl={pa}
+                                imageUrl={elPa}
                                 hoverable={false}
                             />
                         </div>
@@ -58,15 +60,15 @@ const Equipo = () => {
             <div className='alinearEnColumna'>
                 <div className='padding-vertical-1' ></div>
                 <h1 className='text-red text-title'>DE ESTUDIANTE DE DERECHO A EMPRESARIA</h1>
-                <div className='padding-vertical-1' ></div>
                 <div className='enLinea'>
                     <TextBox className="text-box text-box-Equipo text-body">
                         Paz, natural de Villarrobledo (Albacete), es una empreseria con más de 40 años de experiencia en el sector del transporte. Cogió las riendas del negocio y de su familia desde muy joven, a los 18 años. Desde entonces, ha conseguido llevar la empresa a lo más alto, con esfuerzo y dedicación, en una industria tan competitiva como es el transporte de mercancías.
+
+                        <div className='padding-vertical-1'></div>
+
+                        Jesús, marido de Paz y eventualmente informático, administrador, repartidor, conductor, mecánico, y cualquier otra cosa que se le ocurra a la jefa. Él es el apoyo incondicional de Paz y siempre está dispuesto a ayudar a su esposa en lo que haga falta.
                     </TextBox>
                 </div>
-                <TextBox className="text-box text-box-Equipo text-body">
-                    Jesús, marido de Paz y eventualmente informático, administrador, repartidor, conductor, mecánico, y cualquier otra cosa que se le ocurra a la jefa. Él es el apoyo incondicional de Paz y siempre está dispuesto a ayudar a su esposa en lo que haga falta.
-                </TextBox>
             </div>
 
             <div className='padding-vertical-1' ></div>
@@ -93,18 +95,19 @@ const Equipo = () => {
 
                 <TextBox className="text-box text-box-Equipo text-body text-white padding-vertical-3">
                     El equipo de Transportes Fernández es una familia. Nos caracterizamos por haber crecido junto a nuestros empleados de toda la vida. La empresa ha pasado de ser una empresa local a una empresa nacional gracias al esfuerzo y dedicación de todos los trabajadores.
+                </TextBox>
 
-                    <br /><br />
+                <MediaPicture
+                    src={equipo}
+                    alt="Equipo al completo"
+                    className="picture-container picture-Equipo-Hoy"
+                />
 
-                    <MediaPicture
-                        src={cubo}
-                        alt="Descripción de la imagen"
-                        className="picture-container picture-Empresa-Hoy"
-                    />
 
-                    <div className='padding-vertical-3 alinearEnColumna'>AQUI VA LA FOTO DE TODO EL EQUIPO</div>
-
+                <TextBox className="text-box text-box-Equipo text-body text-white padding-vertical-3">
                     El equipo de Transportes Fernández es más que un grupo de trabajo; somos una familia. A lo largo de los años, hemos crecido juntos, acompañados por empleados que han estado con nosotros desde nuestros inicios. Su esfuerzo, dedicación y compromiso han sido la base sobre la que hemos construido nuestra evolución, pasando de ser una empresa local a consolidarnos como un referente a nivel nacional.
+
+                    <div className='padding-vertical-1'></div>
 
                     Cada miembro de nuestro equipo aporta algo único, y juntos hemos creado un ambiente de confianza y colaboración que define quiénes somos. En Transportes Fernández valoramos a las personas que forman parte de esta familia y trabajamos codo a codo para superar los desafíos, celebrando cada logro como un triunfo compartido. Es este espíritu el que nos impulsa a seguir creciendo y mejorando cada día.
                 </TextBox>
@@ -137,13 +140,13 @@ const Equipo = () => {
 
 
             <div className='alinearEnColumna'>
-                <h1 className='padding-vertical-3 text-red text-title'>
+                <h1 className='padding-vertical-up-2 text-red text-title'>
                     <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
                         <strong>SU HISTORIA</strong>
                     </Link>
                 </h1>
                 <div className='enLinea'>
-                    <TextBox className="text-box text-box-Equipo text-body padding-vertical-down-2">
+                    <TextBox className="text-box text-box-Equipo text-body">
                         <Link to={getPathByLabel('fundadores')} className="text-red no-underline">
                             <strong>José María</strong>
                         </Link> y
