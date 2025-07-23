@@ -30,10 +30,11 @@
     align-items: center;
 }
 
+
 /* EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA*/
 
 .picture-Empresa-Hoy img {
-    max-width: 100%;
+    max-width: 75%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
@@ -68,6 +69,21 @@
     transition: all 0.5s ease;
     margin-left: 2.1%;
     margin-top: 0.3%;
+}
+
+/* EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO EQUIPO  */
+.picture-Equipo-Hoy img {
+    max-width: 68%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.picture-Equipo-Hoy img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 /* CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO CONTACTO*/
@@ -275,23 +291,24 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 430px) {    
-    .picture-Servicios-Panoramica img,
-    .picture-Contacto img,
-    .picture-aniversario img,
-    .picture-Industrial-toroMecanico img,
-    .picture-Parques-Eolicos img,
-    .picture-Regional img,
-    .picture-Nacional img,
-    .picture-Internacional img,
-    .picture-JoseMaria img, 
-    .picture-JoseMaria-Carnet img,
-    .picture-Yaya img,
-    .picture-Anuncio-Periodico img, 
-    .picture-Jesus img {
-      max-width: 90%;
-      margin: 0 auto;           /* Centrado */
-      display: block;           /* Asegura que se comporte como bloque */
-    }
+/* iPhone vertical hasta iPhone 15 */
+@media (max-width: 460px) {
+  .picture-Servicios-Panoramica img,
+  .picture-Contacto img,
+  .picture-aniversario img,
+  .picture-Equipo-Hoy img,
+  .picture-Industrial-toroMecanico img,
+  .picture-Parques-Eolicos img,
+  .picture-Regional img,
+  .picture-Nacional img,
+  .picture-Internacional img,
+  .picture-JoseMaria img, 
+  .picture-JoseMaria-Carnet img,
+  .picture-Yaya img,
+  .picture-Anuncio-Periodico img, 
+  .picture-Jesus img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
   }
-  
+}
