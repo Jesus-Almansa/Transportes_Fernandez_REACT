@@ -235,7 +235,7 @@ function Inicio() {
 
         <div className="text-red text-body alinearEnColumna">
           <CEOCard
-            name="Paz Fernández Lozano"
+            name="Paz"
             position="CEO"
             imageUrl={laMadre}
             number="+34 605 688 210"
