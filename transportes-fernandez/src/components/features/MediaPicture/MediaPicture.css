@@ -21,23 +21,25 @@
     max-width: 100%;
     /* Diferente tamaño específico */
     border-radius: 0.5rem;
-    /* Mayor redondez */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    transition: transform 1s ease, box-shadow 0.3s ease;
     /* margin-left: 8%; */
     margin: 0 auto;
     display: block;
     align-items: center;
+    transition: transform 0.6s ease, height 0.6s ease, box-shadow 0.3s ease;
 }
 
+.picture-Home-Intro img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+}
 
 /* EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA EMPRESA*/
 
 .picture-Empresa-Hoy img {
-    max-width: 75%;
+    max-width: 85%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    transition: transform 1s ease, box-shadow 0.3s ease;
+    transition: transform 0.6s ease, height 0.6s ease, box-shadow 0.3s ease;
     margin: 0 auto;
     display: block;
 }
@@ -296,6 +298,7 @@
   .picture-Servicios-Panoramica img,
   .picture-Contacto img,
   .picture-aniversario img,
+  .picture-Empresa-Hoy img,
   .picture-Equipo-Hoy img,
   .picture-Industrial-toroMecanico img,
   .picture-Parques-Eolicos img,
