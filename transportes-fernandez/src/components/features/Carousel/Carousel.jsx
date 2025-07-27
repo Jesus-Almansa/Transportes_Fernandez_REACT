@@ -10,8 +10,10 @@ import image4 from "../../../assets_prod/Carrusel/8.jpg";
 
 // Algoritmo Fisher–Yates para mezclar un array
 function shuffle(array) {
+    // arr es igual que la entrada array pero distinto objeto en memoria, para no pisar el original
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
+      // Math.random() devuelve valores entre [0,1)
         const j = Math.floor(Math.random() * (i + 1));
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
