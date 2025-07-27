@@ -25,7 +25,16 @@ const Fundadores = () => {
                     </div>
                     <div className='derecha'>
                         <TextBox className='text-box text-box-Fundadores-JoseMaria text-body'>
-                            <strong className='text-red'>Jose María </strong> es el socio fundador original de Transportes Fernández. Con más de 40 años  de experiencia en el sector del transporte, ha sido el motor de la empresa desde sus inicios. Su visión y liderazgo han sido fundamentales para el crecimiento y consolidación de la compañía, que ha pasado de ser un pequeño negocio familiar a convertirse en una de las empresas de transporte más reconocidas de la región.
+                            <strong className='text-red'>Jose María </strong> es el socio fundador original de Transportes Fernández. Hijo de agricultores, realizó el servicio militar obligatorio en Chinchilla, Albacete.
+
+                            <div className="padding-vertical-4"></div>
+
+                            Fue durante este tiempo que tuvo la oportunidad, como muchas otras personas que venían del campo, de aprender a leer y escribir, junto a otras competencias que en entornos rurales eran complicado de obtener. 
+                            
+                            <div className="padding-vertical-4"></div>
+
+                            Obtuvo el permiso de conducir y descubrió que disfrutaba mucho de esta nueva destreza que le concedía libertad y autonomía. Llegó a la conclusión de que no quería seguir el camino de sus padres, que quería echarse a la carretera y fundó la empresa que conocemos hoy día.
+
                         </TextBox>
 
                     </div>
@@ -34,28 +43,27 @@ const Fundadores = () => {
 
             <div className='padding-vertical-2'></div>
 
-            <TextBox className='text-box text-box-Fundadores-JoseMaria text-body'>
-                Durante su juventud 
-            </TextBox>
-
-            <div className='padding-vertical-4'></div>
-
             <div className="alinearEnColumna">
 
                 <div className="enLinea">
 
                     <div className="izquierda">
-                        <TextBox className='text-box text-box-Fundadores-JoseMaria text-body'>
-                            <strong className='text-red'>María Asunción </strong> es la socio fundador original de Transportes Fernández. Con más de 40 años  de experiencia en el sector del transporte, ha sido el motor de la empresa desde sus inicios. Su visión y liderazgo han sido fundamentales para el crecimiento y consolidación de la compañía, que ha pasado de ser un pequeño negocio familiar a convertirse en una de las empresas de transporte más reconocidas de la región.
-                        </TextBox>
+                        <MediaPicture
+                            src={yaya}
+                            alt="yaya, te echo de menos"
+                            className="picture-container picture-Yaya"
+                        />
                     </div>
 
                     <div className='derecha'>
-                        <MediaPicture
-                            src={yaya}
-                            alt="Jose María Fernández"
-                            className="picture-container picture-Yaya"
-                        />
+
+                        <TextBox className='text-box text-box-Fundadores-JoseMaria text-body'>
+                            <strong className='text-red'>María Asunción </strong>, socia fundadora de la empresa junto a su marido. Con una visión clara y una determinación inquebrantable, participó activamente en los primeros pasos de esta compañía, sentando las bases de los valores que aún hoy nos guían: compromiso, honestidad y cercanía. 
+                            
+                            <div className="padding-vertical-4"></div>
+
+                            Su apoyo ha sido fundamental para el crecimiento y consolidación de la compañía, que ha pasado de ser un pequeño negocio familiar a convertirse en una de las empresas de transporte más reconocidas de la región.
+                        </TextBox>
                     </div>
                 </div>
 
