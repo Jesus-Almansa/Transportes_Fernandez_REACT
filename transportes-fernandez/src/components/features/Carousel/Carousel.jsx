@@ -2,11 +2,11 @@ import React, { useMemo } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './Carousel.css';
 
-import image0 from "../../../assets_prod/Carrusel/5472x2884/1.jpg";
-import image1 from "../../../assets_prod/Carrusel/5472x2884/0.jpg";
-import image2 from "../../../assets_prod/Carrusel/5472x2884/6.jpg";
-import image3 from "../../../assets_prod/Carrusel/5472x2884/7.jpg";
-import image4 from "../../../assets_prod/Carrusel/5472x2884/8.jpg";
+import image0 from "../../../assets_prod/Carrusel/1.jpg";
+import image1 from "../../../assets_prod/Carrusel/0.jpg";
+import image2 from "../../../assets_prod/Carrusel/6.jpg";
+import image3 from "../../../assets_prod/Carrusel/7.jpg";
+import image4 from "../../../assets_prod/Carrusel/8.jpg";
 
 // Algoritmo Fisher–Yates para mezclar un array
 function shuffle(array) {
