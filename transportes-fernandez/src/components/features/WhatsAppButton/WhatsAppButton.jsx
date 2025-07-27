@@ -10,7 +10,7 @@ const contacts = [
   {
     name: 'Administración y comercial nacional',
     description: 'Facturación',
-    phone: '+34605688210',
+    phone: '+34669354145',
     initialMessage: 'Hola, estoy interesado en un transporte...',
   },
   {
