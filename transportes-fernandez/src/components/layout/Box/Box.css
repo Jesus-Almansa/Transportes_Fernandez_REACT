@@ -120,8 +120,7 @@
 
 /* FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES*/
 .text-box-Fundadores-JoseMaria {
-  max-width: 90%;
-  border-radius: 1rem;
+  max-width: 100%;
   text-align: justify;
 }
 
@@ -136,7 +135,7 @@
 }
 
 /* Media Queries para iPhone (o pantallas pequeñas) */
-@media (max-width: 428px) {
+@media (max-width: 460px) {
   .text-box {
     max-width: 90%;
     font-size: 1rem;
