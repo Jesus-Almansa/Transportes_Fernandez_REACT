@@ -16,7 +16,7 @@
 
 /* The icon at the top (info, success, etc.) */
 .my-custom-report .my-custom-report-icon {
-    background: url(../../../assets/TransportersBranding/icongraphy/3/Icons-32.png) center no-repeat;
+    background: url(../../../assets_prod/iconos/3/Icons-32.png) center no-repeat;
     width: 80px !important;
     height: 80px !important;
     background-size: contain;
