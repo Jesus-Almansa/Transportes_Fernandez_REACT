@@ -21,8 +21,6 @@ const Developer = () => {
     const hasAlerted = useRef(false);
 
     useEffect(() => {
-        // 2) Initialize Notiflix with just the custom className
-        // (we don't inline style, so our CSS can override everything)
         Notiflix.Report.init({
             className: "my-custom-report"
         });
@@ -30,9 +28,12 @@ const Developer = () => {
         // 3) Fire the alert once
         if (!hasAlerted.current) {
             Notiflix.Report.info(
-                "¡Has encontrado la página secreta!",
-                "Enhorabuena, bienvenido a mi CV secreto dentro de la web de Transportes Fernández. Aquí puedes encontrar información sobre mi experiencia y habilidades como desarrollador.",
-                "Next"
+                // Titulo
+                "Bienvenido",
+                // Cuerpo
+                "Bienvenido a mi CV secreto dentro de la web de Transportes Fernández. Aquí puedes encontrar información sobre mi experiencia y habilidades como desarrollador.",
+                // Boton
+                "Continuar"
             );
             hasAlerted.current = true;
         }
