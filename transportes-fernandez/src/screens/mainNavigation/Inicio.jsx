@@ -238,7 +238,7 @@ function Inicio() {
             name="Paz"
             position="CEO"
             imageUrl={laMadre}
-            number="+34 605 688 210"
+            number="+34 669 354 145"
             mail="paz@transportesfernandez.es"
             hoverable={true}
           />
