@@ -223,7 +223,7 @@
 
 /* FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES FUNDADORES*/
 .picture-JoseMaria img {
-    width: 65%;
+    max-width: 75%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
@@ -236,22 +236,8 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.picture-JoseMaria-Carnet img {
-    width: 70%;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    transition: transform 1s ease, box-shadow 0.3s ease;
-    display: block;     /* become a block-level element */
-    margin: 0 auto;     /* center horizontally in container */
-}
-
-.picture-JoseMaria-Carnet img:hover {
-    transform: scale(1.005);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-}
-
 .picture-Yaya img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
@@ -260,12 +246,12 @@
 }
 
 .picture-Yaya img:hover {
-    transform: scale(1.005);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.005);
 }
 
 .picture-Anuncio-Periodico img {
-    width: 60%;
+    max-width: 60%;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: transform 1s ease, box-shadow 0.3s ease;
@@ -305,8 +291,7 @@
   .picture-Regional img,
   .picture-Nacional img,
   .picture-Internacional img,
-  .picture-JoseMaria img, 
-  .picture-JoseMaria-Carnet img,
+  .picture-JoseMaria img,
   .picture-Yaya img,
   .picture-Anuncio-Periodico img, 
   .picture-Jesus img {
