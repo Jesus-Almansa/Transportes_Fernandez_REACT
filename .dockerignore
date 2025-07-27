@@ -3,3 +3,9 @@ node_modules
 dist
 *.env*
 .git
+npm-debug.log*
+transportes-fernandez/node_modules
+transportes-fernandez/dist
+awscliv2.zip
+*.py
+.git

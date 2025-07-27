@@ -1,8 +1,10 @@
 services:
   transportes-fernandez:
     build:
-      context: .          # raíz del repo
-      dockerfile: dockerfile
+      context: .
+      dockerfile: Dockerfile                # dentro de ese folder
     ports:
-      - "80:80" # host:container
+      - "80:80"
     restart: always
+    cpus: 1.0             # Máximo 1 CPU
+    mem_limit: 512M       # Máximo 512 MB RAM
