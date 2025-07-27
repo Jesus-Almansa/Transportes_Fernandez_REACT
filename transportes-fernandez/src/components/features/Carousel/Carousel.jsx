@@ -1,61 +1,63 @@
 import React, { useMemo } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './Carousel.css';
-// import narutoImage from '../../../assets/images/naruto.jpg';
 
-// Función para generar un array de imágenes aleatorias
-const generateRandomItems = () => {
-  return [
-    // {
-    //   name: 'Random Name #1',
-    //   image: narutoImage,
-    // },
-    {
-      name: 'Random Name #1',
-      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
-    },
-    {
-      name: 'Random Name #2',
-      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
-    },
-    {
-      name: 'Random Name #3',
-      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
-    },
-    {
-      name: 'Random Name #4',
-      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
-    },
-    {
-      name: 'Random Name #5',
-      image: `https://picsum.photos/1200/500?random=${Math.floor(Math.random() * 1000)}`,
+import image0 from "../../../assets_prod/Carrusel/5472x2884/1.jpg";
+import image1 from "../../../assets_prod/Carrusel/5472x2884/0.jpg";
+import image2 from "../../../assets_prod/Carrusel/5472x2884/6.jpg";
+import image3 from "../../../assets_prod/Carrusel/5472x2884/7.jpg";
+import image4 from "../../../assets_prod/Carrusel/5472x2884/8.jpg";
+
+// Algoritmo Fisher–Yates para mezclar un array
+function shuffle(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-  ];
+    return arr;
+}
+
+// Construye y mezcla el array de imágenes
+const imagenesCarrusel = () => {
+    const base = [
+        { index: 0, image: image0 },
+        { index: 1, image: image1 },
+        { index: 2, image: image2 },
+        { index: 3, image: image3 },
+        { index: 4, image: image4 },
+    ];
+
+    return shuffle(base);
 };
 
 const MyCarousel = () => {
-  // Generar elementos de manera aleatoria para cada instancia
-  const items = useMemo(() => generateRandomItems(), []);
+    // Se mezclará solo al montar el componente
+    const items = useMemo(() => imagenesCarrusel(), []);
 
-  return (
-    <Carousel
-      fullHeightHover={true}
-      autoPlay={true}
-      animation="slide"
-      interval={7000}
-      indicators={true}
-      navButtonsAlwaysVisible={true}
-      navButtonsProps={{
-        className: 'carousel-arrow', // Aplica la clase CSS personalizada a los botones
-      }}
-    >
-      {items.map((item, index) => (
-        <div key={index} className="carousel-item">
-          <img src={item.image} alt={item.name} className="carousel-image" />
-        </div>
-      ))}
-    </Carousel>
-  );
+    console.log('Orden del carrusel:', items.map(item => item.index));
+
+    return (
+        <Carousel
+            fullHeightHover={true}
+            autoPlay={true}
+            animation="slide"
+            interval={7000}
+            indicators={true}
+            navButtonsAlwaysVisible={true}
+            navButtonsProps={{ className: 'carousel-arrow' }}
+        >
+            {items.map(item => (
+                <div key={item.index} className="carousel-item">
+                    <img
+                        src={item.image}
+                        alt={`Imagen ${item.index}`}
+                        className="carousel-image"
+                    />
+                </div>
+            ))}
+        </Carousel>
+    );
 };
 
 export default MyCarousel;
