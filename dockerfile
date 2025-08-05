@@ -17,6 +17,9 @@ RUN npm rebuild esbuild && npm run build   # genera /app/dist
 
 ######################  imagen final  ########################
 FROM nginx:1.27-alpine
+
+RUN apk update && apk upgrade && rm -rf /var/cache/apk/*
+
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
