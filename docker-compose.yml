@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile                # dentro de ese folder
     ports:
-      - "80:80"
+      - "443:443"
     restart: always
-    cpus: 1.0             # Máximo 1 CPU
-    mem_limit: 512M       # Máximo 512 MB RAM
+    # cpus: 1.0             # Máximo 1 CPU
+    # mem_limit: 512M       # Máximo 512 MB RAM
